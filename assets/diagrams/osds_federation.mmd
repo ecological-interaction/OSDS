@@ -1,0 +1,93 @@
+%% Authoritative diagram source. Fixed-layout hints are consumed by render_osds_federation.py.
+%% Layout hints preserve the explanatory hierarchy in the derived SVG; they do not add graph edges.
+%% @canvas 1200 978
+%% @box IRKB 40 24 1120 108 synthesis
+%% @box DRM 40 164 1120 64 shared
+%% @region NEIGHBOURS 24 245 1152 290
+%% @box EIRKB 40 260 350 80 neighbour
+%% @box EII 425 260 350 80 neighbour
+%% @box GISDS 810 260 350 80 neighbour
+%% @box SSKB 40 360 350 80 neighbour
+%% @box DPRKB 425 360 350 80 neighbour
+%% @box PBCKA 810 360 350 80 neighbour
+%% @box AMRKB 400 460 400 60 neighbour
+%% @container OSDS 40 565 1120 355 observation
+%% @box C01 70 650 515 46 category
+%% @box C02 615 650 515 46 category
+%% @box C03 70 712 515 46 category
+%% @box C04 615 712 515 46 category
+%% @box C05 70 774 515 46 category
+%% @box C06 615 774 515 46 category
+%% @box C07 70 836 515 46 category
+%% @box C08 615 836 515 46 category
+%% @note 600 954 Conceptual relationships; not a claim that automated integrations already exist.
+flowchart TB
+    IRKB["IRKB — Interdisciplinary Research Knowledge Base<br/>Comparative synthesis and interdisciplinary research"]
+    DRM["DRM · Shared entities · Provenance · Interoperability"]
+    subgraph NEIGHBOURS[" "]
+        direction TB
+        subgraph ROW1[" "]
+            direction LR
+            EIRKB["EIRKB<br/>Ecological Information Research Knowledge Base"]
+            EII["EII<br/>Ecological Indicators Inventory"]
+            GISDS["GISDS<br/>GIS and Remote Sensing Database Sources"]
+            EIRKB ~~~ EII ~~~ GISDS
+        end
+        subgraph ROW2[" "]
+            direction LR
+            SSKB["SSKB<br/>Systems Science and SES"]
+            DPRKB["DPRKB<br/>Design Practice Research"]
+            PBCKA["PBCKA"]
+            SSKB ~~~ DPRKB ~~~ PBCKA
+        end
+        AMRKB["AMRKB<br/>Agricultural Modes Reference Knowledge Base"]
+        ROW1 ~~~ ROW2 ~~~ AMRKB
+    end
+    subgraph OSDS["OSDS — Observational Systems and Data Sources<br/>Physical measurements and observation-system discovery"]
+        direction TB
+        subgraph OBS1[" "]
+            direction LR
+            C01["IoT and sensor telemetry"]
+            C02["Scientific monitoring"]
+            C01 ~~~ C02
+        end
+        subgraph OBS2[" "]
+            direction LR
+            C03["Ground-truth observations"]
+            C04["Autonomous systems"]
+            C03 ~~~ C04
+        end
+        subgraph OBS3[" "]
+            direction LR
+            C05["Field campaigns"]
+            C06["Citizen sensing"]
+            C05 ~~~ C06
+        end
+        subgraph OBS4[" "]
+            direction LR
+            C07["Physical computing"]
+            C08["Historical records"]
+            C07 ~~~ C08
+        end
+        OBS1 ~~~ OBS2 ~~~ OBS3 ~~~ OBS4
+    end
+    IRKB <--> DRM
+    DRM <--> NEIGHBOURS
+    NEIGHBOURS <--> OSDS
+    classDef synthesis fill:#f3f6fa,stroke:#62738a,stroke-width:1.5px,color:#18273b;
+    classDef shared fill:#f7f8fa,stroke:#9aa6b5,color:#27364a;
+    classDef neighbour fill:#fafafa,stroke:#b3bdc8,color:#27364a;
+    classDef observation fill:#f4f8fc,stroke:#6388b0,stroke-width:2px,color:#182e48;
+    classDef category fill:#ffffff,stroke:#c1cfde,color:#27364a;
+    class IRKB synthesis;
+    class DRM shared;
+    class EIRKB,EII,GISDS,SSKB,DPRKB,PBCKA,AMRKB neighbour;
+    class OSDS observation;
+    class C01,C02,C03,C04,C05,C06,C07,C08 category;
+    style NEIGHBOURS fill:#ffffff,stroke:#dce3eb,stroke-dasharray:4 4
+    style ROW1 fill:none,stroke:none
+    style ROW2 fill:none,stroke:none
+    style OBS1 fill:none,stroke:none
+    style OBS2 fill:none,stroke:none
+    style OBS3 fill:none,stroke:none
+    style OBS4 fill:none,stroke:none

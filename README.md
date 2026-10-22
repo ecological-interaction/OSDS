@@ -1,54 +1,63 @@
 # Observational Systems and Data Sources (OSDS)
 
+![OSDS federation architecture: interdisciplinary synthesis, shared methodology, neighbouring research databases and eight observation categories](assets/diagrams/osds_federation.svg)
+
+*Conceptual relationships; not a claim that automated integrations already exist.*
+
 **Work in Progress — Academic Research Resource**
 
 Jonathan Minchin · Ecological Interaction · [ORCID 0000-0001-8152-1796](https://orcid.org/0000-0001-8152-1796).
 
-OSDS catalogues global observational systems, IoT data sources, physical sensor networks, scientific monitoring, ground-truth observations and physical computing datasets. The current inventory contains 62 candidate sources, not 62 verified measurement datasets. Discovery URL identity review does not establish dataset availability, measurement quality, access rights or fitness for use.
+## Purpose and scope
 
-## Start here
+OSDS catalogues global observational systems, IoT data sources, physical sensor networks, scientific monitoring, ground-truth observations and physical computing datasets. Its 62 entries are candidate sources, not 62 verified measurement datasets. Source discovery and URL identity review do not establish dataset availability, calibration, measurement quality, access rights or fitness for analysis.
 
-- [Scientific Reference Register](OSDS_Scientific_Reference_Register.md): human-readable four-column presentation, grouped by the eight disciplinary domains.
-- [Machine Reference](OSDS_Machine_Reference.md): authoritative structured register, comprising a manifest and 62 source records in fenced JSON blocks inside Markdown. This is not a standalone JSON file.
-- [CITATION.cff](CITATION.cff): academic attribution.
-- [CHANGELOG.md](CHANGELOG.md): document baseline and local repository preparation.
+## Research registers
 
-The machine reference remains authoritative. The scientific register is its human-readable presentation, not a competing source inventory. No automatic synchronisation or ingestion service is implemented.
+- [Scientific Reference Register](OSDS_Scientific_Reference_Register.md): concise human-readable, four-column catalogue organised by disciplinary domain.
+- [Machine Reference](OSDS_Machine_Reference.md): authoritative structured register containing one manifest and 62 source records in 63 JSON fences inside Markdown. It is not standalone JSON.
+- [Citation metadata](CITATION.cff) and [Changelog](CHANGELOG.md): attribution and research/documentation history.
 
-## Research scope and classifications
+The scientific register presents the machine register's research content; it is not a competing inventory. Provider, observing network, site registry, archive, repository and individual dataset identities remain distinct. Candidate status, evidence limitations and unresolved overlap questions are retained. No automatic synchronisation or ingestion service is implemented.
 
-The eight disciplinary domains are Environmental, Ecological, Terrestrial, Hydrological, Agricultural, Urban, Industrial and Experimental (D01–D08).
+## Disciplinary domains and observation categories
 
-The eight observation categories are IoT telemetry, Scientific monitoring, Ground-truth observations, Autonomous observations, Campaign datasets, Citizen sensing, Physical computing and Historical instrumental records (O01–O08).
+The eight disciplinary domains are **Environmental, Ecological, Terrestrial, Hydrological, Agricultural, Urban, Industrial and Experimental** (D01–D08).
 
-Both classifications permit multiple memberships. Preserve the original presentation group and evidence for any additional assignments. Networks, providers, site registries, repositories and particular datasets must remain distinguishable. Do not infer sensors, variables, calibration, licences or access capabilities from a source name.
+The eight observation categories are **IoT telemetry, Scientific monitoring, Ground-truth observations, Autonomous observations, Campaign datasets, Citizen sensing, Physical computing and Historical instrumental records** (O01–O08).
 
-## Ecological Information federation and DRM
+Both classifications permit multiple memberships. The illustration uses shorter explanatory labels for several categories; the registers retain the authoritative labels and codes. The eight observation categories are distinct from the eight disciplinary domains.
 
-OSDS is independently maintained within Ecological Information. OSDS describes observation sources and provenance; EII describes ecological indicators; GISDS catalogues geographic resources. Future relationships must identify particular records and supporting evidence rather than imply an implemented federation or universal crosswalk.
+## Federation and research methodology
 
-The shared methodology is the **Database Reference Methodology (DRM)**. Its current introduction is maintained as `DRM/README.md` in the Ecological Information umbrella repository (`ecological-interaction/ecological-information`). It is under development and does not establish an approved detailed specification or certify OSDS conformance.
+OSDS contributes observation-system discovery and provenance to the Ecological Information federation. EII concerns ecological indicators; GISDS catalogues geographic resources; EIRKB, AMRKB and other neighbouring databases retain their own research responsibilities and authoritative records.
 
-Preserve stable source IDs (`SRC-001`–`SRC-062`) and qualified references such as `OSDS:SRC-001`, `OSDS:D01` and `OSDS:O01`. OSDS and EII domain codes are not equivalent merely because their numbers match. Record any future crosswalk explicitly with evidence. Keep document versions, `osds.inventory-classification/0.1` and `osds.reference-register/0.1-draft` separate; do not replace them with an assumed DRM version.
+The illustration places comparative interdisciplinary synthesis in IRKB, shared methodology and interoperability in DRM, and observation-source discovery in OSDS. IRKB, SSKB and DPRKB remain developing research directions in the umbrella architecture; PBCKA's scope is still being defined. AMRKB is an established sibling project. The layout expresses conceptual relationships, not dependency, control, completed database implementations or verified cross-project data bindings.
 
-W3C SOSA/SSN, OGC SensorThings API and OGC Observations, Measurements and Samples (OMS) remain references for later development. No standards editions, ontology mappings, API implementation or conformance claims are adopted by this preparation.
+The **Database Reference Methodology (DRM)** is maintained in the [Ecological Information umbrella](https://github.com/ecological-interaction/ecological-information), at `DRM/README.md`. It is under development and provides no approved detailed specification or certification of OSDS conformance.
 
-## Maintenance and provenance
+Source IDs remain stable (`SRC-001`–`SRC-062`), with qualified references such as `OSDS:SRC-001`, `OSDS:D01` and `OSDS:O01`. OSDS and EII domain codes are not equivalent because their numbers match. Future interoperability requires explicit record identities, evidence-backed relationships and documented mappings. Document versions, `osds.inventory-classification/0.1` and `osds.reference-register/0.1-draft` remain separate.
 
-Preserve issued IDs, source names, classifications, descriptions, discovery URLs, candidate status, evidence gaps and unresolved identity or duplication questions. Unknown values and empty collections retain the meanings documented in the machine register. Source identity review must not silently become complete record verification.
+W3C SOSA/SSN, OGC SensorThings API and OGC Observations, Measurements and Samples (OMS) are foundations for later review. No ontology mappings, API implementation, adopted standards editions or conformance claims are established here.
 
-Maintain both registers together when research changes are approved. Validate JSON fences by `block_type`, unique and matching IDs, counts, category memberships and all machine-record anchors. Preserve scientific table wording during editorial or publication-only work.
+## Repository and website publication
 
-Retain useful internal development provenance in the machine reference, including source-inventory references, research attachment labels, dates, unresolved citation markers and review limitations. Exclude conversation identifiers and retrieval-tool commentary that do not support a scientific claim; the legacy conversation_id field remains null to preserve the existing field structure. These historical references are not guaranteed public retrieval routes. Use portable repository references instead of absolute filesystem paths, and neutral descriptions instead of session-dependent operational wording. Record substantive and provenance edits in the changelog.
+The source repository is [ecological-interaction/OSDS](https://github.com/ecological-interaction/OSDS). Its initial research/documentation commit, `dab53c4d0e88cfb3512a56311c488afa87183850`, was verified on public `main`. Both registers retain document version **0.1.2**, dated **22 October 2026**; no research-resource release or DOI is assigned.
 
-Use stable filenames and maintain version notes inside documents. Future Git history will record revisions; uncommitted files are not protected by Git. Generated JSON or CSV exports, if introduced later, must derive from the authoritative register rather than become independently edited copies.
+The central [Ecological Interaction website](https://ecological-interaction.github.io/) publishes approved source editions through a shared MkDocs Material build. OSDS integration has been prepared locally for `/information/OSDS/`, with `research-guide/` and `machine-reference/` pages; deployment of those routes has not been verified by this preparation.
 
-## Versions and publication status
+Publication uses a full source commit pin and SHA-256 allowlist, rather than automatically following the latest source revision. The machine-reference page links to the authoritative pinned source without duplicating its research body. This README and diagram are a subsequent local revision: inclusion requires a reviewed source commit, updated publication checksums and explicit asset handling in the central importer. No separate OSDS MkDocs site is required.
 
-Both research registers retain document version **0.1.2**, dated **22 October 2026**. This phase records naming and provenance edits in the changelog without assigning a new research-resource release, Git tag or schema version.
+## Diagram and asset source
 
-The intended GitHub repository is `ecological-interaction/OSDS`. The intended reading route is `/information/OSDS/` through the existing central `ecological-interaction.github.io` MkDocs build, following EII's commit-pinned, checksum-verified import pattern. These are intended destinations, not claims of repository creation or website deployment.
+`assets/diagrams/osds_federation.mmd` is the single authoritative diagram source, including labels, conceptual connections, styles and fixed-layout hints. The embedded SVG is a derived portable rendering for GitHub Markdown and MkDocs, without a Mermaid plugin. Regenerate it after source edits with:
 
-Phase 1 is local file preparation only: Git has not been initialised here, no remote has been configured, and nothing has been committed, pushed or published by this phase. GitHub connection and publication remain separately managed by the owner. No independent MkDocs installation is required.
+```sh
+python3 assets/diagrams/render_osds_federation.py
+```
 
-No licence has been selected for this repository or its research documentation. Public accessibility and citation metadata do not grant reuse permission. Referenced third-party works and datasets retain their own access, licence and attribution conditions.
+The small, dependency-free renderer handles this diagram's fixed-layout Mermaid subset, rather than acting as a general Mermaid engine. Do not edit the SVG independently. Diagram and future visual research assets belong under `assets/diagrams/`.
+
+## Reuse and research status
+
+No licence has been selected for this repository or its research documentation. Public accessibility and citation metadata do not grant reuse permission. Third-party works and datasets retain their own access, licence and attribution conditions. Each dataset requires product-level review of methods, units, quality, time span and rights before analytical use.

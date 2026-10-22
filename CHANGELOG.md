@@ -4,6 +4,15 @@ Meaningful changes to research registers, provenance, repository documentation a
 
 ## [Unreleased]
 
+### README and federation illustration — 22 October 2026
+
+- Replaced obsolete Phase 1 status wording with the verified public source repository and initial commit, distinguishing local website integration from verified deployment. Consolidated the README into concise scope, register roles, classifications, federation/DRM, publication, assets and reuse sections.
+- Added assets/diagrams/ with the authoritative osds_federation.mmd, a derived osds_federation.svg embedded immediately below the README title, and a dependency-free fixed-layout renderer. Labels, relationships, styling and layout hints are maintained in the Mermaid source; the SVG is regenerated, not independently edited.
+- Preserved the requested full explanatory hierarchy: IRKB synthesis, the shared DRM/entities/provenance/interoperability layer, six neighbours in two rows of three, confirmed sibling AMRKB as an additional card, and highlighted OSDS with eight observation categories in two columns and four rows. Included the conceptual-relationships qualification and documented developing research directions without claiming implemented integrations.
+- Established diagram maintenance and portable asset-path conventions in AGENTS.md. The website will need explicit asset import and an approved new source pin later; no publication manifest is changed here.
+
+Both research registers and CITATION.cff are unchanged. No scientific records, classifications, evidence or identifiers are changed. No commit, push or deployment is performed by this preparation.
+
 ### Editorial review — 22 October 2026
 
 - Made the Scientific Reference Register introduction and reading key neutral and concise, retaining candidate status, unverified coverage/category assignments, the human/machine authority distinction and classification limits. Removed the conversational citation-recovery description and construction-history wording; their substantive provenance limitations remain in the machine reference.

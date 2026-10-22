@@ -20,3 +20,11 @@ Read README.md, CHANGELOG.md and both reference registers before working on this
 - Keep the Scientific Reference Register focused on scope, source tables, classifications, scientific interpretation and dated verification limitations. Keep project background in README.md, attribution in CITATION.cff and administrative changes in CHANGELOG.md.
 - Keep source-inventory references, unresolved citation labels and dated discovery evidence in the machine reference. Do not retain conversation identifiers or retrieval-tool commentary merely as operational history. The existing conversation_id field remains null; do not populate it with internal session identifiers.
 - Preserve the original inventory assertions when adding evidence and maintain both registers together. Do not convert original-citation uncertainty into a claim of verified provenance.
+
+## Diagrams and visual research assets
+
+- Keep diagrams and related visual research assets in assets/diagrams/. The authoritative source for the federation illustration is osds_federation.mmd, including its fixed-layout hints.
+- Regenerate osds_federation.svg with `python3 assets/diagrams/render_osds_federation.py` after editing the source. Do not maintain independent SVG text, labels or relationships. The renderer supports this diagram's Mermaid subset only.
+- Preserve the specified synthesis/shared-methodology/neighbouring-databases/OSDS hierarchy, two-by-three neighbour layout and two-by-four observation-category layout. Keep AMRKB as an additional sibling without displacing the six neighbours.
+- Do not infer implemented integrations or equivalence of domain codes from conceptual connectors. Keep the conceptual-status note and distinguish developing databases from populated resources in the README.
+- Keep README asset paths repository-relative. Central publication must explicitly allowlist, checksum and import the derived asset with the README; do not advance publication pins, edit the website or deploy as part of source-only diagram work.

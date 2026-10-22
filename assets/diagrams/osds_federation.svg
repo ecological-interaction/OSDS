@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="978" viewBox="0 0 1200 978" role="img" aria-labelledby="title description">
+<title id="title">OSDS within the Ecological Information federation</title>
+<desc id="description">Interdisciplinary synthesis above shared methodology and seven autonomous neighbouring research databases; OSDS below, with eight observation categories in two columns.</desc>
+<!-- Derived from osds_federation.mmd; SHA-256 487e3b68fd67afce80125980251e314055ce0634216e72809bfbc97a9350379b. Do not edit this SVG directly. -->
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8795a6"/></marker></defs>
+<rect width="1200" height="978" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+<path d="M 600 135 L 600 161" fill="none" stroke="#8795a6" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path d="M 600 231 L 600 242" fill="none" stroke="#8795a6" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path d="M 600 538 L 600 562" fill="none" stroke="#8795a6" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<rect x="40" y="24" width="1120" height="108" rx="12" fill="#f3f6fa" stroke="#62738a" stroke-width="1.5"/>
+<text x="600" y="67" font-size="25" font-weight="600" fill="#18273b">IRKB — Interdisciplinary Research Knowledge Base</text>
+<text x="600" y="101" font-size="18" font-weight="400" fill="#18273b">Comparative synthesis and interdisciplinary research</text>
+<rect x="40" y="164" width="1120" height="64" rx="12" fill="#f7f8fa" stroke="#9aa6b5" stroke-width="1"/>
+<text x="600" y="203" font-size="23" font-weight="600" fill="#27364a">DRM · Shared entities · Provenance · Interoperability</text>
+<rect x="24" y="245" width="1152" height="290" rx="16" fill="#ffffff" stroke="#dce3eb" stroke-dasharray="4 4"/>
+<rect x="40" y="260" width="350" height="80" rx="12" fill="#fafafa" stroke="#b3bdc8" stroke-width="1"/>
+<text x="215" y="295" font-size="22" font-weight="600" fill="#27364a">EIRKB</text>
+<text x="215" y="320" font-size="13" font-weight="400" fill="#27364a">Ecological Information Research Knowledge Base</text>
+<rect x="425" y="260" width="350" height="80" rx="12" fill="#fafafa" stroke="#b3bdc8" stroke-width="1"/>
+<text x="600" y="295" font-size="22" font-weight="600" fill="#27364a">EII</text>
+<text x="600" y="320" font-size="13" font-weight="400" fill="#27364a">Ecological Indicators Inventory</text>
+<rect x="810" y="260" width="350" height="80" rx="12" fill="#fafafa" stroke="#b3bdc8" stroke-width="1"/>
+<text x="985" y="295" font-size="22" font-weight="600" fill="#27364a">GISDS</text>
+<text x="985" y="320" font-size="13" font-weight="400" fill="#27364a">GIS and Remote Sensing Database Sources</text>
+<rect x="40" y="360" width="350" height="80" rx="12" fill="#fafafa" stroke="#b3bdc8" stroke-width="1"/>
+<text x="215" y="395" font-size="22" font-weight="600" fill="#27364a">SSKB</text>
+<text x="215" y="420" font-size="13" font-weight="400" fill="#27364a">Systems Science and SES</text>
+<rect x="425" y="360" width="350" height="80" rx="12" fill="#fafafa" stroke="#b3bdc8" stroke-width="1"/>
+<text x="600" y="395" font-size="22" font-weight="600" fill="#27364a">DPRKB</text>
+<text x="600" y="420" font-size="13" font-weight="400" fill="#27364a">Design Practice Research</text>
+<rect x="810" y="360" width="350" height="80" rx="12" fill="#fafafa" stroke="#b3bdc8" stroke-width="1"/>
+<text x="985" y="407" font-size="23" font-weight="600" fill="#27364a">PBCKA</text>
+<rect x="400" y="460" width="400" height="60" rx="12" fill="#fafafa" stroke="#b3bdc8" stroke-width="1"/>
+<text x="600" y="485" font-size="22" font-weight="600" fill="#27364a">AMRKB</text>
+<text x="600" y="510" font-size="13" font-weight="400" fill="#27364a">Agricultural Modes Reference Knowledge Base</text>
+<rect x="40" y="565" width="1120" height="355" rx="12" fill="#f4f8fc" stroke="#6388b0" stroke-width="2"/>
+<text x="600" y="600" font-size="25" font-weight="600" fill="#182e48">OSDS — Observational Systems and Data Sources</text>
+<text x="600" y="629" font-size="17" font-weight="400" fill="#182e48">Physical measurements and observation-system discovery</text>
+<rect x="70" y="650" width="515" height="46" rx="12" fill="#ffffff" stroke="#c1cfde" stroke-width="1"/>
+<text x="327.5" y="679" font-size="18" font-weight="400" fill="#27364a">IoT and sensor telemetry</text>
+<rect x="615" y="650" width="515" height="46" rx="12" fill="#ffffff" stroke="#c1cfde" stroke-width="1"/>
+<text x="872.5" y="679" font-size="18" font-weight="400" fill="#27364a">Scientific monitoring</text>
+<rect x="70" y="712" width="515" height="46" rx="12" fill="#ffffff" stroke="#c1cfde" stroke-width="1"/>
+<text x="327.5" y="741" font-size="18" font-weight="400" fill="#27364a">Ground-truth observations</text>
+<rect x="615" y="712" width="515" height="46" rx="12" fill="#ffffff" stroke="#c1cfde" stroke-width="1"/>
+<text x="872.5" y="741" font-size="18" font-weight="400" fill="#27364a">Autonomous systems</text>
+<rect x="70" y="774" width="515" height="46" rx="12" fill="#ffffff" stroke="#c1cfde" stroke-width="1"/>
+<text x="327.5" y="803" font-size="18" font-weight="400" fill="#27364a">Field campaigns</text>
+<rect x="615" y="774" width="515" height="46" rx="12" fill="#ffffff" stroke="#c1cfde" stroke-width="1"/>
+<text x="872.5" y="803" font-size="18" font-weight="400" fill="#27364a">Citizen sensing</text>
+<rect x="70" y="836" width="515" height="46" rx="12" fill="#ffffff" stroke="#c1cfde" stroke-width="1"/>
+<text x="327.5" y="865" font-size="18" font-weight="400" fill="#27364a">Physical computing</text>
+<rect x="615" y="836" width="515" height="46" rx="12" fill="#ffffff" stroke="#c1cfde" stroke-width="1"/>
+<text x="872.5" y="865" font-size="18" font-weight="400" fill="#27364a">Historical records</text>
+<text x="600" y="954" font-size="15" font-style="italic" fill="#637083">Conceptual relationships; not a claim that automated integrations already exist.</text>
+</g></svg>
