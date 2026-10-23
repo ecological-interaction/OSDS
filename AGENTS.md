@@ -28,3 +28,5 @@ Read README.md, CHANGELOG.md and both reference registers before working on this
 - Preserve the specified synthesis/shared-methodology/neighbouring-databases/OSDS hierarchy, two-by-three neighbour layout and two-by-four observation-category layout. Keep AMRKB as an additional sibling without displacing the six neighbours.
 - Do not infer implemented integrations or equivalence of domain codes from conceptual connectors. Keep the conceptual-status note and distinguish developing databases from populated resources in the README.
 - Keep README asset paths repository-relative. Central publication must explicitly allowlist, checksum and import the derived asset with the README; do not advance publication pins, edit the website or deploy as part of source-only diagram work.
+
+- Match the umbrella visual palette exactly: blue synthesis, lavender shared methodology, green knowledge-base cards, amber scientific/geographic/observation-source cards and neutral grey PBCKA. Preserve existing labels, category layout and conceptual edges when changing styling.

@@ -4,6 +4,12 @@ Meaningful changes to research registers, provenance, repository documentation a
 
 ## [Unreleased]
 
+### Diagram visual harmonisation — 23 October 2026
+
+- Applied the umbrella diagram's exact semantic palette, card borders, corner radii, Arial typography, connector styling and white background to the existing OSDS federation illustration. Preserved all diagram labels, relationships, grouping and fixed layout.
+- Regenerated the accessible SVG from its editable Mermaid source with the dependency-free renderer; added a README full-size SVG link and palette maintenance guidance.
+- Both research registers, all 62 source records, classifications and identifiers remain unchanged. The revised asset is local and uncommitted; the website retains its existing OSDS publication pin until a separately approved source commit is pushed and verified.
+
 ### README and federation illustration — 22 October 2026
 
 - Replaced obsolete Phase 1 status wording with the verified public source repository and initial commit, distinguishing local website integration from verified deployment. Consolidated the README into concise scope, register roles, classifications, federation/DRM, publication, assets and reuse sections.

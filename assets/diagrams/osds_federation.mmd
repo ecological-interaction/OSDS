@@ -4,13 +4,13 @@
 %% @box IRKB 40 24 1120 108 synthesis
 %% @box DRM 40 164 1120 64 shared
 %% @region NEIGHBOURS 24 245 1152 290
-%% @box EIRKB 40 260 350 80 neighbour
-%% @box EII 425 260 350 80 neighbour
-%% @box GISDS 810 260 350 80 neighbour
-%% @box SSKB 40 360 350 80 neighbour
-%% @box DPRKB 425 360 350 80 neighbour
-%% @box PBCKA 810 360 350 80 neighbour
-%% @box AMRKB 400 460 400 60 neighbour
+%% @box EIRKB 40 260 350 80 knowledgecard
+%% @box EII 425 260 350 80 sourcecard
+%% @box GISDS 810 260 350 80 sourcecard
+%% @box SSKB 40 360 350 80 knowledgecard
+%% @box DPRKB 425 360 350 80 knowledgecard
+%% @box PBCKA 810 360 350 80 neutral
+%% @box AMRKB 400 460 400 60 knowledgecard
 %% @container OSDS 40 565 1120 355 observation
 %% @box C01 70 650 515 46 category
 %% @box C02 615 650 515 46 category
@@ -74,17 +74,21 @@ flowchart TB
     IRKB <--> DRM
     DRM <--> NEIGHBOURS
     NEIGHBOURS <--> OSDS
-    classDef synthesis fill:#f3f6fa,stroke:#62738a,stroke-width:1.5px,color:#18273b;
-    classDef shared fill:#f7f8fa,stroke:#9aa6b5,color:#27364a;
-    classDef neighbour fill:#fafafa,stroke:#b3bdc8,color:#27364a;
-    classDef observation fill:#f4f8fc,stroke:#6388b0,stroke-width:2px,color:#182e48;
-    classDef category fill:#ffffff,stroke:#c1cfde,color:#27364a;
+    classDef synthesis fill:#cce3f9,stroke:#173b6b,stroke-width:2px,color:#15243d;
+    classDef shared fill:#e1daf0,stroke:#574087,stroke-width:2px,color:#29223e;
+    classDef knowledgecard fill:#f0f7f2,stroke:#41744d,stroke-width:1.4px,color:#172b24;
+    classDef sourcecard fill:#fef6e3,stroke:#a16a16,stroke-width:1.4px,color:#302b20;
+    classDef neutral fill:#f8f9fa,stroke:#99a4b0,stroke-width:1.2px,color:#3a4656;
+    classDef observation fill:#feeec9,stroke:#a16a16,stroke-width:2px,color:#543a13;
+    classDef category fill:#fef6e3,stroke:#a16a16,stroke-width:1.4px,color:#302b20;
     class IRKB synthesis;
     class DRM shared;
-    class EIRKB,EII,GISDS,SSKB,DPRKB,PBCKA,AMRKB neighbour;
+    class EIRKB,SSKB,DPRKB,AMRKB knowledgecard;
+    class EII,GISDS sourcecard;
+    class PBCKA neutral;
     class OSDS observation;
     class C01,C02,C03,C04,C05,C06,C07,C08 category;
-    style NEIGHBOURS fill:#ffffff,stroke:#dce3eb,stroke-dasharray:4 4
+    style NEIGHBOURS fill:none,stroke:#d5dce4,stroke-dasharray:2 5
     style ROW1 fill:none,stroke:none
     style ROW2 fill:none,stroke:none
     style OBS1 fill:none,stroke:none

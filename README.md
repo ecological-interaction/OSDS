@@ -2,7 +2,7 @@
 
 ![OSDS federation architecture: interdisciplinary synthesis, shared methodology, neighbouring research databases and eight observation categories](assets/diagrams/osds_federation.svg)
 
-*Conceptual relationships; not a claim that automated integrations already exist.*
+*Conceptual relationships; not a claim that automated integrations already exist.* [View full-size diagram](assets/diagrams/osds_federation.svg).
 
 **Work in Progress — Academic Research Resource**
 
