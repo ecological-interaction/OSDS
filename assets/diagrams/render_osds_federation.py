@@ -1,8 +1,8 @@
-"""Render this diagram's fixed-layout Mermaid subset as portable SVG.
+"""Render this overview's fixed-layout Mermaid subset as standalone SVG.
 
-Labels, groups, relationships and layout all come from osds_federation.mmd.
-This is a purpose-specific renderer, not a general Mermaid implementation.
-Run with Python 3 from any directory; no third-party packages are required.
+Adapted from the OSDS and Ecological Information diagram protocol. Labels,
+colours, edges and layout belong in the adjacent .mmd source. This is a
+purpose-specific renderer, not a general Mermaid engine. Python 3 only.
 """
 from pathlib import Path
 from html import escape
@@ -17,62 +17,49 @@ DESTINATION = HERE / "osds_federation.svg"
 
 def render():
     source = SOURCE.read_text(encoding="utf-8")
+    width, height = map(int, re.search(r"^%% @canvas (\d+) (\d+)$", source, re.M).groups())
+    title = re.search(r"^%% @title (.+)$", source, re.M).group(1)
+    description = re.search(r"^%% @description (.+)$", source, re.M).group(1)
     labels = dict(re.findall(r'^\s*(?:subgraph\s+)?(\w+)\["([^"\n]+)"\]', source, re.M))
-    width, height = map(int, re.search(r'^%% @canvas (\d+) (\d+)$', source, re.M).groups())
-    hints = re.findall(r'^%% @(box|container|region) (\w+) (\d+) (\d+) (\d+) (\d+)(?: (\w+))?$', source, re.M)
+    hints = re.findall(r"^%% @(box|group) (\w+) (\d+) (\d+) (\d+) (\d+) (\w+)$", source, re.M)
     boxes = {name: tuple(map(int, (x, y, w, h))) for _, name, x, y, w, h, _ in hints}
-    roles = {name: role for _, name, _, _, _, _, role in hints}
-    styles = {}
-    for name, declarations in re.findall(r'^\s*classDef (\w+) ([^\n;]+);', source, re.M):
-        styles[name] = dict(item.split(":", 1) for item in declarations.split(","))
+    styles = {name: dict(item.split(":", 1) for item in declarations.split(","))
+              for name, declarations in re.findall(r"^\s*classDef (\w+) ([^\n;]+);", source, re.M)}
+    assert set(boxes) == set(labels), "Every diagram label needs a layout hint."
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title description">',
-             '<title id="title">OSDS within the Ecological Information federation</title>',
-             '<desc id="description">Interdisciplinary synthesis above shared methodology and seven autonomous neighbouring research databases; OSDS below, with eight observation categories in two columns.</desc>',
-             f'<!-- Derived from osds_federation.mmd; SHA-256 {hashlib.sha256(SOURCE.read_bytes()).hexdigest()}. Do not edit this SVG directly. -->',
+             f'<title id="title">{escape(title)}</title>',
+             f'<desc id="description">{escape(description)}</desc>',
+             f'<!-- Derived from {SOURCE.name}; SHA-256 {hashlib.sha256(SOURCE.read_bytes()).hexdigest()}. Do not edit this SVG directly. -->',
              '<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#637286"/></marker></defs>',
              f'<rect width="{width}" height="{height}" fill="#ffffff"/>',
              '<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">']
-    # Only explicit conceptual graph edges are drawn. ~~~ edges are layout-only.
-    for a, relation, b in re.findall(r'^\s*(\w+) (<-->|-->) (\w+)\s*$', source, re.M):
+    # Edges express documented organisation; ~~~ is layout only.
+    for a, relationship, b in re.findall(r"^\s*(\w+) (<-->|-->) (\w+)\s*$", source, re.M):
         ax, ay, aw, ah = boxes[a]; bx, by, bw, bh = boxes[b]
-        start = ' marker-start="url(#arrow)"' if relation == '<-->' else ''
-        parts.append(f'<path d="M {ax + aw / 2:g} {ay + ah + 5} L {bx + bw / 2:g} {by - 5}" fill="none" stroke="#637286" stroke-width="1.6" marker-end="url(#arrow)"{start}/>')
+        assert by > ay + ah, "Overview connectors must run downward between bands."
+        start = ' marker-start="url(#arrow)"' if relationship == "<-->" else ""
+        parts.append(f'<path d="M {ax+aw/2:g} {ay+ah+4} L {bx+bw/2:g} {by-5}" fill="none" stroke="#637286" stroke-width="1.6" marker-end="url(#arrow)"{start}/>')
     for kind, name, _, _, _, _, role in hints:
-        if kind == 'region':
-            # An unlabelled grouping boundary prevents the central card from
-            # appearing to be the sole endpoint of federation connectors.
-            x, y, w, h = boxes[name]
-            declarations = re.search(r'^\s*style ' + name + r' ([^\n]+)$', source, re.M).group(1)
-            style = dict(item.split(':', 1) for item in declarations.split(','))
-            parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="18" fill="{style["fill"]}" stroke="{style["stroke"]}" stroke-dasharray="{style["stroke-dasharray"]}"/>')
-            continue
-        x, y, w, h = boxes[name]
-        style = styles[roles[name]]
-        stroke_width = style.get('stroke-width', '1px').removesuffix('px')
-        parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="14" fill="{style["fill"]}" stroke="{style["stroke"]}" stroke-width="{stroke_width}"/>')
-        lines = labels[name].split('<br/>')
-        if kind == 'container':
-            ys = [y + 36, y + 66]; sizes = [27, 18]
-        elif role == 'synthesis':
-            ys = [y + 43, y + 80]; sizes = [30, 22]
-        elif role == 'shared':
-            ys = [y + h / 2 + 7]; sizes = [28]
-        elif role == 'category':
-            ys = [y + h / 2 + 6]; sizes = [22]
-        elif len(lines) == 1:
-            ys = [y + h / 2 + 7]; sizes = [23]
-        else:
-            ys = [y + h / 2 - 5, y + h / 2 + 20]; sizes = [22, 15]
-        for index, (line, baseline, size) in enumerate(zip(lines, ys, sizes)):
-            weight = '600' if index == 0 and role != 'category' else '400'
-            parts.append(f'<text x="{x + w / 2:g}" y="{baseline:g}" font-size="{size}" font-weight="{weight}" fill="{style["color"]}">{escape(line)}</text>')
-    nx, ny, note = re.search(r'^%% @note (\d+) (\d+) (.+)$', source, re.M).groups()
-    parts.append(f'<text x="{nx}" y="{ny}" font-size="17" fill="#566579">{escape(note)}</text>')
-    parts.append('</g></svg>')
-    svg = '\n'.join(parts) + '\n'
+        x, y, w, h = boxes[name]; style = styles[role]
+        assert 0 <= x < x+w <= width and 0 <= y < y+h <= height, name
+        dash = ' stroke-dasharray="6 4"' if name == "DRM" else ""
+        parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="14" fill="{style["fill"]}" stroke="{style["stroke"]}" stroke-width="{style.get("stroke-width", "1.5")}"{dash}/>')
+        lines = labels[name].split("<br/>")
+        # Explicit typography offsets keep compact layout faithful to the original.
+        text_hint = re.search(r"^%% @text " + name + r" ([\d.,]+) ([\d.,]+) ([\d,]+)$", source, re.M)
+        assert text_hint is not None, name
+        sizes, offsets, weights = [list(map(float, values.split(","))) for values in text_hint.groups()]
+        assert len(lines) == len(sizes) == len(offsets) == len(weights), name
+        for line, size, offset, weight in zip(lines, sizes, offsets, weights):
+            assert offset - size * .8 > 0 and offset + size * .25 < h, name
+            parts.append(f'<text x="{x+w/2:g}" y="{y+offset:g}" font-size="{size:g}" font-weight="{weight:g}" fill="{style["color"]}">{escape(line)}</text>')
+    for x, y, note in re.findall(r"^%% @note (\d+) (\d+) (.+)$", source, re.M):
+        parts.append(f'<text x="{x}" y="{y}" font-size="17" fill="#526174">{escape(note)}</text>')
+    parts.append("</g></svg>")
+    svg = "\n".join(parts) + "\n"
     ET.fromstring(svg)
     DESTINATION.write_text(svg, encoding="utf-8")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     render()

@@ -1,97 +1,78 @@
-%% Authoritative diagram source. Fixed-layout hints are consumed by render_osds_federation.py.
-%% Layout hints preserve the explanatory hierarchy in the derived SVG; they do not add graph edges.
-%% @canvas 1200 978
-%% @box IRKB 40 24 1120 108 synthesis
-%% @box DRM 40 164 1120 64 shared
-%% @region NEIGHBOURS 24 245 1152 290
-%% @box EIRKB 40 260 350 80 knowledgecard
-%% @box EII 425 260 350 80 sourcecard
-%% @box GISDS 810 260 350 80 sourcecard
-%% @box SSKB 40 360 350 80 knowledgecard
-%% @box DPRKB 425 360 350 80 knowledgecard
-%% @box PBCKA 810 360 350 80 neutral
-%% @box AMRKB 400 460 400 60 knowledgecard
-%% @container OSDS 40 565 1120 355 observation
-%% @box C01 70 650 515 46 category
-%% @box C02 615 650 515 46 category
-%% @box C03 70 712 515 46 category
-%% @box C04 615 712 515 46 category
-%% @box C05 70 774 515 46 category
-%% @box C06 615 774 515 46 category
-%% @box C07 70 836 515 46 category
-%% @box C08 615 836 515 46 category
-%% @note 600 954 Conceptual relationships; not a claim that automated integrations already exist.
+%% Authoritative diagram source; fixed-layout hints are consumed by render_osds_federation.py.
+%% @canvas 1200 744
+%% @title OSDS — observation sources and research use
+%% @description Eight established OSDS observation categories in two columns. Conceptual DRM and application relationships do not establish verified datasets, a new taxonomy or implemented interoperability.
+%% @box TITLE 40 20 1120 76 heading
+%% @group EXAMPLES 40 124 1120 300 sources
+%% @box O01 65 184 525 46 card
+%% @box O02 610 184 525 46 card
+%% @box O03 65 242 525 46 card
+%% @box O04 610 242 525 46 card
+%% @box O05 65 300 525 46 card
+%% @box O06 610 300 525 46 card
+%% @box O07 65 358 525 46 card
+%% @box O08 610 358 525 46 card
+%% @box DRM 40 452 1120 76 federation
+%% @group APPLICATIONS 40 556 1120 132 application
+%% @box INTELLIGENCE 60 626 255 48 applicationcard
+%% @box DECISION 335 626 255 48 applicationcard
+%% @box PLACE 610 626 255 48 applicationcard
+%% @box TECHNOLOGY 885 626 255 48 applicationcard
+%% @note 600 724 Conceptual relationships; autonomous catalogues, not duplicated records or implemented integrations.
+%% @text TITLE 30,22 30,58 600,400
+%% @text EXAMPLES 27 34 600
+%% @text DRM 28,21 31,58 600,400
+%% @text APPLICATIONS 27,18 30,52 600,400
+%% @text O01 22 29 400
+%% @text O02 22 29 400
+%% @text O03 22 29 400
+%% @text O04 22 29 400
+%% @text O05 22 29 400
+%% @text O06 22 29 400
+%% @text O07 22 29 400
+%% @text O08 22 29 400
+%% @text INTELLIGENCE 22,15 20,38 600,400
+%% @text DECISION 22,15 20,38 600,400
+%% @text PLACE 22,15 20,38 600,400
+%% @text TECHNOLOGY 22,15 20,38 600,400
 flowchart TB
-    IRKB["IRKB — Interdisciplinary Research Knowledge Base<br/>Comparative synthesis and interdisciplinary research"]
-    DRM["DRM · Shared entities · Provenance · Interoperability"]
-    subgraph NEIGHBOURS[" "]
-        direction TB
-        subgraph ROW1[" "]
-            direction LR
-            EIRKB["EIRKB<br/>Ecological Information Research Knowledge Base"]
-            EII["EII<br/>Ecological Indicators Inventory"]
-            GISDS["GISDS<br/>GIS and Remote Sensing Database Sources"]
-            EIRKB ~~~ EII ~~~ GISDS
-        end
-        subgraph ROW2[" "]
-            direction LR
-            SSKB["SSKB<br/>Systems Science and SES"]
-            DPRKB["DPRKB<br/>Design Practice Research"]
-            PBCKA["PBCKA"]
-            SSKB ~~~ DPRKB ~~~ PBCKA
-        end
-        AMRKB["AMRKB<br/>Agricultural Modes Reference Knowledge Base"]
-        ROW1 ~~~ ROW2 ~~~ AMRKB
+    TITLE["OSDS<br/>Observational Systems and Data Sources"]
+    subgraph EXAMPLES["Observation Systems and Data Sources"]
+        O01["IoT and Sensor Telemetry"]
+        O02["Scientific Monitoring"]
+        O03["Ground-Truth Observations"]
+        O04["Autonomous Observations"]
+        O05["Field Campaigns and Datasets"]
+        O06["Citizen Sensing"]
+        O07["Physical Computing"]
+        O08["Historical Instrumental Records"]
     end
-    subgraph OSDS["OSDS — Observational Systems and Data Sources<br/>Physical measurements and observation-system discovery"]
-        direction TB
-        subgraph OBS1[" "]
-            direction LR
-            C01["IoT and sensor telemetry"]
-            C02["Scientific monitoring"]
-            C01 ~~~ C02
-        end
-        subgraph OBS2[" "]
-            direction LR
-            C03["Ground-truth observations"]
-            C04["Autonomous systems"]
-            C03 ~~~ C04
-        end
-        subgraph OBS3[" "]
-            direction LR
-            C05["Field campaigns"]
-            C06["Citizen sensing"]
-            C05 ~~~ C06
-        end
-        subgraph OBS4[" "]
-            direction LR
-            C07["Physical computing"]
-            C08["Historical records"]
-            C07 ~~~ C08
-        end
-        OBS1 ~~~ OBS2 ~~~ OBS3 ~~~ OBS4
+    DRM["DRM (output) Database Reference Methodology<br/>Shared identities · Classifications and mappings · Relationships · Provenance"]
+    subgraph APPLICATIONS["Analysis, Intelligence and Applications<br/>Emerging uses — not an operational analytical platform"]
+        INTELLIGENCE["EII Indicator<br/>Inventory"]
+        DECISION["Decision-support<br/>systems"]
+        PLACE["Place-based<br/>interpretation"]
+        TECHNOLOGY["Technology and<br/>design choice"]
     end
-    IRKB <--> DRM
-    DRM <--> NEIGHBOURS
-    NEIGHBOURS <--> OSDS
-    classDef synthesis fill:#cce3f9,stroke:#173b6b,stroke-width:2px,color:#15243d;
-    classDef shared fill:#e1daf0,stroke:#574087,stroke-width:2px,color:#29223e;
-    classDef knowledgecard fill:#f0f7f2,stroke:#41744d,stroke-width:1.4px,color:#172b24;
-    classDef sourcecard fill:#fef6e3,stroke:#a16a16,stroke-width:1.4px,color:#302b20;
-    classDef neutral fill:#f8f9fa,stroke:#99a4b0,stroke-width:1.2px,color:#3a4656;
-    classDef observation fill:#feeec9,stroke:#a16a16,stroke-width:2px,color:#543a13;
-    classDef category fill:#fef6e3,stroke:#a16a16,stroke-width:1.4px,color:#302b20;
-    class IRKB synthesis;
-    class DRM shared;
-    class EIRKB,SSKB,DPRKB,AMRKB knowledgecard;
-    class EII,GISDS sourcecard;
-    class PBCKA neutral;
-    class OSDS observation;
-    class C01,C02,C03,C04,C05,C06,C07,C08 category;
-    style NEIGHBOURS fill:none,stroke:#d5dce4,stroke-dasharray:2 5
-    style ROW1 fill:none,stroke:none
-    style ROW2 fill:none,stroke:none
-    style OBS1 fill:none,stroke:none
-    style OBS2 fill:none,stroke:none
-    style OBS3 fill:none,stroke:none
-    style OBS4 fill:none,stroke:none
+    TITLE --> EXAMPLES
+    EXAMPLES <--> DRM
+    DRM <--> APPLICATIONS
+    classDef heading fill:#cce3f9,stroke:#173b6b,color:#15243d;
+    classDef knowledge fill:#e1f0e6,stroke:#41744d,color:#203d29;
+    classDef method fill:#e1daf0,stroke:#574087,color:#29223e;
+    classDef sources fill:#feeec9,stroke:#a16a16,color:#543a13;
+    classDef card fill:#fef6e3,stroke:#a16a16,color:#302b20;
+    classDef output fill:#eaedf1,stroke:#7c8c9d,color:#25334a;
+    classDef neutral fill:#f8f9fa,stroke:#99a4b0,color:#3a4656;
+    class TITLE heading;
+    class EXAMPLES sources;
+    class O01,O02,O03,O04,O05,O06,O07,O08 card;
+    class DRM federation;
+    class APPLICATIONS application;
+    class INTELLIGENCE,DECISION,PLACE,TECHNOLOGY applicationcard;
+    class DRM developing;
+    classDef federation fill:#e1daf0,stroke:#574087,stroke-width:2,color:#29223e,font-weight:600,font-size:28;
+    classDef application fill:#eaedf1,stroke:#7c8c9d,stroke-width:2,color:#25334a,font-weight:600,font-size:27;
+    classDef applicationcard fill:#f5f6f8,stroke:#9ba8b6,stroke-width:1.2,color:#25334a;
+    classDef developing stroke-dasharray:6 4;
+    classDef classification fill:#fef6e3,stroke:#a16a16,color:#302b20;

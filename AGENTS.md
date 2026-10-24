@@ -25,8 +25,10 @@ Read README.md, CHANGELOG.md and both reference registers before working on this
 
 - Keep diagrams and related visual research assets in assets/diagrams/. The authoritative source for the federation illustration is osds_federation.mmd, including its fixed-layout hints.
 - Regenerate osds_federation.svg with `python3 assets/diagrams/render_osds_federation.py` after editing the source. Do not maintain independent SVG text, labels or relationships. The renderer supports this diagram's Mermaid subset only.
-- Preserve the specified synthesis/shared-methodology/neighbouring-databases/OSDS hierarchy, two-by-three neighbour layout and two-by-four observation-category layout. Keep AMRKB as an additional sibling without displacing the six neighbours.
+- Maintain the approved four-stage Overview: blue OSDS title, orange illustrative source examples with separate domain/category dimensions, compact DRM output, and analysis/application cards. Match the final GISDS typography and palette; preserve candidate status and conceptual relationship qualifications.
 - Do not infer implemented integrations or equivalence of domain codes from conceptual connectors. Keep the conceptual-status note and distinguish developing databases from populated resources in the README.
 - Keep README asset paths repository-relative. Central publication must explicitly allowlist, checksum and import the derived asset with the README; do not advance publication pins, edit the website or deploy as part of source-only diagram work.
 
-- Match the umbrella visual palette exactly: blue synthesis, lavender shared methodology, green knowledge-base cards, amber scientific/geographic/observation-source cards and neutral grey PBCKA. Preserve existing labels, category layout and conceptual edges when changing styling.
+- Match the umbrella/GISDS visual palette exactly: blue synthesis, lavender shared methodology, green knowledge-base cards, amber scientific/geographic/observation-source cards and neutral grey PBCKA. Preserve current labels, classification distinctions and conceptual edges when changing styling.
+
+- Keep README.md as the concise Overview and RESEARCH_NOTES.md as supporting research context, version distinctions and historical publication notes. Neither supporting document replaces an authoritative register.

@@ -4,6 +4,11 @@ Meaningful changes to research registers, provenance, repository documentation a
 
 ## [Unreleased]
 
+### Overview and diagram refinement — local preview
+
+- Reduced README.md to Introduction, Research Scope, Methodology and Federation, and Scientific Reference Register sections. Preserved the earlier research context, version distinctions, standards references and dated publication notes in RESEARCH_NOTES.md.
+- Replaced the former broad federation layout with four GISDS-style stages: OSDS title, selected existing source examples with separate domain/category dimensions, compact DRM output and analysis/application cards. Both research registers and their 62 records are unchanged; production publication pins and checksums are unchanged.
+
 ### Diagram visual harmonisation — 23 October 2026
 
 - Applied the umbrella diagram's exact semantic palette, card borders, corner radii, Arial typography, connector styling and white background to the existing OSDS federation illustration. Preserved all diagram labels, relationships, grouping and fixed layout.
