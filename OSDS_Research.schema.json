@@ -1,0 +1,518 @@
+{
+  "type": "object",
+  "required": [
+    "block_type",
+    "schema",
+    "document_version",
+    "created",
+    "status",
+    "identifier_policy",
+    "scientific_limits",
+    "experimental_controls",
+    "evidence_editions",
+    "origins",
+    "concepts",
+    "assertions",
+    "source_aliases",
+    "counts"
+  ],
+  "properties": {
+    "block_type": {
+      "const": "documentary_research"
+    },
+    "schema": {
+      "const": "osds.documentary-research/0.1.0"
+    },
+    "document_version": {
+      "const": "0.2.0"
+    },
+    "created": {
+      "const": "2026-11-03"
+    },
+    "status": {
+      "const": "candidate_documentary_research"
+    },
+    "identifier_policy": {
+      "type": "string"
+    },
+    "scientific_limits": {
+      "type": "string"
+    },
+    "experimental_controls": {
+      "type": "string"
+    },
+    "evidence_editions": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "source_file",
+          "sha256",
+          "line_count",
+          "authority",
+          "rights",
+          "access_limits"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "source_file": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "line_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "authority": {
+            "type": "string"
+          },
+          "rights": {
+            "type": "string"
+          },
+          "access_limits": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "origins": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "edition_id",
+          "section",
+          "subsection",
+          "line_start",
+          "line_end",
+          "quote",
+          "quote_sha256",
+          "fields",
+          "authority_context"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^OSDS:OR-[0-9]{4}$"
+          },
+          "edition_id": {
+            "type": "string"
+          },
+          "section": {
+            "type": "string"
+          },
+          "subsection": {
+            "type": "string"
+          },
+          "line_start": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "line_end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "quote": {
+            "type": "string"
+          },
+          "quote_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "fields": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "authority_context": {
+            "type": "object",
+            "required": [
+              "reported_role",
+              "claim_basis",
+              "source_claim",
+              "authenticated",
+              "original_message_locator"
+            ],
+            "properties": {
+              "reported_role": {
+                "enum": [
+                  "audit_reported_user_decision",
+                  "audit_reported_exchange",
+                  "reconstruction_and_audit_analysis",
+                  "audit_author_account"
+                ]
+              },
+              "claim_basis": {
+                "enum": [
+                  "audit_field",
+                  "audit_prose"
+                ]
+              },
+              "source_claim": {
+                "type": "string"
+              },
+              "authenticated": {
+                "const": false
+              },
+              "original_message_locator": {
+                "type": "null"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "concepts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "kind",
+          "typing_status",
+          "states",
+          "origin_ids",
+          "content",
+          "qualifications"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^OSDS:RC-[0-9]{4}$"
+          },
+          "label": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "instrument_family_candidate",
+              "observation_method_context",
+              "theme_umbrella_candidate",
+              "descriptive_dimension_candidate",
+              "computing_platform_candidate",
+              "standards_framework_candidate",
+              "framework_reference_group",
+              "technical_interface_group",
+              "research_resource_candidate",
+              "method_framework_candidate",
+              "method_capability_candidate"
+            ]
+          },
+          "typing_status": {
+            "const": "proposed_from_documentary_context"
+          },
+          "states": {
+            "type": "object",
+            "required": [
+              "documentary_inclusion",
+              "canonical_research_status",
+              "identity_verification",
+              "scientific_verification",
+              "reported_authority",
+              "authority_evidence",
+              "relationship_review",
+              "access",
+              "rights"
+            ],
+            "properties": {
+              "documentary_inclusion": {
+                "const": "candidate_documentary"
+              },
+              "canonical_research_status": {
+                "const": "candidate"
+              },
+              "identity_verification": {
+                "const": "unverified"
+              },
+              "scientific_verification": {
+                "const": "not_independently_verified"
+              },
+              "reported_authority": {
+                "const": "audit_reported_or_author_analysis"
+              },
+              "authority_evidence": {
+                "const": "original_scientific_turns_unavailable"
+              },
+              "relationship_review": {
+                "const": "proposed"
+              },
+              "access": {
+                "const": "not_assessed"
+              },
+              "rights": {
+                "const": "unknown"
+              }
+            },
+            "additionalProperties": false
+          },
+          "origin_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "content": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "origin_id",
+                "fields",
+                "text"
+              ],
+              "properties": {
+                "origin_id": {
+                  "type": "string"
+                },
+                "fields": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                },
+                "text": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "qualifications": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "existing_category_reference": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "assertions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "kind",
+          "states",
+          "origin_ids",
+          "content",
+          "qualifications",
+          "subject",
+          "predicate",
+          "object",
+          "internal_targets"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^OSDS:RA-[0-9]{4}$"
+          },
+          "label": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "scope_method_or_evidence_qualification",
+              "historical_discussion_report",
+              "federation_relationship_proposal",
+              "reported_decision",
+              "verification_question",
+              "research_gap",
+              "reconciliation_question",
+              "theme_membership_proposal",
+              "correction_or_conflict",
+              "research_qualification"
+            ]
+          },
+          "states": {
+            "type": "object",
+            "required": [
+              "documentary_inclusion",
+              "canonical_research_status",
+              "identity_verification",
+              "scientific_verification",
+              "reported_authority",
+              "authority_evidence",
+              "relationship_review",
+              "access",
+              "rights"
+            ],
+            "properties": {
+              "documentary_inclusion": {
+                "const": "candidate_documentary"
+              },
+              "canonical_research_status": {
+                "const": "candidate"
+              },
+              "identity_verification": {
+                "const": "unverified"
+              },
+              "scientific_verification": {
+                "const": "not_independently_verified"
+              },
+              "reported_authority": {
+                "const": "audit_reported_or_author_analysis"
+              },
+              "authority_evidence": {
+                "const": "original_scientific_turns_unavailable"
+              },
+              "relationship_review": {
+                "const": "proposed"
+              },
+              "access": {
+                "const": "not_assessed"
+              },
+              "rights": {
+                "const": "unknown"
+              }
+            },
+            "additionalProperties": false
+          },
+          "origin_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "content": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "origin_id",
+                "fields",
+                "text"
+              ],
+              "properties": {
+                "origin_id": {
+                  "type": "string"
+                },
+                "fields": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                },
+                "text": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "qualifications": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "subject": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "predicate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "object": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "internal_targets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "source_aliases": {
+      "type": "array",
+      "minItems": 62,
+      "maxItems": 62,
+      "items": {
+        "type": "object",
+        "required": [
+          "audit_alias",
+          "source_id",
+          "audit_name",
+          "canonical_name",
+          "origin_id",
+          "status"
+        ],
+        "properties": {
+          "audit_alias": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "audit_name": {
+            "type": "string"
+          },
+          "canonical_name": {
+            "type": "string"
+          },
+          "origin_id": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "counts": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OSDS candidate documentary research profile 0.1.0; not the source-record schema"
+}

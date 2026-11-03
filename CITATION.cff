@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this work-in-progress academic research resource, please cite it using this metadata and identify the document version consulted. The repository-code URL is the intended destination; Git and publication have not been established by Phase 1."
+message: "If you use this work-in-progress academic research resource, please cite it using this metadata and identify the document version consulted. The repository-code URL identifies the configured source repository. The local candidate-research document revision is not a resource release or verification of live website deployment."
 type: dataset
 title: "Observational Systems and Data Sources (OSDS)"
 authors:
@@ -8,4 +8,4 @@ authors:
     affiliation: Ecological Interaction
     orcid: "https://orcid.org/0000-0001-8152-1796"
 repository-code: "https://github.com/ecological-interaction/OSDS"
-abstract: "Work in Progress — Academic Research Resource. A candidate catalogue of observational systems, sensor networks, monitoring infrastructure, archives and data sources. The machine reference is authoritative; the scientific reference is its human-readable presentation. The 62 candidate records are not verified datasets or a certified monitoring standard. No licence has been selected; public accessibility and citation metadata do not grant reuse permission. Third-party resources retain their own access and reuse conditions."
+abstract: "Work in Progress — Academic Research Resource. A candidate catalogue of observational systems, sensor networks, monitoring infrastructure, archives and data sources, with separately qualified instrumentation, methods, computational interpretation and research themes. The machine reference is authoritative; the scientific reference is its human-readable presentation. The 62 candidate records are not verified datasets or a certified monitoring standard. No licence has been selected; public accessibility and citation metadata do not grant reuse permission. Third-party resources retain their own access and reuse conditions."

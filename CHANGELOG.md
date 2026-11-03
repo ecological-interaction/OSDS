@@ -4,6 +4,74 @@ Meaningful changes to research registers, provenance, repository documentation a
 
 ## [Unreleased]
 
+### Candidate research expansion — 3 November 2026
+
+- Advanced both document labels to 0.2.0 and added a separate versioned
+  osds.documentary-research/0.1.0 block and schema; original source schema and
+  inventory classification remain unchanged. This is a local candidate revision,
+  not a resource release, standards adoption, licence, DOI or Git tag.
+- Incorporated complementary pinned A01/A02 scientific fields: 109
+  typed concepts, 158 qualified assertions, 304
+  exact evidence slices and 62 explicit audit-alias mappings. Includes sixteen
+  families with A02 examples/properties/inferences; eight observation-method contexts;
+  six distinct platform leads; four umbrellas/six dimensions; standards, methods,
+  resources, reported decisions, unresolved gaps and twelve proposed theme associations.
+- Retained A01 missingness and A02 reported recovery/confirmation claims separately;
+  recorded model/alias, scope, embedded-inference, theme-assignment and standards-origin
+  conflicts rather than applying exclusions or authenticating historical decisions.
+  Each evidence slice separately retains its reported authority role/token and
+  basis, with authentication false and original scientific-message locator unknown.
+- Preserved all 62 original source objects/raw JSON, eight domains/categories,
+  220 original memberships, eight directed source questions, scientific source-table
+  rows, discovery URLs, nulls, provenance and historical evidence. No source merge,
+  reclassification or scientific/identity verification event.
+- Added deterministic research presentation/locator generation and extended the
+  validator under an explicit research profile, with source preservation, source-field/
+  qualification checks, independent status axes and Machine–Scientific parity.
+  Private baselines, reconciliation ledger and previews remain outside this repository.
+- Fresh originating-chat retrieval exposes only five later preparation/handoff turns
+  without an older cursor, not a complete October scientific session. A02 authority
+  remains audit-reported. DRM-ING-01–10 are experimental safeguards, not adopted clauses.
+- Validation passed: six regression methods, original Stage B baseline checks,
+  exact A01/A02 source/locator/field reconciliation, original source preservation,
+  generated research parity, and full Draft 2020-12 validation of the new research
+  schema using an existing optional dependency. Original source-schema identity
+  has no executable schema. No dependency was installed. Browser previews were
+  inspected for wide/narrow table layout, caveats, diagram and record navigation;
+  this is implementation review, not independent scientific or owner acceptance.
+- Owner visual acceptance and independent scientific/rights/identity review remain
+  pending. No Stage D acceptance, Git write, website deployment or DRM Phase 5 work.
+
+### Bounded documentary maintenance — 2 November 2026
+
+- Updated README entity-role/classification explanations, register/supporting
+  navigation, counts and current methodological limits without adopting a new
+  taxonomy or populating unknown entity metadata. Diagram and relative paths unchanged.
+- Added Scientific domain navigation and reading guidance; retained all four-column
+  source-table rows, category-key labels, source links and observation prose verbatim.
+- Added only manifest `current_methodological_context` and `maintenance` keys.
+  Existing historical methodology evidence, provenance, null conversation identifier,
+  classifications and all 62 source-record objects remain unchanged. Current context
+  identifies unadopted DRM-MSP 0.1.0 review revision 2 and bounded Phase 4 closure,
+  not scientific verification, general conformance or Phase 5 authority.
+- Retained document version 0.1.2 and recorded dated maintenance revision
+  2026-11-02-documentary; schema/classification versions, original creation/update
+  dates and historical change entries remain unchanged. No resource release implied.
+- Qualified earlier publication-preparation notes as historical; distinguished
+  inspected local Git/central pinned configuration from verified live deployment.
+  Corrected stale Phase 1 citation wording and maintenance instructions.
+- Added a read-only standard-library validator with explicit preservation comparison,
+  four-column parity, membership/provenance/relationship/anchor/link checks and
+  document-context consistency. No new dependencies or scientific extraction.
+- Stage B checks passed for 63 JSON fences, 62 preserved record objects/raw fences,
+  220 memberships, eight candidate relationships, unchanged Scientific tables and
+  local links. Eleven temporary negative cases were rejected. No executable OSDS
+  JSON Schema or pre-existing register regression suite was available; no full
+  schema-validation result is claimed. Previews remain outside the repository.
+- Stage B implementation/structural checks only: Stage C rendered visual review,
+  explicit owner acceptance and Stage D final validation remain pending. No staging,
+  commit, push, tag, remote configuration, publication, website edit or DRM phase.
+
 ### Overview and diagram refinement — local preview
 
 - Reduced README.md to Introduction, Research Scope, Methodology and Federation, and Scientific Reference Register sections. Preserved the earlier research context, version distinctions, standards references and dated publication notes in RESEARCH_NOTES.md.

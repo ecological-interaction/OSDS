@@ -6,6 +6,92 @@
 
 Jonathan Minchin · Ecological Interaction · [ORCID 0000-0001-8152-1796](https://orcid.org/0000-0001-8152-1796).
 
+## Current candidate-research edition — 3 November 2026
+
+Document 0.2.0 adds one `osds.documentary-research/0.1.0` block inside the
+existing authoritative Machine Reference. Original source schema and inventory
+classification identities remain unchanged. Original source objects and raw
+JSON, source memberships, URLs, provenance and candidate questions are preserved.
+Concepts, research assertions and proposed theme associations have separate counts.
+RC/RA/OR/EVD identifiers are OSDS-local documentary conventions, not DRM codes.
+Keep IDs stable; source aliases SRC001–SRC062 map to existing qualified IDs.
+
+A01 and the preserved retrospective history audit are byte-identical copies of
+one edition. A02 supplies richer fields but reports direct original-conversation
+access that this task cannot authenticate. The fresh bounded retrieval exposes
+five later turns and no older cursor; it supplies audit preparation/handoff
+context, not the original scientific discussion. No full October recovery or
+scientific approval follows. The existing conversation identifier remains null.
+
+## Evidence and intake limits
+
+Immediate editions: A01 SHA-256
+`3ccfde241f06e9a8d329e679e6369f52a3319b6cab0a7d7bd5ada8bdad3d43a0`;
+A02 SHA-256 `36c2add69e3656632abaa1d6dc1f5669524eacefa546103fe25a8b797a6588b1`.
+Machine origins retain exact source fields, quotations, section/line locators and
+quote hashes. A private ledger outside the repository accounts for all source
+units, including administrative context/quoted reconstruction instructions not
+republished as scientific assertions. These are secondary audits, not transcripts.
+Original-message chronology, unavailable attachments, original citations and
+scientific completeness remain unresolved. Administrative scores are not imported
+as scientific confidence; no independent review of this implementation is claimed.
+
+A01 missing-detail statements remain alongside A02's examples and reported
+confirmations. Generic Raspberry Pi and Raspberry Pi 5, Jetson Nano and Orin Nano
+remain distinct. Embedded inference placement, umbrella assignments, biological
+namespace suggestions, aircraft/marine/subsurface scope and PROV-O's later origin
+are explicit qualified proposals/conflicts. No existing provider is excluded.
+
+DRM-MSP 0.1.0 review revision 2 remains an unadopted candidate. DRM-ING-01–10 are
+experimental local safeguards for this intake, not adopted clauses or a new
+service. Identity, provenance, status/authority, versions, local classifications,
+typed relationships and preservation checks are applied within this task only.
+DRM Phase 4 closure does not authorise Phase 5. No DRM or neighbouring research
+content, website pins/checksums/importers or diagram asset has been modified.
+The central website still publishes its pinned source edition; local 0.2.0 is not
+a new deployment. No resource release, licence, DOI or standards compliance added.
+
+Scientific source tables are preserved manually. The new research section and
+Machine locator index are generated from Machine JSON by
+`scripts/render_osds_research.py --write`; never edit those generated sections
+independently. `scripts/validate_osds.py --profile research-0.1` checks the
+explicit profile, original sources and generated presentation. Optional `--baseline`
+compares an actual preserved working edition; `--evidence-dir` checks quotes
+against exact audit files and `--ledger` checks private source-unit accounting.
+Local schema checking is separate from scientific and owner review. Original
+source-schema identity is not itself an executable JSON Schema.
+
+## Earlier documentary and publication context — 2 November 2026
+
+Both registers retain document version 0.1.2; maintenance revision
+`2026-11-02-documentary` identifies this documentation-only patch. The schema
+`osds.reference-register/0.1-draft` and classification
+`osds.inventory-classification/0.1` are unchanged. All 62 candidate source records,
+220 memberships and eight directed candidate questions retain their evidence
+and uncertainty. This is not a resource release or scientific acceptance event.
+
+DRM-MSP 0.1.0 review revision 2 is an unadopted methodological candidate. Later
+DRM decisions record the bounded Phase 4 documentary-preservation pilots as
+completed and closed. Their scope does not establish scientific verification,
+general MSP adoption/release, full DRM conformance or authorisation for Phase 5.
+The retained historical methodology object/locators in the machine manifest are
+not silently redirected; current context is a separate metadata addition.
+
+The local repository is on main with a configured OSDS origin and committed
+baseline. At inspection, the central website manifest pins source commit
+`48b5d7f131ae4b86557d4a7b58a1371cacd3cd6c`; it maps README to the OSDS landing
+page and the Scientific Register to `scientific-reference-register/`, with
+research notes and authoritative pinned machine access handled centrally.
+This describes inspected configuration, not newly verified live deployment.
+Local maintenance now differs from that pinned edition. No website pin,
+checksum, importer or deployment was changed.
+
+Incomplete OSDS research-chat materials are historical context, not an alternative
+authority to the registers. The missing sixteen instrument families, four theme
+umbrellas and unavailable decisions are not reconstructed. Dataset-level
+scientific/rights review, original citation recovery, ambiguous identities,
+classification questions and standards-edition choices remain unresolved.
+
 ## Purpose and scope
 
 OSDS catalogues global observational systems, IoT data sources, physical sensor networks, scientific monitoring, ground-truth observations and physical computing datasets. Its 62 entries are candidate sources, not 62 verified measurement datasets. Source discovery and URL identity review do not establish dataset availability, calibration, measurement quality, access rights or fitness for analysis.
@@ -32,13 +118,15 @@ OSDS contributes observation-system discovery and provenance to the Ecological I
 
 The illustration places comparative interdisciplinary synthesis in IRKB, shared methodology and interoperability in DRM, and observation-source discovery in OSDS. IRKB, SSKB and DPRKB remain developing research directions in the umbrella architecture; PBCKA's scope is still being defined. AMRKB is an established sibling project. The layout expresses conceptual relationships, not dependency, control, completed database implementations or verified cross-project data bindings.
 
-The **Database Reference Methodology (DRM)** is maintained in the [Ecological Information umbrella](https://github.com/ecological-interaction/ecological-information), at `DRM/README.md`. It is under development and provides no approved detailed specification or certification of OSDS conformance.
+Historical context: earlier preparation referenced the Ecological Information umbrella at `DRM/README.md` and its then-current detailed-specification limitation. That source locator remains in historical manifest evidence. The current candidate/Phase 4 context is distinguished above; OSDS conformance is not certified.
 
 Source IDs remain stable (`SRC-001`–`SRC-062`), with qualified references such as `OSDS:SRC-001`, `OSDS:D01` and `OSDS:O01`. OSDS and EII domain codes are not equivalent because their numbers match. Future interoperability requires explicit record identities, evidence-backed relationships and documented mappings. Document versions, `osds.inventory-classification/0.1` and `osds.reference-register/0.1-draft` remain separate.
 
 W3C SOSA/SSN, OGC SensorThings API and OGC Observations, Measurements and Samples (OMS) are foundations for later review. No ontology mappings, API implementation, adopted standards editions or conformance claims are established here.
 
-## Repository and website publication
+## Repository and website publication — historical preparation context
+
+The following paragraphs retain earlier preparation statements and route expectations; the current configuration summary above supersedes them as present-state guidance.
 
 The source repository is [ecological-interaction/OSDS](https://github.com/ecological-interaction/OSDS). Its initial research/documentation commit, `dab53c4d0e88cfb3512a56311c488afa87183850`, was verified on public `main`. Both registers retain document version **0.1.2**, dated **22 October 2026**; no research-resource release or DOI is assigned.
 

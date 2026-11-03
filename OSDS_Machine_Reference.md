@@ -1,6 +1,6 @@
 # OSDS — Machine Reference Register
 
-**Observational Systems and Data Sources** · Version 0.1.2 · 22 October 2026 · Candidate research inventory
+**Observational Systems and Data Sources** · Version 0.2.0 · 3 November 2026 · Candidate research inventory
 
 Structured companion to [OSDS Scientific Reference Register](OSDS_Scientific_Reference_Register.md). All 62 supplied entries are retained, including possible provider or repository overlaps. Source URL identity has been checked for all 62 entries; no complete source record or dataset is independently verified. This is an inventory of sources, not imported measurements or a certified standard.
 
@@ -10,7 +10,9 @@ The first JSON fence is a manifest (`block_type: manifest`); subsequent fences a
 
 The supplied inventory establishes D01–D08 and O01–O08. Both classifications are many-to-many. `domain` retains the original presentation heading; `related_domains` permits later documented assignments. Category assignments and coverage are inherited inventory assertions, not new scientific verification. OSDS:D01 is not EII:D01: their meanings differ. No equivalence crosswalk is asserted.
 
-The current umbrella calls DRM **Database Reference Methodology** and explicitly states that it does not establish an approved detailed specification. EII's historical “Database Research Methodology v1.0.0” wording is recorded as historical context, not adopted as a verified specification. Classification, schema and document versions are separate.
+Historical methodology evidence in the manifest records the umbrella’s earlier **Database Reference Methodology** introduction and its detailed-specification limitation. EII’s historical “Database Research Methodology v1.0.0” wording is context, not an adopted specification. Those dated assertions and their provenance locators are retained. Classification, schema and document versions remain separate.
+
+Current methodological context is recorded separately as DRM-MSP 0.1.0 review revision 2, an unadopted methodological candidate. DRM records its bounded Phase 4 documentary-preservation pilots as completed and closed. This is not scientific verification, general MSP adoption or release, full DRM conformance or authorisation for Phase 5. The earlier dated documentary maintenance revision retained document version 0.1.2. The present 0.2.0 candidate-research revision adds the separate research profile below, without changing the original source-schema or inventory-classification identities.
 
 `null` means unknown or not yet reviewed. An empty array means no items recorded, not confirmed absence. No provider, station, sensor, dataset, measurement, unit, licence, API, extent, quality control, DOI or external identifier is inferred from a source's name. The original inventory supplied no full URLs. Version 0.1.1 adds newly researched official discovery routes with separate URL identity evidence; the original inventory citation URLs remain unavailable. Bare citation labels are preserved as section-level provenance; `+1` and `+2` are unresolved citation display markers, not evidence counts. They cannot be reconstructed into original links.
 
@@ -36,7 +38,7 @@ The original `access` fields remain unassigned: a homepage or documentation page
   "title": "OSDS — Machine Reference Register",
   "working_name": "Observational Systems and Data Sources",
   "previous_working_name": "Observational Systems and Data Knowledge Base (OSDKB)",
-  "document_version": "0.1.2",
+  "document_version": "0.2.0",
   "created": "2026-10-22",
   "schema": "osds.reference-register/0.1-draft",
   "status": "candidate_inventory_not_verified",
@@ -265,7 +267,7 @@ The original `access` fields remain unassigned: a homepage or documentation page
     "OSCAR/Surface operational application endpoint is unresolved after test-environment notice and circular redirect.",
     "Full dataset-level verification, access checks and licence review remain outstanding."
   ],
-  "updated": "2026-10-22",
+  "updated": "2026-11-03",
   "url_identity_checked_count": 62,
   "url_review_scope": "All 62 entries have an official discovery route or scoped collection route. Original hidden citation links remain unavailable. No dataset-level verification is asserted.",
   "change_history": [
@@ -283,6 +285,11 @@ The original `access` fields remain unassigned: a homepage or documentation page
       "version": "0.1.2",
       "date": "2026-10-22",
       "change": "Human tables use four columns: linked ID, linked source name, coverage and plain-language observation description. Retained category key and recorded presentation conventions. Scientific records unchanged."
+    },
+    {
+      "version": "0.2.0",
+      "date": "2026-11-03",
+      "change": "Added one versioned candidate documentary research block from complementary pinned A01/A02 audits; original 62 source objects, classifications, memberships, provenance, URLs and candidate questions unchanged. No scientific verification, resource release or protocol adoption."
     }
   ],
   "presentation": {
@@ -306,6 +313,58 @@ The original `access` fields remain unassigned: a homepage or documentation page
       "O06": "community observations",
       "O07": "embedded-device measurements",
       "O08": "historical instrument records"
+    }
+  },
+  "current_methodological_context": {
+    "name": "Database Reference Methodology",
+    "candidate": "DRM-MSP 0.1.0",
+    "review_revision": 2,
+    "status": "unadopted_methodological_candidate",
+    "as_of": "2026-11-02",
+    "phase_4": "Bounded documentary-preservation pilots completed and closed.",
+    "limitations": "Not scientific verification, general MSP adoption or release, full DRM conformance, or authorisation for Phase 5.",
+    "historical_evidence": "The existing methodology object and provenance entries retain their historical assertions and locators; this context does not replace them."
+  },
+  "maintenance": {
+    "revision": "2026-11-02-documentary",
+    "date": "2026-11-02",
+    "scope": "Documentary and methodological context only; source records, classifications, provenance and scientific assertions unchanged."
+  },
+  "research_profile": {
+    "schema": "osds.documentary-research/0.1.0",
+    "schema_file": "OSDS_Research.schema.json",
+    "block_type": "documentary_research",
+    "source_records_unchanged": 62,
+    "counts": {
+      "concepts": 109,
+      "assertions": 158,
+      "origins": 304,
+      "source_aliases": 62,
+      "concept_types": {
+        "instrument_family_candidate": 16,
+        "observation_method_context": 8,
+        "theme_umbrella_candidate": 4,
+        "descriptive_dimension_candidate": 6,
+        "computing_platform_candidate": 6,
+        "standards_framework_candidate": 8,
+        "framework_reference_group": 2,
+        "technical_interface_group": 1,
+        "research_resource_candidate": 15,
+        "method_framework_candidate": 9,
+        "method_capability_candidate": 34
+      },
+      "assertion_types": {
+        "scope_method_or_evidence_qualification": 27,
+        "historical_discussion_report": 14,
+        "federation_relationship_proposal": 10,
+        "reported_decision": 12,
+        "verification_question": 12,
+        "research_gap": 15,
+        "reconciliation_question": 44,
+        "theme_membership_proposal": 12,
+        "correction_or_conflict": 7,
+        "research_qualification": 5
+      }
     }
   }
 }
@@ -6375,3 +6434,19463 @@ The original `access` fields remain unassigned: a homepage or documentation page
 }
 ```
 
+
+<!-- BEGIN GENERATED OSDS RESEARCH INDEX -->
+## Research record locators
+
+The following anchors identify records in the single authoritative research JSON block below. JSON pointers are relative to that block; these are local documentary locators, not verified scientific identities.
+
+<a id="rc-0001"></a>
+
+### OSDS:RC-0001 — Atmospheric
+
+JSON pointer: `/concepts/0`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0002"></a>
+
+### OSDS:RC-0002 — Meteorological
+
+JSON pointer: `/concepts/1`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0003"></a>
+
+### OSDS:RC-0003 — Soil
+
+JSON pointer: `/concepts/2`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0004"></a>
+
+### OSDS:RC-0004 — Hydrological
+
+JSON pointer: `/concepts/3`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0005"></a>
+
+### OSDS:RC-0005 — Water quality
+
+JSON pointer: `/concepts/4`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0006"></a>
+
+### OSDS:RC-0006 — Atmospheric chemistry
+
+JSON pointer: `/concepts/5`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0007"></a>
+
+### OSDS:RC-0007 — Radiation and light
+
+JSON pointer: `/concepts/6`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0008"></a>
+
+### OSDS:RC-0008 — Acoustic
+
+JSON pointer: `/concepts/7`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0009"></a>
+
+### OSDS:RC-0009 — Mechanical and structural
+
+JSON pointer: `/concepts/8`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0010"></a>
+
+### OSDS:RC-0010 — Energy and electrical
+
+JSON pointer: `/concepts/9`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0011"></a>
+
+### OSDS:RC-0011 — Thermal and building
+
+JSON pointer: `/concepts/10`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0012"></a>
+
+### OSDS:RC-0012 — Position and movement
+
+JSON pointer: `/concepts/11`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0013"></a>
+
+### OSDS:RC-0013 — Chemical
+
+JSON pointer: `/concepts/12`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0014"></a>
+
+### OSDS:RC-0014 — Optical
+
+JSON pointer: `/concepts/13`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0015"></a>
+
+### OSDS:RC-0015 — Geotechnical
+
+JSON pointer: `/concepts/14`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0016"></a>
+
+### OSDS:RC-0016 — Flow and material
+
+JSON pointer: `/concepts/15`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0017"></a>
+
+### OSDS:RC-0017 — IoT telemetry
+
+JSON pointer: `/concepts/16`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0018"></a>
+
+### OSDS:RC-0018 — Scientific monitoring
+
+JSON pointer: `/concepts/17`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0019"></a>
+
+### OSDS:RC-0019 — Ground-truth observations
+
+JSON pointer: `/concepts/18`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0020"></a>
+
+### OSDS:RC-0020 — Autonomous observations
+
+JSON pointer: `/concepts/19`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0021"></a>
+
+### OSDS:RC-0021 — Campaign datasets
+
+JSON pointer: `/concepts/20`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0022"></a>
+
+### OSDS:RC-0022 — Citizen sensing
+
+JSON pointer: `/concepts/21`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0023"></a>
+
+### OSDS:RC-0023 — Physical computing
+
+JSON pointer: `/concepts/22`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0024"></a>
+
+### OSDS:RC-0024 — Historical instrumental records
+
+JSON pointer: `/concepts/23`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0025"></a>
+
+### OSDS:RC-0025 — Observational technologies
+
+JSON pointer: `/concepts/24`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0026"></a>
+
+### OSDS:RC-0026 — Computational interpretation
+
+JSON pointer: `/concepts/25`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0027"></a>
+
+### OSDS:RC-0027 — Embedded intelligence
+
+JSON pointer: `/concepts/26`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0028"></a>
+
+### OSDS:RC-0028 — Scientific methods and interoperability
+
+JSON pointer: `/concepts/27`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0029"></a>
+
+### OSDS:RC-0029 — Observation categories
+
+JSON pointer: `/concepts/28`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0030"></a>
+
+### OSDS:RC-0030 — Instrumentation and technologies
+
+JSON pointer: `/concepts/29`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0031"></a>
+
+### OSDS:RC-0031 — Observed properties and derived indicators
+
+JSON pointer: `/concepts/30`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0032"></a>
+
+### OSDS:RC-0032 — Methodologies, frameworks and standards
+
+JSON pointer: `/concepts/31`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0033"></a>
+
+### OSDS:RC-0033 — Data sources and research infrastructures
+
+JSON pointer: `/concepts/32`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0034"></a>
+
+### OSDS:RC-0034 — Cross-cutting research themes
+
+JSON pointer: `/concepts/33`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0035"></a>
+
+### OSDS:RC-0035 — Jetson Nano
+
+JSON pointer: `/concepts/34`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0036"></a>
+
+### OSDS:RC-0036 — Jetson Orin Nano
+
+JSON pointer: `/concepts/35`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0037"></a>
+
+### OSDS:RC-0037 — LicheeRV Nano
+
+JSON pointer: `/concepts/36`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0038"></a>
+
+### OSDS:RC-0038 — ESP32-S3
+
+JSON pointer: `/concepts/37`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0039"></a>
+
+### OSDS:RC-0039 — Raspberry Pi
+
+JSON pointer: `/concepts/38`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0040"></a>
+
+### OSDS:RC-0040 — Raspberry Pi 5
+
+JSON pointer: `/concepts/39`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0041"></a>
+
+### OSDS:RC-0041 — SOSA/SSN
+
+JSON pointer: `/concepts/40`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0042"></a>
+
+### OSDS:RC-0042 — OGC SensorThings API
+
+JSON pointer: `/concepts/41`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0043"></a>
+
+### OSDS:RC-0043 — OGC Observations, Measurements and Samples / O&M / ISO 19156
+
+JSON pointer: `/concepts/42`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0044"></a>
+
+### OSDS:RC-0044 — W3C PROV-O
+
+JSON pointer: `/concepts/43`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0045"></a>
+
+### OSDS:RC-0045 — Darwin Core
+
+JSON pointer: `/concepts/44`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0046"></a>
+
+### OSDS:RC-0046 — Humboldt Extension
+
+JSON pointer: `/concepts/45`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0047"></a>
+
+### OSDS:RC-0047 — GBIF event-oriented model
+
+JSON pointer: `/concepts/46`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0048"></a>
+
+### OSDS:RC-0048 — FAIR principles
+
+JSON pointer: `/concepts/47`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0049"></a>
+
+### OSDS:RC-0049 — ECSA principles / GLOBE / EPA Air Sensor Toolbox
+
+JSON pointer: `/concepts/48`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0050"></a>
+
+### OSDS:RC-0050 — OSHWA / open scientific hardware
+
+JSON pointer: `/concepts/49`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0051"></a>
+
+### OSDS:RC-0051 — MQTT, LoRaWAN, SDI-12
+
+JSON pointer: `/concepts/50`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0052"></a>
+
+### OSDS:RC-0052 — WILDLABS
+
+JSON pointer: `/concepts/51`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0053"></a>
+
+### OSDS:RC-0053 — Digital Naturalism Laboratories
+
+JSON pointer: `/concepts/52`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0054"></a>
+
+### OSDS:RC-0054 — OS Beehives
+
+JSON pointer: `/concepts/53`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0055"></a>
+
+### OSDS:RC-0055 — Environmental Data Initiative
+
+JSON pointer: `/concepts/54`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0056"></a>
+
+### OSDS:RC-0056 — DataONE
+
+JSON pointer: `/concepts/55`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0057"></a>
+
+### OSDS:RC-0057 — PurpleAir
+
+JSON pointer: `/concepts/56`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0058"></a>
+
+### OSDS:RC-0058 — GLOBE
+
+JSON pointer: `/concepts/57`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0059"></a>
+
+### OSDS:RC-0059 — FreshWater Watch
+
+JSON pointer: `/concepts/58`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0060"></a>
+
+### OSDS:RC-0060 — Public Lab
+
+JSON pointer: `/concepts/59`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0061"></a>
+
+### OSDS:RC-0061 — Arduino
+
+JSON pointer: `/concepts/60`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0062"></a>
+
+### OSDS:RC-0062 — PlatformIO
+
+JSON pointer: `/concepts/61`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0063"></a>
+
+### OSDS:RC-0063 — Hackaday
+
+JSON pointer: `/concepts/62`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0064"></a>
+
+### OSDS:RC-0064 — Open Source Hardware Association
+
+JSON pointer: `/concepts/63`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0065"></a>
+
+### OSDS:RC-0065 — USDA ARS
+
+JSON pointer: `/concepts/64`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0066"></a>
+
+### OSDS:RC-0066 — EPA Air Sensor Toolbox
+
+JSON pointer: `/concepts/65`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0067"></a>
+
+### OSDS:RC-0067 — Open scientific hardware
+
+JSON pointer: `/concepts/66`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0068"></a>
+
+### OSDS:RC-0068 — Calibration
+
+JSON pointer: `/concepts/67`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0069"></a>
+
+### OSDS:RC-0069 — Provenance
+
+JSON pointer: `/concepts/68`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0070"></a>
+
+### OSDS:RC-0070 — Ecological validity
+
+JSON pointer: `/concepts/69`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0071"></a>
+
+### OSDS:RC-0071 — In-situ research
+
+JSON pointer: `/concepts/70`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0072"></a>
+
+### OSDS:RC-0072 — Field-adaptive instrumentation / field laboratories
+
+JSON pointer: `/concepts/71`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0073"></a>
+
+### OSDS:RC-0073 — Statistical inference / AI-assisted reconstruction
+
+JSON pointer: `/concepts/72`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0074"></a>
+
+### OSDS:RC-0074 — Non-stationarity / change-point detection
+
+JSON pointer: `/concepts/73`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0075"></a>
+
+### OSDS:RC-0075 — Validation procedures / reference measurements
+
+JSON pointer: `/concepts/74`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0076"></a>
+
+### OSDS:RC-0076 — Embedded AI and edge inference
+
+JSON pointer: `/concepts/75`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0077"></a>
+
+### OSDS:RC-0077 — Computer vision
+
+JSON pointer: `/concepts/76`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0078"></a>
+
+### OSDS:RC-0078 — Object detection
+
+JSON pointer: `/concepts/77`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0079"></a>
+
+### OSDS:RC-0079 — Segmentation
+
+JSON pointer: `/concepts/78`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0080"></a>
+
+### OSDS:RC-0080 — Acoustic processing
+
+JSON pointer: `/concepts/79`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0081"></a>
+
+### OSDS:RC-0081 — Bioacoustics
+
+JSON pointer: `/concepts/80`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0082"></a>
+
+### OSDS:RC-0082 — Edge computing
+
+JSON pointer: `/concepts/81`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0083"></a>
+
+### OSDS:RC-0083 — Camera trapping
+
+JSON pointer: `/concepts/82`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0084"></a>
+
+### OSDS:RC-0084 — AI for conservation
+
+JSON pointer: `/concepts/83`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0085"></a>
+
+### OSDS:RC-0085 — Audio analysis
+
+JSON pointer: `/concepts/84`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0086"></a>
+
+### OSDS:RC-0086 — Edge AI
+
+JSON pointer: `/concepts/85`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0087"></a>
+
+### OSDS:RC-0087 — Local processing
+
+JSON pointer: `/concepts/86`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0088"></a>
+
+### OSDS:RC-0088 — Adaptive sampling
+
+JSON pointer: `/concepts/87`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0089"></a>
+
+### OSDS:RC-0089 — Protocols
+
+JSON pointer: `/concepts/88`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0090"></a>
+
+### OSDS:RC-0090 — Historical reconstruction
+
+JSON pointer: `/concepts/89`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0091"></a>
+
+### OSDS:RC-0091 — In-situ experimentation
+
+JSON pointer: `/concepts/90`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0092"></a>
+
+### OSDS:RC-0092 — Field laboratories
+
+JSON pointer: `/concepts/91`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0093"></a>
+
+### OSDS:RC-0093 — Data acquisition
+
+JSON pointer: `/concepts/92`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0094"></a>
+
+### OSDS:RC-0094 — Communication
+
+JSON pointer: `/concepts/93`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0095"></a>
+
+### OSDS:RC-0095 — Sensor fusion
+
+JSON pointer: `/concepts/94`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0096"></a>
+
+### OSDS:RC-0096 — Data rescue
+
+JSON pointer: `/concepts/95`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0097"></a>
+
+### OSDS:RC-0097 — Digitisation
+
+JSON pointer: `/concepts/96`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0098"></a>
+
+### OSDS:RC-0098 — Homogenisation
+
+JSON pointer: `/concepts/97`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0099"></a>
+
+### OSDS:RC-0099 — Reconstruction
+
+JSON pointer: `/concepts/98`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0100"></a>
+
+### OSDS:RC-0100 — Statistical inference
+
+JSON pointer: `/concepts/99`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0101"></a>
+
+### OSDS:RC-0101 — AI-assisted analysis
+
+JSON pointer: `/concepts/100`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0102"></a>
+
+### OSDS:RC-0102 — Uncertainty
+
+JSON pointer: `/concepts/101`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0103"></a>
+
+### OSDS:RC-0103 — Non-stationarity
+
+JSON pointer: `/concepts/102`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0104"></a>
+
+### OSDS:RC-0104 — Change-point detection
+
+JSON pointer: `/concepts/103`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0105"></a>
+
+### OSDS:RC-0105 — Historical environmental reconstruction
+
+JSON pointer: `/concepts/104`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0106"></a>
+
+### OSDS:RC-0106 — Sampling effort
+
+JSON pointer: `/concepts/105`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0107"></a>
+
+### OSDS:RC-0107 — Validation
+
+JSON pointer: `/concepts/106`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0108"></a>
+
+### OSDS:RC-0108 — Reference measurements
+
+JSON pointer: `/concepts/107`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="rc-0109"></a>
+
+### OSDS:RC-0109 — Acoustic monitoring
+
+JSON pointer: `/concepts/108`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0001"></a>
+
+### OSDS:RA-0001 — 1. OSDS purpose, scope and boundaries
+
+JSON pointer: `/assertions/0`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0002"></a>
+
+### OSDS:RA-0002 — 11. Instrumentation and technology families across categories
+
+JSON pointer: `/assertions/1`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0003"></a>
+
+### OSDS:RA-0003 — 11. Instrumentation and technology families across categories
+
+JSON pointer: `/assertions/2`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0004"></a>
+
+### OSDS:RA-0004 — 12. Methodologies, frameworks and standards
+
+JSON pointer: `/assertions/3`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0005"></a>
+
+### OSDS:RA-0005 — 13. Cross-cutting research themes
+
+JSON pointer: `/assertions/4`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0006"></a>
+
+### OSDS:RA-0006 — 13. Cross-cutting research themes
+
+JSON pointer: `/assertions/5`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0007"></a>
+
+### OSDS:RA-0007 — 15. Federation and interoperability
+
+JSON pointer: `/assertions/6`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0008"></a>
+
+### OSDS:RA-0008 — 15. Federation and interoperability
+
+JSON pointer: `/assertions/7`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0009"></a>
+
+### OSDS:RA-0009 — DRM
+
+JSON pointer: `/assertions/8`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0010"></a>
+
+### OSDS:RA-0010 — EII
+
+JSON pointer: `/assertions/9`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0011"></a>
+
+### OSDS:RA-0011 — GISDS
+
+JSON pointer: `/assertions/10`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0012"></a>
+
+### OSDS:RA-0012 — Ecological Computation
+
+JSON pointer: `/assertions/11`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0013"></a>
+
+### OSDS:RA-0013 — DPRKB
+
+JSON pointer: `/assertions/12`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0014"></a>
+
+### OSDS:RA-0014 — IRKB
+
+JSON pointer: `/assertions/13`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0015"></a>
+
+### OSDS:RA-0015 — Future biological database
+
+JSON pointer: `/assertions/14`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0016"></a>
+
+### OSDS:RA-0016 — Situated-knowledge database
+
+JSON pointer: `/assertions/15`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0017"></a>
+
+### OSDS:RA-0017 — 15. Federation and interoperability
+
+JSON pointer: `/assertions/16`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0018"></a>
+
+### OSDS:RA-0018 — Create this missing historical audit now; preserve current registers and Stage B work
+
+JSON pointer: `/assertions/17`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0019"></a>
+
+### OSDS:RA-0019 — Keep eight domains/eight categories, original codes and existing source identities
+
+JSON pointer: `/assertions/18`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0020"></a>
+
+### OSDS:RA-0020 — Preserve substantive topics rather than reconstruct only from registers
+
+JSON pointer: `/assertions/19`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0021"></a>
+
+### OSDS:RA-0021 — Ground/human-scale focus and named federation boundaries were “agreed” in October
+
+JSON pointer: `/assertions/20`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0022"></a>
+
+### OSDS:RA-0022 — Six dimensions, sixteen families and four umbrellas are adopted scientific schemes
+
+JSON pointer: `/assertions/21`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0023"></a>
+
+### OSDS:RA-0023 — End the voice call
+
+JSON pointer: `/assertions/22`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0024"></a>
+
+### OSDS:RA-0024 — Accept scientific/register expansion or Phase 5
+
+JSON pointer: `/assertions/23`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0025"></a>
+
+### OSDS:RA-0025 — 16.1 Explicit decisions versus reported historical agreements
+
+JSON pointer: `/assertions/24`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0026"></a>
+
+### OSDS:RA-0026 — 16.2 Provisional proposals and scientific references
+
+JSON pointer: `/assertions/25`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0027"></a>
+
+### OSDS:RA-0027 — 16.2 Provisional proposals and scientific references
+
+JSON pointer: `/assertions/26`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0028"></a>
+
+### OSDS:RA-0028 — Domain/category clarification: User asked to distinguish eight disciplinary domains from eight observation categories; the assistant described each.
+
+JSON pointer: `/assertions/27`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0029"></a>
+
+### OSDS:RA-0029 — Taxonomy expansion and deliberate deferral: User asked how eight categories arose, explored additional types and then deferred formal taxonomy validation.
+
+JSON pointer: `/assertions/28`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0030"></a>
+
+### OSDS:RA-0030 — Scale and boundary: User excluded satellite, Earth viewing, aerial drone/balloon/aircraft mapping, GIS and specialised biological instrumentation; accepted governmental/global infrastructures where observation is at human/ground scale.
+
+JSON pointer: `/assertions/29`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0031"></a>
+
+### OSDS:RA-0031 — O01 IoT: User requested broad sensing families and progression from instruments to derived environmental/ecological indicators.
+
+JSON pointer: `/assertions/30`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0032"></a>
+
+### OSDS:RA-0032 — O02 scientific monitoring: User asked whether instruments overlap with IoT and whether publication differs.
+
+JSON pointer: `/assertions/31`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0033"></a>
+
+### OSDS:RA-0033 — O03 ground truth: User requested reference/validation practices.
+
+JSON pointer: `/assertions/32`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0034"></a>
+
+### OSDS:RA-0034 — O04 autonomous: User explored unattended systems and robots.
+
+JSON pointer: `/assertions/33`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0035"></a>
+
+### OSDS:RA-0035 — O05 campaigns and observation protocols: User gave moth-sighting example and asked about universally validated campaign logging.
+
+JSON pointer: `/assertions/34`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0036"></a>
+
+### OSDS:RA-0036 — O06 citizen sensing and WILDLABS: User asked for community sensing and WILDLABS categorisation.
+
+JSON pointer: `/assertions/35`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0037"></a>
+
+### OSDS:RA-0037 — Cross-cutting themes: User wanted a way to record camera traps, bioacoustics, vision, AI conservation and edge computing without confusing taxonomy.
+
+JSON pointer: `/assertions/36`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0038"></a>
+
+### OSDS:RA-0038 — O07 physical computing: User asked to distinguish physical computing from IoT and examine edge-AI boards.
+
+JSON pointer: `/assertions/37`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0039"></a>
+
+### OSDS:RA-0039 — Bioacoustics and field labs: User introduced OS Beehives and Digital Naturalism; requested field-lab methodological insight.
+
+JSON pointer: `/assertions/38`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0040"></a>
+
+### OSDS:RA-0040 — O08 historic records: User requested data rescue, AI inference, historic reconstruction and situated-knowledge link.
+
+JSON pointer: `/assertions/39`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0041"></a>
+
+### OSDS:RA-0041 — Structural conclusion: User asked what new layers had emerged and confirmed augmentation rather than replacement.
+
+JSON pointer: `/assertions/40`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0042"></a>
+
+### OSDS:RA-0042 — OSDS
+
+JSON pointer: `/assertions/41`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0043"></a>
+
+### OSDS:RA-0043 — OSDS
+
+JSON pointer: `/assertions/42`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0044"></a>
+
+### OSDS:RA-0044 — OSDS
+
+JSON pointer: `/assertions/43`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0045"></a>
+
+### OSDS:RA-0045 — OSDS
+
+JSON pointer: `/assertions/44`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0046"></a>
+
+### OSDS:RA-0046 — OSDS
+
+JSON pointer: `/assertions/45`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0047"></a>
+
+### OSDS:RA-0047 — OSDS
+
+JSON pointer: `/assertions/46`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0048"></a>
+
+### OSDS:RA-0048 — OSDS
+
+JSON pointer: `/assertions/47`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0049"></a>
+
+### OSDS:RA-0049 — OSDS
+
+JSON pointer: `/assertions/48`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0050"></a>
+
+### OSDS:RA-0050 — OSDS
+
+JSON pointer: `/assertions/49`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0051"></a>
+
+### OSDS:RA-0051 — OSDS
+
+JSON pointer: `/assertions/50`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0052"></a>
+
+### OSDS:RA-0052 — Preserve eight existing domains and categories
+
+JSON pointer: `/assertions/51`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0053"></a>
+
+### OSDS:RA-0053 — Defer formal taxonomy validation; continue scoping
+
+JSON pointer: `/assertions/52`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0054"></a>
+
+### OSDS:RA-0054 — Human/ground-scale scope; exclude satellite/aerial GIS and specialised biology instruments
+
+JSON pointer: `/assertions/53`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0055"></a>
+
+### OSDS:RA-0055 — Large governmental and global infrastructures remain in scope if ground-context
+
+JSON pointer: `/assertions/54`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0056"></a>
+
+### OSDS:RA-0056 — Keep publication/accessibility mapping in mind, do not create a new axis yet
+
+JSON pointer: `/assertions/55`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0057"></a>
+
+### OSDS:RA-0057 — Record protocols and standards as research references
+
+JSON pointer: `/assertions/56`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0058"></a>
+
+### OSDS:RA-0058 — Use cross-cutting research themes, but do not formalise new top-level classes
+
+JSON pointer: `/assertions/57`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0059"></a>
+
+### OSDS:RA-0059 — Keep physical computing and IoT distinct but overlapping
+
+JSON pointer: `/assertions/58`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0060"></a>
+
+### OSDS:RA-0060 — Include embedded AI/edge inference as provisional family under O07
+
+JSON pointer: `/assertions/59`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0061"></a>
+
+### OSDS:RA-0061 — Treat acoustic capture in OSDS and biological inference across databases
+
+JSON pointer: `/assertions/60`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0062"></a>
+
+### OSDS:RA-0062 — Link historical instrumental records with situated knowledge without equating evidence
+
+JSON pointer: `/assertions/61`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0063"></a>
+
+### OSDS:RA-0063 — Augment existing OSDS structure rather than replace taxonomy
+
+JSON pointer: `/assertions/62`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0064"></a>
+
+### OSDS:RA-0064 — Earlier OSDKB versus OSDS naming
+
+JSON pointer: `/assertions/63`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0065"></a>
+
+### OSDS:RA-0065 — WILDLABS taxonomy
+
+JSON pointer: `/assertions/64`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0066"></a>
+
+### OSDS:RA-0066 — Digital Naturalism projects
+
+JSON pointer: `/assertions/65`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0067"></a>
+
+### OSDS:RA-0067 — Jetson/LicheeRV capabilities
+
+JSON pointer: `/assertions/66`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0068"></a>
+
+### OSDS:RA-0068 — O08 AI causal claims
+
+JSON pointer: `/assertions/67`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0069"></a>
+
+### OSDS:RA-0069 — Ground truth concept
+
+JSON pointer: `/assertions/68`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0070"></a>
+
+### OSDS:RA-0070 — Original source list duplicates
+
+JSON pointer: `/assertions/69`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0071"></a>
+
+### OSDS:RA-0071 — Historical audit edition
+
+JSON pointer: `/assertions/70`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0072"></a>
+
+### OSDS:RA-0072 — Rights/licensing
+
+JSON pointer: `/assertions/71`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0073"></a>
+
+### OSDS:RA-0073 — Source dates and checksums
+
+JSON pointer: `/assertions/72`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0074"></a>
+
+### OSDS:RA-0074 — DRM rev document status
+
+JSON pointer: `/assertions/73`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0075"></a>
+
+### OSDS:RA-0075 — Three standards versus A02 additions
+
+JSON pointer: `/assertions/74`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0076"></a>
+
+### OSDS:RA-0076 — Research gap GAP01
+
+JSON pointer: `/assertions/75`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0077"></a>
+
+### OSDS:RA-0077 — Research gap GAP02
+
+JSON pointer: `/assertions/76`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0078"></a>
+
+### OSDS:RA-0078 — Research gap GAP03
+
+JSON pointer: `/assertions/77`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0079"></a>
+
+### OSDS:RA-0079 — Research gap GAP04
+
+JSON pointer: `/assertions/78`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0080"></a>
+
+### OSDS:RA-0080 — Research gap GAP05
+
+JSON pointer: `/assertions/79`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0081"></a>
+
+### OSDS:RA-0081 — Research gap GAP06
+
+JSON pointer: `/assertions/80`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0082"></a>
+
+### OSDS:RA-0082 — Research gap GAP07
+
+JSON pointer: `/assertions/81`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0083"></a>
+
+### OSDS:RA-0083 — Research gap GAP08
+
+JSON pointer: `/assertions/82`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0084"></a>
+
+### OSDS:RA-0084 — Research gap GAP09
+
+JSON pointer: `/assertions/83`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0085"></a>
+
+### OSDS:RA-0085 — Research gap GAP10
+
+JSON pointer: `/assertions/84`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0086"></a>
+
+### OSDS:RA-0086 — Research gap GAP11
+
+JSON pointer: `/assertions/85`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0087"></a>
+
+### OSDS:RA-0087 — Research gap GAP12
+
+JSON pointer: `/assertions/86`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0088"></a>
+
+### OSDS:RA-0088 — Research gap GAP13
+
+JSON pointer: `/assertions/87`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0089"></a>
+
+### OSDS:RA-0089 — Research gap GAP14
+
+JSON pointer: `/assertions/88`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0090"></a>
+
+### OSDS:RA-0090 — Research gap GAP15
+
+JSON pointer: `/assertions/89`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0091"></a>
+
+### OSDS:RA-0091 — Existing D01–D08 and O01–O08; B, R§2
+
+JSON pointer: `/assertions/90`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0092"></a>
+
+### OSDS:RA-0092 — Ground/human-scale and large-infrastructure boundary; R§1
+
+JSON pointer: `/assertions/91`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0093"></a>
+
+### OSDS:RA-0093 — Satellite/aerial/biology exclusions; R§1
+
+JSON pointer: `/assertions/92`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0094"></a>
+
+### OSDS:RA-0094 — Sixteen family labels; R§3
+
+JSON pointer: `/assertions/93`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0095"></a>
+
+### OSDS:RA-0095 — Per-family instrument/property/indicator details; R§3
+
+JSON pointer: `/assertions/94`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0096"></a>
+
+### OSDS:RA-0096 — Scientific monitoring/reference grade/calibration/publication; R§4, N§5.2
+
+JSON pointer: `/assertions/95`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0097"></a>
+
+### OSDS:RA-0097 — Manual/reference observations, soil/water samples, geotechnical testing; R§5
+
+JSON pointer: `/assertions/96`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0098"></a>
+
+### OSDS:RA-0098 — Autonomy versus connectivity; R§6
+
+JSON pointer: `/assertions/97`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0099"></a>
+
+### OSDS:RA-0099 — Campaign → Event → Observation → Verification; R§7
+
+JSON pointer: `/assertions/98`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0100"></a>
+
+### OSDS:RA-0100 — Ecological surveys/species sightings; R§7
+
+JSON pointer: `/assertions/99`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0101"></a>
+
+### OSDS:RA-0101 — Darwin Core; R§7/12
+
+JSON pointer: `/assertions/100`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0102"></a>
+
+### OSDS:RA-0102 — Humboldt Extension; R§7/12
+
+JSON pointer: `/assertions/101`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0103"></a>
+
+### OSDS:RA-0103 — GBIF event organisation; R§7
+
+JSON pointer: `/assertions/102`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0104"></a>
+
+### OSDS:RA-0104 — Community sensing/participation/validation; R§8
+
+JSON pointer: `/assertions/103`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0105"></a>
+
+### OSDS:RA-0105 — WILDLABS; R§8
+
+JSON pointer: `/assertions/104`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0106"></a>
+
+### OSDS:RA-0106 — Physical computing versus IoT; R§9
+
+JSON pointer: `/assertions/105`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0107"></a>
+
+### OSDS:RA-0107 — Jetson Nano; R§9
+
+JSON pointer: `/assertions/106`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0108"></a>
+
+### OSDS:RA-0108 — Jetson Orin Nano; R§9
+
+JSON pointer: `/assertions/107`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0109"></a>
+
+### OSDS:RA-0109 — LicheeRV Nano; R§9
+
+JSON pointer: `/assertions/108`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0110"></a>
+
+### OSDS:RA-0110 — ESP32-S3; R§9
+
+JSON pointer: `/assertions/109`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0111"></a>
+
+### OSDS:RA-0111 — Raspberry Pi; R§9
+
+JSON pointer: `/assertions/110`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0112"></a>
+
+### OSDS:RA-0112 — Data acquisition/communications/embedded AI/edge inference; R§9
+
+JSON pointer: `/assertions/111`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0113"></a>
+
+### OSDS:RA-0113 — Computer vision/object detection/segmentation; R§9
+
+JSON pointer: `/assertions/112`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0114"></a>
+
+### OSDS:RA-0114 — Acoustic processing/bioacoustics; R§9
+
+JSON pointer: `/assertions/113`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0115"></a>
+
+### OSDS:RA-0115 — OS Beehives; R§9
+
+JSON pointer: `/assertions/114`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0116"></a>
+
+### OSDS:RA-0116 — Digital Naturalism Laboratories; R§9
+
+JSON pointer: `/assertions/115`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0117"></a>
+
+### OSDS:RA-0117 — Field-adaptive instrumentation/in-situ laboratory; R§9/12
+
+JSON pointer: `/assertions/116`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0118"></a>
+
+### OSDS:RA-0118 — Historical archives; R§10
+
+JSON pointer: `/assertions/117`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0119"></a>
+
+### OSDS:RA-0119 — Data rescue/digitisation/homogenisation/reconstruction; R§10
+
+JSON pointer: `/assertions/118`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0120"></a>
+
+### OSDS:RA-0120 — Statistical inference/AI-assisted analysis; R§10
+
+JSON pointer: `/assertions/119`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0121"></a>
+
+### OSDS:RA-0121 — Uncertainty/non-stationarity/change-point detection; R§10
+
+JSON pointer: `/assertions/120`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0122"></a>
+
+### OSDS:RA-0122 — Situated/traditional/cultural knowledge; R§10
+
+JSON pointer: `/assertions/121`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0123"></a>
+
+### OSDS:RA-0123 — SOSA/SSN, SensorThings, OMS; B, R§12
+
+JSON pointer: `/assertions/122`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0124"></a>
+
+### OSDS:RA-0124 — FAIR principles; R§12
+
+JSON pointer: `/assertions/123`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0125"></a>
+
+### OSDS:RA-0125 — Open scientific hardware; R§12
+
+JSON pointer: `/assertions/124`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0126"></a>
+
+### OSDS:RA-0126 — Ecological validity/provenance; R§12
+
+JSON pointer: `/assertions/125`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0127"></a>
+
+### OSDS:RA-0127 — Four umbrellas; R§13
+
+JSON pointer: `/assertions/126`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0128"></a>
+
+### OSDS:RA-0128 — Camera trapping/AI conservation/themes; R§13
+
+JSON pointer: `/assertions/127`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0129"></a>
+
+### OSDS:RA-0129 — Six structural dimensions; R§14
+
+JSON pointer: `/assertions/128`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0130"></a>
+
+### OSDS:RA-0130 — Instrument → Observation → Observed property → Derived indicator → EII; R§15
+
+JSON pointer: `/assertions/129`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0131"></a>
+
+### OSDS:RA-0131 — DRM; R§15, M guidance
+
+JSON pointer: `/assertions/130`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0132"></a>
+
+### OSDS:RA-0132 — GISDS/EII/IRKB; R§15
+
+JSON pointer: `/assertions/131`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0133"></a>
+
+### OSDS:RA-0133 — Ecological Computation/DPRKB/future biology/situated database; R§15
+
+JSON pointer: `/assertions/132`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0134"></a>
+
+### OSDS:RA-0134 — Original citations/October speaker approvals
+
+JSON pointer: `/assertions/133`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0135"></a>
+
+### OSDS:RA-0135 — Observational technologies / Camera trapping
+
+JSON pointer: `/assertions/134`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0136"></a>
+
+### OSDS:RA-0136 — Observational technologies / Acoustic monitoring
+
+JSON pointer: `/assertions/135`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0137"></a>
+
+### OSDS:RA-0137 — Computational interpretation / Computer vision
+
+JSON pointer: `/assertions/136`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0138"></a>
+
+### OSDS:RA-0138 — Computational interpretation / AI for conservation
+
+JSON pointer: `/assertions/137`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0139"></a>
+
+### OSDS:RA-0139 — Computational interpretation / Audio analysis
+
+JSON pointer: `/assertions/138`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0140"></a>
+
+### OSDS:RA-0140 — Embedded intelligence / Edge AI
+
+JSON pointer: `/assertions/139`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0141"></a>
+
+### OSDS:RA-0141 — Embedded intelligence / Local processing
+
+JSON pointer: `/assertions/140`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0142"></a>
+
+### OSDS:RA-0142 — Embedded intelligence / Adaptive sampling
+
+JSON pointer: `/assertions/141`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0143"></a>
+
+### OSDS:RA-0143 — Scientific methods and interoperability / Field laboratories
+
+JSON pointer: `/assertions/142`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0144"></a>
+
+### OSDS:RA-0144 — Scientific methods and interoperability / Calibration
+
+JSON pointer: `/assertions/143`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0145"></a>
+
+### OSDS:RA-0145 — Scientific methods and interoperability / Protocols
+
+JSON pointer: `/assertions/144`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0146"></a>
+
+### OSDS:RA-0146 — Scientific methods and interoperability / Historical reconstruction
+
+JSON pointer: `/assertions/145`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0147"></a>
+
+### OSDS:RA-0147 — Evidence access
+
+JSON pointer: `/assertions/146`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0148"></a>
+
+### OSDS:RA-0148 — Instrument detail
+
+JSON pointer: `/assertions/147`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0149"></a>
+
+### OSDS:RA-0149 — Raspberry Pi identity
+
+JSON pointer: `/assertions/148`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0150"></a>
+
+### OSDS:RA-0150 — Embedded inference placement
+
+JSON pointer: `/assertions/149`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0151"></a>
+
+### OSDS:RA-0151 — Biological namespace
+
+JSON pointer: `/assertions/150`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0152"></a>
+
+### OSDS:RA-0152 — Ground/air/marine scope
+
+JSON pointer: `/assertions/151`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0153"></a>
+
+### OSDS:RA-0153 — Foundational references
+
+JSON pointer: `/assertions/152`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0154"></a>
+
+### OSDS:RA-0154 — 2. Scope, boundaries and chronological reconstruction
+
+JSON pointer: `/assertions/153`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0155"></a>
+
+### OSDS:RA-0155 — 8. Scientific source inventory — candidate identities recovered
+
+JSON pointer: `/assertions/154`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0156"></a>
+
+### OSDS:RA-0156 — 8. Scientific source inventory — candidate identities recovered
+
+JSON pointer: `/assertions/155`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0157"></a>
+
+### OSDS:RA-0157 — 10. Decision and authority ledger
+
+JSON pointer: `/assertions/156`. Candidate documentary record; scientific/identity verification outstanding.
+
+<a id="ra-0158"></a>
+
+### OSDS:RA-0158 — 16. Distinct completeness assessments
+
+JSON pointer: `/assertions/157`. Candidate documentary record; scientific/identity verification outstanding.
+
+<!-- END GENERATED OSDS RESEARCH INDEX -->
+
+## Candidate research block
+
+Document 0.2.0 introduces `osds.documentary-research/0.1.0` alongside the unchanged source schema. Counts of source providers, concepts, assertions, evidence and proposed theme associations are separate. Source details in A01/A02 are documentary candidates; access, scientific validity, original decision authority and rights remain unverified.
+
+```json
+{
+  "block_type": "documentary_research",
+  "schema": "osds.documentary-research/0.1.0",
+  "document_version": "0.2.0",
+  "created": "2026-11-03",
+  "status": "candidate_documentary_research",
+  "identifier_policy": "OSDS-local RC (concept), RA (assertion), OR (origin) and EVD (edition) identities are persistent documentary conventions, not DRM-issued codes. Preserve IDs through revisions; no scientific identity is inferred from sequence or labels.",
+  "scientific_limits": "Full immediate audit fields/quotations retained for selected research; source access, external identity, scientific verification, hardware capabilities, standards editions and rights remain unresolved. This is author-performed documentary reconciliation, not independent expert review.",
+  "experimental_controls": "DRM-ING-01–10 are experimental local safeguards, not adopted DRM clauses or ingestion infrastructure.",
+  "evidence_editions": [
+    {
+      "id": "OSDS:EVD-0001",
+      "label": "A01 OSDS documentary research audit",
+      "source_file": "20261103_OSDS_a01.md",
+      "sha256": "3ccfde241f06e9a8d329e679e6369f52a3319b6cab0a7d7bd5ada8bdad3d43a0",
+      "line_count": 596,
+      "authority": "secondary_documentary_audit_not_authenticated_original_transcript",
+      "rights": "not_assessed_for_redistribution",
+      "access_limits": "Original scientific conversation is not completely accessible; audit descriptions and reported decisions remain qualified."
+    },
+    {
+      "id": "OSDS:EVD-0002",
+      "label": "A02 OSDS documentary research audit",
+      "source_file": "20261103_OSDS_a02.md",
+      "sha256": "36c2add69e3656632abaa1d6dc1f5669524eacefa546103fe25a8b797a6588b1",
+      "line_count": 312,
+      "authority": "secondary_documentary_audit_not_authenticated_original_transcript",
+      "rights": "not_assessed_for_redistribution",
+      "access_limits": "Original scientific conversation is not completely accessible; audit descriptions and reported decisions remain qualified."
+    }
+  ],
+  "origins": [
+    {
+      "id": "OSDS:OR-0001",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 93,
+      "line_end": 93,
+      "quote": "| 1 | Atmospheric | Not specified at family level; no verified instrument/property/indicator mapping | Distinguish its intended scope from meteorological and atmospheric chemistry. |",
+      "quote_sha256": "30f3116f5c16ff77d46ff3e0837a39d8b34b1ab4cb8849468db05da70f029095",
+      "fields": {
+        "Position": "1",
+        "Family wording supplied in R§3": "Atmospheric",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "Distinguish its intended scope from meteorological and atmospheric chemistry."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0002",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 56,
+      "line_end": 56,
+      "quote": "| F01 | Atmospheric | Thermistors, capacitive humidity probes, barometers | Air temperature, relative humidity, pressure | Microclimate variation, heat exposure, frost risk, evaporative demand |",
+      "quote_sha256": "17d46b261fa579ed548686e66efb5c016ab7f2ed6652367495058f384b9d3f5a",
+      "fields": {
+        "Family ID": "F01",
+        "Instrument family": "Atmospheric",
+        "Examples": "Thermistors, capacitive humidity probes, barometers",
+        "Directly observed properties": "Air temperature, relative humidity, pressure",
+        "Candidate indicators / inferences": "Microclimate variation, heat exposure, frost risk, evaporative demand"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0003",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 94,
+      "line_end": 94,
+      "quote": "| 2 | Meteorological | Not specified at family level; no verified instrument/property/indicator mapping | Recover the intended boundary with atmospheric instrumentation. |",
+      "quote_sha256": "fb23d747e10c5a256b3e672227ba1b71668ea9eb0ae20f0429ae86a06cafa789",
+      "fields": {
+        "Position": "2",
+        "Family wording supplied in R§3": "Meteorological",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "Recover the intended boundary with atmospheric instrumentation."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0004",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 57,
+      "line_end": 57,
+      "quote": "| F02 | Meteorological | Tipping-bucket/weighing rain gauges, anemometers, pyranometers | Rainfall, wind, shortwave irradiance | Storm intensity, rainfall deficits, wind exposure |",
+      "quote_sha256": "2e9dcc51d4f736b867fcfbf9a2f3bedb0f73565544b4663bd275358a09e7e577",
+      "fields": {
+        "Family ID": "F02",
+        "Instrument family": "Meteorological",
+        "Examples": "Tipping-bucket/weighing rain gauges, anemometers, pyranometers",
+        "Directly observed properties": "Rainfall, wind, shortwave irradiance",
+        "Candidate indicators / inferences": "Storm intensity, rainfall deficits, wind exposure"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0005",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 95,
+      "line_end": 95,
+      "quote": "| 3 | Soil | Not specified at family level; no verified instrument/property/indicator mapping | R§5 mentions soil sampling; no specific instrument or indicator is assigned. |",
+      "quote_sha256": "807351a7628aa0ac95413ed865eebdb3bf0370c97946f96b90a1d4c9e27f8749",
+      "fields": {
+        "Position": "3",
+        "Family wording supplied in R§3": "Soil",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "R§5 mentions soil sampling; no specific instrument or indicator is assigned."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0006",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 58,
+      "line_end": 58,
+      "quote": "| F03 | Soil | Capacitance/TDR moisture probes, tensiometers, thermistors, EC, redox and soil-gas probes | Volumetric water content, matric potential, temperature, conductivity, redox, gases | Drought stress proxies, salinity risk, waterlogging and aeration |",
+      "quote_sha256": "2ec05e7088968e8bcd333d6c26099ca8ff83ab44576f64cbb7f497ada6a3f56b",
+      "fields": {
+        "Family ID": "F03",
+        "Instrument family": "Soil",
+        "Examples": "Capacitance/TDR moisture probes, tensiometers, thermistors, EC, redox and soil-gas probes",
+        "Directly observed properties": "Volumetric water content, matric potential, temperature, conductivity, redox, gases",
+        "Candidate indicators / inferences": "Drought stress proxies, salinity risk, waterlogging and aeration"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0007",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 96,
+      "line_end": 96,
+      "quote": "| 4 | Hydrological | Not specified at family level; no verified instrument/property/indicator mapping | Distinguish observation context from water quality and flow/material families. |",
+      "quote_sha256": "edf4691ce1dbaef2bfab3740dabe8418c31d47471cecfc1304af1cba47111731",
+      "fields": {
+        "Position": "4",
+        "Family wording supplied in R§3": "Hydrological",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "Distinguish observation context from water quality and flow/material families."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0008",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 59,
+      "line_end": 59,
+      "quote": "| F04 | Hydrological | Pressure/level transducers, flow meters, groundwater loggers | Stage, flow velocity/discharge, groundwater level | Flood response, water availability, runoff and storage changes |",
+      "quote_sha256": "d8c3b634ba2aa3402923db061a3423c5a951c4a73732a3442dd4b8d475fc95ca",
+      "fields": {
+        "Family ID": "F04",
+        "Instrument family": "Hydrological",
+        "Examples": "Pressure/level transducers, flow meters, groundwater loggers",
+        "Directly observed properties": "Stage, flow velocity/discharge, groundwater level",
+        "Candidate indicators / inferences": "Flood response, water availability, runoff and storage changes"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0009",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 97,
+      "line_end": 97,
+      "quote": "| 5 | Water quality | Not specified at family level; no verified instrument/property/indicator mapping | R§5 mentions water sampling; no analyte, instrument or indicator is supplied. |",
+      "quote_sha256": "84b129b54508e14a7df73dc9d061fe0ab10569503521be25190385fc7ff11b4f",
+      "fields": {
+        "Position": "5",
+        "Family wording supplied in R§3": "Water quality",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "R§5 mentions water sampling; no analyte, instrument or indicator is supplied."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0010",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 60,
+      "line_end": 60,
+      "quote": "| F05 | Water quality | pH, conductivity, dissolved-oxygen, turbidity, nitrate sensors | pH, EC, DO, turbidity, nitrate | Water-quality changes, oxygen depletion, salinity and nutrient loading |",
+      "quote_sha256": "dc64fba222eb208b4476dcb0c0e8077b20efc79094bd0cda5dcd18323c21c9aa",
+      "fields": {
+        "Family ID": "F05",
+        "Instrument family": "Water quality",
+        "Examples": "pH, conductivity, dissolved-oxygen, turbidity, nitrate sensors",
+        "Directly observed properties": "pH, EC, DO, turbidity, nitrate",
+        "Candidate indicators / inferences": "Water-quality changes, oxygen depletion, salinity and nutrient loading"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0011",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 98,
+      "line_end": 98,
+      "quote": "| 6 | Atmospheric chemistry | Not specified at family level; no verified instrument/property/indicator mapping | Separate the family label from chemical instrumentation and atmospheric context. |",
+      "quote_sha256": "d9f8dd15eccd5a624db4a62366f1f8429ee71423dd781c6330791045dd127b63",
+      "fields": {
+        "Position": "6",
+        "Family wording supplied in R§3": "Atmospheric chemistry",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "Separate the family label from chemical instrumentation and atmospheric context."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0012",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 61,
+      "line_end": 61,
+      "quote": "| F06 | Atmospheric chemistry / air quality | Electrochemical gas cells, NDIR CO₂, optical particle counters | CO₂, NO₂, ozone, methane, ammonia, PM | Pollution exposure, concentration trends, emission proxies |",
+      "quote_sha256": "ed0da3a3c0fbb2c65085efb0296c2494846103cf00af09a9806c15bb38bd4794",
+      "fields": {
+        "Family ID": "F06",
+        "Instrument family": "Atmospheric chemistry / air quality",
+        "Examples": "Electrochemical gas cells, NDIR CO₂, optical particle counters",
+        "Directly observed properties": "CO₂, NO₂, ozone, methane, ammonia, PM",
+        "Candidate indicators / inferences": "Pollution exposure, concentration trends, emission proxies"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0013",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 99,
+      "line_end": 99,
+      "quote": "| 7 | Radiation and light | Not specified at family level; no verified instrument/property/indicator mapping | Recover measurement principle, variable, units and calibration from actual evidence. |",
+      "quote_sha256": "421e074c25bd0be0d1c491078cb1793419f925b26f0ef17d12be48ce052c97e6",
+      "fields": {
+        "Position": "7",
+        "Family wording supplied in R§3": "Radiation and light",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "Recover measurement principle, variable, units and calibration from actual evidence."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0014",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 62,
+      "line_end": 62,
+      "quote": "| F07 | Radiation and light | Photodiodes, PAR sensors, UV radiometers | Illuminance, PAR, UV | Light availability, shading, exposure |",
+      "quote_sha256": "1c04922de1caca90ccda8ffc6d9d7f3e3111ee363f76fe5e2b4ef87c55edb783",
+      "fields": {
+        "Family ID": "F07",
+        "Instrument family": "Radiation and light",
+        "Examples": "Photodiodes, PAR sensors, UV radiometers",
+        "Directly observed properties": "Illuminance, PAR, UV",
+        "Candidate indicators / inferences": "Light availability, shading, exposure"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0015",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 100,
+      "line_end": 100,
+      "quote": "| 8 | Acoustic | Not specified at family level; no verified instrument/property/indicator mapping | R§9 mentions acoustic processing/bioacoustics; exact instruments and family assignments are unspecified. |",
+      "quote_sha256": "7927dd0fd65086d2f46ee0106de0f0be280982efa01ca79ed25c30d3751c3ecf",
+      "fields": {
+        "Position": "8",
+        "Family wording supplied in R§3": "Acoustic",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "R§9 mentions acoustic processing/bioacoustics; exact instruments and family assignments are unspecified."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0016",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 63,
+      "line_end": 63,
+      "quote": "| F08 | Acoustic | Microphones, sound-level meters, acoustic vibration sensors | Sound pressure, spectra, event frequency | Noise disturbance, soundscape change; biological interpretation deferred |",
+      "quote_sha256": "8340347c2903540a2b0d131230ab185e135dd81c1fd04c5738092a2c9b519f00",
+      "fields": {
+        "Family ID": "F08",
+        "Instrument family": "Acoustic",
+        "Examples": "Microphones, sound-level meters, acoustic vibration sensors",
+        "Directly observed properties": "Sound pressure, spectra, event frequency",
+        "Candidate indicators / inferences": "Noise disturbance, soundscape change; biological interpretation deferred"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0017",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 101,
+      "line_end": 101,
+      "quote": "| 9 | Mechanical and structural | Not specified at family level; no verified instrument/property/indicator mapping | Recover actual quantities, instruments, procedures and interpretation limits. |",
+      "quote_sha256": "0a20da3ea617c8ad65fe1f491b8947120014a5185927c8e22a5fa3c40e518066",
+      "fields": {
+        "Position": "9",
+        "Family wording supplied in R§3": "Mechanical and structural",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "Recover actual quantities, instruments, procedures and interpretation limits."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0018",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 64,
+      "line_end": 64,
+      "quote": "| F09 | Mechanical / structural | Accelerometers, strain gauges, tilt and crack sensors | Acceleration, strain, tilt, crack width | Mechanical stress, structural movement |",
+      "quote_sha256": "a7b4b4365f919c038cfb6dfa086170bcff5055bf80a8b9a555f180e2b85512f8",
+      "fields": {
+        "Family ID": "F09",
+        "Instrument family": "Mechanical / structural",
+        "Examples": "Accelerometers, strain gauges, tilt and crack sensors",
+        "Directly observed properties": "Acceleration, strain, tilt, crack width",
+        "Candidate indicators / inferences": "Mechanical stress, structural movement"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0019",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 102,
+      "line_end": 102,
+      "quote": "| 10 | Energy and electrical | Not specified at family level; no verified instrument/property/indicator mapping | Recover actual quantities, instruments, procedures and interpretation limits. |",
+      "quote_sha256": "e0571264f96f7ee833f0822ba6ccaf95ee4a2c62db7aa575000ff60fe1c85735",
+      "fields": {
+        "Position": "10",
+        "Family wording supplied in R§3": "Energy and electrical",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "Recover actual quantities, instruments, procedures and interpretation limits."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0020",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 65,
+      "line_end": 65,
+      "quote": "| F10 | Energy / electrical | Current shunts, voltage transducers, power meters, battery monitors | Voltage, current, power, energy, charge | Demand, renewable production, efficiency |",
+      "quote_sha256": "25e17ba5ed1677a25afebd472abf8c9e9e220511f7b6c59e65eae197830855c3",
+      "fields": {
+        "Family ID": "F10",
+        "Instrument family": "Energy / electrical",
+        "Examples": "Current shunts, voltage transducers, power meters, battery monitors",
+        "Directly observed properties": "Voltage, current, power, energy, charge",
+        "Candidate indicators / inferences": "Demand, renewable production, efficiency"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0021",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 103,
+      "line_end": 103,
+      "quote": "| 11 | Thermal and building | Not specified at family level; no verified instrument/property/indicator mapping | Clarify whether grouping is by property, application, or both. |",
+      "quote_sha256": "f61388ad55114483d2d5f75ff774fc699a199ac00dc30732544d4ce5727d7df3",
+      "fields": {
+        "Position": "11",
+        "Family wording supplied in R§3": "Thermal and building",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "Clarify whether grouping is by property, application, or both."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0022",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 66,
+      "line_end": 66,
+      "quote": "| F11 | Thermal / building | Thermocouples, infrared thermometers, heat-flux plates, airflow and indoor CO₂ sensors | Surface temperature, heat flux, air velocity, CO₂ | Thermal performance, heat loss, indoor conditions |",
+      "quote_sha256": "5ead5de51d2beffb7b4c6efcc0d4c5953555a72131ab5a753a97a7a1a58814e8",
+      "fields": {
+        "Family ID": "F11",
+        "Instrument family": "Thermal / building",
+        "Examples": "Thermocouples, infrared thermometers, heat-flux plates, airflow and indoor CO₂ sensors",
+        "Directly observed properties": "Surface temperature, heat flux, air velocity, CO₂",
+        "Candidate indicators / inferences": "Thermal performance, heat loss, indoor conditions"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0023",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 104,
+      "line_end": 104,
+      "quote": "| 12 | Position and movement | Not specified at family level; no verified instrument/property/indicator mapping | R§6 mentions mobile/robotic platforms; do not equate a platform with its measuring instrument. |",
+      "quote_sha256": "9952905b68f54bc9740ff0f33cab1364c62b130096684c55e3cb8402914dd5d9",
+      "fields": {
+        "Position": "12",
+        "Family wording supplied in R§3": "Position and movement",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "R§6 mentions mobile/robotic platforms; do not equate a platform with its measuring instrument."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0024",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 67,
+      "line_end": 67,
+      "quote": "| F12 | Position / movement | GNSS, IMUs, inclinometers, displacement gauges | Position, orientation, displacement | Movement, settlement, slope change |",
+      "quote_sha256": "44654934ee64fe35669e2328a8dc5e2622f684f2d96d462d7aeb347e23b89fad",
+      "fields": {
+        "Family ID": "F12",
+        "Instrument family": "Position / movement",
+        "Examples": "GNSS, IMUs, inclinometers, displacement gauges",
+        "Directly observed properties": "Position, orientation, displacement",
+        "Candidate indicators / inferences": "Movement, settlement, slope change"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0025",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 105,
+      "line_end": 105,
+      "quote": "| 13 | Chemical | Not specified at family level; no verified instrument/property/indicator mapping | Recover boundary with atmospheric chemistry and water quality. |",
+      "quote_sha256": "120c110933986b8c1063f926cb63f23d6a93daec2e02455a351017ae0f24c730",
+      "fields": {
+        "Position": "13",
+        "Family wording supplied in R§3": "Chemical",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "Recover boundary with atmospheric chemistry and water quality."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0026",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 68,
+      "line_end": 68,
+      "quote": "| F13 | Chemical | Ion-selective electrodes, electrochemical cells, gas analysers | Ion activity/concentration, gas concentration | Contamination and nutrient variation |",
+      "quote_sha256": "cfc80e4ffea47aa2d87fb1193e05b73a6504b6fbd6b4f592f2e713148631fdc6",
+      "fields": {
+        "Family ID": "F13",
+        "Instrument family": "Chemical",
+        "Examples": "Ion-selective electrodes, electrochemical cells, gas analysers",
+        "Directly observed properties": "Ion activity/concentration, gas concentration",
+        "Candidate indicators / inferences": "Contamination and nutrient variation"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0027",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 106,
+      "line_end": 106,
+      "quote": "| 14 | Optical | Not specified at family level; no verified instrument/property/indicator mapping | R§9 names computer vision; capture, processing and interpretation must remain distinct. |",
+      "quote_sha256": "615c857fe8eb701e18f90a178aee4190b36c9d9ed21860ec80965c962779bc1a",
+      "fields": {
+        "Position": "14",
+        "Family wording supplied in R§3": "Optical",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "R§9 names computer vision; capture, processing and interpretation must remain distinct."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0028",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 69,
+      "line_end": 69,
+      "quote": "| F14 | Optical | Photometers, spectrometers, fixed cameras, optical counters | Reflectance, absorption, image features, particle scattering | Visibility, turbidity, surface-condition proxies |",
+      "quote_sha256": "7353127871b54433976fd1f17ce414a2d03e42ddf923517c0df95bd3448d3215",
+      "fields": {
+        "Family ID": "F14",
+        "Instrument family": "Optical",
+        "Examples": "Photometers, spectrometers, fixed cameras, optical counters",
+        "Directly observed properties": "Reflectance, absorption, image features, particle scattering",
+        "Candidate indicators / inferences": "Visibility, turbidity, surface-condition proxies"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0029",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 107,
+      "line_end": 107,
+      "quote": "| 15 | Geotechnical | Not specified at family level; no verified instrument/property/indicator mapping | R§5 names geotechnical testing, without a specific instrument or test standard. |",
+      "quote_sha256": "a7d404ee5914a69732c47845b6f38353263b1dd01a2b409415582df7db8ac854",
+      "fields": {
+        "Position": "15",
+        "Family wording supplied in R§3": "Geotechnical",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "R§5 names geotechnical testing, without a specific instrument or test standard."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0030",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 70,
+      "line_end": 70,
+      "quote": "| F15 | Geotechnical | Piezometers, extensometers, earth-pressure cells | Pore pressure, extension, stress | Ground stability, subsidence, slope response |",
+      "quote_sha256": "699e20df3d564f6f5305e2529e7a3480ade0d4d44d7402031552364e02b97d66",
+      "fields": {
+        "Family ID": "F15",
+        "Instrument family": "Geotechnical",
+        "Examples": "Piezometers, extensometers, earth-pressure cells",
+        "Directly observed properties": "Pore pressure, extension, stress",
+        "Candidate indicators / inferences": "Ground stability, subsidence, slope response"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0031",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 108,
+      "line_end": 108,
+      "quote": "| 16 | Flow and material | Not specified at family level; no verified instrument/property/indicator mapping | Clarify overlap with hydrological, energy and industrial measurement contexts. |",
+      "quote_sha256": "c4649622cb3af0c9b694ccc8ecd61ce9b59eb775b14b7ea11d6dbbd43a6bec87",
+      "fields": {
+        "Position": "16",
+        "Family wording supplied in R§3": "Flow and material",
+        "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+        "Methodological review needed": "Clarify overlap with hydrological, energy and industrial measurement contexts."
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0032",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 71,
+      "line_end": 71,
+      "quote": "| F16 | Flow / material | Load cells, weighing systems, tank level and flow instruments | Mass, throughput, liquid level | Resource consumption, storage and material-flow change |",
+      "quote_sha256": "7957e4a753704a6180977fa7244aa04a74ae02a7a395921ce25f57a524c717cd",
+      "fields": {
+        "Family ID": "F16",
+        "Instrument family": "Flow / material",
+        "Examples": "Load cells, weighing systems, tank level and flow instruments",
+        "Directly observed properties": "Mass, throughput, liquid level",
+        "Candidate indicators / inferences": "Resource consumption, storage and material-flow change"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0033",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 87,
+      "line_end": 87,
+      "quote": "**R§3; N§5.1.** R explicitly supplies sixteen provisional family labels. N reported the count but did not recover the labels. These names are now preserved as **R-derived candidates**, not evidence that an exact approved sixteen-part taxonomy existed on 30 October. Numbers in the table are reading positions, not issued OSDS family IDs.",
+      "quote_sha256": "34f948acf8398f0d57505a10d06959af12bb5df38a13abbcf481f4f7a06b407b",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0034",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 89,
+      "line_end": 89,
+      "quote": "R does not supply per-family instrument models, variable lists, units, indicator formulas or calibration procedures. Those columns remain explicit evidence gaps. This avoids replacing the missing historical detail with a generic instrument catalogue. Cross-links in the final column are audit-review questions based on R's other topics; they are not accepted family memberships.",
+      "quote_sha256": "379a9b82791d42efaf5912f266a920ea1a77beaad846bbc99c90dfd2eec50503",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0035",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "3. O01 — IoT telemetry",
+      "subsection": "",
+      "line_start": 110,
+      "line_end": 110,
+      "quote": "The supplied list mixes possible physical quantities, subject contexts and deployment applications. **A:** a future classification review should document overlap and rationale before issuing codes or claiming hierarchy. A measured property and a derived ecological indicator require separate definitions and evidential links. No exact original family definitions, thresholds or performance claims are asserted here.",
+      "quote_sha256": "4258f71d0625566dbe480371d56421cffc10b25f7428918d8c0b4d83370e9fbc",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0036",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "4. O02 — Scientific monitoring",
+      "subsection": "",
+      "line_start": 114,
+      "line_end": 114,
+      "quote": "**R§4; N§5.2.** The account identifies scientific networks, reference-grade instrumentation, calibration and long-term monitoring as research topics. It calls for comparison with IoT while preserving differences between the instrument, complete observation system and publication practice. It supplies no named reference-grade model, accredited calibration claim or guaranteed quality level.",
+      "quote_sha256": "05fd12b16323a34cf53e77058d4a780eaeaaefda35b0962bc5b3f3fb8642934f",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0037",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "4. O02 — Scientific monitoring",
+      "subsection": "",
+      "line_start": 116,
+      "line_end": 116,
+      "quote": "N proposes distinguishing operational streams, processed scientific products, metadata, archived datasets, data papers and research articles. These are **secondary audit-author review distinctions**, not recovered October wording. The same deployment may combine networked telemetry and scientific monitoring; a category label alone cannot certify calibration, uncertainty or fitness.",
+      "quote_sha256": "f2fe9bf5c5dbba02ee62c9ca795495b26ea0289d927e4fdbec53307a57fe88f7",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0038",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "4. O02 — Scientific monitoring",
+      "subsection": "",
+      "line_start": 118,
+      "line_end": 118,
+      "quote": "**B examples, not evidence of October mentions:** WMO WIGOS/GBON SRC-001, NOAA NCEI SRC-003, ICOS SRC-005, NEON SRC-010 and FLUXNET SRC-011. Scientific descriptions should attach to a specific documented product/protocol rather than every output of a provider. **A:** preserve time span, sampling design, instrument/procedure, uncertainty, processing and publication evidence when later researched.",
+      "quote_sha256": "08490b3c62a98514d194fb6a20e86dad80ee50012100f28a4e93bfdc9c85e743",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0039",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "5. O03 — Ground-truth observations",
+      "subsection": "",
+      "line_start": 122,
+      "line_end": 122,
+      "quote": "**R§5; N§5.3.** The supplied account includes manual/reference measurements, validation procedures, calibration, soil and water sampling, environmental measurements and geotechnical testing. Their intended role is to support interpretation of other observations. It does not enumerate specific laboratory methods, test standards, instruments or uncertainty values.",
+      "quote_sha256": "1011b31b000871f99b4f34d31db97cbcd24d69ad5a3e3e26946ed8c3b5f5d4fb",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0040",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "5. O03 — Ground-truth observations",
+      "subsection": "",
+      "line_start": 124,
+      "line_end": 124,
+      "quote": "N's proposed review fields include the validation target, spatial/temporal correspondence, observer/instrument, method, uncertainty and independence of reference evidence. Retain those as review proposals. “Ground truth” must not silently become an error-free or universally transferable label.",
+      "quote_sha256": "928850f64e07386b231ff7db360e9177e1e319fc643888591cb085d8ce301869",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0041",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "5. O03 — Ground-truth observations",
+      "subsection": "",
+      "line_start": 126,
+      "line_end": 126,
+      "quote": "**B:** AERONET SRC-006, NEON SRC-010, GBIF SRC-014, ISMN SRC-019, ISRIC SRC-021 and USGS Water Data SRC-027 have inherited O03 assignments. They are not hereby validated for a particular satellite/model/indicator task. **A:** distinguish a sample, a sample analysis, a reference result and a validation assertion. No existing source classification is changed.",
+      "quote_sha256": "bcae3b829ac3612c438ff12ead2f9ce30b8898d09431be2d99d8fcfd5d7ea2d5",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0042",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "6. O04 — Autonomous observations",
+      "subsection": "",
+      "line_start": 130,
+      "line_end": 130,
+      "quote": "**R§6; N§5.4.** Unattended systems, autonomous stations, mobile platforms, robotic sensing and automated sampling are named. The account explicitly separates autonomy from IoT connectivity. It supplies no autonomy level, control architecture, sensor suite, safety performance or verified deployment.",
+      "quote_sha256": "ef9ac7319b802e0f7bcbdf4c280132e94ca9ae401a007fc63bfe694759ff2c15",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0043",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "6. O04 — Autonomous observations",
+      "subsection": "",
+      "line_start": 132,
+      "line_end": 132,
+      "quote": "N proposes separate review of unattended logging, scheduled/event-triggered capture, mobility, onboard inference and action. **A:** maintain these as distinct capability assertions rather than one inferred autonomous boolean. Human oversight, failures and environmental conditions remain source-specific questions.",
+      "quote_sha256": "6ca12f0a75ae5f3d807e03cd1791c8a66dc28f83dce0064824233f392d864a71",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0044",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "6. O04 — Autonomous observations",
+      "subsection": "",
+      "line_start": 134,
+      "line_end": 134,
+      "quote": "**B:** Argo SRC-028, Wildlife Insights SRC-016 and robotics-related SRC-041/042 illustrate existing candidate pathways, not newly substantiated capabilities. Marine/airborne scope questions in §1 remain open. Autonomous sampling does not establish validation or access rights.",
+      "quote_sha256": "19b9cf7c70cd6493a4abe53c0ccd4fe6935ecff9b3cd86f5e8e6874728f8afac",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0045",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "7. O05 — Campaign datasets",
+      "subsection": "",
+      "line_start": 138,
+      "line_end": 138,
+      "quote": "**R§7; N§5.5.** Time-bounded scientific campaigns, field surveys, sampling events and systematic observation logging are explicit research subjects. Ecological surveys and species-sighting records are included. The conceptual sequence is preserved exactly:",
+      "quote_sha256": "67b26d16d93e421260cea1a83e0a8ca562d3939845eedbe0fa7b4c0e27decc23",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0046",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "7. O05 — Campaign datasets",
+      "subsection": "",
+      "line_start": 140,
+      "line_end": 140,
+      "quote": "**Campaign → Event → Observation → Verification**",
+      "quote_sha256": "ba2cb83595fe5e39d209328183a93797e507b863681588bc58c21825f8880f67",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0047",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "7. O05 — Campaign datasets",
+      "subsection": "",
+      "line_start": 142,
+      "line_end": 142,
+      "quote": "This is an R-supplied organising proposal, not proof that every event/observation has been verified or that a standards implementation exists. Verification should be represented as a claim/process with an assessed scope, not a guaranteed final state.",
+      "quote_sha256": "bd2ae8cb111107099ad73d4daf07ca0045d0bb1591a202686ad681c9a9a98ee7",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0048",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "7. O05 — Campaign datasets",
+      "subsection": "",
+      "line_start": 144,
+      "line_end": 144,
+      "quote": "Darwin Core, the Humboldt Extension and GBIF event-based data organisation are named leads. Exact standard editions, extension terms, field mappings and examples are not supplied. **A:** distinguish campaign identity, event, sampling effort, occurrence/measurement, specimen/sample, dataset and publishing service. An event or occurrence record must not be presumed to contain absent effort or protocol evidence.",
+      "quote_sha256": "23eb7046ee54fc53a8fc3e1fd88af2893d0f8537c479fd4dcc694122b5ba2eea",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0049",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "7. O05 — Campaign datasets",
+      "subsection": "",
+      "line_start": 146,
+      "line_end": 146,
+      "quote": "**B:** GBIF SRC-014, DEIMS-SDR SRC-013, NEON SRC-010, BODC SRC-035 and PANGAEA SRC-056 already provide candidate discovery routes. The campaign model and related standards research are largely unrepresented as scientific records. This audit does not assign compliance to those sources.",
+      "quote_sha256": "5a58c71101de687b09df110fa923132600cde8fcea1b3084af96ed82be0874b7",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0050",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "8. O06 — Citizen sensing",
+      "subsection": "",
+      "line_start": 150,
+      "line_end": 150,
+      "quote": "**R§8; N§5.6.** Community monitoring, participatory science, instruments, platforms, validation and guidance are named. WILDLABS is described in the supplied account through a conservation-technology orientation and comparison with OSDS. That is a source-reported role requiring independent identity/role verification, not a newly verified institutional description.",
+      "quote_sha256": "9ae15a50d8c8ff33fdd8b3798964e2002e2793e3cdf106d152c2554af910bb08",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0051",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "8. O06 — Citizen sensing",
+      "subsection": "",
+      "line_start": 152,
+      "line_end": 152,
+      "quote": "A useful distinction for subsequent research is between a community/knowledge network, a device platform, a participant protocol and an accessible observation dataset. N proposed participation/training/governance and quality-review fields. Those remain proposals, not authenticated historical decisions.",
+      "quote_sha256": "cf575a3ebbb8ba6e07395e327c6985e5f802363da965a8cbc8583ab2a42fd062",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0052",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "8. O06 — Citizen sensing",
+      "subsection": "",
+      "line_start": 154,
+      "line_end": 154,
+      "quote": "**B:** eBird SRC-015, OpenAQ SRC-043, openSenseMap SRC-044, Sensor.Community SRC-045 and Smart Citizen SRC-046 already occur in the inventory. WILDLABS is not an existing source record. **A:** first consider it as a candidate community/research resource; do not classify the entire network as a measurement dataset or assume any O06 membership without evidence.",
+      "quote_sha256": "ccd3e3f29cc4292ff7bd197bf692a418cb085d7a66d4f03ba47d06eb7e8606af",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0053",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "",
+      "line_start": 158,
+      "line_end": 158,
+      "quote": "**R§9; N§5.7.** Preserve the supplied distinction:",
+      "quote_sha256": "54e8e3de78106e1ef36a483f92674ba113e5f552d170e00437b20d3d3bbc5899",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0054",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "",
+      "line_start": 160,
+      "line_end": 160,
+      "quote": "- Physical computing concerns acquisition, processing and interaction with physical systems.",
+      "quote_sha256": "5fd960f2f2f26aa7be58664f68bbe571a8d41bfe5628a59f41322da2dfc7382a",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0055",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "",
+      "line_start": 161,
+      "line_end": 161,
+      "quote": "- IoT concerns connected systems, communication and data exchange.",
+      "quote_sha256": "9ffcf592650e9ba8acdd86aeb4599621b2a02d1e920d8359d3126efa1d760b12",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0056",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "",
+      "line_start": 162,
+      "line_end": 162,
+      "quote": "- Both may operate together within the same observational system.",
+      "quote_sha256": "411406089cce9cadc41e50685b50509dd1d4104df42688b2b86133593071de74",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0057",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "",
+      "line_start": 164,
+      "line_end": 164,
+      "quote": "These are reconstruction-source conceptual statements for review, not newly adopted formal category definitions. Microcontrollers, single-board computers, data acquisition, communications, embedded AI and edge inference are named subjects. Offline acquisition/processing and network exchange should not be silently collapsed.",
+      "quote_sha256": "7b8ac4d471039873a62c9d4849577d1c7d46a099c0361b9ee118e59c6f8dce62",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0058",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "Computing-platform leads",
+      "line_start": 176,
+      "line_end": 176,
+      "quote": "None of these names establishes raw sensors, measured variables, power consumption, pricing, supported model performance, communications, availability or licensing. Hardware is not automatically a new observation-data source. No specifications are invented.",
+      "quote_sha256": "7cb525dda7e26ec90a00642cf26278485681485693f13e3c94b06763810e2c3a",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0059",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "Embedded AI, modalities and field practice",
+      "line_start": 180,
+      "line_end": 180,
+      "quote": "R names a **provisional embedded AI and edge inference family**. It is recorded separately from the sixteen instrument families: it may describe a processing/capability grouping rather than a seventeenth instrumentation family. Its placement and definition remain unresolved.",
+      "quote_sha256": "991eeaa8d4026bff86a25d89400492a06a2eaee5b210c10503761644f7e8398c",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0060",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "Embedded AI, modalities and field practice",
+      "line_start": 182,
+      "line_end": 182,
+      "quote": "R names computer vision, object detection, segmentation, acoustic processing, bioacoustics, OS Beehives and edge computing. N additionally proposes raw-input, model/version, annotation, threshold, uncertainty and human-review evidence. These are candidate pipeline descriptions. A recording, extracted feature, model output and ecological interpretation must remain distinguishable; no bee-colony condition, species inference or indicator is validated by this audit.",
+      "quote_sha256": "ae245eb1a8e16cd26503569f8a0c1724027636ed4c7c78231e95089f5e15f8ef",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0061",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "Embedded AI, modalities and field practice",
+      "line_start": 184,
+      "line_end": 184,
+      "quote": "R names **Digital Naturalism Laboratories**, field-adaptive scientific instrumentation, in-situ experimentation and “taking the laboratory into the field.” N interprets this as situated making/field-lab practice. That institutional/methodological association remains source-reported and externally unverified. Recover exact projects, methods, instruments, outcomes and references before a detailed institutional or scientific claim.",
+      "quote_sha256": "d6db0427a60a5d72b634a35a72ca4ae4085dfb639d8bb458c5256e06cac0ea79",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0062",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "Embedded AI, modalities and field practice",
+      "line_start": 186,
+      "line_end": 186,
+      "quote": "**B:** SRC-041/042 and SRC-044–046 already have physical-computing-related memberships. No named computing-platform, embedded-AI, OS Beehives or Digital Naturalism record is presently instantiated in the machine register.",
+      "quote_sha256": "44a8896f2b274b03aa2c15d51f7c1968c0e1694817325c50082b275c750583e9",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0063",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "10. O08 — Historical instrumental records",
+      "subsection": "",
+      "line_start": 190,
+      "line_end": 190,
+      "quote": "**R§10; N§5.8.** The supplied account includes archives, data rescue, digitisation, homogenisation, reconstruction, statistical inference and AI-assisted analysis. It explicitly adds uncertainty, non-stationarity, change-point detection and historical environmental reconstruction. No statistical formula, implemented algorithm, dataset, result or validated performance is supplied.",
+      "quote_sha256": "bf4246cc861d40cd10c064f49546bb1d6b429fedc3048f5ba32b8b8fffb343c1",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0064",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "10. O08 — Historical instrumental records",
+      "subsection": "",
+      "line_start": 192,
+      "line_end": 192,
+      "quote": "N proposes keeping original readings, transcription/digitisation, corrected series, inferred missing values, model reconstructions and contextual interpretation separate. **A:** these can become distinct processing steps with source editions, transformations, uncertainty and review status. Original measurements should not be replaced by reconstructed values under the same evidence label.",
+      "quote_sha256": "180003a0eb6e395443c64126199ed28945dcf053b6912f7e654a736c6f848457",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0065",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "10. O08 — Historical instrumental records",
+      "subsection": "",
+      "line_start": 194,
+      "line_end": 194,
+      "quote": "Situated, traditional and cultural knowledge are related evidence systems in R, not synonyms for instrument readings. Their specific sources, representation, attribution, permissions and target database remain unresolved. No archive or community collection is newly identified by name.",
+      "quote_sha256": "62c60a62a5a31b00b821c18c9ffaf1a3989db655fdce789cb15c9b8eb017e46b",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0066",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "10. O08 — Historical instrumental records",
+      "subsection": "",
+      "line_start": 196,
+      "line_end": 196,
+      "quote": "**B:** historical category assignments exist for NOAA NCEI, NDACC, ILTER, ISRIC, GLOSS, BODC, EEA Datahub and PANGAEA. Those memberships do not instantiate data-rescue or reconstruction methods or certify a continuous usable series.",
+      "quote_sha256": "0f60e11538eb78a7ca9f4d8f5b9094d841c93d5b11288dc61d9d5721660e9373",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0067",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "4. O01 — IoT: detailed instrumentation → properties → potential indicators",
+      "subsection": "",
+      "line_start": 73,
+      "line_end": 73,
+      "quote": "**Scientific caveat:** Instrument outputs are not automatically validated ecological indicators. Sensor selection, calibration, placement, sampling interval, measurement uncertainty, environmental confounding and inference models must be documented. The 16 families are a conversational working grouping with overlaps (e.g. chemistry/air quality; optical/water quality), not a mutually exclusive ontology. Source-specific accuracy, calibration standards and ecological causal interpretation were not verified.",
+      "quote_sha256": "8ac78d8b80e266b120fbf7d8555f9a1f45e091456b5deb36621b48e8a2b4dcae",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0068",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "5. O02–O08 — detailed category recovery",
+      "subsection": "O02 — Scientific monitoring",
+      "line_start": 79,
+      "line_end": 79,
+      "quote": "Long-term, systematic, protocol-governed monitoring; reference-grade thermometers, gas analysers, sonic anemometers, flux towers, lysimeters and geophysical systems. Examples mentioned: FLUXNET, ICOS, NEON, WMO, USGS and long-term ecological research. Observables include meteorology, carbon/water fluxes, river stage/discharge and soil water balance. Publication may involve calibrated datasets, quality flags, data releases, DOIs and citation guidance. IoT commonly emphasises streams, MQTT, dashboards and APIs; this is a **tendency, not an exclusive rule**. User explicitly deferred adding publication/accessibility as a new axis.",
+      "quote_sha256": "09a240c0be6c4ccb81cddb7e6987999a3c0715e65042a2d68ef1ddf1d90cc5ff",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0069",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "5. O02–O08 — detailed category recovery",
+      "subsection": "O03 — Ground-truth observations",
+      "line_start": 83,
+      "line_end": 83,
+      "quote": "A **validation role**, not a distinct instrument universe. Soil gravimetric sampling (wet/dry mass), pH/nutrient laboratory assays, manual water-quality tests, stream gauging, portable reference meteorology, field spectroradiometry and geotechnical penetrometers/shear tests. Results may test sensor calibration, remote-model predictions or derived indices. Context, sample handling, uncertainty and temporal matching are critical. Mentioned leads: NEON, USGS, ISMN, ICOS, USDA and Copernicus In Situ. Field reflectance is allowed as ground observation; satellite imagery remains GISDS.",
+      "quote_sha256": "a95c50c765d45a119bc20735e99e3b1d4647d88f0e8769678f1a404768a5b0bf",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0070",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "5. O02–O08 — detailed category recovery",
+      "subsection": "O04 — Autonomous observations",
+      "line_start": 87,
+      "line_end": 87,
+      "quote": "Unattended self-powered loggers, fixed stations, ground rovers, robotic boats, autonomous sondes, fixed cameras, GNSS/IMU platforms and automated samplers. Can measure gradients, episodic changes and adaptive/high-frequency conditions. Distinguish operational autonomy, remote communication, sensing, navigation and data interpretation. Examples mentioned: Argo, OceanOPS, Copernicus Marine, NEON, USGS, EarthScope and robotics datasets. **Boundary qualification:** ocean floats and mobile underwater platforms are cited as analogous in-situ systems; aerial mapping remains excluded.",
+      "quote_sha256": "a63428e28afff2a90da0658d2ccfab0471795023771e0526aff98ce76df2a1d3",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0071",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "5. O02–O08 — detailed category recovery",
+      "subsection": "O05 — Campaign datasets",
+      "line_start": 91,
+      "line_end": 91,
+      "quote": "Time-bounded surveys, expeditions, integrated field campaigns, soil/irrigation surveys, hydrological events, atmospheric, geophysical and urban surveys. Methods include transects, timed counts, repeated plots, sample events and manual observations. Instruments include corers, portable sondes, resistivity meters, thermal cameras and flow meters. Sources: NEON, USDA ARS, USGS, PANGAEA, Zenodo, Environmental Data Initiative, DataONE. For moth sighting, distinguish sampling protocol/effort, event metadata, occurrence, identification evidence and verification. Darwin Core, Humboldt Extension and GBIF event-oriented publication were named; none makes an observation automatically scientifically valid. Campaign→event→observation→verification is a useful working abstraction, not a universal normative workflow.",
+      "quote_sha256": "75c189d9ca95cf2a48b14877ef0482a8ac11aee2a6a4cdd835dbb7cd4c573264",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0072",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "5. O02–O08 — detailed category recovery",
+      "subsection": "O06 — Citizen sensing",
+      "line_start": 95,
+      "line_end": 95,
+      "quote": "Community/school/volunteer measurement with low-cost air sensors, DIY weather stations, soil and water meters and noise monitors. Examples: Sensor.Community, openSenseMap, Smart Citizen, PurpleAir, OpenAQ, GLOBE and FreshWater Watch. Framework leads: ECSA principles, GLOBE protocols, EPA Air Sensor Toolbox and Darwin Core for biological observations. Benefits: hyper-local coverage and participation; challenges: calibration, placement, training, quality assurance and comparability. WILDLABS is a discovery/community gateway for conservation technologies, not assumed a direct observation provider.",
+      "quote_sha256": "bc5ab60f79448e34ede1c40cf2b1e5d92634cff572093bdf97363c5dee068be0",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0073",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "5. O02–O08 — detailed category recovery",
+      "subsection": "O07 — Physical computing",
+      "line_start": 99,
+      "line_end": 99,
+      "quote": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings.",
+      "quote_sha256": "dec701a39f07b74fa1d8a4133a6cc4bd1384152a545ba85aa6fb9cff31cbca8a",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0074",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "5. O02–O08 — detailed category recovery",
+      "subsection": "O08 — Historical instrumental records",
+      "line_start": 103,
+      "line_end": 103,
+      "quote": "Manual weather registers, river gauges, soil temperature archives, chart recorders and early loggers. Distinguish original observation from later digitisation, homogenisation, reconstruction or modelled history. Method leads: data rescue, transcription/handwriting recognition, missing-data estimation, change-point detection, Bayesian reconstruction, physical data assimilation, non-stationarity, uncertainty analysis and causal hypotheses. AI may accelerate extraction or pattern detection but does not independently authenticate observations or causality. Situated, traditional and cultural environmental knowledge is a parallel evidence base: connect with explicit consent/context, do not force one to validate the other. Examples: NOAA, USGS, long-term observatories and agricultural stations.",
+      "quote_sha256": "1faeb01f960b2dd8c3e6fcf5504cf77bf5eb525bcb4badd7c8ca98f0a663602f",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0075",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "13. Cross-cutting research themes",
+      "subsection": "",
+      "line_start": 237,
+      "line_end": 237,
+      "quote": "| 1 | Observational technologies | Label supplied; formal definition, boundaries and subtheme memberships unspecified |",
+      "quote_sha256": "9d90d4527c5260f3c1cc774629b02c3a6f28400e2c3203b842524ee96cb78fa5",
+      "fields": {
+        "Reading position": "1",
+        "Proposed umbrella": "Observational technologies",
+        "Definition and membership status": "Label supplied; formal definition, boundaries and subtheme memberships unspecified"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0076",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "13. Cross-cutting research themes",
+      "subsection": "",
+      "line_start": 238,
+      "line_end": 238,
+      "quote": "| 2 | Computational interpretation | Label supplied; formal definition, boundaries and subtheme memberships unspecified |",
+      "quote_sha256": "6e33d4622da5283fd84a04a19bf50279db001fbb0efedcf1655e6efd1a28e14d",
+      "fields": {
+        "Reading position": "2",
+        "Proposed umbrella": "Computational interpretation",
+        "Definition and membership status": "Label supplied; formal definition, boundaries and subtheme memberships unspecified"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0077",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "13. Cross-cutting research themes",
+      "subsection": "",
+      "line_start": 239,
+      "line_end": 239,
+      "quote": "| 3 | Embedded intelligence | Label supplied; formal definition, boundaries and subtheme memberships unspecified |",
+      "quote_sha256": "79295667a4aeb16d6e9781591499004b996a8b2c5396c63593d92fbaa8b341a3",
+      "fields": {
+        "Reading position": "3",
+        "Proposed umbrella": "Embedded intelligence",
+        "Definition and membership status": "Label supplied; formal definition, boundaries and subtheme memberships unspecified"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0078",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "13. Cross-cutting research themes",
+      "subsection": "",
+      "line_start": 240,
+      "line_end": 240,
+      "quote": "| 4 | Scientific methods and interoperability | Label supplied; formal definition, boundaries and subtheme memberships unspecified |",
+      "quote_sha256": "2318b65c4fad47404dd4b7a7b99f47582753b8d89580fd960169cc9ba655f74b",
+      "fields": {
+        "Reading position": "4",
+        "Proposed umbrella": "Scientific methods and interoperability",
+        "Definition and membership status": "Label supplied; formal definition, boundaries and subtheme memberships unspecified"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0079",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "6. Cross-cutting research themes and six-layer architecture",
+      "subsection": "",
+      "line_start": 106,
+      "line_end": 106,
+      "quote": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy.",
+      "quote_sha256": "eeea30e1e7a37251b40b190f6df189a666b20209e4c6a3c5cc3cc381ec4e17d4",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0080",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "6. Cross-cutting research themes and six-layer architecture",
+      "subsection": "",
+      "line_start": 117,
+      "line_end": 117,
+      "quote": "The user explicitly confirmed **augmentation of the existing structure, not a fundamental rewrite**. A conceptual chain is `instrument → observation → observed property → qualified derived indicator → EII`; a system may also produce metadata, quality flags, procedures and results. This is an analytical crosswalk, not an implemented graph.",
+      "quote_sha256": "6bdd031dd989aec2a2eb7b74468ba0e9954c61571beac9c0ef55fb70cfc54ea5",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0081",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "14. Emerging structural dimensions",
+      "subsection": "",
+      "line_start": 248,
+      "line_end": 248,
+      "quote": "**R§14; N§6 has earlier, slightly shorter labels.** Preserve R's six labels exactly:",
+      "quote_sha256": "14196c2122870e2ca6487eb00c1a0ccef621ad0d558cd4cd2ab69e65cc188138",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0082",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "14. Emerging structural dimensions",
+      "subsection": "",
+      "line_start": 250,
+      "line_end": 255,
+      "quote": "1. Observation categories.\n2. Instrumentation and technologies.\n3. Observed properties and derived indicators.\n4. Methodologies, frameworks and standards.\n5. Data sources and research infrastructures.\n6. Cross-cutting research themes.",
+      "quote_sha256": "8ae5bd03ba06a5d0b2a4d2a336baf5f0f0b87509cd9351a884d4a1c8b3af15f3",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0083",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "14. Emerging structural dimensions",
+      "subsection": "",
+      "line_start": 257,
+      "line_end": 257,
+      "quote": "These are proposed descriptive dimensions augmenting the existing framework. Disciplinary domains remain an existing subject axis, not erased because they are absent from this six-item list. The six dimensions do not imply six interchangeable entity types or six compulsory fields on every record.",
+      "quote_sha256": "af4738b00d6935e4882c6c18c9392614195c1e2fcd0cbf9b0bd386753027b489",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0084",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "14. Emerging structural dimensions",
+      "subsection": "",
+      "line_start": 259,
+      "line_end": 259,
+      "quote": "**A:** distinguish measured property from derived indicator internally, and method from standard. Represent instrument/property/method/source/theme relations with evidence and unknowns. The canonical machine schema already has null instrument/property/procedure slots; this does not establish populated records or approve any new schema. Formal definitions, identities and memberships remain proposed for later controlled ingestion.",
+      "quote_sha256": "ff6e4478b5850d7b2f9657618ca63562a0d2a1504004a612c2b642445a52a2e6",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0085",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "6. Cross-cutting research themes and six-layer architecture",
+      "subsection": "",
+      "line_start": 110,
+      "line_end": 110,
+      "quote": "| L01 — Observation categories | O01–O08 production/operational contexts | Keep current classification; allow overlap |",
+      "quote_sha256": "dce1081172f6913fb970d506722ae0e79087643e3d7a6c0994b14fc932e31e1a",
+      "fields": {
+        "Layer": "L01 — Observation categories",
+        "Meaning": "O01–O08 production/operational contexts",
+        "Record recommendation": "Keep current classification; allow overlap"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0086",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "6. Cross-cutting research themes and six-layer architecture",
+      "subsection": "",
+      "line_start": 111,
+      "line_end": 111,
+      "quote": "| L02 — Instrumentation and technologies | Sensors, platforms, processors and measurement principles | Shared instrument family candidates, not duplicates by category |",
+      "quote_sha256": "2624d137397ab0d23ab221acdc4656c89ee8370609e26bef4d6c87b3895bbaa5",
+      "fields": {
+        "Layer": "L02 — Instrumentation and technologies",
+        "Meaning": "Sensors, platforms, processors and measurement principles",
+        "Record recommendation": "Shared instrument family candidates, not duplicates by category"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0087",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "6. Cross-cutting research themes and six-layer architecture",
+      "subsection": "",
+      "line_start": 112,
+      "line_end": 112,
+      "quote": "| L03 — Observed properties and indicators | Direct measurement versus derived interpretation | Link to EII with inference qualification |",
+      "quote_sha256": "f959067c6e72fffaccd72eefc05f6f450a9f7fe07ad91fe5bc0d36b3e55a295f",
+      "fields": {
+        "Layer": "L03 — Observed properties and indicators",
+        "Meaning": "Direct measurement versus derived interpretation",
+        "Record recommendation": "Link to EII with inference qualification"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0088",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "6. Cross-cutting research themes and six-layer architecture",
+      "subsection": "",
+      "line_start": 113,
+      "line_end": 113,
+      "quote": "| L04 — Methodologies, frameworks and standards | Calibration, sampling, data capture, FAIR, field adaptation | Reference method/standard edition and applicability |",
+      "quote_sha256": "76c5b1e10ef06aab0a311862e2ebee6e1a17afbe410a18dcc9873bc0ec3c4b2b",
+      "fields": {
+        "Layer": "L04 — Methodologies, frameworks and standards",
+        "Meaning": "Calibration, sampling, data capture, FAIR, field adaptation",
+        "Record recommendation": "Reference method/standard edition and applicability"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0089",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "6. Cross-cutting research themes and six-layer architecture",
+      "subsection": "",
+      "line_start": 114,
+      "line_end": 114,
+      "quote": "| L05 — Data sources and research infrastructures | Network, institution, programme, dataset and platform | Distinguish resource entity types and access |",
+      "quote_sha256": "69ea22ca9acbbd96c7fe4460df5a9e6138a1f291fe62bda3d9746d74cc289b25",
+      "fields": {
+        "Layer": "L05 — Data sources and research infrastructures",
+        "Meaning": "Network, institution, programme, dataset and platform",
+        "Record recommendation": "Distinguish resource entity types and access"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0090",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "6. Cross-cutting research themes and six-layer architecture",
+      "subsection": "",
+      "line_start": 115,
+      "line_end": 115,
+      "quote": "| L06 — Cross-cutting research themes | Vision, bioacoustics, edge intelligence, field labs, reconstruction | Provisional themes with qualified cross-database links |",
+      "quote_sha256": "36bf9d6cc3596088106e790d929193605a486f06d4357ed0e3d47ab3b3a08f10",
+      "fields": {
+        "Layer": "L06 — Cross-cutting research themes",
+        "Meaning": "Vision, bioacoustics, edge intelligence, field labs, reconstruction",
+        "Record recommendation": "Provisional themes with qualified cross-database links"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0091",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "Computing-platform leads",
+      "line_start": 170,
+      "line_end": 170,
+      "quote": "| Jetson Nano | R§9; also N§5.7; exact model/configuration not supplied | Computing-platform lead |",
+      "quote_sha256": "c9d53f45f4b51abdd4b05a01c98113394a2ed41d644bd07c13676d485e05e2e4",
+      "fields": {
+        "Name as supplied": "Jetson Nano",
+        "Evidence and identity limitation": "R§9; also N§5.7; exact model/configuration not supplied",
+        "Candidate research role, not verified capability": "Computing-platform lead"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0092",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "Computing-platform leads",
+      "line_start": 171,
+      "line_end": 171,
+      "quote": "| Jetson Orin Nano | R§9; N used “Orin Nano”; alias/identity needs review | Computing-platform lead; no performance equivalence to Nano inferred |",
+      "quote_sha256": "56b1d7e6977a885b96d2e71d5b4955e423906262998c41ee7aa04d0a4ec91fa4",
+      "fields": {
+        "Name as supplied": "Jetson Orin Nano",
+        "Evidence and identity limitation": "R§9; N used “Orin Nano”; alias/identity needs review",
+        "Candidate research role, not verified capability": "Computing-platform lead; no performance equivalence to Nano inferred"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0093",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "Computing-platform leads",
+      "line_start": 172,
+      "line_end": 172,
+      "quote": "| LicheeRV Nano | R§9 and N§5.7; exact variant unspecified | Computing-platform lead |",
+      "quote_sha256": "c96251a5c852f463849c92a4794d56b48dbb1df98800c5e8b1f90cc70f8668b1",
+      "fields": {
+        "Name as supplied": "LicheeRV Nano",
+        "Evidence and identity limitation": "R§9 and N§5.7; exact variant unspecified",
+        "Candidate research role, not verified capability": "Computing-platform lead"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0094",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "Computing-platform leads",
+      "line_start": 173,
+      "line_end": 173,
+      "quote": "| ESP32-S3 | R§9 and N§5.7; chip/board/configuration distinction unresolved | Microcontroller-related lead; no sensor suite assumed |",
+      "quote_sha256": "2f716d47c7c0df539afe23a4f9fc85504a7c592a9f65f548a01d4f771f408408",
+      "fields": {
+        "Name as supplied": "ESP32-S3",
+        "Evidence and identity limitation": "R§9 and N§5.7; chip/board/configuration distinction unresolved",
+        "Candidate research role, not verified capability": "Microcontroller-related lead; no sensor suite assumed"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0095",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "9. O07 — Physical computing",
+      "subsection": "Computing-platform leads",
+      "line_start": 174,
+      "line_end": 174,
+      "quote": "| Raspberry Pi | R§9; not in N's four-row hardware table | Platform-family lead; generation/model not supplied |",
+      "quote_sha256": "02e524016644a18b8462b83746eb560f4c5d35404df484bece52b015c218cf10",
+      "fields": {
+        "Name as supplied": "Raspberry Pi",
+        "Evidence and identity limitation": "R§9; not in N's four-row hardware table",
+        "Candidate research role, not verified capability": "Platform-family lead; generation/model not supplied"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0096",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "7. Scientific standards, methodological roles and editions",
+      "subsection": "",
+      "line_start": 122,
+      "line_end": 122,
+      "quote": "| STD01 | SOSA/SSN | W3C sensor/observation semantic vocabulary; distinguish sensor, procedure, observed property, feature of interest and result | Edition/current normative status not independently checked |",
+      "quote_sha256": "35cc6e8cd6c6fc8be7f265165a6cf597c13ab59ead38b199fed2367c2633f2ae",
+      "fields": {
+        "Ref ID": "STD01",
+        "Framework / source": "SOSA/SSN",
+        "Role": "W3C sensor/observation semantic vocabulary; distinguish sensor, procedure, observed property, feature of interest and result",
+        "Evidence / verification limitation": "Edition/current normative status not independently checked"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0097",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "7. Scientific standards, methodological roles and editions",
+      "subsection": "",
+      "line_start": 123,
+      "line_end": 123,
+      "quote": "| STD02 | OGC SensorThings API | Network/API model for Things, Datastreams, Observations and associated entities | Mentioned in foundational conversation; no OSDS implementation evidenced |",
+      "quote_sha256": "ebc0c743a52d81e94c65b38153ed61032579a23d7509b4e4645835d751749821",
+      "fields": {
+        "Ref ID": "STD02",
+        "Framework / source": "OGC SensorThings API",
+        "Role": "Network/API model for Things, Datastreams, Observations and associated entities",
+        "Evidence / verification limitation": "Mentioned in foundational conversation; no OSDS implementation evidenced"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0098",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "7. Scientific standards, methodological roles and editions",
+      "subsection": "",
+      "line_start": 124,
+      "line_end": 124,
+      "quote": "| STD03 | OGC Observations, Measurements and Samples / O&M / ISO 19156 | Conceptual observation, sampling and result semantics | Exact edition not independently checked |",
+      "quote_sha256": "5b97b2fd34498e7309fc2bf358c11de6a2e1d910d52426c29aad45b53fc0dcb9",
+      "fields": {
+        "Ref ID": "STD03",
+        "Framework / source": "OGC Observations, Measurements and Samples / O&M / ISO 19156",
+        "Role": "Conceptual observation, sampling and result semantics",
+        "Evidence / verification limitation": "Exact edition not independently checked"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0099",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "7. Scientific standards, methodological roles and editions",
+      "subsection": "",
+      "line_start": 125,
+      "line_end": 125,
+      "quote": "| STD04 | W3C PROV-O | General provenance relationships between entities, activities and agents | Appears in uploaded OSDS A02 prompt; not clearly established in original voice discussion |",
+      "quote_sha256": "965f18dc2b8c9986ee6a4e83c8ac4a6e813c0a21abf65a1bfd158c6b4170ef2c",
+      "fields": {
+        "Ref ID": "STD04",
+        "Framework / source": "W3C PROV-O",
+        "Role": "General provenance relationships between entities, activities and agents",
+        "Evidence / verification limitation": "Appears in uploaded OSDS A02 prompt; not clearly established in original voice discussion"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0100",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "7. Scientific standards, methodological roles and editions",
+      "subsection": "",
+      "line_start": 126,
+      "line_end": 126,
+      "quote": "| STD05 | Darwin Core | Biodiversity occurrence/event record interoperability | Biological database boundary; not universal quality certification |",
+      "quote_sha256": "3c7e76e035929e94f3d7cef2033a4bc97072defd00e3f90e74710f740e6e41b1",
+      "fields": {
+        "Ref ID": "STD05",
+        "Framework / source": "Darwin Core",
+        "Role": "Biodiversity occurrence/event record interoperability",
+        "Evidence / verification limitation": "Biological database boundary; not universal quality certification"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0101",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "7. Scientific standards, methodological roles and editions",
+      "subsection": "",
+      "line_start": 127,
+      "line_end": 127,
+      "quote": "| STD06 | Humboldt Extension | Survey event, sampling effort and ecological inventory context | Exact extension edition unverified |",
+      "quote_sha256": "aeebb6a81e3e4391ef316b214e38c1cb619f5b826cde9f3f852f5c50367206c2",
+      "fields": {
+        "Ref ID": "STD06",
+        "Framework / source": "Humboldt Extension",
+        "Role": "Survey event, sampling effort and ecological inventory context",
+        "Evidence / verification limitation": "Exact extension edition unverified"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0102",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "7. Scientific standards, methodological roles and editions",
+      "subsection": "",
+      "line_start": 128,
+      "line_end": 128,
+      "quote": "| STD07 | GBIF event-oriented model | Event/occurrence publication and discovery | Platform model; distinguish from scientific validation |",
+      "quote_sha256": "d125fd10eddee346ff92213bef37308a8415a1409faa27c3a61778c07803c72b",
+      "fields": {
+        "Ref ID": "STD07",
+        "Framework / source": "GBIF event-oriented model",
+        "Role": "Event/occurrence publication and discovery",
+        "Evidence / verification limitation": "Platform model; distinguish from scientific validation"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0103",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "7. Scientific standards, methodological roles and editions",
+      "subsection": "",
+      "line_start": 129,
+      "line_end": 129,
+      "quote": "| STD08 | FAIR principles | Findability, accessibility, interoperability, reuse | Principles, not a sensor calibration standard |",
+      "quote_sha256": "48384339cbaa62f508f84e5e457077d2d37dc7acce500d03f988ad873fb498d5",
+      "fields": {
+        "Ref ID": "STD08",
+        "Framework / source": "FAIR principles",
+        "Role": "Findability, accessibility, interoperability, reuse",
+        "Evidence / verification limitation": "Principles, not a sensor calibration standard"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0104",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "7. Scientific standards, methodological roles and editions",
+      "subsection": "",
+      "line_start": 130,
+      "line_end": 130,
+      "quote": "| STD09 | ECSA principles / GLOBE / EPA Air Sensor Toolbox | Citizen-science participation, protocols, QA guidance | Individual documents and editions not independently verified |",
+      "quote_sha256": "c0c439e6feff483cdc4dea3bd321969a24ee0fc89674e628f42ffccf89078c44",
+      "fields": {
+        "Ref ID": "STD09",
+        "Framework / source": "ECSA principles / GLOBE / EPA Air Sensor Toolbox",
+        "Role": "Citizen-science participation, protocols, QA guidance",
+        "Evidence / verification limitation": "Individual documents and editions not independently verified"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0105",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "7. Scientific standards, methodological roles and editions",
+      "subsection": "",
+      "line_start": 131,
+      "line_end": 131,
+      "quote": "| STD10 | OSHWA / open scientific hardware | Open hardware practice and documentation | Licensing/rights vary by project |",
+      "quote_sha256": "6fe4bc69562ed69549a221ab330cb3ef0bca80413dfa18c55c6d59f9a4a86005",
+      "fields": {
+        "Ref ID": "STD10",
+        "Framework / source": "OSHWA / open scientific hardware",
+        "Role": "Open hardware practice and documentation",
+        "Evidence / verification limitation": "Licensing/rights vary by project"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0106",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "7. Scientific standards, methodological roles and editions",
+      "subsection": "",
+      "line_start": 132,
+      "line_end": 132,
+      "quote": "| STD11 | MQTT, LoRaWAN, SDI-12 | Messaging, network and sensor interface technologies | Not interchangeable with scientific measurement validity |",
+      "quote_sha256": "b5c89ded58117e91b392afc41dd4fc75d5c1b986db1b93c9710e74701762340c",
+      "fields": {
+        "Ref ID": "STD11",
+        "Framework / source": "MQTT, LoRaWAN, SDI-12",
+        "Role": "Messaging, network and sensor interface technologies",
+        "Evidence / verification limitation": "Not interchangeable with scientific measurement validity"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0107",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 154,
+      "line_end": 154,
+      "quote": "| LEAD01 | WILDLABS | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "3ecacaa5668c68f4423e88b1b2888e413df3f717161e36a5e80e61afded1879a",
+      "fields": {
+        "Lead ID": "LEAD01",
+        "Name": "WILDLABS",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0108",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 155,
+      "line_end": 155,
+      "quote": "| LEAD02 | Digital Naturalism Laboratories | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "bc5e6c11484bdf572a3fe9136bb5a94bd5d42d305524185648e87ff5616dc4c0",
+      "fields": {
+        "Lead ID": "LEAD02",
+        "Name": "Digital Naturalism Laboratories",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0109",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 156,
+      "line_end": 156,
+      "quote": "| LEAD03 | OS Beehives / OSBH | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "4021e42a854cc0ae49fd71e597730ddcbf8eb209b6ade0c1c45c37e3bccf7202",
+      "fields": {
+        "Lead ID": "LEAD03",
+        "Name": "OS Beehives / OSBH",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0110",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 157,
+      "line_end": 157,
+      "quote": "| LEAD04 | Environmental Data Initiative | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "f7f84a5ae34fe9a7fb3bb0dee17b0ae9195ee6cafc65a7c0a33cfe21e7e13694",
+      "fields": {
+        "Lead ID": "LEAD04",
+        "Name": "Environmental Data Initiative",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0111",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 158,
+      "line_end": 158,
+      "quote": "| LEAD05 | DataONE | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "cf2d409f33feb458c252e92126eb0155f90a67afaccc5640bf278f965fd9fd73",
+      "fields": {
+        "Lead ID": "LEAD05",
+        "Name": "DataONE",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0112",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 159,
+      "line_end": 159,
+      "quote": "| LEAD06 | PurpleAir | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "75b7ae2dfbe28dbab09ac3c3d0be1b4d31262cdb091aa1d01529803ca2b8fdb9",
+      "fields": {
+        "Lead ID": "LEAD06",
+        "Name": "PurpleAir",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0113",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 160,
+      "line_end": 160,
+      "quote": "| LEAD07 | GLOBE | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "31b1839071c4f806d31da4937d80266703b1d3153e7030a84f546e9f20631f96",
+      "fields": {
+        "Lead ID": "LEAD07",
+        "Name": "GLOBE",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0114",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 161,
+      "line_end": 161,
+      "quote": "| LEAD08 | FreshWater Watch | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "1d55fc7b13a527573c2c695f85a3553cba98293a5ec2ba39e82ea76deb2e512a",
+      "fields": {
+        "Lead ID": "LEAD08",
+        "Name": "FreshWater Watch",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0115",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 162,
+      "line_end": 162,
+      "quote": "| LEAD09 | Public Lab | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "e209c92f87bda5527c2ce353ae119f0ad5de04f71446bd85160851ad4ce1455d",
+      "fields": {
+        "Lead ID": "LEAD09",
+        "Name": "Public Lab",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0116",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 163,
+      "line_end": 163,
+      "quote": "| LEAD10 | Arduino | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "a80c2482da4d49f27e71b5d8bd477c9659498d3851f80a24df55d999667f9f00",
+      "fields": {
+        "Lead ID": "LEAD10",
+        "Name": "Arduino",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0117",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 164,
+      "line_end": 164,
+      "quote": "| LEAD11 | Raspberry Pi | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "acda7dcb30bb4a8a2ffe00a0e80e1be69ea2176671859c89ec6869c1fba18c43",
+      "fields": {
+        "Lead ID": "LEAD11",
+        "Name": "Raspberry Pi",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0118",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 165,
+      "line_end": 165,
+      "quote": "| LEAD12 | NVIDIA Jetson Nano / Orin Nano | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "c30207c238edfa5d6adc33989f6977a836c086f46b42c66510b00858195954d4",
+      "fields": {
+        "Lead ID": "LEAD12",
+        "Name": "NVIDIA Jetson Nano / Orin Nano",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0119",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 166,
+      "line_end": 166,
+      "quote": "| LEAD13 | LicheeRV Nano | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "b914e6c73024a268464dc508194c25377248dcb4bfcc12c446026cabd0222641",
+      "fields": {
+        "Lead ID": "LEAD13",
+        "Name": "LicheeRV Nano",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0120",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 167,
+      "line_end": 167,
+      "quote": "| LEAD14 | ESP32-S3 | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "c742c2ea6c2bc87f60b9ec909ba31b54c1dfc56075ff633d841a9332f575a9ab",
+      "fields": {
+        "Lead ID": "LEAD14",
+        "Name": "ESP32-S3",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0121",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 168,
+      "line_end": 168,
+      "quote": "| LEAD15 | PlatformIO | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "156e92383e1c6b08303ec77d0887e80a8e80ae5007038f0063471bd9f094e7af",
+      "fields": {
+        "Lead ID": "LEAD15",
+        "Name": "PlatformIO",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0122",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 169,
+      "line_end": 169,
+      "quote": "| LEAD16 | Hackaday | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "a6b58eb9b8ab794600c967dab3dd1b4c7d1bb1eb8d734d60ae0a3b74530b7701",
+      "fields": {
+        "Lead ID": "LEAD16",
+        "Name": "Hackaday",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0123",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 170,
+      "line_end": 170,
+      "quote": "| LEAD17 | Open Source Hardware Association | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "e24424b296f0bf6659f65f9bca298cace4482970682fe4f186ad05c4ff8c86b3",
+      "fields": {
+        "Lead ID": "LEAD17",
+        "Name": "Open Source Hardware Association",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0124",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 171,
+      "line_end": 171,
+      "quote": "| LEAD18 | USDA ARS | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "359d8140411f9bf1b9c0088c7941f33e0c02b85ad9c2fbbf49b129acc4937501",
+      "fields": {
+        "Lead ID": "LEAD18",
+        "Name": "USDA ARS",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0125",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "Additional research leads raised during the 30 October discussion",
+      "line_start": 172,
+      "line_end": 172,
+      "quote": "| LEAD19 | EPA Air Sensor Toolbox | Named community, infrastructure, device family, tool or method reference (entity type to resolve) | Original-conversation lead; independent verification pending |",
+      "quote_sha256": "965d5606e1bd4201146f2cfcd6a6309fd8ac16f542f17a2389de18a938d64539",
+      "fields": {
+        "Lead ID": "LEAD19",
+        "Name": "EPA Air Sensor Toolbox",
+        "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+        "Status": "Original-conversation lead; independent verification pending"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0126",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 212,
+      "line_end": 212,
+      "quote": "| W3C/OGC SOSA/SSN | Standards/ontology reference candidate | Already in manifest foundational references; source editions/mappings not adopted |",
+      "quote_sha256": "2474f1cd83a1581782e24ec4e99f71fa8ab9198c5a94fc37f91e530328fe69c0",
+      "fields": {
+        "Reference or concept": "W3C/OGC SOSA/SSN",
+        "Kind in this audit": "Standards/ontology reference candidate",
+        "Existing representation and unresolved evidence": "Already in manifest foundational references; source editions/mappings not adopted"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0127",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 213,
+      "line_end": 213,
+      "quote": "| OGC SensorThings API | Access-model standard reference candidate | Already referenced; no implemented API or compliance inferred |",
+      "quote_sha256": "f2bb54f29496b2d577486c8edf06d4e3d1360d9c886ab0aef49d6487e2b5f14c",
+      "fields": {
+        "Reference or concept": "OGC SensorThings API",
+        "Kind in this audit": "Access-model standard reference candidate",
+        "Existing representation and unresolved evidence": "Already referenced; no implemented API or compliance inferred"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0128",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 214,
+      "line_end": 214,
+      "quote": "| OGC Observations, Measurements and Samples | Conceptual observation/sampling reference candidate | Already referenced as OMS; no formal mapping adopted |",
+      "quote_sha256": "06e6bb6cc6c25afac8ecdf0c9664bef09b7952fb4be58db93b262bf33eee0e4d",
+      "fields": {
+        "Reference or concept": "OGC Observations, Measurements and Samples",
+        "Kind in this audit": "Conceptual observation/sampling reference candidate",
+        "Existing representation and unresolved evidence": "Already referenced as OMS; no formal mapping adopted"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0129",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 215,
+      "line_end": 215,
+      "quote": "| Darwin Core | Standards research lead from R§7/12 | No adopted edition, term mapping or compliance record |",
+      "quote_sha256": "070da7daef0edda79d9f020f6dff94826c492b8dcb7951b12203bb482562fb19",
+      "fields": {
+        "Reference or concept": "Darwin Core",
+        "Kind in this audit": "Standards research lead from R§7/12",
+        "Existing representation and unresolved evidence": "No adopted edition, term mapping or compliance record"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0130",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 216,
+      "line_end": 216,
+      "quote": "| Humboldt Extension | Extension research lead from R§7/12 | Exact edition, scope and mappings require verification |",
+      "quote_sha256": "b3d1795f1cfd0060bf7d72ed6e5c01f776a407d90c8c2f032d70b8941e788a46",
+      "fields": {
+        "Reference or concept": "Humboldt Extension",
+        "Kind in this audit": "Extension research lead from R§7/12",
+        "Existing representation and unresolved evidence": "Exact edition, scope and mappings require verification"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0131",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 217,
+      "line_end": 217,
+      "quote": "| GBIF event-based data organisation | Publishing/data-organisation lead | SRC-014 exists; campaign/event interpretation not thereby implemented |",
+      "quote_sha256": "89f8ae39b1f85feff95b62acaf2a268b931a2b7cfff021965ca6e96b84c507da",
+      "fields": {
+        "Reference or concept": "GBIF event-based data organisation",
+        "Kind in this audit": "Publishing/data-organisation lead",
+        "Existing representation and unresolved evidence": "SRC-014 exists; campaign/event interpretation not thereby implemented"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0132",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 218,
+      "line_end": 218,
+      "quote": "| FAIR principles | Principles/framework lead from R§12 | No FAIR assessment or certification supplied |",
+      "quote_sha256": "8698415388b840cd32ff7d110968095ed6d577bd39b15dd77dd5b8cd37aa80e5",
+      "fields": {
+        "Reference or concept": "FAIR principles",
+        "Kind in this audit": "Principles/framework lead from R§12",
+        "Existing representation and unresolved evidence": "No FAIR assessment or certification supplied"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0133",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 219,
+      "line_end": 219,
+      "quote": "| Open scientific hardware | Practice/rights/openness research lead | No specific definition, licence or certified hardware supplied |",
+      "quote_sha256": "51f5089cb64aff1219d78e9512b1afecc6eb387348a52bb1d6bfdae911686947",
+      "fields": {
+        "Reference or concept": "Open scientific hardware",
+        "Kind in this audit": "Practice/rights/openness research lead",
+        "Existing representation and unresolved evidence": "No specific definition, licence or certified hardware supplied"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0134",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 220,
+      "line_end": 220,
+      "quote": "| Calibration | Measurement-method/quality topic | No per-instrument calibration chain, interval or certificate supplied |",
+      "quote_sha256": "d5ba18190f1ea1e85752b43c10a560211887e310ad74859595dbbcdc48b847c4",
+      "fields": {
+        "Reference or concept": "Calibration",
+        "Kind in this audit": "Measurement-method/quality topic",
+        "Existing representation and unresolved evidence": "No per-instrument calibration chain, interval or certificate supplied"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0135",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 221,
+      "line_end": 221,
+      "quote": "| Provenance | Methodological requirement and existing metadata | Existing provenance is incomplete for original conversation evidence |",
+      "quote_sha256": "a07338a18dac72dbd26d5d708207f5b82d5ce0133b447973d8a12dedae42c2a6",
+      "fields": {
+        "Reference or concept": "Provenance",
+        "Kind in this audit": "Methodological requirement and existing metadata",
+        "Existing representation and unresolved evidence": "Existing provenance is incomplete for original conversation evidence"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0136",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 222,
+      "line_end": 222,
+      "quote": "| Ecological validity | Interpretation/fitness question | No operational definition or demonstrated outcome supplied |",
+      "quote_sha256": "98ae408710c7eff4caf013f854b76fab1cafcdb31c5419608a39de0cdc102114",
+      "fields": {
+        "Reference or concept": "Ecological validity",
+        "Kind in this audit": "Interpretation/fitness question",
+        "Existing representation and unresolved evidence": "No operational definition or demonstrated outcome supplied"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0137",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 223,
+      "line_end": 223,
+      "quote": "| In-situ research | Field-context methodological topic | No complete method or protocol supplied |",
+      "quote_sha256": "60771bc1528f9c95f7714de0baf2232abad952490528ba7c373d530efb981cc0",
+      "fields": {
+        "Reference or concept": "In-situ research",
+        "Kind in this audit": "Field-context methodological topic",
+        "Existing representation and unresolved evidence": "No complete method or protocol supplied"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0138",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 224,
+      "line_end": 224,
+      "quote": "| Field-adaptive instrumentation / field laboratories | Method/practice proposal | Digital Naturalism association source-reported, not verified |",
+      "quote_sha256": "fe37cd0506491520ceedd81d67f458e609212e68daa02feed9b6ac11325136aa",
+      "fields": {
+        "Reference or concept": "Field-adaptive instrumentation / field laboratories",
+        "Kind in this audit": "Method/practice proposal",
+        "Existing representation and unresolved evidence": "Digital Naturalism association source-reported, not verified"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0139",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 225,
+      "line_end": 225,
+      "quote": "| Statistical inference / AI-assisted reconstruction | Analytical method family lead | Inputs, algorithms, assumptions, uncertainty and validation absent |",
+      "quote_sha256": "1595a444465829080094296b3cdd8072f3246fad7b0c07cf153105c92598b9ee",
+      "fields": {
+        "Reference or concept": "Statistical inference / AI-assisted reconstruction",
+        "Kind in this audit": "Analytical method family lead",
+        "Existing representation and unresolved evidence": "Inputs, algorithms, assumptions, uncertainty and validation absent"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0140",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 226,
+      "line_end": 226,
+      "quote": "| Non-stationarity / change-point detection | Analytical topics | No specific model, test or result supplied |",
+      "quote_sha256": "ca65b6056c8f4b70771368840d2b855ace31646e94f28cf16c697b06c183e967",
+      "fields": {
+        "Reference or concept": "Non-stationarity / change-point detection",
+        "Kind in this audit": "Analytical topics",
+        "Existing representation and unresolved evidence": "No specific model, test or result supplied"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0141",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 227,
+      "line_end": 227,
+      "quote": "| Validation procedures / reference measurements | Method/quality topics | Ground-truth use must identify its actual target and evidence |",
+      "quote_sha256": "40d3cd0d9b7416ec1faf70c431458ab88ef110652ea15fb75957fe90c3dd3339",
+      "fields": {
+        "Reference or concept": "Validation procedures / reference measurements",
+        "Kind in this audit": "Method/quality topics",
+        "Existing representation and unresolved evidence": "Ground-truth use must identify its actual target and evidence"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0142",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "13. Cross-cutting research themes",
+      "subsection": "",
+      "line_start": 244,
+      "line_end": 244,
+      "quote": "R names camera trapping, bioacoustics, computer vision, AI for conservation, edge computing, field laboratories and historical environmental reconstruction as themes/capabilities. Exact umbrella memberships are not supplied. **A:** preserve a thematic association only when sourced or explicitly reviewed; permit multiple associations. Theme grouping is not a mandate for four new databases, domains or observation-category codes.",
+      "quote_sha256": "5514c358f151e9e228da5c337eb3ede8816a3333fe4bdebc9ee6bc9501b5a86c",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0143",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "1. OSDS purpose, scope and boundaries",
+      "subsection": "",
+      "line_start": 51,
+      "line_end": 51,
+      "quote": "**A — scope tensions requiring review:** Does “aerial” exclude aircraft atmospheric observations, or aerial mapping specifically? How are autonomous ocean floats, underwater/subsurface systems, laboratory and industrial measurements treated? Which biological instrumentation is specialised while camera trapping, bioacoustics and beehive sensing remain relevant? How are mixed providers handled at product level? Existing IAGOS, Argo, NASA, Copernicus and GBIF records must retain their identities and history while those questions are assessed. Location metadata and use of GIS in analysis do not by themselves settle catalogue ownership.",
+      "quote_sha256": "6c246b2f87eec1b07b3223c7b82a2fae6b1873fc34d9e0a4cc37fcd006356ab7",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0144",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "11. Instrumentation and technology families across categories",
+      "subsection": "",
+      "line_start": 204,
+      "line_end": 204,
+      "quote": "For each future family, the intended record should recover representative instruments, measured properties, units, potential indicators, calibration/method and evidence. **All sixteen currently lack source-supplied per-family values for those fields.** The omission is explicit rather than filled with generic examples. A future external research pass may add examples as new research, clearly separated from historical reconstruction.",
+      "quote_sha256": "f8eb158489aaada4472da68bd76f90846672890a0afb3cafbb430dbc50d7a8d3",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0145",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "1. OSDS purpose, scope and boundaries",
+      "subsection": "",
+      "line_start": 47,
+      "line_end": 47,
+      "quote": "**R§1, N§4; historical decision status: owner-requested reconstruction of an agreement, not transcript-authenticated agreement.** The supplied account describes OSDS as concerned with human-scale, ground-based physical observation systems, instrumentation, methods and sources. Large governmental or scientific infrastructures remain relevant when their observations operate at that scale; organisational size is not the proposed exclusion criterion.",
+      "quote_sha256": "eb4b2ea693f1cf58352a457319b5d4d83378f7b57e0537f32a998b4d91e7a88e",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0146",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "2. Original classification framework",
+      "subsection": "",
+      "line_start": 55,
+      "line_end": 55,
+      "quote": "**B; R§2.** The two existing classification dimensions are retained below. Their supplied memberships are provisional research assertions. The reconstruction proposes adding descriptive dimensions, not replacing these codes or equating them to similarly numbered EII codes.",
+      "quote_sha256": "6ab6ac480c35049ff67d6c7f8ca7520c3367e67000931c390573edf141b50230",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0147",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 208,
+      "line_end": 208,
+      "quote": "**R§12, R§7/9/10; N§8; B foundational references.** The list below covers every named framework or methodological lead in the reconstruction brief. A reference to a standard is not adoption or source-level conformance.",
+      "quote_sha256": "3a1e1784a2aa55212752c74ca6efc7c477c88e6d90ed5a912657614bfc47019a",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0148",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "16. Evidence and decision audit",
+      "subsection": "16.3 Research content beyond the existing registers",
+      "line_start": 306,
+      "line_end": 306,
+      "quote": "The current registers contain source identities, candidate classifications, discovery evidence and unresolved questions. They do not contain the detailed family inventory, hardware-platform records, campaign model, four umbrellas or six-dimension research organisation. They also lack explicit statistical-reconstruction, AI-processing and field-lab method records. This is substantive missing research representation, not merely a readability or version-label problem.",
+      "quote_sha256": "493f77e23660d32cc59357dba5ed7704558720c4abb0262ed4853d1a81d86f7e",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0149",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "16. Evidence and decision audit",
+      "subsection": "16.3 Research content beyond the existing registers",
+      "line_start": 308,
+      "line_end": 308,
+      "quote": "Candidate inclusion could be justified by a declared source status such as “reconstruction-brief-derived, externally unverified.” Such inclusion would preserve the record of a proposal, not verify its science or historical acceptance. A later approved patch must choose its precise model and lifecycle states.",
+      "quote_sha256": "0cc10dca33d4be44af8316affc6ca06b57edb1feb4d78dc69f82fb7e993d1948",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0150",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "16. Evidence and decision audit",
+      "subsection": "16.4 Outstanding decisions",
+      "line_start": 312,
+      "line_end": 321,
+      "quote": "1. Accept this reconstruction as a bounded candidate-evidence edition, distinct from an original transcript?\n2. Resolve ground/air/marine/subsurface/specialist-biology scope at source/product level without erasing history.\n3. Approve names, definitions, overlaps and ownership for the sixteen families before issuing classification identities.\n4. Decide whether embedded AI/edge inference is a capability family, theme, or other typed concept; do not assume family 17.\n5. Define four umbrellas and approve any subtheme membership separately.\n6. Define independent identities for instruments, platforms, methods, standards, communities, datasets and assertions.\n7. Decide which named new communities/resources qualify for the source inventory versus separate record types.\n8. Approve the conceptual campaign and EII pathways as scoped relationships, with no assumed verification/derivation outcomes.\n9. Establish claim-level evidence and decision states, and choose a proportionate schema extension and validator changes if ingestion is authorised.\n10. Keep original citations, external identities, rights, standard editions and scientific fitness unresolved until separately researched.",
+      "quote_sha256": "a91609abfb1f82eb705b927539f5ee192fefa3f15f60ab0301ceeb70a5cd388d",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0151",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "15. Federation and interoperability",
+      "subsection": "",
+      "line_start": 267,
+      "line_end": 267,
+      "quote": "This is a research/navigation pathway, not a literal validated ontology or implemented processing pipeline. **A:** identify what the arrows mean and record units, method, derivation, uncertainty and target evidence before treating them as typed scientific relationships. An observation may be about an observed property; the chain does not by itself specify computation or causality. Measurement and interpretation remain distinct.",
+      "quote_sha256": "dd7fe957e1e6c6125ca6e96a6d271cd4b98fc0527b963c01205c948f4ed3695f",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0152",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "1. OSDS purpose, scope and boundaries",
+      "subsection": "",
+      "line_start": 49,
+      "line_end": 49,
+      "quote": "The reported division places satellite, aerial and Earth-observation mapping primarily with GISDS; specialised biological instrumentation and biological evidence primarily with a future biological database. Interdisciplinary links should preserve relationships without duplicating another database's authority. These are proposed scientific responsibility boundaries to reconcile, not automatic deletion rules.",
+      "quote_sha256": "a05466fa3bffeae703d7a5ccc44c2fd2c7daa0733c4979d2dbd10fd3bde3324a",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0153",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "11. Instrumentation and technology families across categories",
+      "subsection": "",
+      "line_start": 200,
+      "line_end": 200,
+      "quote": "**R§11; A design analysis.** Consolidation should avoid duplicating one instrument merely because it participates in multiple observation categories. Distinguish instrument identity, computing platform, deployment platform, measurement principle, property, processing capability, source organisation and observation product.",
+      "quote_sha256": "cd8da076138df6086a3e70e42e493924223dcc7437fe26132219e93e2b3eec88",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0154",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "11. Instrumentation and technology families across categories",
+      "subsection": "",
+      "line_start": 202,
+      "line_end": 202,
+      "quote": "The sixteen labels in §3 are family candidates. The five platform names in §9 are identity leads. Embedded AI/edge inference is a capability-family proposal. Acoustic/optical recording, model processing and ecological interpretation are separate levels. No fully specified instrument instance is recovered from R.",
+      "quote_sha256": "83fbc782b6a0d26f5fc6fd21f24b2920ffef60c27a644ed3d62187920b98f2dc",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0155",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "12. Methodologies, frameworks and standards",
+      "subsection": "",
+      "line_start": 229,
+      "line_end": 229,
+      "quote": "No new authors, titles, DOIs, URLs, standard editions, licences or compliance assertions are fabricated. Existing foundation URLs remain in the machine register with their dated evidence. R/N supply names, not a complete bibliography. Reference identity, relevance, implementation and claim support require distinct review.",
+      "quote_sha256": "cb882db57fc38e101686fffacd6ae3464c03e527aba6f58f3d9e36325ff155fa",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0156",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "13. Cross-cutting research themes",
+      "subsection": "",
+      "line_start": 233,
+      "line_end": 233,
+      "quote": "**R§13.** Four umbrella labels are now supplied explicitly:",
+      "quote_sha256": "4da04a64656ce6f2c94b7338c5b0bde6b1e6ca4cfaec81a2553c19e0534a8327",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0157",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "13. Cross-cutting research themes",
+      "subsection": "",
+      "line_start": 242,
+      "line_end": 242,
+      "quote": "N's four different lenses—measurement trust; embedded computation; participation/situated practice; temporal continuity—were explicitly its author's editorial prompts, not recovered original umbrellas. They must not be merged with, or silently substituted for, R's four labels.",
+      "quote_sha256": "7c2aad3e7343c9369b0ae51cbf954f33fd23a53f3e15f4d196f5c37e2adf716e",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0158",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "15. Federation and interoperability",
+      "subsection": "",
+      "line_start": 263,
+      "line_end": 263,
+      "quote": "**R§15; N§8; B conceptual relationships.** The supplied conceptual pathway is:",
+      "quote_sha256": "01a94fb1ed80d76ce9f3890ede631dd8844129fec2df0350848dbacbf8c36d31",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0159",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "15. Federation and interoperability",
+      "subsection": "",
+      "line_start": 265,
+      "line_end": 265,
+      "quote": "**Instrument → Observation → Observed property → Derived indicator → EII**",
+      "quote_sha256": "348f540dda49acb6767923a18372480e64eccf728a62450ba3a6b999c52806de",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0160",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "15. Federation and interoperability",
+      "subsection": "",
+      "line_start": 271,
+      "line_end": 271,
+      "quote": "| DRM | Methodology, identity/provenance/classification/relationship conventions | Candidate guidance is not adopted full conformance |",
+      "quote_sha256": "542805a018f6f772784efdccd0b1adb36398c1469803ad9b17e100bf75e91fe0",
+      "fields": {
+        "Neighbour named in R": "DRM",
+        "Reconstructed relationship / source boundary": "Methodology, identity/provenance/classification/relationship conventions",
+        "Unresolved implementation or scientific issue": "Candidate guidance is not adopted full conformance"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0161",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "15. Federation and interoperability",
+      "subsection": "",
+      "line_start": 272,
+      "line_end": 272,
+      "quote": "| EII | Derived indicator relationships from observational evidence | Actual indicator IDs, derivations and scientific fitness not established |",
+      "quote_sha256": "3c511031ff6d7a6ddf58e3077325a2a94bf81a71293ba527b5b3cde49a6d2ac6",
+      "fields": {
+        "Neighbour named in R": "EII",
+        "Reconstructed relationship / source boundary": "Derived indicator relationships from observational evidence",
+        "Unresolved implementation or scientific issue": "Actual indicator IDs, derivations and scientific fitness not established"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0162",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "15. Federation and interoperability",
+      "subsection": "",
+      "line_start": 273,
+      "line_end": 273,
+      "quote": "| GISDS | Primary home proposed for satellite/aerial/EO mapping | Mixed-provider/product and aerial-observation boundary unresolved |",
+      "quote_sha256": "20858eb9509cc421ebb982384b0cccda76698d0a68240a7c6491d96f4cf2ed4b",
+      "fields": {
+        "Neighbour named in R": "GISDS",
+        "Reconstructed relationship / source boundary": "Primary home proposed for satellite/aerial/EO mapping",
+        "Unresolved implementation or scientific issue": "Mixed-provider/product and aerial-observation boundary unresolved"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0163",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "15. Federation and interoperability",
+      "subsection": "",
+      "line_start": 274,
+      "line_end": 274,
+      "quote": "| Ecological Computation | Computational processing and interpretation research interface | Exact project/namespace, tools and bindings not supplied |",
+      "quote_sha256": "e28ba0d842d856d488e19f70f50d8051b529a7afa10f7f3d643b995819c6250e",
+      "fields": {
+        "Neighbour named in R": "Ecological Computation",
+        "Reconstructed relationship / source boundary": "Computational processing and interpretation research interface",
+        "Unresolved implementation or scientific issue": "Exact project/namespace, tools and bindings not supplied"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0164",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "15. Federation and interoperability",
+      "subsection": "",
+      "line_start": 275,
+      "line_end": 275,
+      "quote": "| DPRKB | Named federation neighbour | Remit, target entities and specific relationships not established here |",
+      "quote_sha256": "cd8073493a0be285787ef66dc89a13cddc7c37a2db061d43e1d89c3d167dc249",
+      "fields": {
+        "Neighbour named in R": "DPRKB",
+        "Reconstructed relationship / source boundary": "Named federation neighbour",
+        "Unresolved implementation or scientific issue": "Remit, target entities and specific relationships not established here"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0165",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "15. Federation and interoperability",
+      "subsection": "",
+      "line_start": 276,
+      "line_end": 276,
+      "quote": "| IRKB | Independent interdisciplinary interpretation/synthesis context | No automatic ingestion or implemented federation service |",
+      "quote_sha256": "2bc87944dfeba915f0f1976a39719e29289f90d15bcdd4639a884e1c7496bd55",
+      "fields": {
+        "Neighbour named in R": "IRKB",
+        "Reconstructed relationship / source boundary": "Independent interdisciplinary interpretation/synthesis context",
+        "Unresolved implementation or scientific issue": "No automatic ingestion or implemented federation service"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0166",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "15. Federation and interoperability",
+      "subsection": "",
+      "line_start": 277,
+      "line_end": 277,
+      "quote": "| Future biological database | Proposed home for specialised biology instrumentation/evidence | Exact database identity, scope and boundary with acoustic/visual observation unresolved |",
+      "quote_sha256": "8f2584809329ca30857e8809b1a19d302531f637c55c288b07e8d49d977d22f3",
+      "fields": {
+        "Neighbour named in R": "Future biological database",
+        "Reconstructed relationship / source boundary": "Proposed home for specialised biology instrumentation/evidence",
+        "Unresolved implementation or scientific issue": "Exact database identity, scope and boundary with acoustic/visual observation unresolved"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0167",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "15. Federation and interoperability",
+      "subsection": "",
+      "line_start": 278,
+      "line_end": 278,
+      "quote": "| Situated-knowledge database | Related contextual/traditional/cultural knowledge | Identity, representation, permissions and evidence distinctions unresolved |",
+      "quote_sha256": "9514d6398cce1cb70976f80c97a313623e8c9fe23d380ca1daec5ac90bcba0d0",
+      "fields": {
+        "Neighbour named in R": "Situated-knowledge database",
+        "Reconstructed relationship / source boundary": "Related contextual/traditional/cultural knowledge",
+        "Unresolved implementation or scientific issue": "Identity, representation, permissions and evidence distinctions unresolved"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0168",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "15. Federation and interoperability",
+      "subsection": "",
+      "line_start": 280,
+      "line_end": 280,
+      "quote": "AMRKB and other sibling names may appear in baseline repository context, but no scientific material is extracted from their chats. No new external record identifiers or implemented integrations are asserted.",
+      "quote_sha256": "8df716879a450e3e407e5b9f9f666e0404ab3fca0d566debdb1b614805b2558b",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0169",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "16. Evidence and decision audit",
+      "subsection": "16.1 Explicit decisions versus reported historical agreements",
+      "line_start": 288,
+      "line_end": 288,
+      "quote": "| Create this missing historical audit now; preserve current registers and Stage B work | Explicit current owner instruction |",
+      "quote_sha256": "d88922f930af9c7705d4fee3735f71ddcc7c9aaf017586b9132d2d4e3fd70e93",
+      "fields": {
+        "Decision question": "Create this missing historical audit now; preserve current registers and Stage B work",
+        "Defensible evidence/status": "Explicit current owner instruction"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_field",
+        "source_claim": "Explicit current owner instruction",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0170",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "16. Evidence and decision audit",
+      "subsection": "16.1 Explicit decisions versus reported historical agreements",
+      "line_start": 289,
+      "line_end": 289,
+      "quote": "| Keep eight domains/eight categories, original codes and existing source identities | Explicit current instruction and existing repository convention |",
+      "quote_sha256": "605db18a0a75c7a3d7f1333988ce0df052e51842a9475f5acc17067ec1d0a23e",
+      "fields": {
+        "Decision question": "Keep eight domains/eight categories, original codes and existing source identities",
+        "Defensible evidence/status": "Explicit current instruction and existing repository convention"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_field",
+        "source_claim": "Explicit current instruction and existing repository convention",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0171",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "16. Evidence and decision audit",
+      "subsection": "16.1 Explicit decisions versus reported historical agreements",
+      "line_start": 290,
+      "line_end": 290,
+      "quote": "| Preserve substantive topics rather than reconstruct only from registers | Explicit current instruction; R and N provide research content separately from B |",
+      "quote_sha256": "7fae1b2da318e1b0ba6b67afca37eeb6dfb09aa7753bcbf4772f8f16a17261bc",
+      "fields": {
+        "Decision question": "Preserve substantive topics rather than reconstruct only from registers",
+        "Defensible evidence/status": "Explicit current instruction; R and N provide research content separately from B"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_field",
+        "source_claim": "Explicit current instruction; R and N provide research content separately from B",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0172",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "16. Evidence and decision audit",
+      "subsection": "16.1 Explicit decisions versus reported historical agreements",
+      "line_start": 291,
+      "line_end": 291,
+      "quote": "| Ground/human-scale focus and named federation boundaries were “agreed” in October | R characterises them as agreed; no contemporaneous substantive user turn recovered. Record as reported agreement, not authenticated historical approval |",
+      "quote_sha256": "949d283a705ea0d2a128bf2a304d8a822f9e75ce09ae2a3d6286a987248f4908",
+      "fields": {
+        "Decision question": "Ground/human-scale focus and named federation boundaries were “agreed” in October",
+        "Defensible evidence/status": "R characterises them as agreed; no contemporaneous substantive user turn recovered. Record as reported agreement, not authenticated historical approval"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_field",
+        "source_claim": "R characterises them as agreed; no contemporaneous substantive user turn recovered. Record as reported agreement, not authenticated historical approval",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0173",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "16. Evidence and decision audit",
+      "subsection": "16.1 Explicit decisions versus reported historical agreements",
+      "line_start": 292,
+      "line_end": 292,
+      "quote": "| Six dimensions, sixteen families and four umbrellas are adopted scientific schemes | Not established. Labels preserved as proposals from R; adoption/memberships unresolved |",
+      "quote_sha256": "5dbb03ff82e2a7a17ad1442e830cda52359ade885468f7a14bd3f484a7ad37b0",
+      "fields": {
+        "Decision question": "Six dimensions, sixteen families and four umbrellas are adopted scientific schemes",
+        "Defensible evidence/status": "Not established. Labels preserved as proposals from R; adoption/memberships unresolved"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_field",
+        "source_claim": "Not established. Labels preserved as proposals from R; adoption/memberships unresolved",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0174",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "16. Evidence and decision audit",
+      "subsection": "16.1 Explicit decisions versus reported historical agreements",
+      "line_start": 293,
+      "line_end": 293,
+      "quote": "| End the voice call | The available closing exchange supports ending the call only |",
+      "quote_sha256": "300dfa6aeb5e3f8ae471e07b9bd197653de8bfb29df4f3a65a6f7cdb503a3676",
+      "fields": {
+        "Decision question": "End the voice call",
+        "Defensible evidence/status": "The available closing exchange supports ending the call only"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_field",
+        "source_claim": "The available closing exchange supports ending the call only",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0175",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "16. Evidence and decision audit",
+      "subsection": "16.1 Explicit decisions versus reported historical agreements",
+      "line_start": 294,
+      "line_end": 294,
+      "quote": "| Accept scientific/register expansion or Phase 5 | Not authorised by creation of this audit |",
+      "quote_sha256": "067ba4ea44d14510ec9c30c4485d7c0a0bcee9dcff1fb1f2fb87627998b6420e",
+      "fields": {
+        "Decision question": "Accept scientific/register expansion or Phase 5",
+        "Defensible evidence/status": "Not authorised by creation of this audit"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_field",
+        "source_claim": "Not authorised by creation of this audit",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0176",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "16. Evidence and decision audit",
+      "subsection": "16.1 Explicit decisions versus reported historical agreements",
+      "line_start": 296,
+      "line_end": 296,
+      "quote": "The current owner instruction is not converted into invented October dialogue. No original speaker, quotation, timestamp or detailed sequence is manufactured. The original October session is the subject identified by the owner; documentary authentication of its complete coverage remains outstanding.",
+      "quote_sha256": "bd3078316b6de4d723306b07a8c4aa61bc27d6fca0de97e34708a1272591b569",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0177",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "16. Evidence and decision audit",
+      "subsection": "16.2 Provisional proposals and scientific references",
+      "line_start": 300,
+      "line_end": 300,
+      "quote": "Preserve as proposed: sixteen instrument-family labels, the separate embedded-AI/edge-inference grouping, four umbrellas, six descriptive dimensions, campaign/event/observation/verification sequence, EII pathway and new research-resource/platform candidates. Exact scientific identities, definitions, memberships and external claims remain unverified.",
+      "quote_sha256": "be3054fb28051638faa37c758112e19293b6edc4332d474f69f08c6a6ca1b161",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0178",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "16. Evidence and decision audit",
+      "subsection": "16.2 Provisional proposals and scientific references",
+      "line_start": 302,
+      "line_end": 302,
+      "quote": "Scientific references requiring review include every new framework and named organisation/platform in §§8–12. N's hypotheses and editorial fields remain secondary-author analysis. Neither repeated summaries nor an assistant prompt copied into another chat counts as independent corroboration.",
+      "quote_sha256": "13f12bafa19a5b75d12472163c6b1db6e995062bd656dd4542abba11b065fb86",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0179",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 22,
+      "line_end": 22,
+      "quote": "| T01 | Domain/category clarification: User asked to distinguish eight disciplinary domains from eight observation categories; the assistant described each. | Eight-by-eight classification retained; dimensions are many-to-many. | User accepted explanations. |",
+      "quote_sha256": "48dfaaf830b10376ee4743636bd0fb9404bfb890a1bb0bcb54186c74380e8343",
+      "fields": {
+        "Thread": "T01",
+        "Research question / phase": "Domain/category clarification: User asked to distinguish eight disciplinary domains from eight observation categories; the assistant described each.",
+        "Recovered substantive answer": "Eight-by-eight classification retained; dimensions are many-to-many.",
+        "Authority": "User accepted explanations."
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_exchange",
+        "claim_basis": "audit_field",
+        "source_claim": "User accepted explanations.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0180",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 23,
+      "line_end": 23,
+      "quote": "| T02 | Taxonomy expansion and deliberate deferral: User asked how eight categories arose, explored additional types and then deferred formal taxonomy validation. | Do not expand top-level categories now; use candidate instrument/method families. | User explicitly chose continued source capture. |",
+      "quote_sha256": "2335143463bfe10888e1949d0c4f149946f76a96795ee1e95df22464e516d319",
+      "fields": {
+        "Thread": "T02",
+        "Research question / phase": "Taxonomy expansion and deliberate deferral: User asked how eight categories arose, explored additional types and then deferred formal taxonomy validation.",
+        "Recovered substantive answer": "Do not expand top-level categories now; use candidate instrument/method families.",
+        "Authority": "User explicitly chose continued source capture."
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_exchange",
+        "claim_basis": "audit_field",
+        "source_claim": "User explicitly chose continued source capture.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0181",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 24,
+      "line_end": 24,
+      "quote": "| T03 | Scale and boundary: User excluded satellite, Earth viewing, aerial drone/balloon/aircraft mapping, GIS and specialised biological instrumentation; accepted governmental/global infrastructures where observation is at human/ground scale. | Ground-context observational system, not small-institution-only system. | Explicit user scope decision. |",
+      "quote_sha256": "9352e44d73a59e42a53ba1d158c9146ad94bc8f05a02c68257b5bf90142978d6",
+      "fields": {
+        "Thread": "T03",
+        "Research question / phase": "Scale and boundary: User excluded satellite, Earth viewing, aerial drone/balloon/aircraft mapping, GIS and specialised biological instrumentation; accepted governmental/global infrastructures where observation is at human/ground scale.",
+        "Recovered substantive answer": "Ground-context observational system, not small-institution-only system.",
+        "Authority": "Explicit user scope decision."
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_exchange",
+        "claim_basis": "audit_field",
+        "source_claim": "Explicit user scope decision.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0182",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 25,
+      "line_end": 25,
+      "quote": "| T04 | O01 IoT: User requested broad sensing families and progression from instruments to derived environmental/ecological indicators. | Sixteen provisional sensing families; distinguish measurement from inference. | User approved exploratory overview. |",
+      "quote_sha256": "fceef038ef682c8cdac5fd95186e4a2aad1c150ce72d532f5c25d710b785017f",
+      "fields": {
+        "Thread": "T04",
+        "Research question / phase": "O01 IoT: User requested broad sensing families and progression from instruments to derived environmental/ecological indicators.",
+        "Recovered substantive answer": "Sixteen provisional sensing families; distinguish measurement from inference.",
+        "Authority": "User approved exploratory overview."
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_exchange",
+        "claim_basis": "audit_field",
+        "source_claim": "User approved exploratory overview.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0183",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 26,
+      "line_end": 26,
+      "quote": "| T05 | O02 scientific monitoring: User asked whether instruments overlap with IoT and whether publication differs. | Same instruments may occur; reference calibration, protocols, long-term quality and curated data/publication practices vary. | User accepted, deferred publication as a new classification axis. |",
+      "quote_sha256": "a0b11fb9cd310f977610c2b2d53da5868bf28c8289db4e68622f2f2b27a9227e",
+      "fields": {
+        "Thread": "T05",
+        "Research question / phase": "O02 scientific monitoring: User asked whether instruments overlap with IoT and whether publication differs.",
+        "Recovered substantive answer": "Same instruments may occur; reference calibration, protocols, long-term quality and curated data/publication practices vary.",
+        "Authority": "User accepted, deferred publication as a new classification axis."
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_exchange",
+        "claim_basis": "audit_field",
+        "source_claim": "User accepted, deferred publication as a new classification axis.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0184",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 27,
+      "line_end": 27,
+      "quote": "| T06 | O03 ground truth: User requested reference/validation practices. | Ground truth is a contextual validation role rather than a unique instrument family. | User accepted. |",
+      "quote_sha256": "d39471a1cb62af3a045a3175dc3fc8586db022be47106183a9442f332425fd8c",
+      "fields": {
+        "Thread": "T06",
+        "Research question / phase": "O03 ground truth: User requested reference/validation practices.",
+        "Recovered substantive answer": "Ground truth is a contextual validation role rather than a unique instrument family.",
+        "Authority": "User accepted."
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_exchange",
+        "claim_basis": "audit_field",
+        "source_claim": "User accepted.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0185",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 28,
+      "line_end": 28,
+      "quote": "| T07 | O04 autonomous: User explored unattended systems and robots. | Autonomy distinct from network connectivity; stationary/mobile systems. | User accepted. |",
+      "quote_sha256": "fc2d79636a80187b82187c7c0b30fbc19c1d652be5d63f18792a055996fbe6f9",
+      "fields": {
+        "Thread": "T07",
+        "Research question / phase": "O04 autonomous: User explored unattended systems and robots.",
+        "Recovered substantive answer": "Autonomy distinct from network connectivity; stationary/mobile systems.",
+        "Authority": "User accepted."
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_exchange",
+        "claim_basis": "audit_field",
+        "source_claim": "User accepted.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0186",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 29,
+      "line_end": 29,
+      "quote": "| T08 | O05 campaigns and observation protocols: User gave moth-sighting example and asked about universally validated campaign logging. | Campaign→event→observation→verification; Darwin Core, Humboldt Extension, GBIF event model as references; no universal automatic validation. | User endorsed recording frameworks. |",
+      "quote_sha256": "34644d490f11b1519f57d882a6a9eebbf14b7dda0371c488d6bd5e9a88fcb27f",
+      "fields": {
+        "Thread": "T08",
+        "Research question / phase": "O05 campaigns and observation protocols: User gave moth-sighting example and asked about universally validated campaign logging.",
+        "Recovered substantive answer": "Campaign→event→observation→verification; Darwin Core, Humboldt Extension, GBIF event model as references; no universal automatic validation.",
+        "Authority": "User endorsed recording frameworks."
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_exchange",
+        "claim_basis": "audit_field",
+        "source_claim": "User endorsed recording frameworks.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0187",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 30,
+      "line_end": 30,
+      "quote": "| T09 | O06 citizen sensing and WILDLABS: User asked for community sensing and WILDLABS categorisation. | WILDLABS as technology/method discovery gateway, not assumed direct measurement provider. | User accepted cross-cutting themes. |",
+      "quote_sha256": "fc3c29991ca15d51a8f4542685ae3bbd67cbb3cbf253cfa49181170370ca115d",
+      "fields": {
+        "Thread": "T09",
+        "Research question / phase": "O06 citizen sensing and WILDLABS: User asked for community sensing and WILDLABS categorisation.",
+        "Recovered substantive answer": "WILDLABS as technology/method discovery gateway, not assumed direct measurement provider.",
+        "Authority": "User accepted cross-cutting themes."
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_exchange",
+        "claim_basis": "audit_field",
+        "source_claim": "User accepted cross-cutting themes.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0188",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 31,
+      "line_end": 31,
+      "quote": "| T10 | Cross-cutting themes: User wanted a way to record camera traps, bioacoustics, vision, AI conservation and edge computing without confusing taxonomy. | Four proposed umbrellas; record as cross-cutting research themes rather than new domains. | User asked to note approach, not implement taxonomy. |",
+      "quote_sha256": "972fde7ac190e75e58248f5daf0556b52ccfa93eabbb9d5a024d0c81a9d3bd4e",
+      "fields": {
+        "Thread": "T10",
+        "Research question / phase": "Cross-cutting themes: User wanted a way to record camera traps, bioacoustics, vision, AI conservation and edge computing without confusing taxonomy.",
+        "Recovered substantive answer": "Four proposed umbrellas; record as cross-cutting research themes rather than new domains.",
+        "Authority": "User asked to note approach, not implement taxonomy."
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_exchange",
+        "claim_basis": "audit_field",
+        "source_claim": "User asked to note approach, not implement taxonomy.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0189",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 32,
+      "line_end": 32,
+      "quote": "| T11 | O07 physical computing: User asked to distinguish physical computing from IoT and examine edge-AI boards. | Acquisition/control vs communication/networking; embedded AI/edge inference provisional family. | User explicitly accepted family under O07. |",
+      "quote_sha256": "c27ca5728811ce15162825b127705dd15a7bc86d8bf81b604406705bef0d48e9",
+      "fields": {
+        "Thread": "T11",
+        "Research question / phase": "O07 physical computing: User asked to distinguish physical computing from IoT and examine edge-AI boards.",
+        "Recovered substantive answer": "Acquisition/control vs communication/networking; embedded AI/edge inference provisional family.",
+        "Authority": "User explicitly accepted family under O07."
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_exchange",
+        "claim_basis": "audit_field",
+        "source_claim": "User explicitly accepted family under O07.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0190",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 33,
+      "line_end": 33,
+      "quote": "| T12 | Bioacoustics and field labs: User introduced OS Beehives and Digital Naturalism; requested field-lab methodological insight. | Acoustic capture and edge processing in OSDS; biological inference cross-referenced; in-situ, situated instrumentation, field modification and ecological validity. | User approved methodological framing. |",
+      "quote_sha256": "c3353df17b4238159cd09bfc52e6e745b24b934727b4fef399b8a772d19d5323",
+      "fields": {
+        "Thread": "T12",
+        "Research question / phase": "Bioacoustics and field labs: User introduced OS Beehives and Digital Naturalism; requested field-lab methodological insight.",
+        "Recovered substantive answer": "Acoustic capture and edge processing in OSDS; biological inference cross-referenced; in-situ, situated instrumentation, field modification and ecological validity.",
+        "Authority": "User approved methodological framing."
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_exchange",
+        "claim_basis": "audit_field",
+        "source_claim": "User approved methodological framing.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0191",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 34,
+      "line_end": 34,
+      "quote": "| T13 | O08 historic records: User requested data rescue, AI inference, historic reconstruction and situated-knowledge link. | Distinguish measured past from reconstructed inference and cultural testimony. | User accepted cross-database bridge. |",
+      "quote_sha256": "ee1647988e08851e37e9ab7ab1bc31f4c09bbe358b19dd9926c7e04b6ef4b2cf",
+      "fields": {
+        "Thread": "T13",
+        "Research question / phase": "O08 historic records: User requested data rescue, AI inference, historic reconstruction and situated-knowledge link.",
+        "Recovered substantive answer": "Distinguish measured past from reconstructed inference and cultural testimony.",
+        "Authority": "User accepted cross-database bridge."
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_exchange",
+        "claim_basis": "audit_field",
+        "source_claim": "User accepted cross-database bridge.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0192",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 35,
+      "line_end": 35,
+      "quote": "| T14 | Structural conclusion: User asked what new layers had emerged and confirmed augmentation rather than replacement. | Six structural dimensions, eight categories unchanged; do not rewrite register prematurely. | Explicit user confirmation. |",
+      "quote_sha256": "6d3e6ca194c623a99016a667a635a29c9a56cf5dee4d9c09707e239f078904fc",
+      "fields": {
+        "Thread": "T14",
+        "Research question / phase": "Structural conclusion: User asked what new layers had emerged and confirmed augmentation rather than replacement.",
+        "Recovered substantive answer": "Six structural dimensions, eight categories unchanged; do not rewrite register prematurely.",
+        "Authority": "Explicit user confirmation."
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_exchange",
+        "claim_basis": "audit_field",
+        "source_claim": "Explicit user confirmation.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0193",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "9. Federation boundaries and qualified relationship proposals",
+      "subsection": "",
+      "line_start": 177,
+      "line_end": 177,
+      "quote": "| REL01 | OSDS | measures / records | physical properties through ground-context systems | Direct scope; candidate relationship, no endpoint-resolution claim |",
+      "quote_sha256": "41e33b62f13cf3b045f60823de95bac068b6bd21b080ed0e8dc521190ee9a93f",
+      "fields": {
+        "Rel ID": "REL01",
+        "Subject": "OSDS",
+        "Predicate": "measures / records",
+        "Object": "physical properties through ground-context systems",
+        "Qualification": "Direct scope; candidate relationship, no endpoint-resolution claim"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0194",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "9. Federation boundaries and qualified relationship proposals",
+      "subsection": "",
+      "line_start": 178,
+      "line_end": 178,
+      "quote": "| REL02 | OSDS | provides evidence for | EII indicator definitions and inference | Proposed interoperability, not asserted identity; candidate relationship, no endpoint-resolution claim |",
+      "quote_sha256": "313bd12b018a37f21db6bc5c5804caec6a13dab59d7955513b42d247d05ea90f",
+      "fields": {
+        "Rel ID": "REL02",
+        "Subject": "OSDS",
+        "Predicate": "provides evidence for",
+        "Object": "EII indicator definitions and inference",
+        "Qualification": "Proposed interoperability, not asserted identity; candidate relationship, no endpoint-resolution claim"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0195",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "9. Federation boundaries and qualified relationship proposals",
+      "subsection": "",
+      "line_start": 179,
+      "line_end": 179,
+      "quote": "| REL03 | OSDS | cross-references | GISDS satellite/aerial mapping and geospatial services | Boundary: exclude aerial mapping as OSDS records; candidate relationship, no endpoint-resolution claim |",
+      "quote_sha256": "a001dac6c0284d37ad3584e4557aab47e6790023db7753d1eb3894d8b17337d3",
+      "fields": {
+        "Rel ID": "REL03",
+        "Subject": "OSDS",
+        "Predicate": "cross-references",
+        "Object": "GISDS satellite/aerial mapping and geospatial services",
+        "Qualification": "Boundary: exclude aerial mapping as OSDS records; candidate relationship, no endpoint-resolution claim"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0196",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "9. Federation boundaries and qualified relationship proposals",
+      "subsection": "",
+      "line_start": 180,
+      "line_end": 180,
+      "quote": "| REL04 | OSDS | cross-references | future biological database / BIPKB for organisms and phenotypes | Biological interpretations not owned by OSDS; candidate relationship, no endpoint-resolution claim |",
+      "quote_sha256": "a2d33e2b3198e4f834e03893c83dcc3ba8c07d6fef83963d802c4f703bf29f0b",
+      "fields": {
+        "Rel ID": "REL04",
+        "Subject": "OSDS",
+        "Predicate": "cross-references",
+        "Object": "future biological database / BIPKB for organisms and phenotypes",
+        "Qualification": "Biological interpretations not owned by OSDS; candidate relationship, no endpoint-resolution claim"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0197",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "9. Federation boundaries and qualified relationship proposals",
+      "subsection": "",
+      "line_start": 181,
+      "line_end": 181,
+      "quote": "| REL05 | OSDS | cross-references | AMRKB agricultural practice and field operations | Methods vs measurements; candidate relationship, no endpoint-resolution claim |",
+      "quote_sha256": "070e281157480abd15a361352b2a6c767f4ad1215d1c25449839b229b60e53c5",
+      "fields": {
+        "Rel ID": "REL05",
+        "Subject": "OSDS",
+        "Predicate": "cross-references",
+        "Object": "AMRKB agricultural practice and field operations",
+        "Qualification": "Methods vs measurements; candidate relationship, no endpoint-resolution claim"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0198",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "9. Federation boundaries and qualified relationship proposals",
+      "subsection": "",
+      "line_start": 182,
+      "line_end": 182,
+      "quote": "| REL06 | OSDS | cross-references | DPRKB in-situ design research and field fabrication | Methodological relation; candidate relationship, no endpoint-resolution claim |",
+      "quote_sha256": "fa40426c4a685fdcc576bb22870acc7e15c765e05c90d8e1cba75908476020ae",
+      "fields": {
+        "Rel ID": "REL06",
+        "Subject": "OSDS",
+        "Predicate": "cross-references",
+        "Object": "DPRKB in-situ design research and field fabrication",
+        "Qualification": "Methodological relation; candidate relationship, no endpoint-resolution claim"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0199",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "9. Federation boundaries and qualified relationship proposals",
+      "subsection": "",
+      "line_start": 183,
+      "line_end": 183,
+      "quote": "| REL07 | OSDS | supports | Ecological Computation tools and edge analytics | Implementation not evidenced; candidate relationship, no endpoint-resolution claim |",
+      "quote_sha256": "2c86339924eac1fbd69611475a0aca2e929f07e0b3451569c50fd680a45065a8",
+      "fields": {
+        "Rel ID": "REL07",
+        "Subject": "OSDS",
+        "Predicate": "supports",
+        "Object": "Ecological Computation tools and edge analytics",
+        "Qualification": "Implementation not evidenced; candidate relationship, no endpoint-resolution claim"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0200",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "9. Federation boundaries and qualified relationship proposals",
+      "subsection": "",
+      "line_start": 184,
+      "line_end": 184,
+      "quote": "| REL08 | OSDS | provides documentary inputs to | IRKB interdisciplinary synthesis | IRKB assertions remain IRKB-owned; candidate relationship, no endpoint-resolution claim |",
+      "quote_sha256": "b9f4676665d85ef8912e7833c7e3d20d8c4b56cc57dbd5795483420c6713112f",
+      "fields": {
+        "Rel ID": "REL08",
+        "Subject": "OSDS",
+        "Predicate": "provides documentary inputs to",
+        "Object": "IRKB interdisciplinary synthesis",
+        "Qualification": "IRKB assertions remain IRKB-owned; candidate relationship, no endpoint-resolution claim"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0201",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "9. Federation boundaries and qualified relationship proposals",
+      "subsection": "",
+      "line_start": 185,
+      "line_end": 185,
+      "quote": "| REL09 | OSDS | compares without collapsing | situated / traditional knowledge of place | Parallel evidence, consent/context required; candidate relationship, no endpoint-resolution claim |",
+      "quote_sha256": "e7c5107a3adab40fb528715f10e9d86c25b3a0cc595df417632defe1281fd463",
+      "fields": {
+        "Rel ID": "REL09",
+        "Subject": "OSDS",
+        "Predicate": "compares without collapsing",
+        "Object": "situated / traditional knowledge of place",
+        "Qualification": "Parallel evidence, consent/context required; candidate relationship, no endpoint-resolution claim"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0202",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "9. Federation boundaries and qualified relationship proposals",
+      "subsection": "",
+      "line_start": 186,
+      "line_end": 186,
+      "quote": "| REL10 | OSDS | is governed for documentary exchange by | DRM MSP candidate principles | Not protocol conformance; candidate relationship, no endpoint-resolution claim |",
+      "quote_sha256": "dfa8c5b096fb61e86803947f5afad53fd4b7fb49c5c0b5454a94cd26bb7b0591",
+      "fields": {
+        "Rel ID": "REL10",
+        "Subject": "OSDS",
+        "Predicate": "is governed for documentary exchange by",
+        "Object": "DRM MSP candidate principles",
+        "Qualification": "Not protocol conformance; candidate relationship, no endpoint-resolution claim"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0203",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "10. Decision and authority ledger",
+      "subsection": "",
+      "line_start": 191,
+      "line_end": 191,
+      "quote": "| DEC01 | Preserve eight existing domains and categories | User acceptance in T01/T02 | confirmed conversation decision |",
+      "quote_sha256": "df690dd9ad24ef422ddc92071fb685d4277a19f6701d0b21bcdb9cb38cad8cf1",
+      "fields": {
+        "Decision ID": "DEC01",
+        "Proposition": "Preserve eight existing domains and categories",
+        "Evidence locator": "User acceptance in T01/T02",
+        "Authority / status": "confirmed conversation decision"
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_user_decision",
+        "claim_basis": "audit_field",
+        "source_claim": "confirmed conversation decision",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0204",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "10. Decision and authority ledger",
+      "subsection": "",
+      "line_start": 192,
+      "line_end": 192,
+      "quote": "| DEC02 | Defer formal taxonomy validation; continue scoping | Explicit user direction in T02 | confirmed |",
+      "quote_sha256": "1457cb9692fa3e6c70606e18f3951de7b5a669b335ca5c4e5dff0814578f5f12",
+      "fields": {
+        "Decision ID": "DEC02",
+        "Proposition": "Defer formal taxonomy validation; continue scoping",
+        "Evidence locator": "Explicit user direction in T02",
+        "Authority / status": "confirmed"
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_user_decision",
+        "claim_basis": "audit_field",
+        "source_claim": "confirmed",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0205",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "10. Decision and authority ledger",
+      "subsection": "",
+      "line_start": 193,
+      "line_end": 193,
+      "quote": "| DEC03 | Human/ground-scale scope; exclude satellite/aerial GIS and specialised biology instruments | Explicit user direction T03 | confirmed |",
+      "quote_sha256": "9b18b787453f69a781d748b12e7cc7922e2c1498e8e171d803e7363eb9bd5cb3",
+      "fields": {
+        "Decision ID": "DEC03",
+        "Proposition": "Human/ground-scale scope; exclude satellite/aerial GIS and specialised biology instruments",
+        "Evidence locator": "Explicit user direction T03",
+        "Authority / status": "confirmed"
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_user_decision",
+        "claim_basis": "audit_field",
+        "source_claim": "confirmed",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0206",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "10. Decision and authority ledger",
+      "subsection": "",
+      "line_start": 194,
+      "line_end": 194,
+      "quote": "| DEC04 | Large governmental and global infrastructures remain in scope if ground-context | Explicit user clarification T03 | confirmed |",
+      "quote_sha256": "898ad3a36e675f4057818d131e3e9fdb9afe0273c3130948247d55fb1673e784",
+      "fields": {
+        "Decision ID": "DEC04",
+        "Proposition": "Large governmental and global infrastructures remain in scope if ground-context",
+        "Evidence locator": "Explicit user clarification T03",
+        "Authority / status": "confirmed"
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_user_decision",
+        "claim_basis": "audit_field",
+        "source_claim": "confirmed",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0207",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "10. Decision and authority ledger",
+      "subsection": "",
+      "line_start": 195,
+      "line_end": 195,
+      "quote": "| DEC05 | Keep publication/accessibility mapping in mind, do not create a new axis yet | Explicit user direction T05 | confirmed |",
+      "quote_sha256": "6a5269b32466ac3a8460208a7eeecd6edb754e5a9db011b9edbb8cb6bf643b41",
+      "fields": {
+        "Decision ID": "DEC05",
+        "Proposition": "Keep publication/accessibility mapping in mind, do not create a new axis yet",
+        "Evidence locator": "Explicit user direction T05",
+        "Authority / status": "confirmed"
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_user_decision",
+        "claim_basis": "audit_field",
+        "source_claim": "confirmed",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0208",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "10. Decision and authority ledger",
+      "subsection": "",
+      "line_start": 196,
+      "line_end": 196,
+      "quote": "| DEC06 | Record protocols and standards as research references | User agreement T08 | confirmed |",
+      "quote_sha256": "01452831b0a6343ae41f11789fae43495c90a51f04d6685a592f08e43ebfec13",
+      "fields": {
+        "Decision ID": "DEC06",
+        "Proposition": "Record protocols and standards as research references",
+        "Evidence locator": "User agreement T08",
+        "Authority / status": "confirmed"
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_user_decision",
+        "claim_basis": "audit_field",
+        "source_claim": "confirmed",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0209",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "10. Decision and authority ledger",
+      "subsection": "",
+      "line_start": 197,
+      "line_end": 197,
+      "quote": "| DEC07 | Use cross-cutting research themes, but do not formalise new top-level classes | User agreement and deferral T10 | confirmed approach only |",
+      "quote_sha256": "59c1898c169dc3a96e20aa79dfaa90a9c52970e9cd89b21dab763086c0d063bc",
+      "fields": {
+        "Decision ID": "DEC07",
+        "Proposition": "Use cross-cutting research themes, but do not formalise new top-level classes",
+        "Evidence locator": "User agreement and deferral T10",
+        "Authority / status": "confirmed approach only"
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_user_decision",
+        "claim_basis": "audit_field",
+        "source_claim": "confirmed approach only",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0210",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "10. Decision and authority ledger",
+      "subsection": "",
+      "line_start": 198,
+      "line_end": 198,
+      "quote": "| DEC08 | Keep physical computing and IoT distinct but overlapping | User agreement T11 | confirmed working distinction |",
+      "quote_sha256": "9e6cff377068ee532351b44f1f6701eb34a8bb7970a3bb1c4199ecf04d98cd03",
+      "fields": {
+        "Decision ID": "DEC08",
+        "Proposition": "Keep physical computing and IoT distinct but overlapping",
+        "Evidence locator": "User agreement T11",
+        "Authority / status": "confirmed working distinction"
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_user_decision",
+        "claim_basis": "audit_field",
+        "source_claim": "confirmed working distinction",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0211",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "10. Decision and authority ledger",
+      "subsection": "",
+      "line_start": 199,
+      "line_end": 199,
+      "quote": "| DEC09 | Include embedded AI/edge inference as provisional family under O07 | Explicit user agreement T11 | confirmed provisional family |",
+      "quote_sha256": "e2d79f0cbdec8d32c4fd59ebf259d7fff9e9690810c326ecc4375f7f7b72938e",
+      "fields": {
+        "Decision ID": "DEC09",
+        "Proposition": "Include embedded AI/edge inference as provisional family under O07",
+        "Evidence locator": "Explicit user agreement T11",
+        "Authority / status": "confirmed provisional family"
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_user_decision",
+        "claim_basis": "audit_field",
+        "source_claim": "confirmed provisional family",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0212",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "10. Decision and authority ledger",
+      "subsection": "",
+      "line_start": 200,
+      "line_end": 200,
+      "quote": "| DEC10 | Treat acoustic capture in OSDS and biological inference across databases | User agreement T12 | confirmed working boundary |",
+      "quote_sha256": "5634512801b0acbccc2b27fad049a28a7a90fe0b19bf06cf4c45cfe79755723f",
+      "fields": {
+        "Decision ID": "DEC10",
+        "Proposition": "Treat acoustic capture in OSDS and biological inference across databases",
+        "Evidence locator": "User agreement T12",
+        "Authority / status": "confirmed working boundary"
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_user_decision",
+        "claim_basis": "audit_field",
+        "source_claim": "confirmed working boundary",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0213",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "10. Decision and authority ledger",
+      "subsection": "",
+      "line_start": 201,
+      "line_end": 201,
+      "quote": "| DEC11 | Link historical instrumental records with situated knowledge without equating evidence | User agreement T13 | confirmed conceptual bridge |",
+      "quote_sha256": "028f1af3ea1fc74a266fd138b6d5b208e056e8a9a38e087a97492cf9b0352dd6",
+      "fields": {
+        "Decision ID": "DEC11",
+        "Proposition": "Link historical instrumental records with situated knowledge without equating evidence",
+        "Evidence locator": "User agreement T13",
+        "Authority / status": "confirmed conceptual bridge"
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_user_decision",
+        "claim_basis": "audit_field",
+        "source_claim": "confirmed conceptual bridge",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0214",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "10. Decision and authority ledger",
+      "subsection": "",
+      "line_start": 202,
+      "line_end": 202,
+      "quote": "| DEC12 | Augment existing OSDS structure rather than replace taxonomy | Explicit user confirmation T14 | confirmed |",
+      "quote_sha256": "919f24dbc7a1191de5879e7526297c67bd3b05876cba677815f17a0417bf3b5e",
+      "fields": {
+        "Decision ID": "DEC12",
+        "Proposition": "Augment existing OSDS structure rather than replace taxonomy",
+        "Evidence locator": "Explicit user confirmation T14",
+        "Authority / status": "confirmed"
+      },
+      "authority_context": {
+        "reported_role": "audit_reported_user_decision",
+        "claim_basis": "audit_field",
+        "source_claim": "confirmed",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0215",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "11. Verification, correction and discrepancy ledger",
+      "subsection": "",
+      "line_start": 209,
+      "line_end": 209,
+      "quote": "| V01 | Earlier OSDKB versus OSDS naming | OSDS is the working name; expanded form used as Observational Systems and Data Source(s) in conversation | Retain exact source wording; do not silently normalize expansion |",
+      "quote_sha256": "c1a03deae65716c78758f7cfa708f4eac73a4ff40f47c00857d9c456c876b7eb",
+      "fields": {
+        "Issue ID": "V01",
+        "Claim / risk": "Earlier OSDKB versus OSDS naming",
+        "Finding": "OSDS is the working name; expanded form used as Observational Systems and Data Source(s) in conversation",
+        "Required disposition": "Retain exact source wording; do not silently normalize expansion"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0216",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "11. Verification, correction and discrepancy ledger",
+      "subsection": "",
+      "line_start": 210,
+      "line_end": 210,
+      "quote": "| V02 | WILDLABS taxonomy | Assistant summarised technology/challenge groupings without independently checking live inventory | Candidate comparison; verify categories and edition |",
+      "quote_sha256": "81cac644a4329cce2001e0522eb62e4310d8d52305b10aafc854f91cd473905c",
+      "fields": {
+        "Issue ID": "V02",
+        "Claim / risk": "WILDLABS taxonomy",
+        "Finding": "Assistant summarised technology/challenge groupings without independently checking live inventory",
+        "Required disposition": "Candidate comparison; verify categories and edition"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0217",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "11. Verification, correction and discrepancy ledger",
+      "subsection": "",
+      "line_start": 211,
+      "line_end": 211,
+      "quote": "| V03 | Digital Naturalism projects | Assistant inferred field-adaptive/wearable/fabrication families without individual project verification | Methodological lead only |",
+      "quote_sha256": "a2dd84fc7cc524d0b6340b8fef5d8d9661e09283bdf92de2d445d5a70580fba6",
+      "fields": {
+        "Issue ID": "V03",
+        "Claim / risk": "Digital Naturalism projects",
+        "Finding": "Assistant inferred field-adaptive/wearable/fabrication families without individual project verification",
+        "Required disposition": "Methodological lead only"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0218",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "11. Verification, correction and discrepancy ledger",
+      "subsection": "",
+      "line_start": 212,
+      "line_end": 212,
+      "quote": "| V04 | Jetson/LicheeRV capabilities | Product generations and accelerators described conversationally | Verify board-specific specifications before scientific or procurement use |",
+      "quote_sha256": "a1cd025914a8a062c2e0e4c9e3009ec4b5d6f775d10974f174eb0002e1b2dde7",
+      "fields": {
+        "Issue ID": "V04",
+        "Claim / risk": "Jetson/LicheeRV capabilities",
+        "Finding": "Product generations and accelerators described conversationally",
+        "Required disposition": "Verify board-specific specifications before scientific or procurement use"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0219",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "11. Verification, correction and discrepancy ledger",
+      "subsection": "",
+      "line_start": 213,
+      "line_end": 213,
+      "quote": "| V05 | O08 AI causal claims | AI pattern discovery does not establish causation | Separate extraction, reconstruction and causal inference |",
+      "quote_sha256": "ba06090c9be78aae2cf55f8d8cdb1b47e0e0653f9032a4d912ae8310202e6b86",
+      "fields": {
+        "Issue ID": "V05",
+        "Claim / risk": "O08 AI causal claims",
+        "Finding": "AI pattern discovery does not establish causation",
+        "Required disposition": "Separate extraction, reconstruction and causal inference"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0220",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "11. Verification, correction and discrepancy ledger",
+      "subsection": "",
+      "line_start": 214,
+      "line_end": 214,
+      "quote": "| V06 | Ground truth concept | Reference role is context-dependent, not intrinsic quality label | Record validation design and uncertainty |",
+      "quote_sha256": "79a585f65078b92fec7a81577d07b95a3e7d0b6e871f2050a5ab4e8fe7ab524f",
+      "fields": {
+        "Issue ID": "V06",
+        "Claim / risk": "Ground truth concept",
+        "Finding": "Reference role is context-dependent, not intrinsic quality label",
+        "Required disposition": "Record validation design and uncertainty"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0221",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "11. Verification, correction and discrepancy ledger",
+      "subsection": "",
+      "line_start": 215,
+      "line_end": 215,
+      "quote": "| V07 | Original source list duplicates | 62 inventory rows are not 62 distinct verified entities | Preserve row aliases; later deduplicate with provenance |",
+      "quote_sha256": "df13ed2053a5cebf6f0582801ba065e1f425a0130fed0b3dc61fcb6b048e794b",
+      "fields": {
+        "Issue ID": "V07",
+        "Claim / risk": "Original source list duplicates",
+        "Finding": "62 inventory rows are not 62 distinct verified entities",
+        "Required disposition": "Preserve row aliases; later deduplicate with provenance"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0222",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "11. Verification, correction and discrepancy ledger",
+      "subsection": "",
+      "line_start": 216,
+      "line_end": 216,
+      "quote": "| V08 | Historical audit edition | 30 Oct file reported absent; 1 Nov audit not provided in this turn | No earlier-audit reconciliation claim |",
+      "quote_sha256": "45b5d006eaa1edc3b24a26d8b24fba95ede72d2fad54c567a6f9dc64c463d5a8",
+      "fields": {
+        "Issue ID": "V08",
+        "Claim / risk": "Historical audit edition",
+        "Finding": "30 Oct file reported absent; 1 Nov audit not provided in this turn",
+        "Required disposition": "No earlier-audit reconciliation claim"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0223",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "11. Verification, correction and discrepancy ledger",
+      "subsection": "",
+      "line_start": 217,
+      "line_end": 217,
+      "quote": "| V09 | Rights/licensing | Named URLs/resources do not imply reuse permission | Unknown; restrict publication of third-party content |",
+      "quote_sha256": "f83d226537eea6488e9bb881b19fa4d5ded53b8f311f7cae27453efecfb81a77",
+      "fields": {
+        "Issue ID": "V09",
+        "Claim / risk": "Rights/licensing",
+        "Finding": "Named URLs/resources do not imply reuse permission",
+        "Required disposition": "Unknown; restrict publication of third-party content"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0224",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "11. Verification, correction and discrepancy ledger",
+      "subsection": "",
+      "line_start": 218,
+      "line_end": 218,
+      "quote": "| V10 | Source dates and checksums | Voice transcript not exported in this context | Cannot certify exhaustive recovery |",
+      "quote_sha256": "d8585feebd3ea3103e87a015b5bc07d1edb08befc45135928c11cae7f88fcfd7",
+      "fields": {
+        "Issue ID": "V10",
+        "Claim / risk": "Source dates and checksums",
+        "Finding": "Voice transcript not exported in this context",
+        "Required disposition": "Cannot certify exhaustive recovery"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0225",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "11. Verification, correction and discrepancy ledger",
+      "subsection": "",
+      "line_start": 219,
+      "line_end": 219,
+      "quote": "| V11 | DRM rev document status | Rev03 file is A1/A2 review and proposed ingestion controls, not adopted protocol | Do not promote DRM-ING proposals to requirements |",
+      "quote_sha256": "32387773b31191b6c09c5e8ec68e96d24f35f3eeb9db666cba60e33c3fd2f9e3",
+      "fields": {
+        "Issue ID": "V11",
+        "Claim / risk": "DRM rev document status",
+        "Finding": "Rev03 file is A1/A2 review and proposed ingestion controls, not adopted protocol",
+        "Required disposition": "Do not promote DRM-ING proposals to requirements"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0226",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "11. Verification, correction and discrepancy ledger",
+      "subsection": "",
+      "line_start": 220,
+      "line_end": 220,
+      "quote": "| V12 | Three standards versus A02 additions | SOSA/SSN, SensorThings, O&M foundational; PROV-O added by A02 instructions | Preserve both origin contexts |",
+      "quote_sha256": "bad58a6239d5750ff97aadf7ff85ee405a08f33e7b74637e9865073af9f5c9ca",
+      "fields": {
+        "Issue ID": "V12",
+        "Claim / risk": "Three standards versus A02 additions",
+        "Finding": "SOSA/SSN, SensorThings, O&M foundational; PROV-O added by A02 instructions",
+        "Required disposition": "Preserve both origin contexts"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0227",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 260,
+      "line_end": 260,
+      "quote": "- **GAP01:** Immutable L0 export with original turn IDs, time offsets and exact text.",
+      "quote_sha256": "4da308e3fe128d7f2ac9f6f1a99bde3dae6d60680f885506c93967a466783a05",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0228",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 261,
+      "line_end": 261,
+      "quote": "- **GAP02:** Complete 1 November OSDS audit and earlier source-register editions for field-level reconciliation.",
+      "quote_sha256": "385f5c6a396b5f1cd8479dfb8cb903ddf74a0d265db89c875b9065ed356c80ad",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0229",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 262,
+      "line_end": 262,
+      "quote": "- **GAP03:** Independent validation of scientific source URLs, provider identities, versions and access conditions.",
+      "quote_sha256": "74ea124d1c40bf83b9dff3acf44395ff4c3929338e0c5ce39a4baaa0dbbe0d83",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0230",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 263,
+      "line_end": 263,
+      "quote": "- **GAP04:** Exact source licences, community consent and sensitivity restrictions.",
+      "quote_sha256": "f983d639e6df936c487753679e7f12ae28fe197a69c344992bb3251ad780c4f4",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0231",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 264,
+      "line_end": 264,
+      "quote": "- **GAP05:** Entity-type model distinguishing institution/network/station/platform/instrument/dataset/observation.",
+      "quote_sha256": "0c01204fc660bd935a1c1507103f9f0fd524b4a8d17b7ae0fab50941564fc631",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0232",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 265,
+      "line_end": 265,
+      "quote": "- **GAP06:** Scheme ownership and approval of category/domain codes under MSP-05.",
+      "quote_sha256": "1256f4ae846a05c97ed8629333b3dc90f45860ee2265cd76a1cde5b0424e9de1",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0233",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 266,
+      "line_end": 266,
+      "quote": "- **GAP07:** Quantitative sensor accuracy, calibration and environmental performance per instrument family.",
+      "quote_sha256": "ca3a4acb4ba574ea51d8c1939965c8af6336c12fee1a36a176bd3a6afb4d3f7a",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0234",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 267,
+      "line_end": 267,
+      "quote": "- **GAP08:** Specific standards editions and interoperability mapping, including SOSA/SSN, SensorThings and O&M.",
+      "quote_sha256": "e77be121551ade320462e22597a29455d304b457a18b86b2713c6a0dc1e35a63",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0235",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 268,
+      "line_end": 268,
+      "quote": "- **GAP09:** Validation protocols and quality levels for campaign records, citizen sensing and ground truth.",
+      "quote_sha256": "63a498f8e05fe1843a72b4c366637bf5c380cb1a6e5ffaf96da33e9e0f264a66",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0236",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 269,
+      "line_end": 269,
+      "quote": "- **GAP10:** Actual board-level edge inference performance, power budgets and model/version compatibility.",
+      "quote_sha256": "0793a8749cd00256ee83771c55aa2a91ce10ec95e8855cc515f05ad3f5bd8cd2",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0237",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 270,
+      "line_end": 270,
+      "quote": "- **GAP11:** Evidence-based comparison with WILDLABS and Digital Naturalism live project taxonomies.",
+      "quote_sha256": "06e6a3d556dd655d7a7e321c4eb2f149b06e02f3dd840f06180f514e54ce2160",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0238",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 271,
+      "line_end": 271,
+      "quote": "- **GAP12:** Rights/consent and epistemic protocols for situated knowledge and oral histories.",
+      "quote_sha256": "d81dd4eaed3fc7bf4d46701277fe6705ab7922a61d878e1cb37b9bc0856e1b7b",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0239",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 272,
+      "line_end": 272,
+      "quote": "- **GAP13:** Boundary examples for underwater autonomy, fixed ecological cameras and biological instruments.",
+      "quote_sha256": "6a3dfab4484b76e98bd6e04924d9e4271e7212b1b670f44ab03d908ba034bd81",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0240",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 273,
+      "line_end": 273,
+      "quote": "- **GAP14:** OSDS-to-EII mapping criteria, uncertainty propagation and derived indicator provenance.",
+      "quote_sha256": "80ae1a21276298331c3245db1b2e0b4295d2dca6ff6f6346d4a6a833a9d1bf96",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0241",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "15. Research gaps and deferred questions",
+      "subsection": "",
+      "line_start": 274,
+      "line_end": 274,
+      "quote": "- **GAP15:** Independent review, scored assessment and controlled candidate ingestion approval.",
+      "quote_sha256": "d1f7035588f2f76eb8608ac945b1b4bd666bcad348a951a3b5d2be3d33d41d25",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0242",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 331,
+      "line_end": 331,
+      "quote": "| Existing D01–D08 and O01–O08; B, R§2 | Already / Already / Already | Preserve both dimensions and original memberships | Candidate classifications, not externally verified meanings |",
+      "quote_sha256": "0fb1e18e80025c843383ea45417fb0f0a7aef10be753164506eb30049616ce59",
+      "fields": {
+        "Item / evidence locator": "Existing D01–D08 and O01–O08; B, R§2",
+        "R / S / M assessment": "Already / Already / Already",
+        "Proposed destination and record treatment": "Preserve both dimensions and original memberships",
+        "Evidence/decision limitation": "Candidate classifications, not externally verified meanings"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0243",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 332,
+      "line_end": 332,
+      "quote": "| Ground/human-scale and large-infrastructure boundary; R§1 | Partial / Partial / Partial; Tension with mixed providers | Scope guidance in R/S; proposed scope-assessment assertions in M | Reported agreement, original acceptance unavailable |",
+      "quote_sha256": "34e8be36e9a3e56fcbcae1e335ea31f1da93b80fa0c5a0b42a2add8155b41267",
+      "fields": {
+        "Item / evidence locator": "Ground/human-scale and large-infrastructure boundary; R§1",
+        "R / S / M assessment": "Partial / Partial / Partial; Tension with mixed providers",
+        "Proposed destination and record treatment": "Scope guidance in R/S; proposed scope-assessment assertions in M",
+        "Evidence/decision limitation": "Reported agreement, original acceptance unavailable"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0244",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 333,
+      "line_end": 333,
+      "quote": "| Satellite/aerial/biology exclusions; R§1 | Missing as operational rules; Tension | Source/product scope-review questions, not deletions | Needs owner scientific decision |",
+      "quote_sha256": "7615aeb6d9587ca87f8807a49382d6308ef033fb1aaaba1de51eac045432644c",
+      "fields": {
+        "Item / evidence locator": "Satellite/aerial/biology exclusions; R§1",
+        "R / S / M assessment": "Missing as operational rules; Tension",
+        "Proposed destination and record treatment": "Source/product scope-review questions, not deletions",
+        "Evidence/decision limitation": "Needs owner scientific decision"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0245",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 334,
+      "line_end": 334,
+      "quote": "| Sixteen family labels; R§3 | Missing / Missing / Missing; Proposed | S instrumentation-family section; M separate family-definition candidates | Labels only; definitions/models/properties/indicators unknown |",
+      "quote_sha256": "3cd0694e51d5b7e6b9001f660cf296d9ab2cebd227a31ef339acc36f092e6dc6",
+      "fields": {
+        "Item / evidence locator": "Sixteen family labels; R§3",
+        "R / S / M assessment": "Missing / Missing / Missing; Proposed",
+        "Proposed destination and record treatment": "S instrumentation-family section; M separate family-definition candidates",
+        "Evidence/decision limitation": "Labels only; definitions/models/properties/indicators unknown"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0246",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 335,
+      "line_end": 335,
+      "quote": "| Per-family instrument/property/indicator details; R§3 | Missing in all outputs | Retain explicit research gaps; do not fabricate rows | Not supplied in R/N |",
+      "quote_sha256": "6ee4badea1d3cceec20654ece92257e54a036f959077015d898876f999522d1c",
+      "fields": {
+        "Item / evidence locator": "Per-family instrument/property/indicator details; R§3",
+        "R / S / M assessment": "Missing in all outputs",
+        "Proposed destination and record treatment": "Retain explicit research gaps; do not fabricate rows",
+        "Evidence/decision limitation": "Not supplied in R/N"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0247",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 336,
+      "line_end": 336,
+      "quote": "| Scientific monitoring/reference grade/calibration/publication; R§4, N§5.2 | Partial across outputs | S category-method narrative; M method/quality evidence where sourced | No automatic quality/compliance upgrade |",
+      "quote_sha256": "81d439edcb8c18bddb8d2061f7c8a1edff46677135abae8e9e042d2811fba0bc",
+      "fields": {
+        "Item / evidence locator": "Scientific monitoring/reference grade/calibration/publication; R§4, N§5.2",
+        "R / S / M assessment": "Partial across outputs",
+        "Proposed destination and record treatment": "S category-method narrative; M method/quality evidence where sourced",
+        "Evidence/decision limitation": "No automatic quality/compliance upgrade"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0248",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 337,
+      "line_end": 337,
+      "quote": "| Manual/reference observations, soil/water samples, geotechnical testing; R§5 | Partial / Partial / Null entity slots | S methodological section; M process/sample/reference-method candidates | No exact test/instrument supplied |",
+      "quote_sha256": "d8865a2bed640601c2f9b85d1c6a4c663a0f4f062ef5bbcd4f385c056d71cbab",
+      "fields": {
+        "Item / evidence locator": "Manual/reference observations, soil/water samples, geotechnical testing; R§5",
+        "R / S / M assessment": "Partial / Partial / Null entity slots",
+        "Proposed destination and record treatment": "S methodological section; M process/sample/reference-method candidates",
+        "Evidence/decision limitation": "No exact test/instrument supplied"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0249",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 338,
+      "line_end": 338,
+      "quote": "| Autonomy versus connectivity; R§6 | Partial category labels only | S distinction; M independently evidenced capability assertions | No inferred capability from membership |",
+      "quote_sha256": "64fa8a551f1b025f37fc01ffb34d1f3595fc3e3dc63301383e8652962cfdd5af",
+      "fields": {
+        "Item / evidence locator": "Autonomy versus connectivity; R§6",
+        "R / S / M assessment": "Partial category labels only",
+        "Proposed destination and record treatment": "S distinction; M independently evidenced capability assertions",
+        "Evidence/decision limitation": "No inferred capability from membership"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0250",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 339,
+      "line_end": 339,
+      "quote": "| Campaign → Event → Observation → Verification; R§7 | Missing substantive model | S campaign framework; M separate process/entity relationships | Conceptual proposal, not guarantee of verification |",
+      "quote_sha256": "8f4f6972a0e68a3b73542f3fd9f061f38fff7721a11c4f75e8d0f30aae5e1c8c",
+      "fields": {
+        "Item / evidence locator": "Campaign → Event → Observation → Verification; R§7",
+        "R / S / M assessment": "Missing substantive model",
+        "Proposed destination and record treatment": "S campaign framework; M separate process/entity relationships",
+        "Evidence/decision limitation": "Conceptual proposal, not guarantee of verification"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0251",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 340,
+      "line_end": 340,
+      "quote": "| Ecological surveys/species sightings; R§7 | GBIF/eBird present; method distinctions partial | Add supported campaign/protocol/effort context to SRC-014/015 only when tied to specific evidence | Existing source identity alone insufficient |",
+      "quote_sha256": "d0a01a4ecd14d405cfe34e27a24858a1d5188a4efb3dce5eba6bd6390ac7d9de",
+      "fields": {
+        "Item / evidence locator": "Ecological surveys/species sightings; R§7",
+        "R / S / M assessment": "GBIF/eBird present; method distinctions partial",
+        "Proposed destination and record treatment": "Add supported campaign/protocol/effort context to SRC-014/015 only when tied to specific evidence",
+        "Evidence/decision limitation": "Existing source identity alone insufficient"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0252",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 341,
+      "line_end": 341,
+      "quote": "| Darwin Core; R§7/12 | Missing as substantive reference | M standards-reference candidate; S methods references | Edition/mapping/compliance unverified |",
+      "quote_sha256": "bf1be58a006fe4b66826b75c91b3f5899d167ba14953766f7fbe231b09243f97",
+      "fields": {
+        "Item / evidence locator": "Darwin Core; R§7/12",
+        "R / S / M assessment": "Missing as substantive reference",
+        "Proposed destination and record treatment": "M standards-reference candidate; S methods references",
+        "Evidence/decision limitation": "Edition/mapping/compliance unverified"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0253",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 342,
+      "line_end": 342,
+      "quote": "| Humboldt Extension; R§7/12 | Missing as substantive reference | M extension-reference candidate; S campaign context | Definition/version/field mappings unresolved |",
+      "quote_sha256": "a1f2bda7c9e090c1776f1e6c5e0e7a1d1c5a37dcad1df1588af7eca4243ff8cd",
+      "fields": {
+        "Item / evidence locator": "Humboldt Extension; R§7/12",
+        "R / S / M assessment": "Missing as substantive reference",
+        "Proposed destination and record treatment": "M extension-reference candidate; S campaign context",
+        "Evidence/decision limitation": "Definition/version/field mappings unresolved"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0254",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 343,
+      "line_end": 343,
+      "quote": "| GBIF event organisation; R§7 | SRC-014 Already; event framework Missing | Link new method/reference candidate to existing SRC-014 without duplicating provider | Association is source-reported, not implemented |",
+      "quote_sha256": "8b4fb2049ec3b9f01b75fc4f8c583e3bfef46409d848ff12d1d6e823e8556846",
+      "fields": {
+        "Item / evidence locator": "GBIF event organisation; R§7",
+        "R / S / M assessment": "SRC-014 Already; event framework Missing",
+        "Proposed destination and record treatment": "Link new method/reference candidate to existing SRC-014 without duplicating provider",
+        "Evidence/decision limitation": "Association is source-reported, not implemented"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0255",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 344,
+      "line_end": 344,
+      "quote": "| Community sensing/participation/validation; R§8 | Existing O06 sources Already; guidance Partial | S category guidance; M documented participation/protocol assertions | Preserve quality/rights limits |",
+      "quote_sha256": "97fa6f3d340c0566cab6dcaa27239b89cdef9064c7801cd9e63771c7c8dd33c2",
+      "fields": {
+        "Item / evidence locator": "Community sensing/participation/validation; R§8",
+        "R / S / M assessment": "Existing O06 sources Already; guidance Partial",
+        "Proposed destination and record treatment": "S category guidance; M documented participation/protocol assertions",
+        "Evidence/decision limitation": "Preserve quality/rights limits"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0256",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 345,
+      "line_end": 345,
+      "quote": "| WILDLABS; R§8 | Missing | Candidate community/knowledge resource, type to review | Conservation-technology role source-reported |",
+      "quote_sha256": "a7d167d1926e64eea9d5f818c30cf0780d3c5d5b7b18650f3046aa1bac4c6c04",
+      "fields": {
+        "Item / evidence locator": "WILDLABS; R§8",
+        "R / S / M assessment": "Missing",
+        "Proposed destination and record treatment": "Candidate community/knowledge resource, type to review",
+        "Evidence/decision limitation": "Conservation-technology role source-reported"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0257",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 346,
+      "line_end": 346,
+      "quote": "| Physical computing versus IoT; R§9 | Category labels Already; substantive distinction Missing | S paired conceptual definitions; M concept/relationship candidates | Formal definitions not adopted |",
+      "quote_sha256": "2cba2ad59e903a9254112541ed412785633f954fccccebbded52fb01393f33e0",
+      "fields": {
+        "Item / evidence locator": "Physical computing versus IoT; R§9",
+        "R / S / M assessment": "Category labels Already; substantive distinction Missing",
+        "Proposed destination and record treatment": "S paired conceptual definitions; M concept/relationship candidates",
+        "Evidence/decision limitation": "Formal definitions not adopted"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0258",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 347,
+      "line_end": 347,
+      "quote": "| Jetson Nano; R§9 | Missing | M computing-platform candidate; S technology section | Model/variant/capability unknown |",
+      "quote_sha256": "c9621ef3f9d8f8f1d003dd5d6cfc84f068a9b429a1875815824512961fe12ba0",
+      "fields": {
+        "Item / evidence locator": "Jetson Nano; R§9",
+        "R / S / M assessment": "Missing",
+        "Proposed destination and record treatment": "M computing-platform candidate; S technology section",
+        "Evidence/decision limitation": "Model/variant/capability unknown"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0259",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 348,
+      "line_end": 348,
+      "quote": "| Jetson Orin Nano; R§9 | Missing | M computing-platform candidate with N alias “Orin Nano” retained as source wording | No automatic alias equivalence or specification transfer |",
+      "quote_sha256": "6e90b4db53e2f557d9713c9a92b50e8537f5b34ae413318f6ed31f90bcab266a",
+      "fields": {
+        "Item / evidence locator": "Jetson Orin Nano; R§9",
+        "R / S / M assessment": "Missing",
+        "Proposed destination and record treatment": "M computing-platform candidate with N alias “Orin Nano” retained as source wording",
+        "Evidence/decision limitation": "No automatic alias equivalence or specification transfer"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0260",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 349,
+      "line_end": 349,
+      "quote": "| LicheeRV Nano; R§9 | Missing | M platform candidate; S technology list | Exact variant/role unverified |",
+      "quote_sha256": "fa14e10255b27ff0dbd8c9bbd81f03f896680e4615b67bab223c1e5c0fd223b4",
+      "fields": {
+        "Item / evidence locator": "LicheeRV Nano; R§9",
+        "R / S / M assessment": "Missing",
+        "Proposed destination and record treatment": "M platform candidate; S technology list",
+        "Evidence/decision limitation": "Exact variant/role unverified"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0261",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 350,
+      "line_end": 350,
+      "quote": "| ESP32-S3; R§9 | Missing | M chip/platform lead pending type review | Do not infer chip equals full device |",
+      "quote_sha256": "5db743ab45fc2ed3c36129b97606311e7e1910ace9d1f3da6e94f47f9d68a588",
+      "fields": {
+        "Item / evidence locator": "ESP32-S3; R§9",
+        "R / S / M assessment": "Missing",
+        "Proposed destination and record treatment": "M chip/platform lead pending type review",
+        "Evidence/decision limitation": "Do not infer chip equals full device"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0262",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 351,
+      "line_end": 351,
+      "quote": "| Raspberry Pi; R§9 | Missing; new relative to N hardware table | M platform-family candidate | Exact model not supplied |",
+      "quote_sha256": "24e22a7fc7e0c2acda2737507dcf58ed47ac42e5f08dd64e2da840b4070e7046",
+      "fields": {
+        "Item / evidence locator": "Raspberry Pi; R§9",
+        "R / S / M assessment": "Missing; new relative to N hardware table",
+        "Proposed destination and record treatment": "M platform-family candidate",
+        "Evidence/decision limitation": "Exact model not supplied"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0263",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 352,
+      "line_end": 352,
+      "quote": "| Data acquisition/communications/embedded AI/edge inference; R§9 | Null slots / Missing substantive pipeline | Separate processing/capability candidates and evidence links | Not new source providers or approved family 17 |",
+      "quote_sha256": "6146a19810187b00cc1e708c09ac4a9dfae8f22fcd5d988e0d5e84cb3985fe17",
+      "fields": {
+        "Item / evidence locator": "Data acquisition/communications/embedded AI/edge inference; R§9",
+        "R / S / M assessment": "Null slots / Missing substantive pipeline",
+        "Proposed destination and record treatment": "Separate processing/capability candidates and evidence links",
+        "Evidence/decision limitation": "Not new source providers or approved family 17"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0264",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 353,
+      "line_end": 353,
+      "quote": "| Computer vision/object detection/segmentation; R§9 | Not substantive in current records | S capability narrative; M processing-method candidates | Model/benchmark/claim evidence absent |",
+      "quote_sha256": "30972f54d6d23f79c6bfa9e12297c34da2f40bb7add792ee2e10d024ff7e17c7",
+      "fields": {
+        "Item / evidence locator": "Computer vision/object detection/segmentation; R§9",
+        "R / S / M assessment": "Not substantive in current records",
+        "Proposed destination and record treatment": "S capability narrative; M processing-method candidates",
+        "Evidence/decision limitation": "Model/benchmark/claim evidence absent"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0265",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 354,
+      "line_end": 354,
+      "quote": "| Acoustic processing/bioacoustics; R§9 | Missing substantive methods | Separate recording/processing/inference concepts | No biological conclusion inferred |",
+      "quote_sha256": "32bca3b3e53471b43c49a89b7b908b48341519d02c5c395b4657c1d2e2523436",
+      "fields": {
+        "Item / evidence locator": "Acoustic processing/bioacoustics; R§9",
+        "R / S / M assessment": "Missing substantive methods",
+        "Proposed destination and record treatment": "Separate recording/processing/inference concepts",
+        "Evidence/decision limitation": "No biological conclusion inferred"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0266",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 355,
+      "line_end": 355,
+      "quote": "| OS Beehives; R§9 | Missing | Candidate project/resource identity requiring type/URL review | No claim of operational product or colony diagnosis |",
+      "quote_sha256": "cd29e94b6f4f071a641a998ae92c76a941622fc4dcb9d7c28cf157e6502b612e",
+      "fields": {
+        "Item / evidence locator": "OS Beehives; R§9",
+        "R / S / M assessment": "Missing",
+        "Proposed destination and record treatment": "Candidate project/resource identity requiring type/URL review",
+        "Evidence/decision limitation": "No claim of operational product or colony diagnosis"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0267",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 356,
+      "line_end": 356,
+      "quote": "| Digital Naturalism Laboratories; R§9 | Missing | Candidate research-resource identity and separately sourced method assertions | Institutional role externally unverified |",
+      "quote_sha256": "f0d6ab423944a42ff271f911387b2e99de61316cf0bf01e2f825b60ac4297dd7",
+      "fields": {
+        "Item / evidence locator": "Digital Naturalism Laboratories; R§9",
+        "R / S / M assessment": "Missing",
+        "Proposed destination and record treatment": "Candidate research-resource identity and separately sourced method assertions",
+        "Evidence/decision limitation": "Institutional role externally unverified"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0268",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 357,
+      "line_end": 357,
+      "quote": "| Field-adaptive instrumentation/in-situ laboratory; R§9/12 | Missing substantive methods | S field-practice section; M method/practice candidates | N elaboration distinguished from R wording |",
+      "quote_sha256": "e4325e328ccd68f7c8279d4b5a4d9401870ceddae0ba0fed981da9088231ccc7",
+      "fields": {
+        "Item / evidence locator": "Field-adaptive instrumentation/in-situ laboratory; R§9/12",
+        "R / S / M assessment": "Missing substantive methods",
+        "Proposed destination and record treatment": "S field-practice section; M method/practice candidates",
+        "Evidence/decision limitation": "N elaboration distinguished from R wording"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0269",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 358,
+      "line_end": 358,
+      "quote": "| Historical archives; R§10 | Existing O08 sources Already | Preserve source records; add method context only with evidence | No complete time series or dataset validation |",
+      "quote_sha256": "cd045123113edfb7b6a408e8a1d07cb2059deebaacd1b09fa2194be95a8b6436",
+      "fields": {
+        "Item / evidence locator": "Historical archives; R§10",
+        "R / S / M assessment": "Existing O08 sources Already",
+        "Proposed destination and record treatment": "Preserve source records; add method context only with evidence",
+        "Evidence/decision limitation": "No complete time series or dataset validation"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0270",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 359,
+      "line_end": 359,
+      "quote": "| Data rescue/digitisation/homogenisation/reconstruction; R§10 | Missing substantive pipeline | S methods section; M transformation/lineage candidates | Do not relabel derived data as original |",
+      "quote_sha256": "56e7da2605dcf81fe34f17eb524d6e1b9122d1a4912bebd6c8eae8305b8199a3",
+      "fields": {
+        "Item / evidence locator": "Data rescue/digitisation/homogenisation/reconstruction; R§10",
+        "R / S / M assessment": "Missing substantive pipeline",
+        "Proposed destination and record treatment": "S methods section; M transformation/lineage candidates",
+        "Evidence/decision limitation": "Do not relabel derived data as original"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0271",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 360,
+      "line_end": 360,
+      "quote": "| Statistical inference/AI-assisted analysis; R§10 | Missing | M analytical-method candidates; S limitations | No algorithms/results supplied |",
+      "quote_sha256": "b43a29504c2ddd3234ea6c1a3d8a10e8fc399ff85a8d05b45035572585088afe",
+      "fields": {
+        "Item / evidence locator": "Statistical inference/AI-assisted analysis; R§10",
+        "R / S / M assessment": "Missing",
+        "Proposed destination and record treatment": "M analytical-method candidates; S limitations",
+        "Evidence/decision limitation": "No algorithms/results supplied"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0272",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 361,
+      "line_end": 361,
+      "quote": "| Uncertainty/non-stationarity/change-point detection; R§10 | General cautions Partial; methods Missing | Methodological research candidates and explicit assumptions | No model/test adopted |",
+      "quote_sha256": "d5eae346cbe3a4b4eff2f61257d098ca3900060552652ef8a3c278822094f69d",
+      "fields": {
+        "Item / evidence locator": "Uncertainty/non-stationarity/change-point detection; R§10",
+        "R / S / M assessment": "General cautions Partial; methods Missing",
+        "Proposed destination and record treatment": "Methodological research candidates and explicit assumptions",
+        "Evidence/decision limitation": "No model/test adopted"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0273",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 362,
+      "line_end": 362,
+      "quote": "| Situated/traditional/cultural knowledge; R§10 | No substantive model | Contextual relationship proposals, distinct evidence types | Target database/rights/representation unknown |",
+      "quote_sha256": "7e58630bbefc9fcc3acc0e16f281da3a9b5f838a0a3b2f9bbd9d57260af457ed",
+      "fields": {
+        "Item / evidence locator": "Situated/traditional/cultural knowledge; R§10",
+        "R / S / M assessment": "No substantive model",
+        "Proposed destination and record treatment": "Contextual relationship proposals, distinct evidence types",
+        "Evidence/decision limitation": "Target database/rights/representation unknown"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0274",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 363,
+      "line_end": 363,
+      "quote": "| SOSA/SSN, SensorThings, OMS; B, R§12 | Already foundational references | Retain; separately assess edition/mappings later | References are not compliance |",
+      "quote_sha256": "2d6fff2cf114845bcce7304a22973eef7ae1c17af7dd6720d5e8d67d4220b14a",
+      "fields": {
+        "Item / evidence locator": "SOSA/SSN, SensorThings, OMS; B, R§12",
+        "R / S / M assessment": "Already foundational references",
+        "Proposed destination and record treatment": "Retain; separately assess edition/mappings later",
+        "Evidence/decision limitation": "References are not compliance"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0275",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 364,
+      "line_end": 364,
+      "quote": "| FAIR principles; R§12 | Missing substantive assessment | Framework-reference candidate; no FAIR score | No evaluation performed |",
+      "quote_sha256": "3867836fe78fcb2e54458a9ee72c2a42ede3eabdf13e031d09fdcc0a3ba0d6e1",
+      "fields": {
+        "Item / evidence locator": "FAIR principles; R§12",
+        "R / S / M assessment": "Missing substantive assessment",
+        "Proposed destination and record treatment": "Framework-reference candidate; no FAIR score",
+        "Evidence/decision limitation": "No evaluation performed"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0276",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 365,
+      "line_end": 365,
+      "quote": "| Open scientific hardware; R§12 | Missing substantive policy | Practice/framework lead with actual rights evidence later | No openness/licence invented |",
+      "quote_sha256": "602744fdd969f3190581a9dd080aecd5752db1d6f323911616928045793699de",
+      "fields": {
+        "Item / evidence locator": "Open scientific hardware; R§12",
+        "R / S / M assessment": "Missing substantive policy",
+        "Proposed destination and record treatment": "Practice/framework lead with actual rights evidence later",
+        "Evidence/decision limitation": "No openness/licence invented"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0277",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 366,
+      "line_end": 366,
+      "quote": "| Ecological validity/provenance; R§12 | Provenance Partial; validity unresolved | Method and claim-fitness review; preserve evidence provenance | Structural checks do not validate ecology |",
+      "quote_sha256": "a3ff5bd62a8991e5a813e6a695dc5671a64d3f416045db48fe66a6012536130a",
+      "fields": {
+        "Item / evidence locator": "Ecological validity/provenance; R§12",
+        "R / S / M assessment": "Provenance Partial; validity unresolved",
+        "Proposed destination and record treatment": "Method and claim-fitness review; preserve evidence provenance",
+        "Evidence/decision limitation": "Structural checks do not validate ecology"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0278",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 367,
+      "line_end": 367,
+      "quote": "| Four umbrellas; R§13 | Missing / Missing / Missing; Proposed | S themes section; M theme-definition candidates | Formal definitions/subthemes unassigned |",
+      "quote_sha256": "7f56c1195d9cb706036ad34ecef315702844a80b9b9f1a1a0b743b4f71073401",
+      "fields": {
+        "Item / evidence locator": "Four umbrellas; R§13",
+        "R / S / M assessment": "Missing / Missing / Missing; Proposed",
+        "Proposed destination and record treatment": "S themes section; M theme-definition candidates",
+        "Evidence/decision limitation": "Formal definitions/subthemes unassigned"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0279",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 368,
+      "line_end": 368,
+      "quote": "| Camera trapping/AI conservation/themes; R§13 | Wildlife Insights SRC-016 Already; theme structure Missing | Candidate thematic links after specific review | Provider mention does not prove methods/links |",
+      "quote_sha256": "846e9cf8d38ed28a4b1cd86647e348b7268e1659b2744a4e0bcd7e1900d0ad91",
+      "fields": {
+        "Item / evidence locator": "Camera trapping/AI conservation/themes; R§13",
+        "R / S / M assessment": "Wildlife Insights SRC-016 Already; theme structure Missing",
+        "Proposed destination and record treatment": "Candidate thematic links after specific review",
+        "Evidence/decision limitation": "Provider mention does not prove methods/links"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0280",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 369,
+      "line_end": 369,
+      "quote": "| Six structural dimensions; R§14 | Null entity slots Partial; organising framework Missing | R concise research map; S scientific sections; M typed extension proposal | Retain disciplinary-domain axis |",
+      "quote_sha256": "acef6432c431dddbd127dea3702c337692499a62ab985f94f4044396d3103854",
+      "fields": {
+        "Item / evidence locator": "Six structural dimensions; R§14",
+        "R / S / M assessment": "Null entity slots Partial; organising framework Missing",
+        "Proposed destination and record treatment": "R concise research map; S scientific sections; M typed extension proposal",
+        "Evidence/decision limitation": "Retain disciplinary-domain axis"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0281",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 370,
+      "line_end": 370,
+      "quote": "| Instrument → Observation → Observed property → Derived indicator → EII; R§15 | Conceptual EII link Partial; typed chain Missing | S conceptual pathway; M candidate assertion graph | No implemented pipeline or invented EII IDs |",
+      "quote_sha256": "496defe63347b1dcc9074b5c93ffefbbf42c46c9fabb0c5b08dd418d766f21ce",
+      "fields": {
+        "Item / evidence locator": "Instrument → Observation → Observed property → Derived indicator → EII; R§15",
+        "R / S / M assessment": "Conceptual EII link Partial; typed chain Missing",
+        "Proposed destination and record treatment": "S conceptual pathway; M candidate assertion graph",
+        "Evidence/decision limitation": "No implemented pipeline or invented EII IDs"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0282",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 371,
+      "line_end": 371,
+      "quote": "| DRM; R§15, M guidance | Already current candidate context | Preserve candidate/revision/status separation | Phase 4 closure is bounded; Phase 5 unauthorised |",
+      "quote_sha256": "f3401f5ec20d8c9bca77a96ca557462180a17d93c6eaa9987288008e87947215",
+      "fields": {
+        "Item / evidence locator": "DRM; R§15, M guidance",
+        "R / S / M assessment": "Already current candidate context",
+        "Proposed destination and record treatment": "Preserve candidate/revision/status separation",
+        "Evidence/decision limitation": "Phase 4 closure is bounded; Phase 5 unauthorised"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0283",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 372,
+      "line_end": 372,
+      "quote": "| GISDS/EII/IRKB; R§15 | Conceptual mentions Partial | Scope-qualified research relationships, no duplicate authorities | No verified external bindings |",
+      "quote_sha256": "02eb821d4eb5a7e19501f1cd508e4cc363d9eb58407f8703a936ffa033f41212",
+      "fields": {
+        "Item / evidence locator": "GISDS/EII/IRKB; R§15",
+        "R / S / M assessment": "Conceptual mentions Partial",
+        "Proposed destination and record treatment": "Scope-qualified research relationships, no duplicate authorities",
+        "Evidence/decision limitation": "No verified external bindings"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0284",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 373,
+      "line_end": 373,
+      "quote": "| Ecological Computation/DPRKB/future biology/situated database; R§15 | Missing or supporting-note mention only | Relationship research queue with unresolved target identities | No invented namespaces or APIs |",
+      "quote_sha256": "86b54ff671841ae6e5d83b35740660e40302995543c07371a7a018b4901451bf",
+      "fields": {
+        "Item / evidence locator": "Ecological Computation/DPRKB/future biology/situated database; R§15",
+        "R / S / M assessment": "Missing or supporting-note mention only",
+        "Proposed destination and record treatment": "Relationship research queue with unresolved target identities",
+        "Evidence/decision limitation": "No invented namespaces or APIs"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0285",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "17. Register reconciliation and proposed expansion",
+      "subsection": "",
+      "line_start": 374,
+      "line_end": 374,
+      "quote": "| Original citations/October speaker approvals | Unavailable in all evidence | Retain explicit gaps, not reconstructed citations/decisions | R/C copy is not independent corroboration |",
+      "quote_sha256": "b7a26d7ff40edb90b0ee79152faa52dc9e1e93522ae566b36b4f028f0d7577ed",
+      "fields": {
+        "Item / evidence locator": "Original citations/October speaker approvals",
+        "R / S / M assessment": "Unavailable in all evidence",
+        "Proposed destination and record treatment": "Retain explicit gaps, not reconstructed citations/decisions",
+        "Evidence/decision limitation": "R/C copy is not independent corroboration"
+      },
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0286",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "Evidence status and how to use this document",
+      "subsection": "",
+      "line_start": 14,
+      "line_end": 14,
+      "quote": "The substantive October discussion remains unavailable in full. The latest accessible OSDS Overview excerpt contains later exchanges about locating and recreating this document, a reconstruction prompt, an earlier summary request and a closing exchange. It supplies no full October research-session body and no older-page cursor. A closing acknowledgement cannot approve an unseen taxonomy.",
+      "quote_sha256": "dcff22d0a859cb6605486c6589f4988a18d1ae58d57207ce35cae71e89983b05",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0287",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "1. Evidence access, authority and edition manifest",
+      "subsection": "",
+      "line_start": 5,
+      "line_end": 5,
+      "quote": "This audit was reconstructed from the **direct conversation messages available in this chat**, including the extended voice-session exchange, and the earlier 62-entry inventory as rendered in the conversation. The voice turns are directly readable in the conversation context but have **no export-provided immutable message IDs, timestamps per turn, or byte-identical transcript file**. The transcript was not independently exported or hashed. Thus recovery is substantial but not demonstrably exhaustive. The attached OSDS prompt is an instruction, not evidence that an audit or local repository file exists. The 1 November audit and the missing 30 October audit were discussed, but their full bytes were not supplied here; no source-ID or field-level reconciliation against them can be claimed.",
+      "quote_sha256": "f5a837d6d54f5956fd90aac69f7882b413763868b5a857e58fa36c8b620bee13",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0288",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "1. Evidence access, authority and edition manifest",
+      "subsection": "",
+      "line_start": 12,
+      "line_end": 12,
+      "quote": "| OSDS Overview visible conversation | Original turns displayed in this conversation; no stable exported edition | unavailable | unavailable | Direct conversational evidence for questions, assistant answers and user confirmations |",
+      "quote_sha256": "83b6522ebf4c0283fbd951ac688524f3a18affc487ee1473473928675f89794c",
+      "fields": {
+        "Evidence": "OSDS Overview visible conversation",
+        "Edition / status": "Original turns displayed in this conversation; no stable exported edition",
+        "Bytes": "unavailable",
+        "SHA-256": "unavailable",
+        "Role": "Direct conversational evidence for questions, assistant answers and user confirmations"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0289",
+      "edition_id": "OSDS:EVD-0001",
+      "section": "18. DRM methodological assessment and implementation handoff",
+      "subsection": "Focused next implementation plan, requiring owner approval",
+      "line_start": 408,
+      "line_end": 415,
+      "quote": "1. Review this reconstruction edition, especially R's assistant-authored origin and incomplete historical authentication. Approve or qualify its candidate-evidence use.\n2. Select a bounded substantive intake: preserve sixteen family labels, four umbrellas, six dimensions, five platform leads and named method/resource proposals with explicit unknowns. Do not invent their definitions to reach an apparent completion count.\n3. Resolve only the scientific scope/identity decisions explicitly authorised; defer marine/aerial/biology boundaries, source merges and external equivalences otherwise.\n4. Design minimal independent typed records and assertion provenance, retaining the current source register authority and original scientific values.\n5. Implement paired scientific/machine content and concise README navigation only after a scoped patch is approved. Reconcile source-derived labels, methods, themes and reference candidates without automatically verifying them.\n6. Extend preservation/validation checks; keep source counts distinct from family/platform/theme/member counts. Run meaningful negative tests for identity, references, lifecycle/verification confusion and preservation.\n7. Review rendered scientific content with the owner. Prior documentary Stage C non-acceptance remains in force; document creation does not satisfy it.\n8. Perform final validation only after acceptance. Git actions, website pins/checksums and publication remain separate authorisations. Do not modify DRM.",
+      "quote_sha256": "e95e9ce50bcc6151b63113bbd19e0890ec0e9d604fb74f93d7922c3c10b967c2",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "reconstruction_and_audit_analysis",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0290",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "1. Evidence access, authority and edition manifest",
+      "subsection": "",
+      "line_start": 16,
+      "line_end": 16,
+      "quote": "**DRM authority:** `DRM_Minimum_Shared_Protocol(1).md` identifies itself as **DRM-MSP 0.1.0, unadopted review candidate, review revision 2, public preparation edition 1 November 2026**. Phase 4 bounded pilots are closed; Phase 5 and general adoption are not authorised. `20261103_DRM_a01_rev03.md`, despite its filename, is an **A1/A2 comparative review narrative** proposing DRM-ING-01–10; it is not an adopted ingestion specification. The uploaded OSDS prompt mentions a separate ingestion-methodology document, but that complete document was **not supplied**. Apply its ten proposed controls as experimental guidance, not binding clauses. The foundational SensorThings API remains in the earlier OSDS conversation even though the newer prompt emphasises SOSA/SSN, PROV-O and O&M.",
+      "quote_sha256": "a71d7c5bdec6fd9b14b7eda459576f2c0b26004f625a8b78288934d0c974e12a",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0291",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "7. Scientific standards, methodological roles and editions",
+      "subsection": "",
+      "line_start": 134,
+      "line_end": 134,
+      "quote": "No OSDS standards implementation, conformance, current specification edition or rights clearance is demonstrated by these mentions. The original three foundational references were **SOSA/SSN, SensorThings API and OGC O&M/OMS**; the uploaded A02 prompt additionally highlights PROV-O.",
+      "quote_sha256": "05c08d2ccac91f79d4ae4e13960386dbf057160fbdc922afbaafd209a3d46530",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0292",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "2. Scope, boundaries and chronological reconstruction",
+      "subsection": "",
+      "line_start": 37,
+      "line_end": 37,
+      "quote": "**Conversation sequence locator:** `T01`–`T14` are **audit-scoped narrative locators**, not original message IDs. The exchange was sequential, with O01→O08 covered in order and interspersed scope and methodological discussion. Exact individual turn times and source-export offsets are unavailable. No verbatim quotes are claimed.",
+      "quote_sha256": "cda26161bfc0f3d3fa831e543fb1f12beef27ce097a5fae4e393ae12f6c35cfa",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0293",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "",
+      "line_start": 137,
+      "line_end": 137,
+      "quote": "The original assistant inventory listed **62 row entries**, not 62 distinct verified providers. Duplicate/cross-domain mentions include ICOS, EarthScope and Zenodo; generic repositories are not themselves instruments. The following is a **row-preserving reconstruction** of those names; URL, licence, DOI, coverage and entity-type verification must be performed against the original inventory and external sources before canonical ingestion.",
+      "quote_sha256": "d97d3fdd263bb17a72a137c1089f654fd62194fca371044e58dfb82661691c19",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0294",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "",
+      "line_start": 149,
+      "line_end": 149,
+      "quote": "**Inventory check:** 62 row identities accounted for in the reconstructed original inventory. These are **audit-scoped row aliases**, not new OSDS canonical IDs. The earlier list numbered 001–062; `SRC###` is used here only to prevent confusing row numbers with database identity. The original URLs are present in the prior conversation message but not reprinted here; their byte-level and field-level preservation is **not** asserted. Original inventory classifications and access descriptions require a source-edition crosswalk before any merge or correction.",
+      "quote_sha256": "56c32990c88d3095b9fde78e530f86462e85f710d0d264bf653103c143e7071f",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0295",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "10. Decision and authority ledger",
+      "subsection": "",
+      "line_start": 204,
+      "line_end": 204,
+      "quote": "**Authority limit:** These are reported user confirmations recoverable from displayed conversation, not externally authenticated signed decisions. No repository owner approval for schema changes, record acceptance, publication or scientific verification is inferred.",
+      "quote_sha256": "f93db568b1df782a8964b96d3b3430123a7b31dbde8d8891620f59ac1dd638df",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0296",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "16. Distinct completeness assessments",
+      "subsection": "",
+      "line_start": 277,
+      "line_end": 277,
+      "quote": "**Conversation recovery:** Directly visible substantive sequence T01–T14 covered, but no immutable L0 transcript, message-level offset map or completeness denominator; **no percentage claimed**. **Documentary inventory:** 62/62 original displayed inventory row names reconstructed, but earlier audit editions unavailable and field-level parity (URLs, category assignments, caveats) unproven; **not 100% information preservation**. **Scientific domain completeness:** eight domains and eight categories have exploratory coverage; no systematic completeness benchmark or independent source verification. These three assessments must not be combined.",
+      "quote_sha256": "57e069c4478930f7b5188e88132ea4b14c3553718ee5d971ed44b308d09735d3",
+      "fields": {},
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0297",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "",
+      "line_start": 140,
+      "line_end": 140,
+      "quote": "| SRC001–SRC009 | Environmental | `SRC001` WMO WIGOS / GBON; `SRC002` WMO OSCAR; `SRC003` NOAA NCEI; `SRC004` NOAA Global Monitoring Laboratory; `SRC005` ICOS; `SRC006` AERONET; `SRC007` IAGOS; `SRC008` NDACC; `SRC009` Copernicus Atmosphere Monitoring Service | Conversation candidate; unverified |",
+      "quote_sha256": "f31ee850411818caff5d21da1b3168bf160e7482cba240bb175a783a33d7da3c",
+      "fields": {
+        "Candidate row IDs": "SRC001–SRC009",
+        "Primary domain": "Environmental",
+        "Original candidate names (in original row order)": "`SRC001` WMO WIGOS / GBON; `SRC002` WMO OSCAR; `SRC003` NOAA NCEI; `SRC004` NOAA Global Monitoring Laboratory; `SRC005` ICOS; `SRC006` AERONET; `SRC007` IAGOS; `SRC008` NDACC; `SRC009` Copernicus Atmosphere Monitoring Service",
+        "Evidence status": "Conversation candidate; unverified"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0298",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "",
+      "line_start": 141,
+      "line_end": 141,
+      "quote": "| SRC010–SRC018 | Ecological | `SRC010` NEON; `SRC011` FLUXNET; `SRC012` ILTER; `SRC013` DEIMS-SDR; `SRC014` GBIF; `SRC015` eBird; `SRC016` Wildlife Insights; `SRC017` LifeWatch ERIC; `SRC018` GLEON | Conversation candidate; unverified |",
+      "quote_sha256": "8228df0873e617512e7d76acd0af0a80d81b67fb138c4e39439de96797b8e404",
+      "fields": {
+        "Candidate row IDs": "SRC010–SRC018",
+        "Primary domain": "Ecological",
+        "Original candidate names (in original row order)": "`SRC010` NEON; `SRC011` FLUXNET; `SRC012` ILTER; `SRC013` DEIMS-SDR; `SRC014` GBIF; `SRC015` eBird; `SRC016` Wildlife Insights; `SRC017` LifeWatch ERIC; `SRC018` GLEON",
+        "Evidence status": "Conversation candidate; unverified"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0299",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "",
+      "line_start": 142,
+      "line_end": 142,
+      "quote": "| SRC019–SRC026 | Terrestrial | `SRC019` International Soil Moisture Network; `SRC020` TERENO; `SRC021` ISRIC; `SRC022` EarthScope; `SRC023` International Seismological Centre; `SRC024` GTN-P; `SRC025` World Glacier Monitoring Service; `SRC026` GLORIA | Conversation candidate; unverified |",
+      "quote_sha256": "4e7a074cce723e5af9326a091bd6873a153c7beb6bb5d50e702b865791707976",
+      "fields": {
+        "Candidate row IDs": "SRC019–SRC026",
+        "Primary domain": "Terrestrial",
+        "Original candidate names (in original row order)": "`SRC019` International Soil Moisture Network; `SRC020` TERENO; `SRC021` ISRIC; `SRC022` EarthScope; `SRC023` International Seismological Centre; `SRC024` GTN-P; `SRC025` World Glacier Monitoring Service; `SRC026` GLORIA",
+        "Evidence status": "Conversation candidate; unverified"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0300",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "",
+      "line_start": 143,
+      "line_end": 143,
+      "quote": "| SRC027–SRC035 | Hydrological | `SRC027` USGS Water Data; `SRC028` Argo; `SRC029` Copernicus Marine; `SRC030` EMODnet; `SRC031` OceanOPS; `SRC032` GOOS; `SRC033` US IOOS; `SRC034` GLOSS; `SRC035` British Oceanographic Data Centre | Conversation candidate; unverified |",
+      "quote_sha256": "e2d6a499f96bcbd8a9d57271045ab406601bffd11f3eb03a15454b837702a4fd",
+      "fields": {
+        "Candidate row IDs": "SRC027–SRC035",
+        "Primary domain": "Hydrological",
+        "Original candidate names (in original row order)": "`SRC027` USGS Water Data; `SRC028` Argo; `SRC029` Copernicus Marine; `SRC030` EMODnet; `SRC031` OceanOPS; `SRC032` GOOS; `SRC033` US IOOS; `SRC034` GLOSS; `SRC035` British Oceanographic Data Centre",
+        "Evidence status": "Conversation candidate; unverified"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0301",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "",
+      "line_start": 144,
+      "line_end": 144,
+      "quote": "| SRC036–SRC042 | Agricultural | `SRC036` USDA LTAR; `SRC037` USDA NASS; `SRC038` FAO AQUASTAT; `SRC039` European Flood Awareness System; `SRC040` ICOS Ecosystem Stations; `SRC041` Lincoln Agricultural Robotics Datasets; `SRC042` AG-LOAM | Conversation candidate; unverified |",
+      "quote_sha256": "9b6a8736d6918b40912755748e06b9c5cb782a344b24bec54dad3018c04b4e6c",
+      "fields": {
+        "Candidate row IDs": "SRC036–SRC042",
+        "Primary domain": "Agricultural",
+        "Original candidate names (in original row order)": "`SRC036` USDA LTAR; `SRC037` USDA NASS; `SRC038` FAO AQUASTAT; `SRC039` European Flood Awareness System; `SRC040` ICOS Ecosystem Stations; `SRC041` Lincoln Agricultural Robotics Datasets; `SRC042` AG-LOAM",
+        "Evidence status": "Conversation candidate; unverified"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0302",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "",
+      "line_start": 145,
+      "line_end": 145,
+      "quote": "| SRC043–SRC049 | Urban | `SRC043` OpenAQ; `SRC044` openSenseMap; `SRC045` Sensor.Community; `SRC046` Smart Citizen; `SRC047` EEA Datahub; `SRC048` London Datastore; `SRC049` Barcelona Open Data | Conversation candidate; unverified |",
+      "quote_sha256": "c648b91bef88d30e979cc85631384d272468785162ff90b271462884e26afcc2",
+      "fields": {
+        "Candidate row IDs": "SRC043–SRC049",
+        "Primary domain": "Urban",
+        "Original candidate names (in original row order)": "`SRC043` OpenAQ; `SRC044` openSenseMap; `SRC045` Sensor.Community; `SRC046` Smart Citizen; `SRC047` EEA Datahub; `SRC048` London Datastore; `SRC049` Barcelona Open Data",
+        "Evidence status": "Conversation candidate; unverified"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0303",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "",
+      "line_start": 146,
+      "line_end": 146,
+      "quote": "| SRC050–SRC055 | Industrial | `SRC050` Open Power System Data; `SRC051` ENTSO-E Transparency Platform; `SRC052` NREL Grid Research; `SRC053` NASA Open Data; `SRC054` UCI Machine Learning Repository; `SRC055` Zenodo | Conversation candidate; unverified |",
+      "quote_sha256": "7d6cd2fa558531da40e8af3cfb3dc09cc3076898cad0dbb11e1559fe96ce0e46",
+      "fields": {
+        "Candidate row IDs": "SRC050–SRC055",
+        "Primary domain": "Industrial",
+        "Original candidate names (in original row order)": "`SRC050` Open Power System Data; `SRC051` ENTSO-E Transparency Platform; `SRC052` NREL Grid Research; `SRC053` NASA Open Data; `SRC054` UCI Machine Learning Repository; `SRC055` Zenodo",
+        "Evidence status": "Conversation candidate; unverified"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    },
+    {
+      "id": "OSDS:OR-0304",
+      "edition_id": "OSDS:EVD-0002",
+      "section": "8. Scientific source inventory — candidate identities recovered",
+      "subsection": "",
+      "line_start": 147,
+      "line_end": 147,
+      "quote": "| SRC056–SRC062 | Experimental | `SRC056` PANGAEA; `SRC057` NASA Earthdata; `SRC058` Zenodo Research Datasets; `SRC059` Mendeley Data; `SRC060` OpenML; `SRC061` AWS Open Data Registry; `SRC062` EarthScope Research Infrastructure | Conversation candidate; unverified |",
+      "quote_sha256": "733d6a3d3cac979e9c84388ed665d9e8aaf1b8c36aece09ff6c1f11bc921c1c6",
+      "fields": {
+        "Candidate row IDs": "SRC056–SRC062",
+        "Primary domain": "Experimental",
+        "Original candidate names (in original row order)": "`SRC056` PANGAEA; `SRC057` NASA Earthdata; `SRC058` Zenodo Research Datasets; `SRC059` Mendeley Data; `SRC060` OpenML; `SRC061` AWS Open Data Registry; `SRC062` EarthScope Research Infrastructure",
+        "Evidence status": "Conversation candidate; unverified"
+      },
+      "authority_context": {
+        "reported_role": "audit_author_account",
+        "claim_basis": "audit_prose",
+        "source_claim": "Source-author account or analysis; not individually attributed to an authenticated original speaker.",
+        "authenticated": false,
+        "original_message_locator": null
+      }
+    }
+  ],
+  "concepts": [
+    {
+      "id": "OSDS:RC-0001",
+      "label": "Atmospheric",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0001",
+        "OSDS:OR-0002"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0001",
+          "fields": {
+            "Position": "1",
+            "Family wording supplied in R§3": "Atmospheric",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Distinguish its intended scope from meteorological and atmospheric chemistry."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0002",
+          "fields": {
+            "Family ID": "F01",
+            "Instrument family": "Atmospheric",
+            "Examples": "Thermistors, capacitive humidity probes, barometers",
+            "Directly observed properties": "Air temperature, relative humidity, pressure",
+            "Candidate indicators / inferences": "Microclimate variation, heat exposure, frost risk, evaporative demand"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0002",
+      "label": "Meteorological",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0003",
+        "OSDS:OR-0004"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0003",
+          "fields": {
+            "Position": "2",
+            "Family wording supplied in R§3": "Meteorological",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Recover the intended boundary with atmospheric instrumentation."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0004",
+          "fields": {
+            "Family ID": "F02",
+            "Instrument family": "Meteorological",
+            "Examples": "Tipping-bucket/weighing rain gauges, anemometers, pyranometers",
+            "Directly observed properties": "Rainfall, wind, shortwave irradiance",
+            "Candidate indicators / inferences": "Storm intensity, rainfall deficits, wind exposure"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0003",
+      "label": "Soil",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0005",
+        "OSDS:OR-0006"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0005",
+          "fields": {
+            "Position": "3",
+            "Family wording supplied in R§3": "Soil",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "R§5 mentions soil sampling; no specific instrument or indicator is assigned."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0006",
+          "fields": {
+            "Family ID": "F03",
+            "Instrument family": "Soil",
+            "Examples": "Capacitance/TDR moisture probes, tensiometers, thermistors, EC, redox and soil-gas probes",
+            "Directly observed properties": "Volumetric water content, matric potential, temperature, conductivity, redox, gases",
+            "Candidate indicators / inferences": "Drought stress proxies, salinity risk, waterlogging and aeration"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0004",
+      "label": "Hydrological",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0007",
+        "OSDS:OR-0008"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0007",
+          "fields": {
+            "Position": "4",
+            "Family wording supplied in R§3": "Hydrological",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Distinguish observation context from water quality and flow/material families."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0008",
+          "fields": {
+            "Family ID": "F04",
+            "Instrument family": "Hydrological",
+            "Examples": "Pressure/level transducers, flow meters, groundwater loggers",
+            "Directly observed properties": "Stage, flow velocity/discharge, groundwater level",
+            "Candidate indicators / inferences": "Flood response, water availability, runoff and storage changes"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0005",
+      "label": "Water quality",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0009",
+        "OSDS:OR-0010"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0009",
+          "fields": {
+            "Position": "5",
+            "Family wording supplied in R§3": "Water quality",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "R§5 mentions water sampling; no analyte, instrument or indicator is supplied."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0010",
+          "fields": {
+            "Family ID": "F05",
+            "Instrument family": "Water quality",
+            "Examples": "pH, conductivity, dissolved-oxygen, turbidity, nitrate sensors",
+            "Directly observed properties": "pH, EC, DO, turbidity, nitrate",
+            "Candidate indicators / inferences": "Water-quality changes, oxygen depletion, salinity and nutrient loading"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0006",
+      "label": "Atmospheric chemistry",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0011",
+        "OSDS:OR-0012"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0011",
+          "fields": {
+            "Position": "6",
+            "Family wording supplied in R§3": "Atmospheric chemistry",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Separate the family label from chemical instrumentation and atmospheric context."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0012",
+          "fields": {
+            "Family ID": "F06",
+            "Instrument family": "Atmospheric chemistry / air quality",
+            "Examples": "Electrochemical gas cells, NDIR CO₂, optical particle counters",
+            "Directly observed properties": "CO₂, NO₂, ozone, methane, ammonia, PM",
+            "Candidate indicators / inferences": "Pollution exposure, concentration trends, emission proxies"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0007",
+      "label": "Radiation and light",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0013",
+        "OSDS:OR-0014"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0013",
+          "fields": {
+            "Position": "7",
+            "Family wording supplied in R§3": "Radiation and light",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Recover measurement principle, variable, units and calibration from actual evidence."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0014",
+          "fields": {
+            "Family ID": "F07",
+            "Instrument family": "Radiation and light",
+            "Examples": "Photodiodes, PAR sensors, UV radiometers",
+            "Directly observed properties": "Illuminance, PAR, UV",
+            "Candidate indicators / inferences": "Light availability, shading, exposure"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0008",
+      "label": "Acoustic",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0015",
+        "OSDS:OR-0016"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0015",
+          "fields": {
+            "Position": "8",
+            "Family wording supplied in R§3": "Acoustic",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "R§9 mentions acoustic processing/bioacoustics; exact instruments and family assignments are unspecified."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0016",
+          "fields": {
+            "Family ID": "F08",
+            "Instrument family": "Acoustic",
+            "Examples": "Microphones, sound-level meters, acoustic vibration sensors",
+            "Directly observed properties": "Sound pressure, spectra, event frequency",
+            "Candidate indicators / inferences": "Noise disturbance, soundscape change; biological interpretation deferred"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0009",
+      "label": "Mechanical and structural",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0017",
+        "OSDS:OR-0018"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0017",
+          "fields": {
+            "Position": "9",
+            "Family wording supplied in R§3": "Mechanical and structural",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Recover actual quantities, instruments, procedures and interpretation limits."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0018",
+          "fields": {
+            "Family ID": "F09",
+            "Instrument family": "Mechanical / structural",
+            "Examples": "Accelerometers, strain gauges, tilt and crack sensors",
+            "Directly observed properties": "Acceleration, strain, tilt, crack width",
+            "Candidate indicators / inferences": "Mechanical stress, structural movement"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0010",
+      "label": "Energy and electrical",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0019",
+        "OSDS:OR-0020"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0019",
+          "fields": {
+            "Position": "10",
+            "Family wording supplied in R§3": "Energy and electrical",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Recover actual quantities, instruments, procedures and interpretation limits."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0020",
+          "fields": {
+            "Family ID": "F10",
+            "Instrument family": "Energy / electrical",
+            "Examples": "Current shunts, voltage transducers, power meters, battery monitors",
+            "Directly observed properties": "Voltage, current, power, energy, charge",
+            "Candidate indicators / inferences": "Demand, renewable production, efficiency"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0011",
+      "label": "Thermal and building",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0021",
+        "OSDS:OR-0022"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0021",
+          "fields": {
+            "Position": "11",
+            "Family wording supplied in R§3": "Thermal and building",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Clarify whether grouping is by property, application, or both."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0022",
+          "fields": {
+            "Family ID": "F11",
+            "Instrument family": "Thermal / building",
+            "Examples": "Thermocouples, infrared thermometers, heat-flux plates, airflow and indoor CO₂ sensors",
+            "Directly observed properties": "Surface temperature, heat flux, air velocity, CO₂",
+            "Candidate indicators / inferences": "Thermal performance, heat loss, indoor conditions"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0012",
+      "label": "Position and movement",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0023",
+        "OSDS:OR-0024"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0023",
+          "fields": {
+            "Position": "12",
+            "Family wording supplied in R§3": "Position and movement",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "R§6 mentions mobile/robotic platforms; do not equate a platform with its measuring instrument."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0024",
+          "fields": {
+            "Family ID": "F12",
+            "Instrument family": "Position / movement",
+            "Examples": "GNSS, IMUs, inclinometers, displacement gauges",
+            "Directly observed properties": "Position, orientation, displacement",
+            "Candidate indicators / inferences": "Movement, settlement, slope change"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0013",
+      "label": "Chemical",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0025",
+        "OSDS:OR-0026"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0025",
+          "fields": {
+            "Position": "13",
+            "Family wording supplied in R§3": "Chemical",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Recover boundary with atmospheric chemistry and water quality."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0026",
+          "fields": {
+            "Family ID": "F13",
+            "Instrument family": "Chemical",
+            "Examples": "Ion-selective electrodes, electrochemical cells, gas analysers",
+            "Directly observed properties": "Ion activity/concentration, gas concentration",
+            "Candidate indicators / inferences": "Contamination and nutrient variation"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0014",
+      "label": "Optical",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0027",
+        "OSDS:OR-0028"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0027",
+          "fields": {
+            "Position": "14",
+            "Family wording supplied in R§3": "Optical",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "R§9 names computer vision; capture, processing and interpretation must remain distinct."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0028",
+          "fields": {
+            "Family ID": "F14",
+            "Instrument family": "Optical",
+            "Examples": "Photometers, spectrometers, fixed cameras, optical counters",
+            "Directly observed properties": "Reflectance, absorption, image features, particle scattering",
+            "Candidate indicators / inferences": "Visibility, turbidity, surface-condition proxies"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0015",
+      "label": "Geotechnical",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0029",
+        "OSDS:OR-0030"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0029",
+          "fields": {
+            "Position": "15",
+            "Family wording supplied in R§3": "Geotechnical",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "R§5 names geotechnical testing, without a specific instrument or test standard."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0030",
+          "fields": {
+            "Family ID": "F15",
+            "Instrument family": "Geotechnical",
+            "Examples": "Piezometers, extensometers, earth-pressure cells",
+            "Directly observed properties": "Pore pressure, extension, stress",
+            "Candidate indicators / inferences": "Ground stability, subsidence, slope response"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0016",
+      "label": "Flow and material",
+      "kind": "instrument_family_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0031",
+        "OSDS:OR-0032"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0031",
+          "fields": {
+            "Position": "16",
+            "Family wording supplied in R§3": "Flow and material",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Clarify overlap with hydrological, energy and industrial measurement contexts."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0032",
+          "fields": {
+            "Family ID": "F16",
+            "Instrument family": "Flow / material",
+            "Examples": "Load cells, weighing systems, tank level and flow instruments",
+            "Directly observed properties": "Mass, throughput, liquid level",
+            "Candidate indicators / inferences": "Resource consumption, storage and material-flow change"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records unavailable per-family detail; A02 later supplies audit-reported examples, properties and inferences. These are different evidence scopes, not authenticated recovery of original turns.",
+        "A02 column headings describe its assertions. Instrument-specific calibration, direct-versus-derived status, accuracy and ecological validity have not been verified. Variants and overlaps are not an adopted taxonomy."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0017",
+      "label": "IoT telemetry",
+      "kind": "observation_method_context",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0033",
+        "OSDS:OR-0034",
+        "OSDS:OR-0035",
+        "OSDS:OR-0067"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0033",
+          "fields": {},
+          "text": "**R§3; N§5.1.** R explicitly supplies sixteen provisional family labels. N reported the count but did not recover the labels. These names are now preserved as **R-derived candidates**, not evidence that an exact approved sixteen-part taxonomy existed on 30 October. Numbers in the table are reading positions, not issued OSDS family IDs."
+        },
+        {
+          "origin_id": "OSDS:OR-0034",
+          "fields": {},
+          "text": "R does not supply per-family instrument models, variable lists, units, indicator formulas or calibration procedures. Those columns remain explicit evidence gaps. This avoids replacing the missing historical detail with a generic instrument catalogue. Cross-links in the final column are audit-review questions based on R's other topics; they are not accepted family memberships."
+        },
+        {
+          "origin_id": "OSDS:OR-0035",
+          "fields": {},
+          "text": "The supplied list mixes possible physical quantities, subject contexts and deployment applications. **A:** a future classification review should document overlap and rationale before issuing codes or claiming hierarchy. A measured property and a derived ecological indicator require separate definitions and evidential links. No exact original family definitions, thresholds or performance claims are asserted here."
+        },
+        {
+          "origin_id": "OSDS:OR-0067",
+          "fields": {},
+          "text": "**Scientific caveat:** Instrument outputs are not automatically validated ecological indicators. Sensor selection, calibration, placement, sampling interval, measurement uncertainty, environmental confounding and inference models must be documented. The 16 families are a conversational working grouping with overlaps (e.g. chemistry/air quality; optical/water quality), not a mutually exclusive ontology. Source-specific accuracy, calibration standards and ecological causal interpretation were not verified."
+        }
+      ],
+      "qualifications": [],
+      "existing_category_reference": "OSDS:O01"
+    },
+    {
+      "id": "OSDS:RC-0018",
+      "label": "Scientific monitoring",
+      "kind": "observation_method_context",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0036",
+        "OSDS:OR-0037",
+        "OSDS:OR-0038",
+        "OSDS:OR-0068"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0036",
+          "fields": {},
+          "text": "**R§4; N§5.2.** The account identifies scientific networks, reference-grade instrumentation, calibration and long-term monitoring as research topics. It calls for comparison with IoT while preserving differences between the instrument, complete observation system and publication practice. It supplies no named reference-grade model, accredited calibration claim or guaranteed quality level."
+        },
+        {
+          "origin_id": "OSDS:OR-0037",
+          "fields": {},
+          "text": "N proposes distinguishing operational streams, processed scientific products, metadata, archived datasets, data papers and research articles. These are **secondary audit-author review distinctions**, not recovered October wording. The same deployment may combine networked telemetry and scientific monitoring; a category label alone cannot certify calibration, uncertainty or fitness."
+        },
+        {
+          "origin_id": "OSDS:OR-0038",
+          "fields": {},
+          "text": "**B examples, not evidence of October mentions:** WMO WIGOS/GBON SRC-001, NOAA NCEI SRC-003, ICOS SRC-005, NEON SRC-010 and FLUXNET SRC-011. Scientific descriptions should attach to a specific documented product/protocol rather than every output of a provider. **A:** preserve time span, sampling design, instrument/procedure, uncertainty, processing and publication evidence when later researched."
+        },
+        {
+          "origin_id": "OSDS:OR-0068",
+          "fields": {},
+          "text": "Long-term, systematic, protocol-governed monitoring; reference-grade thermometers, gas analysers, sonic anemometers, flux towers, lysimeters and geophysical systems. Examples mentioned: FLUXNET, ICOS, NEON, WMO, USGS and long-term ecological research. Observables include meteorology, carbon/water fluxes, river stage/discharge and soil water balance. Publication may involve calibrated datasets, quality flags, data releases, DOIs and citation guidance. IoT commonly emphasises streams, MQTT, dashboards and APIs; this is a **tendency, not an exclusive rule**. User explicitly deferred adding publication/accessibility as a new axis."
+        }
+      ],
+      "qualifications": [],
+      "existing_category_reference": "OSDS:O02"
+    },
+    {
+      "id": "OSDS:RC-0019",
+      "label": "Ground-truth observations",
+      "kind": "observation_method_context",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0039",
+        "OSDS:OR-0040",
+        "OSDS:OR-0041",
+        "OSDS:OR-0069"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0039",
+          "fields": {},
+          "text": "**R§5; N§5.3.** The supplied account includes manual/reference measurements, validation procedures, calibration, soil and water sampling, environmental measurements and geotechnical testing. Their intended role is to support interpretation of other observations. It does not enumerate specific laboratory methods, test standards, instruments or uncertainty values."
+        },
+        {
+          "origin_id": "OSDS:OR-0040",
+          "fields": {},
+          "text": "N's proposed review fields include the validation target, spatial/temporal correspondence, observer/instrument, method, uncertainty and independence of reference evidence. Retain those as review proposals. “Ground truth” must not silently become an error-free or universally transferable label."
+        },
+        {
+          "origin_id": "OSDS:OR-0041",
+          "fields": {},
+          "text": "**B:** AERONET SRC-006, NEON SRC-010, GBIF SRC-014, ISMN SRC-019, ISRIC SRC-021 and USGS Water Data SRC-027 have inherited O03 assignments. They are not hereby validated for a particular satellite/model/indicator task. **A:** distinguish a sample, a sample analysis, a reference result and a validation assertion. No existing source classification is changed."
+        },
+        {
+          "origin_id": "OSDS:OR-0069",
+          "fields": {},
+          "text": "A **validation role**, not a distinct instrument universe. Soil gravimetric sampling (wet/dry mass), pH/nutrient laboratory assays, manual water-quality tests, stream gauging, portable reference meteorology, field spectroradiometry and geotechnical penetrometers/shear tests. Results may test sensor calibration, remote-model predictions or derived indices. Context, sample handling, uncertainty and temporal matching are critical. Mentioned leads: NEON, USGS, ISMN, ICOS, USDA and Copernicus In Situ. Field reflectance is allowed as ground observation; satellite imagery remains GISDS."
+        }
+      ],
+      "qualifications": [],
+      "existing_category_reference": "OSDS:O03"
+    },
+    {
+      "id": "OSDS:RC-0020",
+      "label": "Autonomous observations",
+      "kind": "observation_method_context",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0042",
+        "OSDS:OR-0043",
+        "OSDS:OR-0044",
+        "OSDS:OR-0070"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0042",
+          "fields": {},
+          "text": "**R§6; N§5.4.** Unattended systems, autonomous stations, mobile platforms, robotic sensing and automated sampling are named. The account explicitly separates autonomy from IoT connectivity. It supplies no autonomy level, control architecture, sensor suite, safety performance or verified deployment."
+        },
+        {
+          "origin_id": "OSDS:OR-0043",
+          "fields": {},
+          "text": "N proposes separate review of unattended logging, scheduled/event-triggered capture, mobility, onboard inference and action. **A:** maintain these as distinct capability assertions rather than one inferred autonomous boolean. Human oversight, failures and environmental conditions remain source-specific questions."
+        },
+        {
+          "origin_id": "OSDS:OR-0044",
+          "fields": {},
+          "text": "**B:** Argo SRC-028, Wildlife Insights SRC-016 and robotics-related SRC-041/042 illustrate existing candidate pathways, not newly substantiated capabilities. Marine/airborne scope questions in §1 remain open. Autonomous sampling does not establish validation or access rights."
+        },
+        {
+          "origin_id": "OSDS:OR-0070",
+          "fields": {},
+          "text": "Unattended self-powered loggers, fixed stations, ground rovers, robotic boats, autonomous sondes, fixed cameras, GNSS/IMU platforms and automated samplers. Can measure gradients, episodic changes and adaptive/high-frequency conditions. Distinguish operational autonomy, remote communication, sensing, navigation and data interpretation. Examples mentioned: Argo, OceanOPS, Copernicus Marine, NEON, USGS, EarthScope and robotics datasets. **Boundary qualification:** ocean floats and mobile underwater platforms are cited as analogous in-situ systems; aerial mapping remains excluded."
+        }
+      ],
+      "qualifications": [],
+      "existing_category_reference": "OSDS:O04"
+    },
+    {
+      "id": "OSDS:RC-0021",
+      "label": "Campaign datasets",
+      "kind": "observation_method_context",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0045",
+        "OSDS:OR-0046",
+        "OSDS:OR-0047",
+        "OSDS:OR-0048",
+        "OSDS:OR-0049",
+        "OSDS:OR-0071"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0045",
+          "fields": {},
+          "text": "**R§7; N§5.5.** Time-bounded scientific campaigns, field surveys, sampling events and systematic observation logging are explicit research subjects. Ecological surveys and species-sighting records are included. The conceptual sequence is preserved exactly:"
+        },
+        {
+          "origin_id": "OSDS:OR-0046",
+          "fields": {},
+          "text": "**Campaign → Event → Observation → Verification**"
+        },
+        {
+          "origin_id": "OSDS:OR-0047",
+          "fields": {},
+          "text": "This is an R-supplied organising proposal, not proof that every event/observation has been verified or that a standards implementation exists. Verification should be represented as a claim/process with an assessed scope, not a guaranteed final state."
+        },
+        {
+          "origin_id": "OSDS:OR-0048",
+          "fields": {},
+          "text": "Darwin Core, the Humboldt Extension and GBIF event-based data organisation are named leads. Exact standard editions, extension terms, field mappings and examples are not supplied. **A:** distinguish campaign identity, event, sampling effort, occurrence/measurement, specimen/sample, dataset and publishing service. An event or occurrence record must not be presumed to contain absent effort or protocol evidence."
+        },
+        {
+          "origin_id": "OSDS:OR-0049",
+          "fields": {},
+          "text": "**B:** GBIF SRC-014, DEIMS-SDR SRC-013, NEON SRC-010, BODC SRC-035 and PANGAEA SRC-056 already provide candidate discovery routes. The campaign model and related standards research are largely unrepresented as scientific records. This audit does not assign compliance to those sources."
+        },
+        {
+          "origin_id": "OSDS:OR-0071",
+          "fields": {},
+          "text": "Time-bounded surveys, expeditions, integrated field campaigns, soil/irrigation surveys, hydrological events, atmospheric, geophysical and urban surveys. Methods include transects, timed counts, repeated plots, sample events and manual observations. Instruments include corers, portable sondes, resistivity meters, thermal cameras and flow meters. Sources: NEON, USDA ARS, USGS, PANGAEA, Zenodo, Environmental Data Initiative, DataONE. For moth sighting, distinguish sampling protocol/effort, event metadata, occurrence, identification evidence and verification. Darwin Core, Humboldt Extension and GBIF event-oriented publication were named; none makes an observation automatically scientifically valid. Campaign→event→observation→verification is a useful working abstraction, not a universal normative workflow."
+        }
+      ],
+      "qualifications": [],
+      "existing_category_reference": "OSDS:O05"
+    },
+    {
+      "id": "OSDS:RC-0022",
+      "label": "Citizen sensing",
+      "kind": "observation_method_context",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0050",
+        "OSDS:OR-0051",
+        "OSDS:OR-0052",
+        "OSDS:OR-0072"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0050",
+          "fields": {},
+          "text": "**R§8; N§5.6.** Community monitoring, participatory science, instruments, platforms, validation and guidance are named. WILDLABS is described in the supplied account through a conservation-technology orientation and comparison with OSDS. That is a source-reported role requiring independent identity/role verification, not a newly verified institutional description."
+        },
+        {
+          "origin_id": "OSDS:OR-0051",
+          "fields": {},
+          "text": "A useful distinction for subsequent research is between a community/knowledge network, a device platform, a participant protocol and an accessible observation dataset. N proposed participation/training/governance and quality-review fields. Those remain proposals, not authenticated historical decisions."
+        },
+        {
+          "origin_id": "OSDS:OR-0052",
+          "fields": {},
+          "text": "**B:** eBird SRC-015, OpenAQ SRC-043, openSenseMap SRC-044, Sensor.Community SRC-045 and Smart Citizen SRC-046 already occur in the inventory. WILDLABS is not an existing source record. **A:** first consider it as a candidate community/research resource; do not classify the entire network as a measurement dataset or assume any O06 membership without evidence."
+        },
+        {
+          "origin_id": "OSDS:OR-0072",
+          "fields": {},
+          "text": "Community/school/volunteer measurement with low-cost air sensors, DIY weather stations, soil and water meters and noise monitors. Examples: Sensor.Community, openSenseMap, Smart Citizen, PurpleAir, OpenAQ, GLOBE and FreshWater Watch. Framework leads: ECSA principles, GLOBE protocols, EPA Air Sensor Toolbox and Darwin Core for biological observations. Benefits: hyper-local coverage and participation; challenges: calibration, placement, training, quality assurance and comparability. WILDLABS is a discovery/community gateway for conservation technologies, not assumed a direct observation provider."
+        }
+      ],
+      "qualifications": [],
+      "existing_category_reference": "OSDS:O06"
+    },
+    {
+      "id": "OSDS:RC-0023",
+      "label": "Physical computing",
+      "kind": "observation_method_context",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0053",
+        "OSDS:OR-0054",
+        "OSDS:OR-0055",
+        "OSDS:OR-0056",
+        "OSDS:OR-0057",
+        "OSDS:OR-0058",
+        "OSDS:OR-0059",
+        "OSDS:OR-0060",
+        "OSDS:OR-0061",
+        "OSDS:OR-0062",
+        "OSDS:OR-0073"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0053",
+          "fields": {},
+          "text": "**R§9; N§5.7.** Preserve the supplied distinction:"
+        },
+        {
+          "origin_id": "OSDS:OR-0054",
+          "fields": {},
+          "text": "- Physical computing concerns acquisition, processing and interaction with physical systems."
+        },
+        {
+          "origin_id": "OSDS:OR-0055",
+          "fields": {},
+          "text": "- IoT concerns connected systems, communication and data exchange."
+        },
+        {
+          "origin_id": "OSDS:OR-0056",
+          "fields": {},
+          "text": "- Both may operate together within the same observational system."
+        },
+        {
+          "origin_id": "OSDS:OR-0057",
+          "fields": {},
+          "text": "These are reconstruction-source conceptual statements for review, not newly adopted formal category definitions. Microcontrollers, single-board computers, data acquisition, communications, embedded AI and edge inference are named subjects. Offline acquisition/processing and network exchange should not be silently collapsed."
+        },
+        {
+          "origin_id": "OSDS:OR-0058",
+          "fields": {},
+          "text": "None of these names establishes raw sensors, measured variables, power consumption, pricing, supported model performance, communications, availability or licensing. Hardware is not automatically a new observation-data source. No specifications are invented."
+        },
+        {
+          "origin_id": "OSDS:OR-0059",
+          "fields": {},
+          "text": "R names a **provisional embedded AI and edge inference family**. It is recorded separately from the sixteen instrument families: it may describe a processing/capability grouping rather than a seventeenth instrumentation family. Its placement and definition remain unresolved."
+        },
+        {
+          "origin_id": "OSDS:OR-0060",
+          "fields": {},
+          "text": "R names computer vision, object detection, segmentation, acoustic processing, bioacoustics, OS Beehives and edge computing. N additionally proposes raw-input, model/version, annotation, threshold, uncertainty and human-review evidence. These are candidate pipeline descriptions. A recording, extracted feature, model output and ecological interpretation must remain distinguishable; no bee-colony condition, species inference or indicator is validated by this audit."
+        },
+        {
+          "origin_id": "OSDS:OR-0061",
+          "fields": {},
+          "text": "R names **Digital Naturalism Laboratories**, field-adaptive scientific instrumentation, in-situ experimentation and “taking the laboratory into the field.” N interprets this as situated making/field-lab practice. That institutional/methodological association remains source-reported and externally unverified. Recover exact projects, methods, instruments, outcomes and references before a detailed institutional or scientific claim."
+        },
+        {
+          "origin_id": "OSDS:OR-0062",
+          "fields": {},
+          "text": "**B:** SRC-041/042 and SRC-044–046 already have physical-computing-related memberships. No named computing-platform, embedded-AI, OS Beehives or Digital Naturalism record is presently instantiated in the machine register."
+        },
+        {
+          "origin_id": "OSDS:OR-0073",
+          "fields": {},
+          "text": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings."
+        }
+      ],
+      "qualifications": [],
+      "existing_category_reference": "OSDS:O07"
+    },
+    {
+      "id": "OSDS:RC-0024",
+      "label": "Historical instrumental records",
+      "kind": "observation_method_context",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0063",
+        "OSDS:OR-0064",
+        "OSDS:OR-0065",
+        "OSDS:OR-0066",
+        "OSDS:OR-0074"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0063",
+          "fields": {},
+          "text": "**R§10; N§5.8.** The supplied account includes archives, data rescue, digitisation, homogenisation, reconstruction, statistical inference and AI-assisted analysis. It explicitly adds uncertainty, non-stationarity, change-point detection and historical environmental reconstruction. No statistical formula, implemented algorithm, dataset, result or validated performance is supplied."
+        },
+        {
+          "origin_id": "OSDS:OR-0064",
+          "fields": {},
+          "text": "N proposes keeping original readings, transcription/digitisation, corrected series, inferred missing values, model reconstructions and contextual interpretation separate. **A:** these can become distinct processing steps with source editions, transformations, uncertainty and review status. Original measurements should not be replaced by reconstructed values under the same evidence label."
+        },
+        {
+          "origin_id": "OSDS:OR-0065",
+          "fields": {},
+          "text": "Situated, traditional and cultural knowledge are related evidence systems in R, not synonyms for instrument readings. Their specific sources, representation, attribution, permissions and target database remain unresolved. No archive or community collection is newly identified by name."
+        },
+        {
+          "origin_id": "OSDS:OR-0066",
+          "fields": {},
+          "text": "**B:** historical category assignments exist for NOAA NCEI, NDACC, ILTER, ISRIC, GLOSS, BODC, EEA Datahub and PANGAEA. Those memberships do not instantiate data-rescue or reconstruction methods or certify a continuous usable series."
+        },
+        {
+          "origin_id": "OSDS:OR-0074",
+          "fields": {},
+          "text": "Manual weather registers, river gauges, soil temperature archives, chart recorders and early loggers. Distinguish original observation from later digitisation, homogenisation, reconstruction or modelled history. Method leads: data rescue, transcription/handwriting recognition, missing-data estimation, change-point detection, Bayesian reconstruction, physical data assimilation, non-stationarity, uncertainty analysis and causal hypotheses. AI may accelerate extraction or pattern detection but does not independently authenticate observations or causality. Situated, traditional and cultural environmental knowledge is a parallel evidence base: connect with explicit consent/context, do not force one to validate the other. Examples: NOAA, USGS, long-term observatories and agricultural stations."
+        }
+      ],
+      "qualifications": [],
+      "existing_category_reference": "OSDS:O08"
+    },
+    {
+      "id": "OSDS:RC-0025",
+      "label": "Observational technologies",
+      "kind": "theme_umbrella_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0075",
+        "OSDS:OR-0079",
+        "OSDS:OR-0080"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0075",
+          "fields": {
+            "Reading position": "1",
+            "Proposed umbrella": "Observational technologies",
+            "Definition and membership status": "Label supplied; formal definition, boundaries and subtheme memberships unspecified"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        },
+        {
+          "origin_id": "OSDS:OR-0080",
+          "fields": {},
+          "text": "The user explicitly confirmed **augmentation of the existing structure, not a fundamental rewrite**. A conceptual chain is `instrument → observation → observed property → qualified derived indicator → EII`; a system may also produce metadata, quality flags, procedures and results. This is an analytical crosswalk, not an implemented graph."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0026",
+      "label": "Computational interpretation",
+      "kind": "theme_umbrella_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0076",
+        "OSDS:OR-0079",
+        "OSDS:OR-0080"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0076",
+          "fields": {
+            "Reading position": "2",
+            "Proposed umbrella": "Computational interpretation",
+            "Definition and membership status": "Label supplied; formal definition, boundaries and subtheme memberships unspecified"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        },
+        {
+          "origin_id": "OSDS:OR-0080",
+          "fields": {},
+          "text": "The user explicitly confirmed **augmentation of the existing structure, not a fundamental rewrite**. A conceptual chain is `instrument → observation → observed property → qualified derived indicator → EII`; a system may also produce metadata, quality flags, procedures and results. This is an analytical crosswalk, not an implemented graph."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0027",
+      "label": "Embedded intelligence",
+      "kind": "theme_umbrella_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0077",
+        "OSDS:OR-0079",
+        "OSDS:OR-0080"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0077",
+          "fields": {
+            "Reading position": "3",
+            "Proposed umbrella": "Embedded intelligence",
+            "Definition and membership status": "Label supplied; formal definition, boundaries and subtheme memberships unspecified"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        },
+        {
+          "origin_id": "OSDS:OR-0080",
+          "fields": {},
+          "text": "The user explicitly confirmed **augmentation of the existing structure, not a fundamental rewrite**. A conceptual chain is `instrument → observation → observed property → qualified derived indicator → EII`; a system may also produce metadata, quality flags, procedures and results. This is an analytical crosswalk, not an implemented graph."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0028",
+      "label": "Scientific methods and interoperability",
+      "kind": "theme_umbrella_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0078",
+        "OSDS:OR-0079",
+        "OSDS:OR-0080"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0078",
+          "fields": {
+            "Reading position": "4",
+            "Proposed umbrella": "Scientific methods and interoperability",
+            "Definition and membership status": "Label supplied; formal definition, boundaries and subtheme memberships unspecified"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        },
+        {
+          "origin_id": "OSDS:OR-0080",
+          "fields": {},
+          "text": "The user explicitly confirmed **augmentation of the existing structure, not a fundamental rewrite**. A conceptual chain is `instrument → observation → observed property → qualified derived indicator → EII`; a system may also produce metadata, quality flags, procedures and results. This is an analytical crosswalk, not an implemented graph."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0029",
+      "label": "Observation categories",
+      "kind": "descriptive_dimension_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0081",
+        "OSDS:OR-0082",
+        "OSDS:OR-0083",
+        "OSDS:OR-0084",
+        "OSDS:OR-0085"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0081",
+          "fields": {},
+          "text": "**R§14; N§6 has earlier, slightly shorter labels.** Preserve R's six labels exactly:"
+        },
+        {
+          "origin_id": "OSDS:OR-0082",
+          "fields": {},
+          "text": "1. Observation categories.\n2. Instrumentation and technologies.\n3. Observed properties and derived indicators.\n4. Methodologies, frameworks and standards.\n5. Data sources and research infrastructures.\n6. Cross-cutting research themes."
+        },
+        {
+          "origin_id": "OSDS:OR-0083",
+          "fields": {},
+          "text": "These are proposed descriptive dimensions augmenting the existing framework. Disciplinary domains remain an existing subject axis, not erased because they are absent from this six-item list. The six dimensions do not imply six interchangeable entity types or six compulsory fields on every record."
+        },
+        {
+          "origin_id": "OSDS:OR-0084",
+          "fields": {},
+          "text": "**A:** distinguish measured property from derived indicator internally, and method from standard. Represent instrument/property/method/source/theme relations with evidence and unknowns. The canonical machine schema already has null instrument/property/procedure slots; this does not establish populated records or approve any new schema. Formal definitions, identities and memberships remain proposed for later controlled ingestion."
+        },
+        {
+          "origin_id": "OSDS:OR-0085",
+          "fields": {
+            "Layer": "L01 — Observation categories",
+            "Meaning": "O01–O08 production/operational contexts",
+            "Record recommendation": "Keep current classification; allow overlap"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0030",
+      "label": "Instrumentation and technologies",
+      "kind": "descriptive_dimension_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0081",
+        "OSDS:OR-0082",
+        "OSDS:OR-0083",
+        "OSDS:OR-0084",
+        "OSDS:OR-0086"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0081",
+          "fields": {},
+          "text": "**R§14; N§6 has earlier, slightly shorter labels.** Preserve R's six labels exactly:"
+        },
+        {
+          "origin_id": "OSDS:OR-0082",
+          "fields": {},
+          "text": "1. Observation categories.\n2. Instrumentation and technologies.\n3. Observed properties and derived indicators.\n4. Methodologies, frameworks and standards.\n5. Data sources and research infrastructures.\n6. Cross-cutting research themes."
+        },
+        {
+          "origin_id": "OSDS:OR-0083",
+          "fields": {},
+          "text": "These are proposed descriptive dimensions augmenting the existing framework. Disciplinary domains remain an existing subject axis, not erased because they are absent from this six-item list. The six dimensions do not imply six interchangeable entity types or six compulsory fields on every record."
+        },
+        {
+          "origin_id": "OSDS:OR-0084",
+          "fields": {},
+          "text": "**A:** distinguish measured property from derived indicator internally, and method from standard. Represent instrument/property/method/source/theme relations with evidence and unknowns. The canonical machine schema already has null instrument/property/procedure slots; this does not establish populated records or approve any new schema. Formal definitions, identities and memberships remain proposed for later controlled ingestion."
+        },
+        {
+          "origin_id": "OSDS:OR-0086",
+          "fields": {
+            "Layer": "L02 — Instrumentation and technologies",
+            "Meaning": "Sensors, platforms, processors and measurement principles",
+            "Record recommendation": "Shared instrument family candidates, not duplicates by category"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0031",
+      "label": "Observed properties and derived indicators",
+      "kind": "descriptive_dimension_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0081",
+        "OSDS:OR-0082",
+        "OSDS:OR-0083",
+        "OSDS:OR-0084",
+        "OSDS:OR-0087"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0081",
+          "fields": {},
+          "text": "**R§14; N§6 has earlier, slightly shorter labels.** Preserve R's six labels exactly:"
+        },
+        {
+          "origin_id": "OSDS:OR-0082",
+          "fields": {},
+          "text": "1. Observation categories.\n2. Instrumentation and technologies.\n3. Observed properties and derived indicators.\n4. Methodologies, frameworks and standards.\n5. Data sources and research infrastructures.\n6. Cross-cutting research themes."
+        },
+        {
+          "origin_id": "OSDS:OR-0083",
+          "fields": {},
+          "text": "These are proposed descriptive dimensions augmenting the existing framework. Disciplinary domains remain an existing subject axis, not erased because they are absent from this six-item list. The six dimensions do not imply six interchangeable entity types or six compulsory fields on every record."
+        },
+        {
+          "origin_id": "OSDS:OR-0084",
+          "fields": {},
+          "text": "**A:** distinguish measured property from derived indicator internally, and method from standard. Represent instrument/property/method/source/theme relations with evidence and unknowns. The canonical machine schema already has null instrument/property/procedure slots; this does not establish populated records or approve any new schema. Formal definitions, identities and memberships remain proposed for later controlled ingestion."
+        },
+        {
+          "origin_id": "OSDS:OR-0087",
+          "fields": {
+            "Layer": "L03 — Observed properties and indicators",
+            "Meaning": "Direct measurement versus derived interpretation",
+            "Record recommendation": "Link to EII with inference qualification"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0032",
+      "label": "Methodologies, frameworks and standards",
+      "kind": "descriptive_dimension_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0081",
+        "OSDS:OR-0082",
+        "OSDS:OR-0083",
+        "OSDS:OR-0084",
+        "OSDS:OR-0088"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0081",
+          "fields": {},
+          "text": "**R§14; N§6 has earlier, slightly shorter labels.** Preserve R's six labels exactly:"
+        },
+        {
+          "origin_id": "OSDS:OR-0082",
+          "fields": {},
+          "text": "1. Observation categories.\n2. Instrumentation and technologies.\n3. Observed properties and derived indicators.\n4. Methodologies, frameworks and standards.\n5. Data sources and research infrastructures.\n6. Cross-cutting research themes."
+        },
+        {
+          "origin_id": "OSDS:OR-0083",
+          "fields": {},
+          "text": "These are proposed descriptive dimensions augmenting the existing framework. Disciplinary domains remain an existing subject axis, not erased because they are absent from this six-item list. The six dimensions do not imply six interchangeable entity types or six compulsory fields on every record."
+        },
+        {
+          "origin_id": "OSDS:OR-0084",
+          "fields": {},
+          "text": "**A:** distinguish measured property from derived indicator internally, and method from standard. Represent instrument/property/method/source/theme relations with evidence and unknowns. The canonical machine schema already has null instrument/property/procedure slots; this does not establish populated records or approve any new schema. Formal definitions, identities and memberships remain proposed for later controlled ingestion."
+        },
+        {
+          "origin_id": "OSDS:OR-0088",
+          "fields": {
+            "Layer": "L04 — Methodologies, frameworks and standards",
+            "Meaning": "Calibration, sampling, data capture, FAIR, field adaptation",
+            "Record recommendation": "Reference method/standard edition and applicability"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0033",
+      "label": "Data sources and research infrastructures",
+      "kind": "descriptive_dimension_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0081",
+        "OSDS:OR-0082",
+        "OSDS:OR-0083",
+        "OSDS:OR-0084",
+        "OSDS:OR-0089"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0081",
+          "fields": {},
+          "text": "**R§14; N§6 has earlier, slightly shorter labels.** Preserve R's six labels exactly:"
+        },
+        {
+          "origin_id": "OSDS:OR-0082",
+          "fields": {},
+          "text": "1. Observation categories.\n2. Instrumentation and technologies.\n3. Observed properties and derived indicators.\n4. Methodologies, frameworks and standards.\n5. Data sources and research infrastructures.\n6. Cross-cutting research themes."
+        },
+        {
+          "origin_id": "OSDS:OR-0083",
+          "fields": {},
+          "text": "These are proposed descriptive dimensions augmenting the existing framework. Disciplinary domains remain an existing subject axis, not erased because they are absent from this six-item list. The six dimensions do not imply six interchangeable entity types or six compulsory fields on every record."
+        },
+        {
+          "origin_id": "OSDS:OR-0084",
+          "fields": {},
+          "text": "**A:** distinguish measured property from derived indicator internally, and method from standard. Represent instrument/property/method/source/theme relations with evidence and unknowns. The canonical machine schema already has null instrument/property/procedure slots; this does not establish populated records or approve any new schema. Formal definitions, identities and memberships remain proposed for later controlled ingestion."
+        },
+        {
+          "origin_id": "OSDS:OR-0089",
+          "fields": {
+            "Layer": "L05 — Data sources and research infrastructures",
+            "Meaning": "Network, institution, programme, dataset and platform",
+            "Record recommendation": "Distinguish resource entity types and access"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0034",
+      "label": "Cross-cutting research themes",
+      "kind": "descriptive_dimension_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0081",
+        "OSDS:OR-0082",
+        "OSDS:OR-0083",
+        "OSDS:OR-0084",
+        "OSDS:OR-0090"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0081",
+          "fields": {},
+          "text": "**R§14; N§6 has earlier, slightly shorter labels.** Preserve R's six labels exactly:"
+        },
+        {
+          "origin_id": "OSDS:OR-0082",
+          "fields": {},
+          "text": "1. Observation categories.\n2. Instrumentation and technologies.\n3. Observed properties and derived indicators.\n4. Methodologies, frameworks and standards.\n5. Data sources and research infrastructures.\n6. Cross-cutting research themes."
+        },
+        {
+          "origin_id": "OSDS:OR-0083",
+          "fields": {},
+          "text": "These are proposed descriptive dimensions augmenting the existing framework. Disciplinary domains remain an existing subject axis, not erased because they are absent from this six-item list. The six dimensions do not imply six interchangeable entity types or six compulsory fields on every record."
+        },
+        {
+          "origin_id": "OSDS:OR-0084",
+          "fields": {},
+          "text": "**A:** distinguish measured property from derived indicator internally, and method from standard. Represent instrument/property/method/source/theme relations with evidence and unknowns. The canonical machine schema already has null instrument/property/procedure slots; this does not establish populated records or approve any new schema. Formal definitions, identities and memberships remain proposed for later controlled ingestion."
+        },
+        {
+          "origin_id": "OSDS:OR-0090",
+          "fields": {
+            "Layer": "L06 — Cross-cutting research themes",
+            "Meaning": "Vision, bioacoustics, edge intelligence, field labs, reconstruction",
+            "Record recommendation": "Provisional themes with qualified cross-database links"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0035",
+      "label": "Jetson Nano",
+      "kind": "computing_platform_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0091",
+        "OSDS:OR-0073",
+        "OSDS:OR-0118"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0091",
+          "fields": {
+            "Name as supplied": "Jetson Nano",
+            "Evidence and identity limitation": "R§9; also N§5.7; exact model/configuration not supplied",
+            "Candidate research role, not verified capability": "Computing-platform lead"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0073",
+          "fields": {},
+          "text": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings."
+        },
+        {
+          "origin_id": "OSDS:OR-0118",
+          "fields": {
+            "Lead ID": "LEAD12",
+            "Name": "NVIDIA Jetson Nano / Orin Nano",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Combined/variant source wording retained as an unresolved documentary mention; no verified alias, model equivalence or specification transfer asserted."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0036",
+      "label": "Jetson Orin Nano",
+      "kind": "computing_platform_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0092",
+        "OSDS:OR-0073",
+        "OSDS:OR-0118"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0092",
+          "fields": {
+            "Name as supplied": "Jetson Orin Nano",
+            "Evidence and identity limitation": "R§9; N used “Orin Nano”; alias/identity needs review",
+            "Candidate research role, not verified capability": "Computing-platform lead; no performance equivalence to Nano inferred"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0073",
+          "fields": {},
+          "text": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings."
+        },
+        {
+          "origin_id": "OSDS:OR-0118",
+          "fields": {
+            "Lead ID": "LEAD12",
+            "Name": "NVIDIA Jetson Nano / Orin Nano",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Combined/variant source wording retained as an unresolved documentary mention; no verified alias, model equivalence or specification transfer asserted."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0037",
+      "label": "LicheeRV Nano",
+      "kind": "computing_platform_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0093",
+        "OSDS:OR-0073",
+        "OSDS:OR-0119"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0093",
+          "fields": {
+            "Name as supplied": "LicheeRV Nano",
+            "Evidence and identity limitation": "R§9 and N§5.7; exact variant unspecified",
+            "Candidate research role, not verified capability": "Computing-platform lead"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0073",
+          "fields": {},
+          "text": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings."
+        },
+        {
+          "origin_id": "OSDS:OR-0119",
+          "fields": {
+            "Lead ID": "LEAD13",
+            "Name": "LicheeRV Nano",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0038",
+      "label": "ESP32-S3",
+      "kind": "computing_platform_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0094",
+        "OSDS:OR-0073",
+        "OSDS:OR-0120"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0094",
+          "fields": {
+            "Name as supplied": "ESP32-S3",
+            "Evidence and identity limitation": "R§9 and N§5.7; chip/board/configuration distinction unresolved",
+            "Candidate research role, not verified capability": "Microcontroller-related lead; no sensor suite assumed"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0073",
+          "fields": {},
+          "text": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings."
+        },
+        {
+          "origin_id": "OSDS:OR-0120",
+          "fields": {
+            "Lead ID": "LEAD14",
+            "Name": "ESP32-S3",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0039",
+      "label": "Raspberry Pi",
+      "kind": "computing_platform_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0095",
+        "OSDS:OR-0073",
+        "OSDS:OR-0117"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0095",
+          "fields": {
+            "Name as supplied": "Raspberry Pi",
+            "Evidence and identity limitation": "R§9; not in N's four-row hardware table",
+            "Candidate research role, not verified capability": "Platform-family lead; generation/model not supplied"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0073",
+          "fields": {},
+          "text": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings."
+        },
+        {
+          "origin_id": "OSDS:OR-0117",
+          "fields": {
+            "Lead ID": "LEAD11",
+            "Name": "Raspberry Pi",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0040",
+      "label": "Raspberry Pi 5",
+      "kind": "computing_platform_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0073"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0073",
+          "fields": {},
+          "text": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0041",
+      "label": "SOSA/SSN",
+      "kind": "standards_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0096",
+        "OSDS:OR-0126"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0096",
+          "fields": {
+            "Ref ID": "STD01",
+            "Framework / source": "SOSA/SSN",
+            "Role": "W3C sensor/observation semantic vocabulary; distinguish sensor, procedure, observed property, feature of interest and result",
+            "Evidence / verification limitation": "Edition/current normative status not independently checked"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0126",
+          "fields": {
+            "Reference or concept": "W3C/OGC SOSA/SSN",
+            "Kind in this audit": "Standards/ontology reference candidate",
+            "Existing representation and unresolved evidence": "Already in manifest foundational references; source editions/mappings not adopted"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0042",
+      "label": "OGC SensorThings API",
+      "kind": "standards_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0097",
+        "OSDS:OR-0127"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0097",
+          "fields": {
+            "Ref ID": "STD02",
+            "Framework / source": "OGC SensorThings API",
+            "Role": "Network/API model for Things, Datastreams, Observations and associated entities",
+            "Evidence / verification limitation": "Mentioned in foundational conversation; no OSDS implementation evidenced"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0127",
+          "fields": {
+            "Reference or concept": "OGC SensorThings API",
+            "Kind in this audit": "Access-model standard reference candidate",
+            "Existing representation and unresolved evidence": "Already referenced; no implemented API or compliance inferred"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0043",
+      "label": "OGC Observations, Measurements and Samples / O&M / ISO 19156",
+      "kind": "standards_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0098",
+        "OSDS:OR-0128"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0098",
+          "fields": {
+            "Ref ID": "STD03",
+            "Framework / source": "OGC Observations, Measurements and Samples / O&M / ISO 19156",
+            "Role": "Conceptual observation, sampling and result semantics",
+            "Evidence / verification limitation": "Exact edition not independently checked"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0128",
+          "fields": {
+            "Reference or concept": "OGC Observations, Measurements and Samples",
+            "Kind in this audit": "Conceptual observation/sampling reference candidate",
+            "Existing representation and unresolved evidence": "Already referenced as OMS; no formal mapping adopted"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0044",
+      "label": "W3C PROV-O",
+      "kind": "standards_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0099"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0099",
+          "fields": {
+            "Ref ID": "STD04",
+            "Framework / source": "W3C PROV-O",
+            "Role": "General provenance relationships between entities, activities and agents",
+            "Evidence / verification limitation": "Appears in uploaded OSDS A02 prompt; not clearly established in original voice discussion"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0045",
+      "label": "Darwin Core",
+      "kind": "standards_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0100",
+        "OSDS:OR-0129"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0100",
+          "fields": {
+            "Ref ID": "STD05",
+            "Framework / source": "Darwin Core",
+            "Role": "Biodiversity occurrence/event record interoperability",
+            "Evidence / verification limitation": "Biological database boundary; not universal quality certification"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0129",
+          "fields": {
+            "Reference or concept": "Darwin Core",
+            "Kind in this audit": "Standards research lead from R§7/12",
+            "Existing representation and unresolved evidence": "No adopted edition, term mapping or compliance record"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0046",
+      "label": "Humboldt Extension",
+      "kind": "standards_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0101",
+        "OSDS:OR-0130"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0101",
+          "fields": {
+            "Ref ID": "STD06",
+            "Framework / source": "Humboldt Extension",
+            "Role": "Survey event, sampling effort and ecological inventory context",
+            "Evidence / verification limitation": "Exact extension edition unverified"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0130",
+          "fields": {
+            "Reference or concept": "Humboldt Extension",
+            "Kind in this audit": "Extension research lead from R§7/12",
+            "Existing representation and unresolved evidence": "Exact edition, scope and mappings require verification"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0047",
+      "label": "GBIF event-oriented model",
+      "kind": "standards_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0102",
+        "OSDS:OR-0131"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0102",
+          "fields": {
+            "Ref ID": "STD07",
+            "Framework / source": "GBIF event-oriented model",
+            "Role": "Event/occurrence publication and discovery",
+            "Evidence / verification limitation": "Platform model; distinguish from scientific validation"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0131",
+          "fields": {
+            "Reference or concept": "GBIF event-based data organisation",
+            "Kind in this audit": "Publishing/data-organisation lead",
+            "Existing representation and unresolved evidence": "SRC-014 exists; campaign/event interpretation not thereby implemented"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0048",
+      "label": "FAIR principles",
+      "kind": "standards_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0103",
+        "OSDS:OR-0132"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0103",
+          "fields": {
+            "Ref ID": "STD08",
+            "Framework / source": "FAIR principles",
+            "Role": "Findability, accessibility, interoperability, reuse",
+            "Evidence / verification limitation": "Principles, not a sensor calibration standard"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0132",
+          "fields": {
+            "Reference or concept": "FAIR principles",
+            "Kind in this audit": "Principles/framework lead from R§12",
+            "Existing representation and unresolved evidence": "No FAIR assessment or certification supplied"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0049",
+      "label": "ECSA principles / GLOBE / EPA Air Sensor Toolbox",
+      "kind": "framework_reference_group",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0104"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0104",
+          "fields": {
+            "Ref ID": "STD09",
+            "Framework / source": "ECSA principles / GLOBE / EPA Air Sensor Toolbox",
+            "Role": "Citizen-science participation, protocols, QA guidance",
+            "Evidence / verification limitation": "Individual documents and editions not independently verified"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0050",
+      "label": "OSHWA / open scientific hardware",
+      "kind": "framework_reference_group",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0105"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0105",
+          "fields": {
+            "Ref ID": "STD10",
+            "Framework / source": "OSHWA / open scientific hardware",
+            "Role": "Open hardware practice and documentation",
+            "Evidence / verification limitation": "Licensing/rights vary by project"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0051",
+      "label": "MQTT, LoRaWAN, SDI-12",
+      "kind": "technical_interface_group",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0106"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0106",
+          "fields": {
+            "Ref ID": "STD11",
+            "Framework / source": "MQTT, LoRaWAN, SDI-12",
+            "Role": "Messaging, network and sensor interface technologies",
+            "Evidence / verification limitation": "Not interchangeable with scientific measurement validity"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0052",
+      "label": "WILDLABS",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0107"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0107",
+          "fields": {
+            "Lead ID": "LEAD01",
+            "Name": "WILDLABS",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0053",
+      "label": "Digital Naturalism Laboratories",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0108"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0108",
+          "fields": {
+            "Lead ID": "LEAD02",
+            "Name": "Digital Naturalism Laboratories",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0054",
+      "label": "OS Beehives",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0109"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0109",
+          "fields": {
+            "Lead ID": "LEAD03",
+            "Name": "OS Beehives / OSBH",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Combined/variant source wording retained as an unresolved documentary mention; no verified alias, model equivalence or specification transfer asserted."
+      ]
+    },
+    {
+      "id": "OSDS:RC-0055",
+      "label": "Environmental Data Initiative",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0110"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0110",
+          "fields": {
+            "Lead ID": "LEAD04",
+            "Name": "Environmental Data Initiative",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0056",
+      "label": "DataONE",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0111"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0111",
+          "fields": {
+            "Lead ID": "LEAD05",
+            "Name": "DataONE",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0057",
+      "label": "PurpleAir",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0112"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0112",
+          "fields": {
+            "Lead ID": "LEAD06",
+            "Name": "PurpleAir",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0058",
+      "label": "GLOBE",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0113"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0113",
+          "fields": {
+            "Lead ID": "LEAD07",
+            "Name": "GLOBE",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0059",
+      "label": "FreshWater Watch",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0114"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0114",
+          "fields": {
+            "Lead ID": "LEAD08",
+            "Name": "FreshWater Watch",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0060",
+      "label": "Public Lab",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0115"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0115",
+          "fields": {
+            "Lead ID": "LEAD09",
+            "Name": "Public Lab",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0061",
+      "label": "Arduino",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0116"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0116",
+          "fields": {
+            "Lead ID": "LEAD10",
+            "Name": "Arduino",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0062",
+      "label": "PlatformIO",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0121"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0121",
+          "fields": {
+            "Lead ID": "LEAD15",
+            "Name": "PlatformIO",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0063",
+      "label": "Hackaday",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0122"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0122",
+          "fields": {
+            "Lead ID": "LEAD16",
+            "Name": "Hackaday",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0064",
+      "label": "Open Source Hardware Association",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0123"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0123",
+          "fields": {
+            "Lead ID": "LEAD17",
+            "Name": "Open Source Hardware Association",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0065",
+      "label": "USDA ARS",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0124"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0124",
+          "fields": {
+            "Lead ID": "LEAD18",
+            "Name": "USDA ARS",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0066",
+      "label": "EPA Air Sensor Toolbox",
+      "kind": "research_resource_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0125"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0125",
+          "fields": {
+            "Lead ID": "LEAD19",
+            "Name": "EPA Air Sensor Toolbox",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0067",
+      "label": "Open scientific hardware",
+      "kind": "method_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0133"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0133",
+          "fields": {
+            "Reference or concept": "Open scientific hardware",
+            "Kind in this audit": "Practice/rights/openness research lead",
+            "Existing representation and unresolved evidence": "No specific definition, licence or certified hardware supplied"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0068",
+      "label": "Calibration",
+      "kind": "method_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0134",
+        "OSDS:OR-0034",
+        "OSDS:OR-0036",
+        "OSDS:OR-0037",
+        "OSDS:OR-0039",
+        "OSDS:OR-0144",
+        "OSDS:OR-0067",
+        "OSDS:OR-0069",
+        "OSDS:OR-0072",
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0134",
+          "fields": {
+            "Reference or concept": "Calibration",
+            "Kind in this audit": "Measurement-method/quality topic",
+            "Existing representation and unresolved evidence": "No per-instrument calibration chain, interval or certificate supplied"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0034",
+          "fields": {},
+          "text": "R does not supply per-family instrument models, variable lists, units, indicator formulas or calibration procedures. Those columns remain explicit evidence gaps. This avoids replacing the missing historical detail with a generic instrument catalogue. Cross-links in the final column are audit-review questions based on R's other topics; they are not accepted family memberships."
+        },
+        {
+          "origin_id": "OSDS:OR-0036",
+          "fields": {},
+          "text": "**R§4; N§5.2.** The account identifies scientific networks, reference-grade instrumentation, calibration and long-term monitoring as research topics. It calls for comparison with IoT while preserving differences between the instrument, complete observation system and publication practice. It supplies no named reference-grade model, accredited calibration claim or guaranteed quality level."
+        },
+        {
+          "origin_id": "OSDS:OR-0037",
+          "fields": {},
+          "text": "N proposes distinguishing operational streams, processed scientific products, metadata, archived datasets, data papers and research articles. These are **secondary audit-author review distinctions**, not recovered October wording. The same deployment may combine networked telemetry and scientific monitoring; a category label alone cannot certify calibration, uncertainty or fitness."
+        },
+        {
+          "origin_id": "OSDS:OR-0039",
+          "fields": {},
+          "text": "**R§5; N§5.3.** The supplied account includes manual/reference measurements, validation procedures, calibration, soil and water sampling, environmental measurements and geotechnical testing. Their intended role is to support interpretation of other observations. It does not enumerate specific laboratory methods, test standards, instruments or uncertainty values."
+        },
+        {
+          "origin_id": "OSDS:OR-0144",
+          "fields": {},
+          "text": "For each future family, the intended record should recover representative instruments, measured properties, units, potential indicators, calibration/method and evidence. **All sixteen currently lack source-supplied per-family values for those fields.** The omission is explicit rather than filled with generic examples. A future external research pass may add examples as new research, clearly separated from historical reconstruction."
+        },
+        {
+          "origin_id": "OSDS:OR-0067",
+          "fields": {},
+          "text": "**Scientific caveat:** Instrument outputs are not automatically validated ecological indicators. Sensor selection, calibration, placement, sampling interval, measurement uncertainty, environmental confounding and inference models must be documented. The 16 families are a conversational working grouping with overlaps (e.g. chemistry/air quality; optical/water quality), not a mutually exclusive ontology. Source-specific accuracy, calibration standards and ecological causal interpretation were not verified."
+        },
+        {
+          "origin_id": "OSDS:OR-0069",
+          "fields": {},
+          "text": "A **validation role**, not a distinct instrument universe. Soil gravimetric sampling (wet/dry mass), pH/nutrient laboratory assays, manual water-quality tests, stream gauging, portable reference meteorology, field spectroradiometry and geotechnical penetrometers/shear tests. Results may test sensor calibration, remote-model predictions or derived indices. Context, sample handling, uncertainty and temporal matching are critical. Mentioned leads: NEON, USGS, ISMN, ICOS, USDA and Copernicus In Situ. Field reflectance is allowed as ground observation; satellite imagery remains GISDS."
+        },
+        {
+          "origin_id": "OSDS:OR-0072",
+          "fields": {},
+          "text": "Community/school/volunteer measurement with low-cost air sensors, DIY weather stations, soil and water meters and noise monitors. Examples: Sensor.Community, openSenseMap, Smart Citizen, PurpleAir, OpenAQ, GLOBE and FreshWater Watch. Framework leads: ECSA principles, GLOBE protocols, EPA Air Sensor Toolbox and Darwin Core for biological observations. Benefits: hyper-local coverage and participation; challenges: calibration, placement, training, quality assurance and comparability. WILDLABS is a discovery/community gateway for conservation technologies, not assumed a direct observation provider."
+        },
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0069",
+      "label": "Provenance",
+      "kind": "method_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0135"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0135",
+          "fields": {
+            "Reference or concept": "Provenance",
+            "Kind in this audit": "Methodological requirement and existing metadata",
+            "Existing representation and unresolved evidence": "Existing provenance is incomplete for original conversation evidence"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0070",
+      "label": "Ecological validity",
+      "kind": "method_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0136"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0136",
+          "fields": {
+            "Reference or concept": "Ecological validity",
+            "Kind in this audit": "Interpretation/fitness question",
+            "Existing representation and unresolved evidence": "No operational definition or demonstrated outcome supplied"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0071",
+      "label": "In-situ research",
+      "kind": "method_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0137"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0137",
+          "fields": {
+            "Reference or concept": "In-situ research",
+            "Kind in this audit": "Field-context methodological topic",
+            "Existing representation and unresolved evidence": "No complete method or protocol supplied"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0072",
+      "label": "Field-adaptive instrumentation / field laboratories",
+      "kind": "method_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0138"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0138",
+          "fields": {
+            "Reference or concept": "Field-adaptive instrumentation / field laboratories",
+            "Kind in this audit": "Method/practice proposal",
+            "Existing representation and unresolved evidence": "Digital Naturalism association source-reported, not verified"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0073",
+      "label": "Statistical inference / AI-assisted reconstruction",
+      "kind": "method_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0139"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0139",
+          "fields": {
+            "Reference or concept": "Statistical inference / AI-assisted reconstruction",
+            "Kind in this audit": "Analytical method family lead",
+            "Existing representation and unresolved evidence": "Inputs, algorithms, assumptions, uncertainty and validation absent"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0074",
+      "label": "Non-stationarity / change-point detection",
+      "kind": "method_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0140"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0140",
+          "fields": {
+            "Reference or concept": "Non-stationarity / change-point detection",
+            "Kind in this audit": "Analytical topics",
+            "Existing representation and unresolved evidence": "No specific model, test or result supplied"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0075",
+      "label": "Validation procedures / reference measurements",
+      "kind": "method_framework_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0141"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0141",
+          "fields": {
+            "Reference or concept": "Validation procedures / reference measurements",
+            "Kind in this audit": "Method/quality topics",
+            "Existing representation and unresolved evidence": "Ground-truth use must identify its actual target and evidence"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0076",
+      "label": "Embedded AI and edge inference",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0057",
+        "OSDS:OR-0059"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0057",
+          "fields": {},
+          "text": "These are reconstruction-source conceptual statements for review, not newly adopted formal category definitions. Microcontrollers, single-board computers, data acquisition, communications, embedded AI and edge inference are named subjects. Offline acquisition/processing and network exchange should not be silently collapsed."
+        },
+        {
+          "origin_id": "OSDS:OR-0059",
+          "fields": {},
+          "text": "R names a **provisional embedded AI and edge inference family**. It is recorded separately from the sixteen instrument families: it may describe a processing/capability grouping rather than a seventeenth instrumentation family. Its placement and definition remain unresolved."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0077",
+      "label": "Computer vision",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0060",
+        "OSDS:OR-0142",
+        "OSDS:OR-0073",
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0060",
+          "fields": {},
+          "text": "R names computer vision, object detection, segmentation, acoustic processing, bioacoustics, OS Beehives and edge computing. N additionally proposes raw-input, model/version, annotation, threshold, uncertainty and human-review evidence. These are candidate pipeline descriptions. A recording, extracted feature, model output and ecological interpretation must remain distinguishable; no bee-colony condition, species inference or indicator is validated by this audit."
+        },
+        {
+          "origin_id": "OSDS:OR-0142",
+          "fields": {},
+          "text": "R names camera trapping, bioacoustics, computer vision, AI for conservation, edge computing, field laboratories and historical environmental reconstruction as themes/capabilities. Exact umbrella memberships are not supplied. **A:** preserve a thematic association only when sourced or explicitly reviewed; permit multiple associations. Theme grouping is not a mandate for four new databases, domains or observation-category codes."
+        },
+        {
+          "origin_id": "OSDS:OR-0073",
+          "fields": {},
+          "text": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings."
+        },
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0078",
+      "label": "Object detection",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0060",
+        "OSDS:OR-0073"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0060",
+          "fields": {},
+          "text": "R names computer vision, object detection, segmentation, acoustic processing, bioacoustics, OS Beehives and edge computing. N additionally proposes raw-input, model/version, annotation, threshold, uncertainty and human-review evidence. These are candidate pipeline descriptions. A recording, extracted feature, model output and ecological interpretation must remain distinguishable; no bee-colony condition, species inference or indicator is validated by this audit."
+        },
+        {
+          "origin_id": "OSDS:OR-0073",
+          "fields": {},
+          "text": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0079",
+      "label": "Segmentation",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0060",
+        "OSDS:OR-0073"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0060",
+          "fields": {},
+          "text": "R names computer vision, object detection, segmentation, acoustic processing, bioacoustics, OS Beehives and edge computing. N additionally proposes raw-input, model/version, annotation, threshold, uncertainty and human-review evidence. These are candidate pipeline descriptions. A recording, extracted feature, model output and ecological interpretation must remain distinguishable; no bee-colony condition, species inference or indicator is validated by this audit."
+        },
+        {
+          "origin_id": "OSDS:OR-0073",
+          "fields": {},
+          "text": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0080",
+      "label": "Acoustic processing",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0060"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0060",
+          "fields": {},
+          "text": "R names computer vision, object detection, segmentation, acoustic processing, bioacoustics, OS Beehives and edge computing. N additionally proposes raw-input, model/version, annotation, threshold, uncertainty and human-review evidence. These are candidate pipeline descriptions. A recording, extracted feature, model output and ecological interpretation must remain distinguishable; no bee-colony condition, species inference or indicator is validated by this audit."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0081",
+      "label": "Bioacoustics",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0143",
+        "OSDS:OR-0060",
+        "OSDS:OR-0142",
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0143",
+          "fields": {},
+          "text": "**A — scope tensions requiring review:** Does “aerial” exclude aircraft atmospheric observations, or aerial mapping specifically? How are autonomous ocean floats, underwater/subsurface systems, laboratory and industrial measurements treated? Which biological instrumentation is specialised while camera trapping, bioacoustics and beehive sensing remain relevant? How are mixed providers handled at product level? Existing IAGOS, Argo, NASA, Copernicus and GBIF records must retain their identities and history while those questions are assessed. Location metadata and use of GIS in analysis do not by themselves settle catalogue ownership."
+        },
+        {
+          "origin_id": "OSDS:OR-0060",
+          "fields": {},
+          "text": "R names computer vision, object detection, segmentation, acoustic processing, bioacoustics, OS Beehives and edge computing. N additionally proposes raw-input, model/version, annotation, threshold, uncertainty and human-review evidence. These are candidate pipeline descriptions. A recording, extracted feature, model output and ecological interpretation must remain distinguishable; no bee-colony condition, species inference or indicator is validated by this audit."
+        },
+        {
+          "origin_id": "OSDS:OR-0142",
+          "fields": {},
+          "text": "R names camera trapping, bioacoustics, computer vision, AI for conservation, edge computing, field laboratories and historical environmental reconstruction as themes/capabilities. Exact umbrella memberships are not supplied. **A:** preserve a thematic association only when sourced or explicitly reviewed; permit multiple associations. Theme grouping is not a mandate for four new databases, domains or observation-category codes."
+        },
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0082",
+      "label": "Edge computing",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0060",
+        "OSDS:OR-0142"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0060",
+          "fields": {},
+          "text": "R names computer vision, object detection, segmentation, acoustic processing, bioacoustics, OS Beehives and edge computing. N additionally proposes raw-input, model/version, annotation, threshold, uncertainty and human-review evidence. These are candidate pipeline descriptions. A recording, extracted feature, model output and ecological interpretation must remain distinguishable; no bee-colony condition, species inference or indicator is validated by this audit."
+        },
+        {
+          "origin_id": "OSDS:OR-0142",
+          "fields": {},
+          "text": "R names camera trapping, bioacoustics, computer vision, AI for conservation, edge computing, field laboratories and historical environmental reconstruction as themes/capabilities. Exact umbrella memberships are not supplied. **A:** preserve a thematic association only when sourced or explicitly reviewed; permit multiple associations. Theme grouping is not a mandate for four new databases, domains or observation-category codes."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0083",
+      "label": "Camera trapping",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0143",
+        "OSDS:OR-0142",
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0143",
+          "fields": {},
+          "text": "**A — scope tensions requiring review:** Does “aerial” exclude aircraft atmospheric observations, or aerial mapping specifically? How are autonomous ocean floats, underwater/subsurface systems, laboratory and industrial measurements treated? Which biological instrumentation is specialised while camera trapping, bioacoustics and beehive sensing remain relevant? How are mixed providers handled at product level? Existing IAGOS, Argo, NASA, Copernicus and GBIF records must retain their identities and history while those questions are assessed. Location metadata and use of GIS in analysis do not by themselves settle catalogue ownership."
+        },
+        {
+          "origin_id": "OSDS:OR-0142",
+          "fields": {},
+          "text": "R names camera trapping, bioacoustics, computer vision, AI for conservation, edge computing, field laboratories and historical environmental reconstruction as themes/capabilities. Exact umbrella memberships are not supplied. **A:** preserve a thematic association only when sourced or explicitly reviewed; permit multiple associations. Theme grouping is not a mandate for four new databases, domains or observation-category codes."
+        },
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0084",
+      "label": "AI for conservation",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0142",
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0142",
+          "fields": {},
+          "text": "R names camera trapping, bioacoustics, computer vision, AI for conservation, edge computing, field laboratories and historical environmental reconstruction as themes/capabilities. Exact umbrella memberships are not supplied. **A:** preserve a thematic association only when sourced or explicitly reviewed; permit multiple associations. Theme grouping is not a mandate for four new databases, domains or observation-category codes."
+        },
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0085",
+      "label": "Audio analysis",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0086",
+      "label": "Edge AI",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0087",
+      "label": "Local processing",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0088",
+      "label": "Adaptive sampling",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0073",
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0073",
+          "fields": {},
+          "text": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings."
+        },
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0089",
+      "label": "Protocols",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0072",
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0072",
+          "fields": {},
+          "text": "Community/school/volunteer measurement with low-cost air sensors, DIY weather stations, soil and water meters and noise monitors. Examples: Sensor.Community, openSenseMap, Smart Citizen, PurpleAir, OpenAQ, GLOBE and FreshWater Watch. Framework leads: ECSA principles, GLOBE protocols, EPA Air Sensor Toolbox and Darwin Core for biological observations. Benefits: hyper-local coverage and participation; challenges: calibration, placement, training, quality assurance and comparability. WILDLABS is a discovery/community gateway for conservation technologies, not assumed a direct observation provider."
+        },
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0090",
+      "label": "Historical reconstruction",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0144",
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0144",
+          "fields": {},
+          "text": "For each future family, the intended record should recover representative instruments, measured properties, units, potential indicators, calibration/method and evidence. **All sixteen currently lack source-supplied per-family values for those fields.** The omission is explicit rather than filled with generic examples. A future external research pass may add examples as new research, clearly separated from historical reconstruction."
+        },
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0091",
+      "label": "In-situ experimentation",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0061"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0061",
+          "fields": {},
+          "text": "R names **Digital Naturalism Laboratories**, field-adaptive scientific instrumentation, in-situ experimentation and “taking the laboratory into the field.” N interprets this as situated making/field-lab practice. That institutional/methodological association remains source-reported and externally unverified. Recover exact projects, methods, instruments, outcomes and references before a detailed institutional or scientific claim."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0092",
+      "label": "Field laboratories",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0142",
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0142",
+          "fields": {},
+          "text": "R names camera trapping, bioacoustics, computer vision, AI for conservation, edge computing, field laboratories and historical environmental reconstruction as themes/capabilities. Exact umbrella memberships are not supplied. **A:** preserve a thematic association only when sourced or explicitly reviewed; permit multiple associations. Theme grouping is not a mandate for four new databases, domains or observation-category codes."
+        },
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0093",
+      "label": "Data acquisition",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0057"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0057",
+          "fields": {},
+          "text": "These are reconstruction-source conceptual statements for review, not newly adopted formal category definitions. Microcontrollers, single-board computers, data acquisition, communications, embedded AI and edge inference are named subjects. Offline acquisition/processing and network exchange should not be silently collapsed."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0094",
+      "label": "Communication",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0055",
+        "OSDS:OR-0057",
+        "OSDS:OR-0058",
+        "OSDS:OR-0070",
+        "OSDS:OR-0073"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0055",
+          "fields": {},
+          "text": "- IoT concerns connected systems, communication and data exchange."
+        },
+        {
+          "origin_id": "OSDS:OR-0057",
+          "fields": {},
+          "text": "These are reconstruction-source conceptual statements for review, not newly adopted formal category definitions. Microcontrollers, single-board computers, data acquisition, communications, embedded AI and edge inference are named subjects. Offline acquisition/processing and network exchange should not be silently collapsed."
+        },
+        {
+          "origin_id": "OSDS:OR-0058",
+          "fields": {},
+          "text": "None of these names establishes raw sensors, measured variables, power consumption, pricing, supported model performance, communications, availability or licensing. Hardware is not automatically a new observation-data source. No specifications are invented."
+        },
+        {
+          "origin_id": "OSDS:OR-0070",
+          "fields": {},
+          "text": "Unattended self-powered loggers, fixed stations, ground rovers, robotic boats, autonomous sondes, fixed cameras, GNSS/IMU platforms and automated samplers. Can measure gradients, episodic changes and adaptive/high-frequency conditions. Distinguish operational autonomy, remote communication, sensing, navigation and data interpretation. Examples mentioned: Argo, OceanOPS, Copernicus Marine, NEON, USGS, EarthScope and robotics datasets. **Boundary qualification:** ocean floats and mobile underwater platforms are cited as analogous in-situ systems; aerial mapping remains excluded."
+        },
+        {
+          "origin_id": "OSDS:OR-0073",
+          "fields": {},
+          "text": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0095",
+      "label": "Sensor fusion",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0073"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0073",
+          "fields": {},
+          "text": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0096",
+      "label": "Data rescue",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0063",
+        "OSDS:OR-0074"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0063",
+          "fields": {},
+          "text": "**R§10; N§5.8.** The supplied account includes archives, data rescue, digitisation, homogenisation, reconstruction, statistical inference and AI-assisted analysis. It explicitly adds uncertainty, non-stationarity, change-point detection and historical environmental reconstruction. No statistical formula, implemented algorithm, dataset, result or validated performance is supplied."
+        },
+        {
+          "origin_id": "OSDS:OR-0074",
+          "fields": {},
+          "text": "Manual weather registers, river gauges, soil temperature archives, chart recorders and early loggers. Distinguish original observation from later digitisation, homogenisation, reconstruction or modelled history. Method leads: data rescue, transcription/handwriting recognition, missing-data estimation, change-point detection, Bayesian reconstruction, physical data assimilation, non-stationarity, uncertainty analysis and causal hypotheses. AI may accelerate extraction or pattern detection but does not independently authenticate observations or causality. Situated, traditional and cultural environmental knowledge is a parallel evidence base: connect with explicit consent/context, do not force one to validate the other. Examples: NOAA, USGS, long-term observatories and agricultural stations."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0097",
+      "label": "Digitisation",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0063",
+        "OSDS:OR-0064",
+        "OSDS:OR-0074"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0063",
+          "fields": {},
+          "text": "**R§10; N§5.8.** The supplied account includes archives, data rescue, digitisation, homogenisation, reconstruction, statistical inference and AI-assisted analysis. It explicitly adds uncertainty, non-stationarity, change-point detection and historical environmental reconstruction. No statistical formula, implemented algorithm, dataset, result or validated performance is supplied."
+        },
+        {
+          "origin_id": "OSDS:OR-0064",
+          "fields": {},
+          "text": "N proposes keeping original readings, transcription/digitisation, corrected series, inferred missing values, model reconstructions and contextual interpretation separate. **A:** these can become distinct processing steps with source editions, transformations, uncertainty and review status. Original measurements should not be replaced by reconstructed values under the same evidence label."
+        },
+        {
+          "origin_id": "OSDS:OR-0074",
+          "fields": {},
+          "text": "Manual weather registers, river gauges, soil temperature archives, chart recorders and early loggers. Distinguish original observation from later digitisation, homogenisation, reconstruction or modelled history. Method leads: data rescue, transcription/handwriting recognition, missing-data estimation, change-point detection, Bayesian reconstruction, physical data assimilation, non-stationarity, uncertainty analysis and causal hypotheses. AI may accelerate extraction or pattern detection but does not independently authenticate observations or causality. Situated, traditional and cultural environmental knowledge is a parallel evidence base: connect with explicit consent/context, do not force one to validate the other. Examples: NOAA, USGS, long-term observatories and agricultural stations."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0098",
+      "label": "Homogenisation",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0063",
+        "OSDS:OR-0074"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0063",
+          "fields": {},
+          "text": "**R§10; N§5.8.** The supplied account includes archives, data rescue, digitisation, homogenisation, reconstruction, statistical inference and AI-assisted analysis. It explicitly adds uncertainty, non-stationarity, change-point detection and historical environmental reconstruction. No statistical formula, implemented algorithm, dataset, result or validated performance is supplied."
+        },
+        {
+          "origin_id": "OSDS:OR-0074",
+          "fields": {},
+          "text": "Manual weather registers, river gauges, soil temperature archives, chart recorders and early loggers. Distinguish original observation from later digitisation, homogenisation, reconstruction or modelled history. Method leads: data rescue, transcription/handwriting recognition, missing-data estimation, change-point detection, Bayesian reconstruction, physical data assimilation, non-stationarity, uncertainty analysis and causal hypotheses. AI may accelerate extraction or pattern detection but does not independently authenticate observations or causality. Situated, traditional and cultural environmental knowledge is a parallel evidence base: connect with explicit consent/context, do not force one to validate the other. Examples: NOAA, USGS, long-term observatories and agricultural stations."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0099",
+      "label": "Reconstruction",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0145",
+        "OSDS:OR-0146",
+        "OSDS:OR-0057",
+        "OSDS:OR-0063",
+        "OSDS:OR-0064",
+        "OSDS:OR-0066",
+        "OSDS:OR-0144",
+        "OSDS:OR-0147",
+        "OSDS:OR-0142",
+        "OSDS:OR-0148",
+        "OSDS:OR-0149",
+        "OSDS:OR-0150",
+        "OSDS:OR-0074",
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0145",
+          "fields": {},
+          "text": "**R§1, N§4; historical decision status: owner-requested reconstruction of an agreement, not transcript-authenticated agreement.** The supplied account describes OSDS as concerned with human-scale, ground-based physical observation systems, instrumentation, methods and sources. Large governmental or scientific infrastructures remain relevant when their observations operate at that scale; organisational size is not the proposed exclusion criterion."
+        },
+        {
+          "origin_id": "OSDS:OR-0146",
+          "fields": {},
+          "text": "**B; R§2.** The two existing classification dimensions are retained below. Their supplied memberships are provisional research assertions. The reconstruction proposes adding descriptive dimensions, not replacing these codes or equating them to similarly numbered EII codes."
+        },
+        {
+          "origin_id": "OSDS:OR-0057",
+          "fields": {},
+          "text": "These are reconstruction-source conceptual statements for review, not newly adopted formal category definitions. Microcontrollers, single-board computers, data acquisition, communications, embedded AI and edge inference are named subjects. Offline acquisition/processing and network exchange should not be silently collapsed."
+        },
+        {
+          "origin_id": "OSDS:OR-0063",
+          "fields": {},
+          "text": "**R§10; N§5.8.** The supplied account includes archives, data rescue, digitisation, homogenisation, reconstruction, statistical inference and AI-assisted analysis. It explicitly adds uncertainty, non-stationarity, change-point detection and historical environmental reconstruction. No statistical formula, implemented algorithm, dataset, result or validated performance is supplied."
+        },
+        {
+          "origin_id": "OSDS:OR-0064",
+          "fields": {},
+          "text": "N proposes keeping original readings, transcription/digitisation, corrected series, inferred missing values, model reconstructions and contextual interpretation separate. **A:** these can become distinct processing steps with source editions, transformations, uncertainty and review status. Original measurements should not be replaced by reconstructed values under the same evidence label."
+        },
+        {
+          "origin_id": "OSDS:OR-0066",
+          "fields": {},
+          "text": "**B:** historical category assignments exist for NOAA NCEI, NDACC, ILTER, ISRIC, GLOSS, BODC, EEA Datahub and PANGAEA. Those memberships do not instantiate data-rescue or reconstruction methods or certify a continuous usable series."
+        },
+        {
+          "origin_id": "OSDS:OR-0144",
+          "fields": {},
+          "text": "For each future family, the intended record should recover representative instruments, measured properties, units, potential indicators, calibration/method and evidence. **All sixteen currently lack source-supplied per-family values for those fields.** The omission is explicit rather than filled with generic examples. A future external research pass may add examples as new research, clearly separated from historical reconstruction."
+        },
+        {
+          "origin_id": "OSDS:OR-0147",
+          "fields": {},
+          "text": "**R§12, R§7/9/10; N§8; B foundational references.** The list below covers every named framework or methodological lead in the reconstruction brief. A reference to a standard is not adoption or source-level conformance."
+        },
+        {
+          "origin_id": "OSDS:OR-0142",
+          "fields": {},
+          "text": "R names camera trapping, bioacoustics, computer vision, AI for conservation, edge computing, field laboratories and historical environmental reconstruction as themes/capabilities. Exact umbrella memberships are not supplied. **A:** preserve a thematic association only when sourced or explicitly reviewed; permit multiple associations. Theme grouping is not a mandate for four new databases, domains or observation-category codes."
+        },
+        {
+          "origin_id": "OSDS:OR-0148",
+          "fields": {},
+          "text": "The current registers contain source identities, candidate classifications, discovery evidence and unresolved questions. They do not contain the detailed family inventory, hardware-platform records, campaign model, four umbrellas or six-dimension research organisation. They also lack explicit statistical-reconstruction, AI-processing and field-lab method records. This is substantive missing research representation, not merely a readability or version-label problem."
+        },
+        {
+          "origin_id": "OSDS:OR-0149",
+          "fields": {},
+          "text": "Candidate inclusion could be justified by a declared source status such as “reconstruction-brief-derived, externally unverified.” Such inclusion would preserve the record of a proposal, not verify its science or historical acceptance. A later approved patch must choose its precise model and lifecycle states."
+        },
+        {
+          "origin_id": "OSDS:OR-0150",
+          "fields": {},
+          "text": "1. Accept this reconstruction as a bounded candidate-evidence edition, distinct from an original transcript?\n2. Resolve ground/air/marine/subsurface/specialist-biology scope at source/product level without erasing history.\n3. Approve names, definitions, overlaps and ownership for the sixteen families before issuing classification identities.\n4. Decide whether embedded AI/edge inference is a capability family, theme, or other typed concept; do not assume family 17.\n5. Define four umbrellas and approve any subtheme membership separately.\n6. Define independent identities for instruments, platforms, methods, standards, communities, datasets and assertions.\n7. Decide which named new communities/resources qualify for the source inventory versus separate record types.\n8. Approve the conceptual campaign and EII pathways as scoped relationships, with no assumed verification/derivation outcomes.\n9. Establish claim-level evidence and decision states, and choose a proportionate schema extension and validator changes if ingestion is authorised.\n10. Keep original citations, external identities, rights, standard editions and scientific fitness unresolved until separately researched."
+        },
+        {
+          "origin_id": "OSDS:OR-0074",
+          "fields": {},
+          "text": "Manual weather registers, river gauges, soil temperature archives, chart recorders and early loggers. Distinguish original observation from later digitisation, homogenisation, reconstruction or modelled history. Method leads: data rescue, transcription/handwriting recognition, missing-data estimation, change-point detection, Bayesian reconstruction, physical data assimilation, non-stationarity, uncertainty analysis and causal hypotheses. AI may accelerate extraction or pattern detection but does not independently authenticate observations or causality. Situated, traditional and cultural environmental knowledge is a parallel evidence base: connect with explicit consent/context, do not force one to validate the other. Examples: NOAA, USGS, long-term observatories and agricultural stations."
+        },
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0100",
+      "label": "Statistical inference",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0063"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0063",
+          "fields": {},
+          "text": "**R§10; N§5.8.** The supplied account includes archives, data rescue, digitisation, homogenisation, reconstruction, statistical inference and AI-assisted analysis. It explicitly adds uncertainty, non-stationarity, change-point detection and historical environmental reconstruction. No statistical formula, implemented algorithm, dataset, result or validated performance is supplied."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0101",
+      "label": "AI-assisted analysis",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0063"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0063",
+          "fields": {},
+          "text": "**R§10; N§5.8.** The supplied account includes archives, data rescue, digitisation, homogenisation, reconstruction, statistical inference and AI-assisted analysis. It explicitly adds uncertainty, non-stationarity, change-point detection and historical environmental reconstruction. No statistical formula, implemented algorithm, dataset, result or validated performance is supplied."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0102",
+      "label": "Uncertainty",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0037",
+        "OSDS:OR-0038",
+        "OSDS:OR-0039",
+        "OSDS:OR-0040",
+        "OSDS:OR-0060",
+        "OSDS:OR-0063",
+        "OSDS:OR-0064",
+        "OSDS:OR-0151",
+        "OSDS:OR-0067",
+        "OSDS:OR-0069",
+        "OSDS:OR-0074"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0037",
+          "fields": {},
+          "text": "N proposes distinguishing operational streams, processed scientific products, metadata, archived datasets, data papers and research articles. These are **secondary audit-author review distinctions**, not recovered October wording. The same deployment may combine networked telemetry and scientific monitoring; a category label alone cannot certify calibration, uncertainty or fitness."
+        },
+        {
+          "origin_id": "OSDS:OR-0038",
+          "fields": {},
+          "text": "**B examples, not evidence of October mentions:** WMO WIGOS/GBON SRC-001, NOAA NCEI SRC-003, ICOS SRC-005, NEON SRC-010 and FLUXNET SRC-011. Scientific descriptions should attach to a specific documented product/protocol rather than every output of a provider. **A:** preserve time span, sampling design, instrument/procedure, uncertainty, processing and publication evidence when later researched."
+        },
+        {
+          "origin_id": "OSDS:OR-0039",
+          "fields": {},
+          "text": "**R§5; N§5.3.** The supplied account includes manual/reference measurements, validation procedures, calibration, soil and water sampling, environmental measurements and geotechnical testing. Their intended role is to support interpretation of other observations. It does not enumerate specific laboratory methods, test standards, instruments or uncertainty values."
+        },
+        {
+          "origin_id": "OSDS:OR-0040",
+          "fields": {},
+          "text": "N's proposed review fields include the validation target, spatial/temporal correspondence, observer/instrument, method, uncertainty and independence of reference evidence. Retain those as review proposals. “Ground truth” must not silently become an error-free or universally transferable label."
+        },
+        {
+          "origin_id": "OSDS:OR-0060",
+          "fields": {},
+          "text": "R names computer vision, object detection, segmentation, acoustic processing, bioacoustics, OS Beehives and edge computing. N additionally proposes raw-input, model/version, annotation, threshold, uncertainty and human-review evidence. These are candidate pipeline descriptions. A recording, extracted feature, model output and ecological interpretation must remain distinguishable; no bee-colony condition, species inference or indicator is validated by this audit."
+        },
+        {
+          "origin_id": "OSDS:OR-0063",
+          "fields": {},
+          "text": "**R§10; N§5.8.** The supplied account includes archives, data rescue, digitisation, homogenisation, reconstruction, statistical inference and AI-assisted analysis. It explicitly adds uncertainty, non-stationarity, change-point detection and historical environmental reconstruction. No statistical formula, implemented algorithm, dataset, result or validated performance is supplied."
+        },
+        {
+          "origin_id": "OSDS:OR-0064",
+          "fields": {},
+          "text": "N proposes keeping original readings, transcription/digitisation, corrected series, inferred missing values, model reconstructions and contextual interpretation separate. **A:** these can become distinct processing steps with source editions, transformations, uncertainty and review status. Original measurements should not be replaced by reconstructed values under the same evidence label."
+        },
+        {
+          "origin_id": "OSDS:OR-0151",
+          "fields": {},
+          "text": "This is a research/navigation pathway, not a literal validated ontology or implemented processing pipeline. **A:** identify what the arrows mean and record units, method, derivation, uncertainty and target evidence before treating them as typed scientific relationships. An observation may be about an observed property; the chain does not by itself specify computation or causality. Measurement and interpretation remain distinct."
+        },
+        {
+          "origin_id": "OSDS:OR-0067",
+          "fields": {},
+          "text": "**Scientific caveat:** Instrument outputs are not automatically validated ecological indicators. Sensor selection, calibration, placement, sampling interval, measurement uncertainty, environmental confounding and inference models must be documented. The 16 families are a conversational working grouping with overlaps (e.g. chemistry/air quality; optical/water quality), not a mutually exclusive ontology. Source-specific accuracy, calibration standards and ecological causal interpretation were not verified."
+        },
+        {
+          "origin_id": "OSDS:OR-0069",
+          "fields": {},
+          "text": "A **validation role**, not a distinct instrument universe. Soil gravimetric sampling (wet/dry mass), pH/nutrient laboratory assays, manual water-quality tests, stream gauging, portable reference meteorology, field spectroradiometry and geotechnical penetrometers/shear tests. Results may test sensor calibration, remote-model predictions or derived indices. Context, sample handling, uncertainty and temporal matching are critical. Mentioned leads: NEON, USGS, ISMN, ICOS, USDA and Copernicus In Situ. Field reflectance is allowed as ground observation; satellite imagery remains GISDS."
+        },
+        {
+          "origin_id": "OSDS:OR-0074",
+          "fields": {},
+          "text": "Manual weather registers, river gauges, soil temperature archives, chart recorders and early loggers. Distinguish original observation from later digitisation, homogenisation, reconstruction or modelled history. Method leads: data rescue, transcription/handwriting recognition, missing-data estimation, change-point detection, Bayesian reconstruction, physical data assimilation, non-stationarity, uncertainty analysis and causal hypotheses. AI may accelerate extraction or pattern detection but does not independently authenticate observations or causality. Situated, traditional and cultural environmental knowledge is a parallel evidence base: connect with explicit consent/context, do not force one to validate the other. Examples: NOAA, USGS, long-term observatories and agricultural stations."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0103",
+      "label": "Non-stationarity",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0063",
+        "OSDS:OR-0074"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0063",
+          "fields": {},
+          "text": "**R§10; N§5.8.** The supplied account includes archives, data rescue, digitisation, homogenisation, reconstruction, statistical inference and AI-assisted analysis. It explicitly adds uncertainty, non-stationarity, change-point detection and historical environmental reconstruction. No statistical formula, implemented algorithm, dataset, result or validated performance is supplied."
+        },
+        {
+          "origin_id": "OSDS:OR-0074",
+          "fields": {},
+          "text": "Manual weather registers, river gauges, soil temperature archives, chart recorders and early loggers. Distinguish original observation from later digitisation, homogenisation, reconstruction or modelled history. Method leads: data rescue, transcription/handwriting recognition, missing-data estimation, change-point detection, Bayesian reconstruction, physical data assimilation, non-stationarity, uncertainty analysis and causal hypotheses. AI may accelerate extraction or pattern detection but does not independently authenticate observations or causality. Situated, traditional and cultural environmental knowledge is a parallel evidence base: connect with explicit consent/context, do not force one to validate the other. Examples: NOAA, USGS, long-term observatories and agricultural stations."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0104",
+      "label": "Change-point detection",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0063",
+        "OSDS:OR-0074"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0063",
+          "fields": {},
+          "text": "**R§10; N§5.8.** The supplied account includes archives, data rescue, digitisation, homogenisation, reconstruction, statistical inference and AI-assisted analysis. It explicitly adds uncertainty, non-stationarity, change-point detection and historical environmental reconstruction. No statistical formula, implemented algorithm, dataset, result or validated performance is supplied."
+        },
+        {
+          "origin_id": "OSDS:OR-0074",
+          "fields": {},
+          "text": "Manual weather registers, river gauges, soil temperature archives, chart recorders and early loggers. Distinguish original observation from later digitisation, homogenisation, reconstruction or modelled history. Method leads: data rescue, transcription/handwriting recognition, missing-data estimation, change-point detection, Bayesian reconstruction, physical data assimilation, non-stationarity, uncertainty analysis and causal hypotheses. AI may accelerate extraction or pattern detection but does not independently authenticate observations or causality. Situated, traditional and cultural environmental knowledge is a parallel evidence base: connect with explicit consent/context, do not force one to validate the other. Examples: NOAA, USGS, long-term observatories and agricultural stations."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0105",
+      "label": "Historical environmental reconstruction",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0063",
+        "OSDS:OR-0142"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0063",
+          "fields": {},
+          "text": "**R§10; N§5.8.** The supplied account includes archives, data rescue, digitisation, homogenisation, reconstruction, statistical inference and AI-assisted analysis. It explicitly adds uncertainty, non-stationarity, change-point detection and historical environmental reconstruction. No statistical formula, implemented algorithm, dataset, result or validated performance is supplied."
+        },
+        {
+          "origin_id": "OSDS:OR-0142",
+          "fields": {},
+          "text": "R names camera trapping, bioacoustics, computer vision, AI for conservation, edge computing, field laboratories and historical environmental reconstruction as themes/capabilities. Exact umbrella memberships are not supplied. **A:** preserve a thematic association only when sourced or explicitly reviewed; permit multiple associations. Theme grouping is not a mandate for four new databases, domains or observation-category codes."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0106",
+      "label": "Sampling effort",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0048"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0048",
+          "fields": {},
+          "text": "Darwin Core, the Humboldt Extension and GBIF event-based data organisation are named leads. Exact standard editions, extension terms, field mappings and examples are not supplied. **A:** distinguish campaign identity, event, sampling effort, occurrence/measurement, specimen/sample, dataset and publishing service. An event or occurrence record must not be presumed to contain absent effort or protocol evidence."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0107",
+      "label": "Validation",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0039",
+        "OSDS:OR-0040",
+        "OSDS:OR-0041",
+        "OSDS:OR-0044",
+        "OSDS:OR-0050",
+        "OSDS:OR-0069"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0039",
+          "fields": {},
+          "text": "**R§5; N§5.3.** The supplied account includes manual/reference measurements, validation procedures, calibration, soil and water sampling, environmental measurements and geotechnical testing. Their intended role is to support interpretation of other observations. It does not enumerate specific laboratory methods, test standards, instruments or uncertainty values."
+        },
+        {
+          "origin_id": "OSDS:OR-0040",
+          "fields": {},
+          "text": "N's proposed review fields include the validation target, spatial/temporal correspondence, observer/instrument, method, uncertainty and independence of reference evidence. Retain those as review proposals. “Ground truth” must not silently become an error-free or universally transferable label."
+        },
+        {
+          "origin_id": "OSDS:OR-0041",
+          "fields": {},
+          "text": "**B:** AERONET SRC-006, NEON SRC-010, GBIF SRC-014, ISMN SRC-019, ISRIC SRC-021 and USGS Water Data SRC-027 have inherited O03 assignments. They are not hereby validated for a particular satellite/model/indicator task. **A:** distinguish a sample, a sample analysis, a reference result and a validation assertion. No existing source classification is changed."
+        },
+        {
+          "origin_id": "OSDS:OR-0044",
+          "fields": {},
+          "text": "**B:** Argo SRC-028, Wildlife Insights SRC-016 and robotics-related SRC-041/042 illustrate existing candidate pathways, not newly substantiated capabilities. Marine/airborne scope questions in §1 remain open. Autonomous sampling does not establish validation or access rights."
+        },
+        {
+          "origin_id": "OSDS:OR-0050",
+          "fields": {},
+          "text": "**R§8; N§5.6.** Community monitoring, participatory science, instruments, platforms, validation and guidance are named. WILDLABS is described in the supplied account through a conservation-technology orientation and comparison with OSDS. That is a source-reported role requiring independent identity/role verification, not a newly verified institutional description."
+        },
+        {
+          "origin_id": "OSDS:OR-0069",
+          "fields": {},
+          "text": "A **validation role**, not a distinct instrument universe. Soil gravimetric sampling (wet/dry mass), pH/nutrient laboratory assays, manual water-quality tests, stream gauging, portable reference meteorology, field spectroradiometry and geotechnical penetrometers/shear tests. Results may test sensor calibration, remote-model predictions or derived indices. Context, sample handling, uncertainty and temporal matching are critical. Mentioned leads: NEON, USGS, ISMN, ICOS, USDA and Copernicus In Situ. Field reflectance is allowed as ground observation; satellite imagery remains GISDS."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0108",
+      "label": "Reference measurements",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0039"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0039",
+          "fields": {},
+          "text": "**R§5; N§5.3.** The supplied account includes manual/reference measurements, validation procedures, calibration, soil and water sampling, environmental measurements and geotechnical testing. Their intended role is to support interpretation of other observations. It does not enumerate specific laboratory methods, test standards, instruments or uncertainty values."
+        }
+      ],
+      "qualifications": []
+    },
+    {
+      "id": "OSDS:RC-0109",
+      "label": "Acoustic monitoring",
+      "kind": "method_capability_candidate",
+      "typing_status": "proposed_from_documentary_context",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": []
+    }
+  ],
+  "assertions": [
+    {
+      "id": "OSDS:RA-0001",
+      "label": "1. OSDS purpose, scope and boundaries",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0152"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0152",
+          "fields": {},
+          "text": "The reported division places satellite, aerial and Earth-observation mapping primarily with GISDS; specialised biological instrumentation and biological evidence primarily with a future biological database. Interdisciplinary links should preserve relationships without duplicating another database's authority. These are proposed scientific responsibility boundaries to reconcile, not automatic deletion rules."
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0002",
+      "label": "11. Instrumentation and technology families across categories",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0153"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0153",
+          "fields": {},
+          "text": "**R§11; A design analysis.** Consolidation should avoid duplicating one instrument merely because it participates in multiple observation categories. Distinguish instrument identity, computing platform, deployment platform, measurement principle, property, processing capability, source organisation and observation product."
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0003",
+      "label": "11. Instrumentation and technology families across categories",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0154"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0154",
+          "fields": {},
+          "text": "The sixteen labels in §3 are family candidates. The five platform names in §9 are identity leads. Embedded AI/edge inference is a capability-family proposal. Acoustic/optical recording, model processing and ecological interpretation are separate levels. No fully specified instrument instance is recovered from R."
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0004",
+      "label": "12. Methodologies, frameworks and standards",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0155"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0155",
+          "fields": {},
+          "text": "No new authors, titles, DOIs, URLs, standard editions, licences or compliance assertions are fabricated. Existing foundation URLs remain in the machine register with their dated evidence. R/N supply names, not a complete bibliography. Reference identity, relevance, implementation and claim support require distinct review."
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0005",
+      "label": "13. Cross-cutting research themes",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0156"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0156",
+          "fields": {},
+          "text": "**R§13.** Four umbrella labels are now supplied explicitly:"
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0006",
+      "label": "13. Cross-cutting research themes",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0157"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0157",
+          "fields": {},
+          "text": "N's four different lenses—measurement trust; embedded computation; participation/situated practice; temporal continuity—were explicitly its author's editorial prompts, not recovered original umbrellas. They must not be merged with, or silently substituted for, R's four labels."
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0007",
+      "label": "15. Federation and interoperability",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0158"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0158",
+          "fields": {},
+          "text": "**R§15; N§8; B conceptual relationships.** The supplied conceptual pathway is:"
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0008",
+      "label": "15. Federation and interoperability",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0159"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0159",
+          "fields": {},
+          "text": "**Instrument → Observation → Observed property → Derived indicator → EII**"
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0009",
+      "label": "DRM",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0160"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0160",
+          "fields": {
+            "Neighbour named in R": "DRM",
+            "Reconstructed relationship / source boundary": "Methodology, identity/provenance/classification/relationship conventions",
+            "Unresolved implementation or scientific issue": "Candidate guidance is not adopted full conformance"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0010",
+      "label": "EII",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0161"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0161",
+          "fields": {
+            "Neighbour named in R": "EII",
+            "Reconstructed relationship / source boundary": "Derived indicator relationships from observational evidence",
+            "Unresolved implementation or scientific issue": "Actual indicator IDs, derivations and scientific fitness not established"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0011",
+      "label": "GISDS",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0162"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0162",
+          "fields": {
+            "Neighbour named in R": "GISDS",
+            "Reconstructed relationship / source boundary": "Primary home proposed for satellite/aerial/EO mapping",
+            "Unresolved implementation or scientific issue": "Mixed-provider/product and aerial-observation boundary unresolved"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0012",
+      "label": "Ecological Computation",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0163"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0163",
+          "fields": {
+            "Neighbour named in R": "Ecological Computation",
+            "Reconstructed relationship / source boundary": "Computational processing and interpretation research interface",
+            "Unresolved implementation or scientific issue": "Exact project/namespace, tools and bindings not supplied"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0013",
+      "label": "DPRKB",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0164"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0164",
+          "fields": {
+            "Neighbour named in R": "DPRKB",
+            "Reconstructed relationship / source boundary": "Named federation neighbour",
+            "Unresolved implementation or scientific issue": "Remit, target entities and specific relationships not established here"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0014",
+      "label": "IRKB",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0165"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0165",
+          "fields": {
+            "Neighbour named in R": "IRKB",
+            "Reconstructed relationship / source boundary": "Independent interdisciplinary interpretation/synthesis context",
+            "Unresolved implementation or scientific issue": "No automatic ingestion or implemented federation service"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0015",
+      "label": "Future biological database",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0166"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0166",
+          "fields": {
+            "Neighbour named in R": "Future biological database",
+            "Reconstructed relationship / source boundary": "Proposed home for specialised biology instrumentation/evidence",
+            "Unresolved implementation or scientific issue": "Exact database identity, scope and boundary with acoustic/visual observation unresolved"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0016",
+      "label": "Situated-knowledge database",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0167"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0167",
+          "fields": {
+            "Neighbour named in R": "Situated-knowledge database",
+            "Reconstructed relationship / source boundary": "Related contextual/traditional/cultural knowledge",
+            "Unresolved implementation or scientific issue": "Identity, representation, permissions and evidence distinctions unresolved"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0017",
+      "label": "15. Federation and interoperability",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0168"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0168",
+          "fields": {},
+          "text": "AMRKB and other sibling names may appear in baseline repository context, but no scientific material is extracted from their chats. No new external record identifiers or implemented integrations are asserted."
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0018",
+      "label": "Create this missing historical audit now; preserve current registers and Stage B work",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0169"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0169",
+          "fields": {
+            "Decision question": "Create this missing historical audit now; preserve current registers and Stage B work",
+            "Defensible evidence/status": "Explicit current owner instruction"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0019",
+      "label": "Keep eight domains/eight categories, original codes and existing source identities",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0170"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0170",
+          "fields": {
+            "Decision question": "Keep eight domains/eight categories, original codes and existing source identities",
+            "Defensible evidence/status": "Explicit current instruction and existing repository convention"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0020",
+      "label": "Preserve substantive topics rather than reconstruct only from registers",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0171"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0171",
+          "fields": {
+            "Decision question": "Preserve substantive topics rather than reconstruct only from registers",
+            "Defensible evidence/status": "Explicit current instruction; R and N provide research content separately from B"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0021",
+      "label": "Ground/human-scale focus and named federation boundaries were “agreed” in October",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0172"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0172",
+          "fields": {
+            "Decision question": "Ground/human-scale focus and named federation boundaries were “agreed” in October",
+            "Defensible evidence/status": "R characterises them as agreed; no contemporaneous substantive user turn recovered. Record as reported agreement, not authenticated historical approval"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0022",
+      "label": "Six dimensions, sixteen families and four umbrellas are adopted scientific schemes",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0173"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0173",
+          "fields": {
+            "Decision question": "Six dimensions, sixteen families and four umbrellas are adopted scientific schemes",
+            "Defensible evidence/status": "Not established. Labels preserved as proposals from R; adoption/memberships unresolved"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0023",
+      "label": "End the voice call",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0174"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0174",
+          "fields": {
+            "Decision question": "End the voice call",
+            "Defensible evidence/status": "The available closing exchange supports ending the call only"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0024",
+      "label": "Accept scientific/register expansion or Phase 5",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0175"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0175",
+          "fields": {
+            "Decision question": "Accept scientific/register expansion or Phase 5",
+            "Defensible evidence/status": "Not authorised by creation of this audit"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0025",
+      "label": "16.1 Explicit decisions versus reported historical agreements",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0176"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0176",
+          "fields": {},
+          "text": "The current owner instruction is not converted into invented October dialogue. No original speaker, quotation, timestamp or detailed sequence is manufactured. The original October session is the subject identified by the owner; documentary authentication of its complete coverage remains outstanding."
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0026",
+      "label": "16.2 Provisional proposals and scientific references",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0177"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0177",
+          "fields": {},
+          "text": "Preserve as proposed: sixteen instrument-family labels, the separate embedded-AI/edge-inference grouping, four umbrellas, six descriptive dimensions, campaign/event/observation/verification sequence, EII pathway and new research-resource/platform candidates. Exact scientific identities, definitions, memberships and external claims remain unverified."
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0027",
+      "label": "16.2 Provisional proposals and scientific references",
+      "kind": "scope_method_or_evidence_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0178"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0178",
+          "fields": {},
+          "text": "Scientific references requiring review include every new framework and named organisation/platform in §§8–12. N's hypotheses and editorial fields remain secondary-author analysis. Neither repeated summaries nor an assistant prompt copied into another chat counts as independent corroboration."
+        }
+      ],
+      "qualifications": [
+        "Retained as source-reported proposal/analysis, not authenticated original dialogue or adopted scope exclusion."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0028",
+      "label": "Domain/category clarification: User asked to distinguish eight disciplinary domains from eight observation categories; the assistant described each.",
+      "kind": "historical_discussion_report",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0179"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0179",
+          "fields": {
+            "Thread": "T01",
+            "Research question / phase": "Domain/category clarification: User asked to distinguish eight disciplinary domains from eight observation categories; the assistant described each.",
+            "Recovered substantive answer": "Eight-by-eight classification retained; dimensions are many-to-many.",
+            "Authority": "User accepted explanations."
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0029",
+      "label": "Taxonomy expansion and deliberate deferral: User asked how eight categories arose, explored additional types and then deferred formal taxonomy validation.",
+      "kind": "historical_discussion_report",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0180"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0180",
+          "fields": {
+            "Thread": "T02",
+            "Research question / phase": "Taxonomy expansion and deliberate deferral: User asked how eight categories arose, explored additional types and then deferred formal taxonomy validation.",
+            "Recovered substantive answer": "Do not expand top-level categories now; use candidate instrument/method families.",
+            "Authority": "User explicitly chose continued source capture."
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0030",
+      "label": "Scale and boundary: User excluded satellite, Earth viewing, aerial drone/balloon/aircraft mapping, GIS and specialised biological instrumentation; accepted governmental/global infrastructures where observation is at human/ground scale.",
+      "kind": "historical_discussion_report",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0181"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0181",
+          "fields": {
+            "Thread": "T03",
+            "Research question / phase": "Scale and boundary: User excluded satellite, Earth viewing, aerial drone/balloon/aircraft mapping, GIS and specialised biological instrumentation; accepted governmental/global infrastructures where observation is at human/ground scale.",
+            "Recovered substantive answer": "Ground-context observational system, not small-institution-only system.",
+            "Authority": "Explicit user scope decision."
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0031",
+      "label": "O01 IoT: User requested broad sensing families and progression from instruments to derived environmental/ecological indicators.",
+      "kind": "historical_discussion_report",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0182"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0182",
+          "fields": {
+            "Thread": "T04",
+            "Research question / phase": "O01 IoT: User requested broad sensing families and progression from instruments to derived environmental/ecological indicators.",
+            "Recovered substantive answer": "Sixteen provisional sensing families; distinguish measurement from inference.",
+            "Authority": "User approved exploratory overview."
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0032",
+      "label": "O02 scientific monitoring: User asked whether instruments overlap with IoT and whether publication differs.",
+      "kind": "historical_discussion_report",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0183"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0183",
+          "fields": {
+            "Thread": "T05",
+            "Research question / phase": "O02 scientific monitoring: User asked whether instruments overlap with IoT and whether publication differs.",
+            "Recovered substantive answer": "Same instruments may occur; reference calibration, protocols, long-term quality and curated data/publication practices vary.",
+            "Authority": "User accepted, deferred publication as a new classification axis."
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0033",
+      "label": "O03 ground truth: User requested reference/validation practices.",
+      "kind": "historical_discussion_report",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0184"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0184",
+          "fields": {
+            "Thread": "T06",
+            "Research question / phase": "O03 ground truth: User requested reference/validation practices.",
+            "Recovered substantive answer": "Ground truth is a contextual validation role rather than a unique instrument family.",
+            "Authority": "User accepted."
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0034",
+      "label": "O04 autonomous: User explored unattended systems and robots.",
+      "kind": "historical_discussion_report",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0185"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0185",
+          "fields": {
+            "Thread": "T07",
+            "Research question / phase": "O04 autonomous: User explored unattended systems and robots.",
+            "Recovered substantive answer": "Autonomy distinct from network connectivity; stationary/mobile systems.",
+            "Authority": "User accepted."
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0035",
+      "label": "O05 campaigns and observation protocols: User gave moth-sighting example and asked about universally validated campaign logging.",
+      "kind": "historical_discussion_report",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0186"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0186",
+          "fields": {
+            "Thread": "T08",
+            "Research question / phase": "O05 campaigns and observation protocols: User gave moth-sighting example and asked about universally validated campaign logging.",
+            "Recovered substantive answer": "Campaign→event→observation→verification; Darwin Core, Humboldt Extension, GBIF event model as references; no universal automatic validation.",
+            "Authority": "User endorsed recording frameworks."
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0036",
+      "label": "O06 citizen sensing and WILDLABS: User asked for community sensing and WILDLABS categorisation.",
+      "kind": "historical_discussion_report",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0187"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0187",
+          "fields": {
+            "Thread": "T09",
+            "Research question / phase": "O06 citizen sensing and WILDLABS: User asked for community sensing and WILDLABS categorisation.",
+            "Recovered substantive answer": "WILDLABS as technology/method discovery gateway, not assumed direct measurement provider.",
+            "Authority": "User accepted cross-cutting themes."
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0037",
+      "label": "Cross-cutting themes: User wanted a way to record camera traps, bioacoustics, vision, AI conservation and edge computing without confusing taxonomy.",
+      "kind": "historical_discussion_report",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0188"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0188",
+          "fields": {
+            "Thread": "T10",
+            "Research question / phase": "Cross-cutting themes: User wanted a way to record camera traps, bioacoustics, vision, AI conservation and edge computing without confusing taxonomy.",
+            "Recovered substantive answer": "Four proposed umbrellas; record as cross-cutting research themes rather than new domains.",
+            "Authority": "User asked to note approach, not implement taxonomy."
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0038",
+      "label": "O07 physical computing: User asked to distinguish physical computing from IoT and examine edge-AI boards.",
+      "kind": "historical_discussion_report",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0189"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0189",
+          "fields": {
+            "Thread": "T11",
+            "Research question / phase": "O07 physical computing: User asked to distinguish physical computing from IoT and examine edge-AI boards.",
+            "Recovered substantive answer": "Acquisition/control vs communication/networking; embedded AI/edge inference provisional family.",
+            "Authority": "User explicitly accepted family under O07."
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0039",
+      "label": "Bioacoustics and field labs: User introduced OS Beehives and Digital Naturalism; requested field-lab methodological insight.",
+      "kind": "historical_discussion_report",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0190"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0190",
+          "fields": {
+            "Thread": "T12",
+            "Research question / phase": "Bioacoustics and field labs: User introduced OS Beehives and Digital Naturalism; requested field-lab methodological insight.",
+            "Recovered substantive answer": "Acoustic capture and edge processing in OSDS; biological inference cross-referenced; in-situ, situated instrumentation, field modification and ecological validity.",
+            "Authority": "User approved methodological framing."
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0040",
+      "label": "O08 historic records: User requested data rescue, AI inference, historic reconstruction and situated-knowledge link.",
+      "kind": "historical_discussion_report",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0191"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0191",
+          "fields": {
+            "Thread": "T13",
+            "Research question / phase": "O08 historic records: User requested data rescue, AI inference, historic reconstruction and situated-knowledge link.",
+            "Recovered substantive answer": "Distinguish measured past from reconstructed inference and cultural testimony.",
+            "Authority": "User accepted cross-database bridge."
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0041",
+      "label": "Structural conclusion: User asked what new layers had emerged and confirmed augmentation rather than replacement.",
+      "kind": "historical_discussion_report",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0192"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0192",
+          "fields": {
+            "Thread": "T14",
+            "Research question / phase": "Structural conclusion: User asked what new layers had emerged and confirmed augmentation rather than replacement.",
+            "Recovered substantive answer": "Six structural dimensions, eight categories unchanged; do not rewrite register prematurely.",
+            "Authority": "Explicit user confirmation."
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0042",
+      "label": "OSDS",
+      "kind": "federation_relationship_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0193"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0193",
+          "fields": {
+            "Rel ID": "REL01",
+            "Subject": "OSDS",
+            "Predicate": "measures / records",
+            "Object": "physical properties through ground-context systems",
+            "Qualification": "Direct scope; candidate relationship, no endpoint-resolution claim"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions.",
+        "Physical observation systems measure properties. The OSDS catalogue describes sources; it does not perform physical measurements."
+      ],
+      "subject": "OSDS",
+      "predicate": "measures / records",
+      "object": "physical properties through ground-context systems",
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0043",
+      "label": "OSDS",
+      "kind": "federation_relationship_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0194"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0194",
+          "fields": {
+            "Rel ID": "REL02",
+            "Subject": "OSDS",
+            "Predicate": "provides evidence for",
+            "Object": "EII indicator definitions and inference",
+            "Qualification": "Proposed interoperability, not asserted identity; candidate relationship, no endpoint-resolution claim"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": "OSDS",
+      "predicate": "provides evidence for",
+      "object": "EII indicator definitions and inference",
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0044",
+      "label": "OSDS",
+      "kind": "federation_relationship_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0195"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0195",
+          "fields": {
+            "Rel ID": "REL03",
+            "Subject": "OSDS",
+            "Predicate": "cross-references",
+            "Object": "GISDS satellite/aerial mapping and geospatial services",
+            "Qualification": "Boundary: exclude aerial mapping as OSDS records; candidate relationship, no endpoint-resolution claim"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": "OSDS",
+      "predicate": "cross-references",
+      "object": "GISDS satellite/aerial mapping and geospatial services",
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0045",
+      "label": "OSDS",
+      "kind": "federation_relationship_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0196"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0196",
+          "fields": {
+            "Rel ID": "REL04",
+            "Subject": "OSDS",
+            "Predicate": "cross-references",
+            "Object": "future biological database / BIPKB for organisms and phenotypes",
+            "Qualification": "Biological interpretations not owned by OSDS; candidate relationship, no endpoint-resolution claim"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": "OSDS",
+      "predicate": "cross-references",
+      "object": "future biological database / BIPKB for organisms and phenotypes",
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0046",
+      "label": "OSDS",
+      "kind": "federation_relationship_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0197"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0197",
+          "fields": {
+            "Rel ID": "REL05",
+            "Subject": "OSDS",
+            "Predicate": "cross-references",
+            "Object": "AMRKB agricultural practice and field operations",
+            "Qualification": "Methods vs measurements; candidate relationship, no endpoint-resolution claim"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": "OSDS",
+      "predicate": "cross-references",
+      "object": "AMRKB agricultural practice and field operations",
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0047",
+      "label": "OSDS",
+      "kind": "federation_relationship_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0198"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0198",
+          "fields": {
+            "Rel ID": "REL06",
+            "Subject": "OSDS",
+            "Predicate": "cross-references",
+            "Object": "DPRKB in-situ design research and field fabrication",
+            "Qualification": "Methodological relation; candidate relationship, no endpoint-resolution claim"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": "OSDS",
+      "predicate": "cross-references",
+      "object": "DPRKB in-situ design research and field fabrication",
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0048",
+      "label": "OSDS",
+      "kind": "federation_relationship_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0199"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0199",
+          "fields": {
+            "Rel ID": "REL07",
+            "Subject": "OSDS",
+            "Predicate": "supports",
+            "Object": "Ecological Computation tools and edge analytics",
+            "Qualification": "Implementation not evidenced; candidate relationship, no endpoint-resolution claim"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": "OSDS",
+      "predicate": "supports",
+      "object": "Ecological Computation tools and edge analytics",
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0049",
+      "label": "OSDS",
+      "kind": "federation_relationship_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0200"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0200",
+          "fields": {
+            "Rel ID": "REL08",
+            "Subject": "OSDS",
+            "Predicate": "provides documentary inputs to",
+            "Object": "IRKB interdisciplinary synthesis",
+            "Qualification": "IRKB assertions remain IRKB-owned; candidate relationship, no endpoint-resolution claim"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": "OSDS",
+      "predicate": "provides documentary inputs to",
+      "object": "IRKB interdisciplinary synthesis",
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0050",
+      "label": "OSDS",
+      "kind": "federation_relationship_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0201"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0201",
+          "fields": {
+            "Rel ID": "REL09",
+            "Subject": "OSDS",
+            "Predicate": "compares without collapsing",
+            "Object": "situated / traditional knowledge of place",
+            "Qualification": "Parallel evidence, consent/context required; candidate relationship, no endpoint-resolution claim"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": "OSDS",
+      "predicate": "compares without collapsing",
+      "object": "situated / traditional knowledge of place",
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0051",
+      "label": "OSDS",
+      "kind": "federation_relationship_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0202"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0202",
+          "fields": {
+            "Rel ID": "REL10",
+            "Subject": "OSDS",
+            "Predicate": "is governed for documentary exchange by",
+            "Object": "DRM MSP candidate principles",
+            "Qualification": "Not protocol conformance; candidate relationship, no endpoint-resolution claim"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions.",
+        "DRM-MSP is an unadopted methodological candidate; this is not adopted governance or conformance."
+      ],
+      "subject": "OSDS",
+      "predicate": "is governed for documentary exchange by",
+      "object": "DRM MSP candidate principles",
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0052",
+      "label": "Preserve eight existing domains and categories",
+      "kind": "reported_decision",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0203"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0203",
+          "fields": {
+            "Decision ID": "DEC01",
+            "Proposition": "Preserve eight existing domains and categories",
+            "Evidence locator": "User acceptance in T01/T02",
+            "Authority / status": "confirmed conversation decision"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0053",
+      "label": "Defer formal taxonomy validation; continue scoping",
+      "kind": "reported_decision",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0204"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0204",
+          "fields": {
+            "Decision ID": "DEC02",
+            "Proposition": "Defer formal taxonomy validation; continue scoping",
+            "Evidence locator": "Explicit user direction in T02",
+            "Authority / status": "confirmed"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0054",
+      "label": "Human/ground-scale scope; exclude satellite/aerial GIS and specialised biology instruments",
+      "kind": "reported_decision",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0205"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0205",
+          "fields": {
+            "Decision ID": "DEC03",
+            "Proposition": "Human/ground-scale scope; exclude satellite/aerial GIS and specialised biology instruments",
+            "Evidence locator": "Explicit user direction T03",
+            "Authority / status": "confirmed"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0055",
+      "label": "Large governmental and global infrastructures remain in scope if ground-context",
+      "kind": "reported_decision",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0206"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0206",
+          "fields": {
+            "Decision ID": "DEC04",
+            "Proposition": "Large governmental and global infrastructures remain in scope if ground-context",
+            "Evidence locator": "Explicit user clarification T03",
+            "Authority / status": "confirmed"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0056",
+      "label": "Keep publication/accessibility mapping in mind, do not create a new axis yet",
+      "kind": "reported_decision",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0207"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0207",
+          "fields": {
+            "Decision ID": "DEC05",
+            "Proposition": "Keep publication/accessibility mapping in mind, do not create a new axis yet",
+            "Evidence locator": "Explicit user direction T05",
+            "Authority / status": "confirmed"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0057",
+      "label": "Record protocols and standards as research references",
+      "kind": "reported_decision",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0208"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0208",
+          "fields": {
+            "Decision ID": "DEC06",
+            "Proposition": "Record protocols and standards as research references",
+            "Evidence locator": "User agreement T08",
+            "Authority / status": "confirmed"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0058",
+      "label": "Use cross-cutting research themes, but do not formalise new top-level classes",
+      "kind": "reported_decision",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0209"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0209",
+          "fields": {
+            "Decision ID": "DEC07",
+            "Proposition": "Use cross-cutting research themes, but do not formalise new top-level classes",
+            "Evidence locator": "User agreement and deferral T10",
+            "Authority / status": "confirmed approach only"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0059",
+      "label": "Keep physical computing and IoT distinct but overlapping",
+      "kind": "reported_decision",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0210"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0210",
+          "fields": {
+            "Decision ID": "DEC08",
+            "Proposition": "Keep physical computing and IoT distinct but overlapping",
+            "Evidence locator": "User agreement T11",
+            "Authority / status": "confirmed working distinction"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0060",
+      "label": "Include embedded AI/edge inference as provisional family under O07",
+      "kind": "reported_decision",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0211"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0211",
+          "fields": {
+            "Decision ID": "DEC09",
+            "Proposition": "Include embedded AI/edge inference as provisional family under O07",
+            "Evidence locator": "Explicit user agreement T11",
+            "Authority / status": "confirmed provisional family"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0061",
+      "label": "Treat acoustic capture in OSDS and biological inference across databases",
+      "kind": "reported_decision",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0212"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0212",
+          "fields": {
+            "Decision ID": "DEC10",
+            "Proposition": "Treat acoustic capture in OSDS and biological inference across databases",
+            "Evidence locator": "User agreement T12",
+            "Authority / status": "confirmed working boundary"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0062",
+      "label": "Link historical instrumental records with situated knowledge without equating evidence",
+      "kind": "reported_decision",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0213"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0213",
+          "fields": {
+            "Decision ID": "DEC11",
+            "Proposition": "Link historical instrumental records with situated knowledge without equating evidence",
+            "Evidence locator": "User agreement T13",
+            "Authority / status": "confirmed conceptual bridge"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0063",
+      "label": "Augment existing OSDS structure rather than replace taxonomy",
+      "kind": "reported_decision",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0214"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0214",
+          "fields": {
+            "Decision ID": "DEC12",
+            "Proposition": "Augment existing OSDS structure rather than replace taxonomy",
+            "Evidence locator": "Explicit user confirmation T14",
+            "Authority / status": "confirmed"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0064",
+      "label": "Earlier OSDKB versus OSDS naming",
+      "kind": "verification_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0215"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0215",
+          "fields": {
+            "Issue ID": "V01",
+            "Claim / risk": "Earlier OSDKB versus OSDS naming",
+            "Finding": "OSDS is the working name; expanded form used as Observational Systems and Data Source(s) in conversation",
+            "Required disposition": "Retain exact source wording; do not silently normalize expansion"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0065",
+      "label": "WILDLABS taxonomy",
+      "kind": "verification_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0216"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0216",
+          "fields": {
+            "Issue ID": "V02",
+            "Claim / risk": "WILDLABS taxonomy",
+            "Finding": "Assistant summarised technology/challenge groupings without independently checking live inventory",
+            "Required disposition": "Candidate comparison; verify categories and edition"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0066",
+      "label": "Digital Naturalism projects",
+      "kind": "verification_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0217"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0217",
+          "fields": {
+            "Issue ID": "V03",
+            "Claim / risk": "Digital Naturalism projects",
+            "Finding": "Assistant inferred field-adaptive/wearable/fabrication families without individual project verification",
+            "Required disposition": "Methodological lead only"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0067",
+      "label": "Jetson/LicheeRV capabilities",
+      "kind": "verification_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0218"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0218",
+          "fields": {
+            "Issue ID": "V04",
+            "Claim / risk": "Jetson/LicheeRV capabilities",
+            "Finding": "Product generations and accelerators described conversationally",
+            "Required disposition": "Verify board-specific specifications before scientific or procurement use"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0068",
+      "label": "O08 AI causal claims",
+      "kind": "verification_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0219"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0219",
+          "fields": {
+            "Issue ID": "V05",
+            "Claim / risk": "O08 AI causal claims",
+            "Finding": "AI pattern discovery does not establish causation",
+            "Required disposition": "Separate extraction, reconstruction and causal inference"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0069",
+      "label": "Ground truth concept",
+      "kind": "verification_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0220"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0220",
+          "fields": {
+            "Issue ID": "V06",
+            "Claim / risk": "Ground truth concept",
+            "Finding": "Reference role is context-dependent, not intrinsic quality label",
+            "Required disposition": "Record validation design and uncertainty"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0070",
+      "label": "Original source list duplicates",
+      "kind": "verification_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0221"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0221",
+          "fields": {
+            "Issue ID": "V07",
+            "Claim / risk": "Original source list duplicates",
+            "Finding": "62 inventory rows are not 62 distinct verified entities",
+            "Required disposition": "Preserve row aliases; later deduplicate with provenance"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0071",
+      "label": "Historical audit edition",
+      "kind": "verification_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0222"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0222",
+          "fields": {
+            "Issue ID": "V08",
+            "Claim / risk": "Historical audit edition",
+            "Finding": "30 Oct file reported absent; 1 Nov audit not provided in this turn",
+            "Required disposition": "No earlier-audit reconciliation claim"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0072",
+      "label": "Rights/licensing",
+      "kind": "verification_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0223"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0223",
+          "fields": {
+            "Issue ID": "V09",
+            "Claim / risk": "Rights/licensing",
+            "Finding": "Named URLs/resources do not imply reuse permission",
+            "Required disposition": "Unknown; restrict publication of third-party content"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0073",
+      "label": "Source dates and checksums",
+      "kind": "verification_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0224"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0224",
+          "fields": {
+            "Issue ID": "V10",
+            "Claim / risk": "Source dates and checksums",
+            "Finding": "Voice transcript not exported in this context",
+            "Required disposition": "Cannot certify exhaustive recovery"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0074",
+      "label": "DRM rev document status",
+      "kind": "verification_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0225"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0225",
+          "fields": {
+            "Issue ID": "V11",
+            "Claim / risk": "DRM rev document status",
+            "Finding": "Rev03 file is A1/A2 review and proposed ingestion controls, not adopted protocol",
+            "Required disposition": "Do not promote DRM-ING proposals to requirements"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0075",
+      "label": "Three standards versus A02 additions",
+      "kind": "verification_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0226"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0226",
+          "fields": {
+            "Issue ID": "V12",
+            "Claim / risk": "Three standards versus A02 additions",
+            "Finding": "SOSA/SSN, SensorThings, O&M foundational; PROV-O added by A02 instructions",
+            "Required disposition": "Preserve both origin contexts"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Any confirmed/user-accepted wording is audit-reported authority. Original scientific messages are not accessible; current documentary intake does not authenticate historical decisions."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0076",
+      "label": "Research gap GAP01",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0227"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0227",
+          "fields": {},
+          "text": "- **GAP01:** Immutable L0 export with original turn IDs, time offsets and exact text."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0077",
+      "label": "Research gap GAP02",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0228"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0228",
+          "fields": {},
+          "text": "- **GAP02:** Complete 1 November OSDS audit and earlier source-register editions for field-level reconciliation."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0078",
+      "label": "Research gap GAP03",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0229"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0229",
+          "fields": {},
+          "text": "- **GAP03:** Independent validation of scientific source URLs, provider identities, versions and access conditions."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0079",
+      "label": "Research gap GAP04",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0230"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0230",
+          "fields": {},
+          "text": "- **GAP04:** Exact source licences, community consent and sensitivity restrictions."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0080",
+      "label": "Research gap GAP05",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0231"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0231",
+          "fields": {},
+          "text": "- **GAP05:** Entity-type model distinguishing institution/network/station/platform/instrument/dataset/observation."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0081",
+      "label": "Research gap GAP06",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0232"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0232",
+          "fields": {},
+          "text": "- **GAP06:** Scheme ownership and approval of category/domain codes under MSP-05."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0082",
+      "label": "Research gap GAP07",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0233"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0233",
+          "fields": {},
+          "text": "- **GAP07:** Quantitative sensor accuracy, calibration and environmental performance per instrument family."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0083",
+      "label": "Research gap GAP08",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0234"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0234",
+          "fields": {},
+          "text": "- **GAP08:** Specific standards editions and interoperability mapping, including SOSA/SSN, SensorThings and O&M."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0084",
+      "label": "Research gap GAP09",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0235"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0235",
+          "fields": {},
+          "text": "- **GAP09:** Validation protocols and quality levels for campaign records, citizen sensing and ground truth."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0085",
+      "label": "Research gap GAP10",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0236"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0236",
+          "fields": {},
+          "text": "- **GAP10:** Actual board-level edge inference performance, power budgets and model/version compatibility."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0086",
+      "label": "Research gap GAP11",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0237"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0237",
+          "fields": {},
+          "text": "- **GAP11:** Evidence-based comparison with WILDLABS and Digital Naturalism live project taxonomies."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0087",
+      "label": "Research gap GAP12",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0238"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0238",
+          "fields": {},
+          "text": "- **GAP12:** Rights/consent and epistemic protocols for situated knowledge and oral histories."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0088",
+      "label": "Research gap GAP13",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0239"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0239",
+          "fields": {},
+          "text": "- **GAP13:** Boundary examples for underwater autonomy, fixed ecological cameras and biological instruments."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0089",
+      "label": "Research gap GAP14",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0240"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0240",
+          "fields": {},
+          "text": "- **GAP14:** OSDS-to-EII mapping criteria, uncertainty propagation and derived indicator provenance."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0090",
+      "label": "Research gap GAP15",
+      "kind": "research_gap",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0241"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0241",
+          "fields": {},
+          "text": "- **GAP15:** Independent review, scored assessment and controlled candidate ingestion approval."
+        }
+      ],
+      "qualifications": [],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0091",
+      "label": "Existing D01–D08 and O01–O08; B, R§2",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0242"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0242",
+          "fields": {
+            "Item / evidence locator": "Existing D01–D08 and O01–O08; B, R§2",
+            "R / S / M assessment": "Already / Already / Already",
+            "Proposed destination and record treatment": "Preserve both dimensions and original memberships",
+            "Evidence/decision limitation": "Candidate classifications, not externally verified meanings"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0092",
+      "label": "Ground/human-scale and large-infrastructure boundary; R§1",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0243"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0243",
+          "fields": {
+            "Item / evidence locator": "Ground/human-scale and large-infrastructure boundary; R§1",
+            "R / S / M assessment": "Partial / Partial / Partial; Tension with mixed providers",
+            "Proposed destination and record treatment": "Scope guidance in R/S; proposed scope-assessment assertions in M",
+            "Evidence/decision limitation": "Reported agreement, original acceptance unavailable"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0093",
+      "label": "Satellite/aerial/biology exclusions; R§1",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0244"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0244",
+          "fields": {
+            "Item / evidence locator": "Satellite/aerial/biology exclusions; R§1",
+            "R / S / M assessment": "Missing as operational rules; Tension",
+            "Proposed destination and record treatment": "Source/product scope-review questions, not deletions",
+            "Evidence/decision limitation": "Needs owner scientific decision"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0094",
+      "label": "Sixteen family labels; R§3",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0245"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0245",
+          "fields": {
+            "Item / evidence locator": "Sixteen family labels; R§3",
+            "R / S / M assessment": "Missing / Missing / Missing; Proposed",
+            "Proposed destination and record treatment": "S instrumentation-family section; M separate family-definition candidates",
+            "Evidence/decision limitation": "Labels only; definitions/models/properties/indicators unknown"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0095",
+      "label": "Per-family instrument/property/indicator details; R§3",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0246"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0246",
+          "fields": {
+            "Item / evidence locator": "Per-family instrument/property/indicator details; R§3",
+            "R / S / M assessment": "Missing in all outputs",
+            "Proposed destination and record treatment": "Retain explicit research gaps; do not fabricate rows",
+            "Evidence/decision limitation": "Not supplied in R/N"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0096",
+      "label": "Scientific monitoring/reference grade/calibration/publication; R§4, N§5.2",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0247"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0247",
+          "fields": {
+            "Item / evidence locator": "Scientific monitoring/reference grade/calibration/publication; R§4, N§5.2",
+            "R / S / M assessment": "Partial across outputs",
+            "Proposed destination and record treatment": "S category-method narrative; M method/quality evidence where sourced",
+            "Evidence/decision limitation": "No automatic quality/compliance upgrade"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0097",
+      "label": "Manual/reference observations, soil/water samples, geotechnical testing; R§5",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0248"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0248",
+          "fields": {
+            "Item / evidence locator": "Manual/reference observations, soil/water samples, geotechnical testing; R§5",
+            "R / S / M assessment": "Partial / Partial / Null entity slots",
+            "Proposed destination and record treatment": "S methodological section; M process/sample/reference-method candidates",
+            "Evidence/decision limitation": "No exact test/instrument supplied"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0098",
+      "label": "Autonomy versus connectivity; R§6",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0249"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0249",
+          "fields": {
+            "Item / evidence locator": "Autonomy versus connectivity; R§6",
+            "R / S / M assessment": "Partial category labels only",
+            "Proposed destination and record treatment": "S distinction; M independently evidenced capability assertions",
+            "Evidence/decision limitation": "No inferred capability from membership"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0099",
+      "label": "Campaign → Event → Observation → Verification; R§7",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0250"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0250",
+          "fields": {
+            "Item / evidence locator": "Campaign → Event → Observation → Verification; R§7",
+            "R / S / M assessment": "Missing substantive model",
+            "Proposed destination and record treatment": "S campaign framework; M separate process/entity relationships",
+            "Evidence/decision limitation": "Conceptual proposal, not guarantee of verification"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0100",
+      "label": "Ecological surveys/species sightings; R§7",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0251"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0251",
+          "fields": {
+            "Item / evidence locator": "Ecological surveys/species sightings; R§7",
+            "R / S / M assessment": "GBIF/eBird present; method distinctions partial",
+            "Proposed destination and record treatment": "Add supported campaign/protocol/effort context to SRC-014/015 only when tied to specific evidence",
+            "Evidence/decision limitation": "Existing source identity alone insufficient"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0101",
+      "label": "Darwin Core; R§7/12",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0252"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0252",
+          "fields": {
+            "Item / evidence locator": "Darwin Core; R§7/12",
+            "R / S / M assessment": "Missing as substantive reference",
+            "Proposed destination and record treatment": "M standards-reference candidate; S methods references",
+            "Evidence/decision limitation": "Edition/mapping/compliance unverified"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0102",
+      "label": "Humboldt Extension; R§7/12",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0253"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0253",
+          "fields": {
+            "Item / evidence locator": "Humboldt Extension; R§7/12",
+            "R / S / M assessment": "Missing as substantive reference",
+            "Proposed destination and record treatment": "M extension-reference candidate; S campaign context",
+            "Evidence/decision limitation": "Definition/version/field mappings unresolved"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0103",
+      "label": "GBIF event organisation; R§7",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0254"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0254",
+          "fields": {
+            "Item / evidence locator": "GBIF event organisation; R§7",
+            "R / S / M assessment": "SRC-014 Already; event framework Missing",
+            "Proposed destination and record treatment": "Link new method/reference candidate to existing SRC-014 without duplicating provider",
+            "Evidence/decision limitation": "Association is source-reported, not implemented"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0104",
+      "label": "Community sensing/participation/validation; R§8",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0255"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0255",
+          "fields": {
+            "Item / evidence locator": "Community sensing/participation/validation; R§8",
+            "R / S / M assessment": "Existing O06 sources Already; guidance Partial",
+            "Proposed destination and record treatment": "S category guidance; M documented participation/protocol assertions",
+            "Evidence/decision limitation": "Preserve quality/rights limits"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0105",
+      "label": "WILDLABS; R§8",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0256"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0256",
+          "fields": {
+            "Item / evidence locator": "WILDLABS; R§8",
+            "R / S / M assessment": "Missing",
+            "Proposed destination and record treatment": "Candidate community/knowledge resource, type to review",
+            "Evidence/decision limitation": "Conservation-technology role source-reported"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0106",
+      "label": "Physical computing versus IoT; R§9",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0257"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0257",
+          "fields": {
+            "Item / evidence locator": "Physical computing versus IoT; R§9",
+            "R / S / M assessment": "Category labels Already; substantive distinction Missing",
+            "Proposed destination and record treatment": "S paired conceptual definitions; M concept/relationship candidates",
+            "Evidence/decision limitation": "Formal definitions not adopted"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0107",
+      "label": "Jetson Nano; R§9",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0258"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0258",
+          "fields": {
+            "Item / evidence locator": "Jetson Nano; R§9",
+            "R / S / M assessment": "Missing",
+            "Proposed destination and record treatment": "M computing-platform candidate; S technology section",
+            "Evidence/decision limitation": "Model/variant/capability unknown"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0108",
+      "label": "Jetson Orin Nano; R§9",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0259"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0259",
+          "fields": {
+            "Item / evidence locator": "Jetson Orin Nano; R§9",
+            "R / S / M assessment": "Missing",
+            "Proposed destination and record treatment": "M computing-platform candidate with N alias “Orin Nano” retained as source wording",
+            "Evidence/decision limitation": "No automatic alias equivalence or specification transfer"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0109",
+      "label": "LicheeRV Nano; R§9",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0260"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0260",
+          "fields": {
+            "Item / evidence locator": "LicheeRV Nano; R§9",
+            "R / S / M assessment": "Missing",
+            "Proposed destination and record treatment": "M platform candidate; S technology list",
+            "Evidence/decision limitation": "Exact variant/role unverified"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0110",
+      "label": "ESP32-S3; R§9",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0261"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0261",
+          "fields": {
+            "Item / evidence locator": "ESP32-S3; R§9",
+            "R / S / M assessment": "Missing",
+            "Proposed destination and record treatment": "M chip/platform lead pending type review",
+            "Evidence/decision limitation": "Do not infer chip equals full device"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0111",
+      "label": "Raspberry Pi; R§9",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0262"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0262",
+          "fields": {
+            "Item / evidence locator": "Raspberry Pi; R§9",
+            "R / S / M assessment": "Missing; new relative to N hardware table",
+            "Proposed destination and record treatment": "M platform-family candidate",
+            "Evidence/decision limitation": "Exact model not supplied"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0112",
+      "label": "Data acquisition/communications/embedded AI/edge inference; R§9",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0263"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0263",
+          "fields": {
+            "Item / evidence locator": "Data acquisition/communications/embedded AI/edge inference; R§9",
+            "R / S / M assessment": "Null slots / Missing substantive pipeline",
+            "Proposed destination and record treatment": "Separate processing/capability candidates and evidence links",
+            "Evidence/decision limitation": "Not new source providers or approved family 17"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0113",
+      "label": "Computer vision/object detection/segmentation; R§9",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0264"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0264",
+          "fields": {
+            "Item / evidence locator": "Computer vision/object detection/segmentation; R§9",
+            "R / S / M assessment": "Not substantive in current records",
+            "Proposed destination and record treatment": "S capability narrative; M processing-method candidates",
+            "Evidence/decision limitation": "Model/benchmark/claim evidence absent"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0114",
+      "label": "Acoustic processing/bioacoustics; R§9",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0265"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0265",
+          "fields": {
+            "Item / evidence locator": "Acoustic processing/bioacoustics; R§9",
+            "R / S / M assessment": "Missing substantive methods",
+            "Proposed destination and record treatment": "Separate recording/processing/inference concepts",
+            "Evidence/decision limitation": "No biological conclusion inferred"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0115",
+      "label": "OS Beehives; R§9",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0266"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0266",
+          "fields": {
+            "Item / evidence locator": "OS Beehives; R§9",
+            "R / S / M assessment": "Missing",
+            "Proposed destination and record treatment": "Candidate project/resource identity requiring type/URL review",
+            "Evidence/decision limitation": "No claim of operational product or colony diagnosis"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0116",
+      "label": "Digital Naturalism Laboratories; R§9",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0267"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0267",
+          "fields": {
+            "Item / evidence locator": "Digital Naturalism Laboratories; R§9",
+            "R / S / M assessment": "Missing",
+            "Proposed destination and record treatment": "Candidate research-resource identity and separately sourced method assertions",
+            "Evidence/decision limitation": "Institutional role externally unverified"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0117",
+      "label": "Field-adaptive instrumentation/in-situ laboratory; R§9/12",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0268"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0268",
+          "fields": {
+            "Item / evidence locator": "Field-adaptive instrumentation/in-situ laboratory; R§9/12",
+            "R / S / M assessment": "Missing substantive methods",
+            "Proposed destination and record treatment": "S field-practice section; M method/practice candidates",
+            "Evidence/decision limitation": "N elaboration distinguished from R wording"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0118",
+      "label": "Historical archives; R§10",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0269"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0269",
+          "fields": {
+            "Item / evidence locator": "Historical archives; R§10",
+            "R / S / M assessment": "Existing O08 sources Already",
+            "Proposed destination and record treatment": "Preserve source records; add method context only with evidence",
+            "Evidence/decision limitation": "No complete time series or dataset validation"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0119",
+      "label": "Data rescue/digitisation/homogenisation/reconstruction; R§10",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0270"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0270",
+          "fields": {
+            "Item / evidence locator": "Data rescue/digitisation/homogenisation/reconstruction; R§10",
+            "R / S / M assessment": "Missing substantive pipeline",
+            "Proposed destination and record treatment": "S methods section; M transformation/lineage candidates",
+            "Evidence/decision limitation": "Do not relabel derived data as original"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0120",
+      "label": "Statistical inference/AI-assisted analysis; R§10",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0271"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0271",
+          "fields": {
+            "Item / evidence locator": "Statistical inference/AI-assisted analysis; R§10",
+            "R / S / M assessment": "Missing",
+            "Proposed destination and record treatment": "M analytical-method candidates; S limitations",
+            "Evidence/decision limitation": "No algorithms/results supplied"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0121",
+      "label": "Uncertainty/non-stationarity/change-point detection; R§10",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0272"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0272",
+          "fields": {
+            "Item / evidence locator": "Uncertainty/non-stationarity/change-point detection; R§10",
+            "R / S / M assessment": "General cautions Partial; methods Missing",
+            "Proposed destination and record treatment": "Methodological research candidates and explicit assumptions",
+            "Evidence/decision limitation": "No model/test adopted"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0122",
+      "label": "Situated/traditional/cultural knowledge; R§10",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0273"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0273",
+          "fields": {
+            "Item / evidence locator": "Situated/traditional/cultural knowledge; R§10",
+            "R / S / M assessment": "No substantive model",
+            "Proposed destination and record treatment": "Contextual relationship proposals, distinct evidence types",
+            "Evidence/decision limitation": "Target database/rights/representation unknown"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0123",
+      "label": "SOSA/SSN, SensorThings, OMS; B, R§12",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0274"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0274",
+          "fields": {
+            "Item / evidence locator": "SOSA/SSN, SensorThings, OMS; B, R§12",
+            "R / S / M assessment": "Already foundational references",
+            "Proposed destination and record treatment": "Retain; separately assess edition/mappings later",
+            "Evidence/decision limitation": "References are not compliance"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0124",
+      "label": "FAIR principles; R§12",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0275"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0275",
+          "fields": {
+            "Item / evidence locator": "FAIR principles; R§12",
+            "R / S / M assessment": "Missing substantive assessment",
+            "Proposed destination and record treatment": "Framework-reference candidate; no FAIR score",
+            "Evidence/decision limitation": "No evaluation performed"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0125",
+      "label": "Open scientific hardware; R§12",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0276"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0276",
+          "fields": {
+            "Item / evidence locator": "Open scientific hardware; R§12",
+            "R / S / M assessment": "Missing substantive policy",
+            "Proposed destination and record treatment": "Practice/framework lead with actual rights evidence later",
+            "Evidence/decision limitation": "No openness/licence invented"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0126",
+      "label": "Ecological validity/provenance; R§12",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0277"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0277",
+          "fields": {
+            "Item / evidence locator": "Ecological validity/provenance; R§12",
+            "R / S / M assessment": "Provenance Partial; validity unresolved",
+            "Proposed destination and record treatment": "Method and claim-fitness review; preserve evidence provenance",
+            "Evidence/decision limitation": "Structural checks do not validate ecology"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0127",
+      "label": "Four umbrellas; R§13",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0278"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0278",
+          "fields": {
+            "Item / evidence locator": "Four umbrellas; R§13",
+            "R / S / M assessment": "Missing / Missing / Missing; Proposed",
+            "Proposed destination and record treatment": "S themes section; M theme-definition candidates",
+            "Evidence/decision limitation": "Formal definitions/subthemes unassigned"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0128",
+      "label": "Camera trapping/AI conservation/themes; R§13",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0279"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0279",
+          "fields": {
+            "Item / evidence locator": "Camera trapping/AI conservation/themes; R§13",
+            "R / S / M assessment": "Wildlife Insights SRC-016 Already; theme structure Missing",
+            "Proposed destination and record treatment": "Candidate thematic links after specific review",
+            "Evidence/decision limitation": "Provider mention does not prove methods/links"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0129",
+      "label": "Six structural dimensions; R§14",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0280"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0280",
+          "fields": {
+            "Item / evidence locator": "Six structural dimensions; R§14",
+            "R / S / M assessment": "Null entity slots Partial; organising framework Missing",
+            "Proposed destination and record treatment": "R concise research map; S scientific sections; M typed extension proposal",
+            "Evidence/decision limitation": "Retain disciplinary-domain axis"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0130",
+      "label": "Instrument → Observation → Observed property → Derived indicator → EII; R§15",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0281"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0281",
+          "fields": {
+            "Item / evidence locator": "Instrument → Observation → Observed property → Derived indicator → EII; R§15",
+            "R / S / M assessment": "Conceptual EII link Partial; typed chain Missing",
+            "Proposed destination and record treatment": "S conceptual pathway; M candidate assertion graph",
+            "Evidence/decision limitation": "No implemented pipeline or invented EII IDs"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0131",
+      "label": "DRM; R§15, M guidance",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0282"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0282",
+          "fields": {
+            "Item / evidence locator": "DRM; R§15, M guidance",
+            "R / S / M assessment": "Already current candidate context",
+            "Proposed destination and record treatment": "Preserve candidate/revision/status separation",
+            "Evidence/decision limitation": "Phase 4 closure is bounded; Phase 5 unauthorised"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0132",
+      "label": "GISDS/EII/IRKB; R§15",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0283"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0283",
+          "fields": {
+            "Item / evidence locator": "GISDS/EII/IRKB; R§15",
+            "R / S / M assessment": "Conceptual mentions Partial",
+            "Proposed destination and record treatment": "Scope-qualified research relationships, no duplicate authorities",
+            "Evidence/decision limitation": "No verified external bindings"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0133",
+      "label": "Ecological Computation/DPRKB/future biology/situated database; R§15",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0284"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0284",
+          "fields": {
+            "Item / evidence locator": "Ecological Computation/DPRKB/future biology/situated database; R§15",
+            "R / S / M assessment": "Missing or supporting-note mention only",
+            "Proposed destination and record treatment": "Relationship research queue with unresolved target identities",
+            "Evidence/decision limitation": "No invented namespaces or APIs"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0134",
+      "label": "Original citations/October speaker approvals",
+      "kind": "reconciliation_question",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0285"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0285",
+          "fields": {
+            "Item / evidence locator": "Original citations/October speaker approvals",
+            "R / S / M assessment": "Unavailable in all evidence",
+            "Proposed destination and record treatment": "Retain explicit gaps, not reconstructed citations/decisions",
+            "Evidence/decision limitation": "R/C copy is not independent corroboration"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "This row describes the earlier audit baseline, not the newly populated version. Proposed destinations are not scientific approvals."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0135",
+      "label": "Observational technologies / Camera trapping",
+      "kind": "theme_membership_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": [
+        "A02 proposes this association; A01 supplies no assignment. It is not an adopted taxonomy or original source-category membership."
+      ],
+      "subject": "OSDS:RC-0083",
+      "predicate": "proposed_theme_association",
+      "object": "OSDS:RC-0025",
+      "internal_targets": [
+        "OSDS:RC-0083",
+        "OSDS:RC-0025"
+      ]
+    },
+    {
+      "id": "OSDS:RA-0136",
+      "label": "Observational technologies / Acoustic monitoring",
+      "kind": "theme_membership_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": [
+        "A02 proposes this association; A01 supplies no assignment. It is not an adopted taxonomy or original source-category membership."
+      ],
+      "subject": "OSDS:RC-0109",
+      "predicate": "proposed_theme_association",
+      "object": "OSDS:RC-0025",
+      "internal_targets": [
+        "OSDS:RC-0109",
+        "OSDS:RC-0025"
+      ]
+    },
+    {
+      "id": "OSDS:RA-0137",
+      "label": "Computational interpretation / Computer vision",
+      "kind": "theme_membership_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": [
+        "A02 proposes this association; A01 supplies no assignment. It is not an adopted taxonomy or original source-category membership."
+      ],
+      "subject": "OSDS:RC-0077",
+      "predicate": "proposed_theme_association",
+      "object": "OSDS:RC-0026",
+      "internal_targets": [
+        "OSDS:RC-0077",
+        "OSDS:RC-0026"
+      ]
+    },
+    {
+      "id": "OSDS:RA-0138",
+      "label": "Computational interpretation / AI for conservation",
+      "kind": "theme_membership_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": [
+        "A02 proposes this association; A01 supplies no assignment. It is not an adopted taxonomy or original source-category membership."
+      ],
+      "subject": "OSDS:RC-0084",
+      "predicate": "proposed_theme_association",
+      "object": "OSDS:RC-0026",
+      "internal_targets": [
+        "OSDS:RC-0084",
+        "OSDS:RC-0026"
+      ]
+    },
+    {
+      "id": "OSDS:RA-0139",
+      "label": "Computational interpretation / Audio analysis",
+      "kind": "theme_membership_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": [
+        "A02 proposes this association; A01 supplies no assignment. It is not an adopted taxonomy or original source-category membership."
+      ],
+      "subject": "OSDS:RC-0085",
+      "predicate": "proposed_theme_association",
+      "object": "OSDS:RC-0026",
+      "internal_targets": [
+        "OSDS:RC-0085",
+        "OSDS:RC-0026"
+      ]
+    },
+    {
+      "id": "OSDS:RA-0140",
+      "label": "Embedded intelligence / Edge AI",
+      "kind": "theme_membership_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": [
+        "A02 proposes this association; A01 supplies no assignment. It is not an adopted taxonomy or original source-category membership."
+      ],
+      "subject": "OSDS:RC-0086",
+      "predicate": "proposed_theme_association",
+      "object": "OSDS:RC-0027",
+      "internal_targets": [
+        "OSDS:RC-0086",
+        "OSDS:RC-0027"
+      ]
+    },
+    {
+      "id": "OSDS:RA-0141",
+      "label": "Embedded intelligence / Local processing",
+      "kind": "theme_membership_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": [
+        "A02 proposes this association; A01 supplies no assignment. It is not an adopted taxonomy or original source-category membership."
+      ],
+      "subject": "OSDS:RC-0087",
+      "predicate": "proposed_theme_association",
+      "object": "OSDS:RC-0027",
+      "internal_targets": [
+        "OSDS:RC-0087",
+        "OSDS:RC-0027"
+      ]
+    },
+    {
+      "id": "OSDS:RA-0142",
+      "label": "Embedded intelligence / Adaptive sampling",
+      "kind": "theme_membership_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": [
+        "A02 proposes this association; A01 supplies no assignment. It is not an adopted taxonomy or original source-category membership."
+      ],
+      "subject": "OSDS:RC-0088",
+      "predicate": "proposed_theme_association",
+      "object": "OSDS:RC-0027",
+      "internal_targets": [
+        "OSDS:RC-0088",
+        "OSDS:RC-0027"
+      ]
+    },
+    {
+      "id": "OSDS:RA-0143",
+      "label": "Scientific methods and interoperability / Field laboratories",
+      "kind": "theme_membership_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": [
+        "A02 proposes this association; A01 supplies no assignment. It is not an adopted taxonomy or original source-category membership."
+      ],
+      "subject": "OSDS:RC-0092",
+      "predicate": "proposed_theme_association",
+      "object": "OSDS:RC-0028",
+      "internal_targets": [
+        "OSDS:RC-0092",
+        "OSDS:RC-0028"
+      ]
+    },
+    {
+      "id": "OSDS:RA-0144",
+      "label": "Scientific methods and interoperability / Calibration",
+      "kind": "theme_membership_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": [
+        "A02 proposes this association; A01 supplies no assignment. It is not an adopted taxonomy or original source-category membership."
+      ],
+      "subject": "OSDS:RC-0068",
+      "predicate": "proposed_theme_association",
+      "object": "OSDS:RC-0028",
+      "internal_targets": [
+        "OSDS:RC-0068",
+        "OSDS:RC-0028"
+      ]
+    },
+    {
+      "id": "OSDS:RA-0145",
+      "label": "Scientific methods and interoperability / Protocols",
+      "kind": "theme_membership_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": [
+        "A02 proposes this association; A01 supplies no assignment. It is not an adopted taxonomy or original source-category membership."
+      ],
+      "subject": "OSDS:RC-0089",
+      "predicate": "proposed_theme_association",
+      "object": "OSDS:RC-0028",
+      "internal_targets": [
+        "OSDS:RC-0089",
+        "OSDS:RC-0028"
+      ]
+    },
+    {
+      "id": "OSDS:RA-0146",
+      "label": "Scientific methods and interoperability / Historical reconstruction",
+      "kind": "theme_membership_proposal",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0079"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0079",
+          "fields": {},
+          "text": "Four **proposed theme umbrellas**, explicitly accepted only as an approach to record, not as adopted taxonomy: **observational technologies** (camera trapping, acoustic monitoring); **computational interpretation** (computer vision, AI for conservation, audio analysis); **embedded intelligence** (edge AI, local processing, adaptive sampling); **scientific methods and interoperability** (field laboratories, calibration, protocols, historical reconstruction). Bioacoustics and camera traps bridge OSDS capture systems with the biological database; biological inference is not automatically OSDS-owned. WILDLABS categorises around technologies, conservation challenges, ecosystems and organisations; OSDS categorises around observation modes, domains, instruments, methods and indicators. This comparison was conversational, not independently verified against a current WILDLABS taxonomy."
+        }
+      ],
+      "qualifications": [
+        "A02 proposes this association; A01 supplies no assignment. It is not an adopted taxonomy or original source-category membership."
+      ],
+      "subject": "OSDS:RC-0090",
+      "predicate": "proposed_theme_association",
+      "object": "OSDS:RC-0028",
+      "internal_targets": [
+        "OSDS:RC-0090",
+        "OSDS:RC-0028"
+      ]
+    },
+    {
+      "id": "OSDS:RA-0147",
+      "label": "Evidence access",
+      "kind": "correction_or_conflict",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0286",
+        "OSDS:OR-0287",
+        "OSDS:OR-0288"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0286",
+          "fields": {},
+          "text": "The substantive October discussion remains unavailable in full. The latest accessible OSDS Overview excerpt contains later exchanges about locating and recreating this document, a reconstruction prompt, an earlier summary request and a closing exchange. It supplies no full October research-session body and no older-page cursor. A closing acknowledgement cannot approve an unseen taxonomy."
+        },
+        {
+          "origin_id": "OSDS:OR-0287",
+          "fields": {},
+          "text": "This audit was reconstructed from the **direct conversation messages available in this chat**, including the extended voice-session exchange, and the earlier 62-entry inventory as rendered in the conversation. The voice turns are directly readable in the conversation context but have **no export-provided immutable message IDs, timestamps per turn, or byte-identical transcript file**. The transcript was not independently exported or hashed. Thus recovery is substantial but not demonstrably exhaustive. The attached OSDS prompt is an instruction, not evidence that an audit or local repository file exists. The 1 November audit and the missing 30 October audit were discussed, but their full bytes were not supplied here; no source-ID or field-level reconciliation against them can be claimed."
+        },
+        {
+          "origin_id": "OSDS:OR-0288",
+          "fields": {
+            "Evidence": "OSDS Overview visible conversation",
+            "Edition / status": "Original turns displayed in this conversation; no stable exported edition",
+            "Bytes": "unavailable",
+            "SHA-256": "unavailable",
+            "Role": "Direct conversational evidence for questions, assistant answers and user confirmations"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 records bounded later-message access; A02 reports direct conversational recovery. Fresh access does not authenticate A02’s original-turn claim."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0148",
+      "label": "Instrument detail",
+      "kind": "correction_or_conflict",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0034",
+        "OSDS:OR-0001",
+        "OSDS:OR-0003",
+        "OSDS:OR-0005",
+        "OSDS:OR-0007",
+        "OSDS:OR-0009",
+        "OSDS:OR-0011",
+        "OSDS:OR-0013",
+        "OSDS:OR-0015",
+        "OSDS:OR-0017",
+        "OSDS:OR-0019",
+        "OSDS:OR-0021",
+        "OSDS:OR-0023",
+        "OSDS:OR-0025",
+        "OSDS:OR-0027",
+        "OSDS:OR-0029",
+        "OSDS:OR-0031",
+        "OSDS:OR-0144",
+        "OSDS:OR-0246"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0034",
+          "fields": {},
+          "text": "R does not supply per-family instrument models, variable lists, units, indicator formulas or calibration procedures. Those columns remain explicit evidence gaps. This avoids replacing the missing historical detail with a generic instrument catalogue. Cross-links in the final column are audit-review questions based on R's other topics; they are not accepted family memberships."
+        },
+        {
+          "origin_id": "OSDS:OR-0001",
+          "fields": {
+            "Position": "1",
+            "Family wording supplied in R§3": "Atmospheric",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Distinguish its intended scope from meteorological and atmospheric chemistry."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0003",
+          "fields": {
+            "Position": "2",
+            "Family wording supplied in R§3": "Meteorological",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Recover the intended boundary with atmospheric instrumentation."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0005",
+          "fields": {
+            "Position": "3",
+            "Family wording supplied in R§3": "Soil",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "R§5 mentions soil sampling; no specific instrument or indicator is assigned."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0007",
+          "fields": {
+            "Position": "4",
+            "Family wording supplied in R§3": "Hydrological",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Distinguish observation context from water quality and flow/material families."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0009",
+          "fields": {
+            "Position": "5",
+            "Family wording supplied in R§3": "Water quality",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "R§5 mentions water sampling; no analyte, instrument or indicator is supplied."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0011",
+          "fields": {
+            "Position": "6",
+            "Family wording supplied in R§3": "Atmospheric chemistry",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Separate the family label from chemical instrumentation and atmospheric context."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0013",
+          "fields": {
+            "Position": "7",
+            "Family wording supplied in R§3": "Radiation and light",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Recover measurement principle, variable, units and calibration from actual evidence."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0015",
+          "fields": {
+            "Position": "8",
+            "Family wording supplied in R§3": "Acoustic",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "R§9 mentions acoustic processing/bioacoustics; exact instruments and family assignments are unspecified."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0017",
+          "fields": {
+            "Position": "9",
+            "Family wording supplied in R§3": "Mechanical and structural",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Recover actual quantities, instruments, procedures and interpretation limits."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0019",
+          "fields": {
+            "Position": "10",
+            "Family wording supplied in R§3": "Energy and electrical",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Recover actual quantities, instruments, procedures and interpretation limits."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0021",
+          "fields": {
+            "Position": "11",
+            "Family wording supplied in R§3": "Thermal and building",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Clarify whether grouping is by property, application, or both."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0023",
+          "fields": {
+            "Position": "12",
+            "Family wording supplied in R§3": "Position and movement",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "R§6 mentions mobile/robotic platforms; do not equate a platform with its measuring instrument."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0025",
+          "fields": {
+            "Position": "13",
+            "Family wording supplied in R§3": "Chemical",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Recover boundary with atmospheric chemistry and water quality."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0027",
+          "fields": {
+            "Position": "14",
+            "Family wording supplied in R§3": "Optical",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "R§9 names computer vision; capture, processing and interpretation must remain distinct."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0029",
+          "fields": {
+            "Position": "15",
+            "Family wording supplied in R§3": "Geotechnical",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "R§5 names geotechnical testing, without a specific instrument or test standard."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0031",
+          "fields": {
+            "Position": "16",
+            "Family wording supplied in R§3": "Flow and material",
+            "Representative instruments/properties/indicators in available source": "Not specified at family level; no verified instrument/property/indicator mapping",
+            "Methodological review needed": "Clarify overlap with hydrological, energy and industrial measurement contexts."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0144",
+          "fields": {},
+          "text": "For each future family, the intended record should recover representative instruments, measured properties, units, potential indicators, calibration/method and evidence. **All sixteen currently lack source-supplied per-family values for those fields.** The omission is explicit rather than filled with generic examples. A future external research pass may add examples as new research, clearly separated from historical reconstruction."
+        },
+        {
+          "origin_id": "OSDS:OR-0246",
+          "fields": {
+            "Item / evidence locator": "Per-family instrument/property/indicator details; R§3",
+            "R / S / M assessment": "Missing in all outputs",
+            "Proposed destination and record treatment": "Retain explicit research gaps; do not fabricate rows",
+            "Evidence/decision limitation": "Not supplied in R/N"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 reports family-level values unavailable; A02 supplies detailed examples/properties/inferences as later audit-reported evidence. Neither is silently substituted for the other."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0149",
+      "label": "Raspberry Pi identity",
+      "kind": "correction_or_conflict",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0092",
+        "OSDS:OR-0095",
+        "OSDS:OR-0259",
+        "OSDS:OR-0262",
+        "OSDS:OR-0073",
+        "OSDS:OR-0117",
+        "OSDS:OR-0118"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0092",
+          "fields": {
+            "Name as supplied": "Jetson Orin Nano",
+            "Evidence and identity limitation": "R§9; N used “Orin Nano”; alias/identity needs review",
+            "Candidate research role, not verified capability": "Computing-platform lead; no performance equivalence to Nano inferred"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0095",
+          "fields": {
+            "Name as supplied": "Raspberry Pi",
+            "Evidence and identity limitation": "R§9; not in N's four-row hardware table",
+            "Candidate research role, not verified capability": "Platform-family lead; generation/model not supplied"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0259",
+          "fields": {
+            "Item / evidence locator": "Jetson Orin Nano; R§9",
+            "R / S / M assessment": "Missing",
+            "Proposed destination and record treatment": "M computing-platform candidate with N alias “Orin Nano” retained as source wording",
+            "Evidence/decision limitation": "No automatic alias equivalence or specification transfer"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0262",
+          "fields": {
+            "Item / evidence locator": "Raspberry Pi; R§9",
+            "R / S / M assessment": "Missing; new relative to N hardware table",
+            "Proposed destination and record treatment": "M platform-family candidate",
+            "Evidence/decision limitation": "Exact model not supplied"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0073",
+          "fields": {},
+          "text": "Embedded controllers, microcontrollers, single-board computers, DAQ systems, sensor interfaces, communications, edge processing, field fabrication and open hardware. IoT asks how data are communicated; physical computing asks how signals are acquired, interpreted and acted upon. An offline logger is physical computing without IoT; a connected commercial meter may be both. Named hardware: NVIDIA Jetson Nano and Orin Nano, LicheeRV Nano (RISC-V), ESP32-S3, Raspberry Pi 5; capabilities include edge inference, computer vision, segmentation, object detection, acoustic classification, sensor fusion, adaptive sampling and autonomy. Actual board specs and model performance were not verified. Digital Naturalism Laboratories inspired field-adaptive/open scientific instrumentation, wearable and interactive tools, in-situ fabrication, field modification logs, context preservation and ecological validity. OS Beehives/OSBH introduced bioacoustic recording, feature extraction, feedback and biological inference boundary. Technical leads: Arduino, PlatformIO, GitHub, Hackaday, Public Lab, WILDLABS, MQTT, LoRaWAN, SDI-12, OSHWA and SensorThings."
+        },
+        {
+          "origin_id": "OSDS:OR-0117",
+          "fields": {
+            "Lead ID": "LEAD11",
+            "Name": "Raspberry Pi",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0118",
+          "fields": {
+            "Lead ID": "LEAD12",
+            "Name": "NVIDIA Jetson Nano / Orin Nano",
+            "Documentary role": "Named community, infrastructure, device family, tool or method reference (entity type to resolve)",
+            "Status": "Original-conversation lead; independent verification pending"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Generic Raspberry Pi and Raspberry Pi 5 are separate candidate identities; Jetson Nano and Orin Nano are also separate. Hardware claims remain unverified."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0150",
+      "label": "Embedded inference placement",
+      "kind": "correction_or_conflict",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0057",
+        "OSDS:OR-0059",
+        "OSDS:OR-0154",
+        "OSDS:OR-0150",
+        "OSDS:OR-0263",
+        "OSDS:OR-0189",
+        "OSDS:OR-0211"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0057",
+          "fields": {},
+          "text": "These are reconstruction-source conceptual statements for review, not newly adopted formal category definitions. Microcontrollers, single-board computers, data acquisition, communications, embedded AI and edge inference are named subjects. Offline acquisition/processing and network exchange should not be silently collapsed."
+        },
+        {
+          "origin_id": "OSDS:OR-0059",
+          "fields": {},
+          "text": "R names a **provisional embedded AI and edge inference family**. It is recorded separately from the sixteen instrument families: it may describe a processing/capability grouping rather than a seventeenth instrumentation family. Its placement and definition remain unresolved."
+        },
+        {
+          "origin_id": "OSDS:OR-0154",
+          "fields": {},
+          "text": "The sixteen labels in §3 are family candidates. The five platform names in §9 are identity leads. Embedded AI/edge inference is a capability-family proposal. Acoustic/optical recording, model processing and ecological interpretation are separate levels. No fully specified instrument instance is recovered from R."
+        },
+        {
+          "origin_id": "OSDS:OR-0150",
+          "fields": {},
+          "text": "1. Accept this reconstruction as a bounded candidate-evidence edition, distinct from an original transcript?\n2. Resolve ground/air/marine/subsurface/specialist-biology scope at source/product level without erasing history.\n3. Approve names, definitions, overlaps and ownership for the sixteen families before issuing classification identities.\n4. Decide whether embedded AI/edge inference is a capability family, theme, or other typed concept; do not assume family 17.\n5. Define four umbrellas and approve any subtheme membership separately.\n6. Define independent identities for instruments, platforms, methods, standards, communities, datasets and assertions.\n7. Decide which named new communities/resources qualify for the source inventory versus separate record types.\n8. Approve the conceptual campaign and EII pathways as scoped relationships, with no assumed verification/derivation outcomes.\n9. Establish claim-level evidence and decision states, and choose a proportionate schema extension and validator changes if ingestion is authorised.\n10. Keep original citations, external identities, rights, standard editions and scientific fitness unresolved until separately researched."
+        },
+        {
+          "origin_id": "OSDS:OR-0263",
+          "fields": {
+            "Item / evidence locator": "Data acquisition/communications/embedded AI/edge inference; R§9",
+            "R / S / M assessment": "Null slots / Missing substantive pipeline",
+            "Proposed destination and record treatment": "Separate processing/capability candidates and evidence links",
+            "Evidence/decision limitation": "Not new source providers or approved family 17"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0189",
+          "fields": {
+            "Thread": "T11",
+            "Research question / phase": "O07 physical computing: User asked to distinguish physical computing from IoT and examine edge-AI boards.",
+            "Recovered substantive answer": "Acquisition/control vs communication/networking; embedded AI/edge inference provisional family.",
+            "Authority": "User explicitly accepted family under O07."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0211",
+          "fields": {
+            "Decision ID": "DEC09",
+            "Proposition": "Include embedded AI/edge inference as provisional family under O07",
+            "Evidence locator": "Explicit user agreement T11",
+            "Authority / status": "confirmed provisional family"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "A01 leaves type/placement unresolved; A02 reports provisional O07 placement. Keep the proposed processing-family assertion, not a seventeenth instrument family."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0151",
+      "label": "Biological namespace",
+      "kind": "correction_or_conflict",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0152",
+        "OSDS:OR-0166",
+        "OSDS:OR-0196"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0152",
+          "fields": {},
+          "text": "The reported division places satellite, aerial and Earth-observation mapping primarily with GISDS; specialised biological instrumentation and biological evidence primarily with a future biological database. Interdisciplinary links should preserve relationships without duplicating another database's authority. These are proposed scientific responsibility boundaries to reconcile, not automatic deletion rules."
+        },
+        {
+          "origin_id": "OSDS:OR-0166",
+          "fields": {
+            "Neighbour named in R": "Future biological database",
+            "Reconstructed relationship / source boundary": "Proposed home for specialised biology instrumentation/evidence",
+            "Unresolved implementation or scientific issue": "Exact database identity, scope and boundary with acoustic/visual observation unresolved"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0196",
+          "fields": {
+            "Rel ID": "REL04",
+            "Subject": "OSDS",
+            "Predicate": "cross-references",
+            "Object": "future biological database / BIPKB for organisms and phenotypes",
+            "Qualification": "Biological interpretations not owned by OSDS; candidate relationship, no endpoint-resolution claim"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "BIPKB occurs as an audit-reported future biological database suggestion. No namespace adoption, source deletion or cross-repository mapping is authorised."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0152",
+      "label": "Ground/air/marine scope",
+      "kind": "correction_or_conflict",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0152",
+        "OSDS:OR-0143",
+        "OSDS:OR-0162",
+        "OSDS:OR-0150",
+        "OSDS:OR-0244",
+        "OSDS:OR-0289",
+        "OSDS:OR-0181",
+        "OSDS:OR-0070",
+        "OSDS:OR-0195",
+        "OSDS:OR-0205",
+        "OSDS:OR-0239"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0152",
+          "fields": {},
+          "text": "The reported division places satellite, aerial and Earth-observation mapping primarily with GISDS; specialised biological instrumentation and biological evidence primarily with a future biological database. Interdisciplinary links should preserve relationships without duplicating another database's authority. These are proposed scientific responsibility boundaries to reconcile, not automatic deletion rules."
+        },
+        {
+          "origin_id": "OSDS:OR-0143",
+          "fields": {},
+          "text": "**A — scope tensions requiring review:** Does “aerial” exclude aircraft atmospheric observations, or aerial mapping specifically? How are autonomous ocean floats, underwater/subsurface systems, laboratory and industrial measurements treated? Which biological instrumentation is specialised while camera trapping, bioacoustics and beehive sensing remain relevant? How are mixed providers handled at product level? Existing IAGOS, Argo, NASA, Copernicus and GBIF records must retain their identities and history while those questions are assessed. Location metadata and use of GIS in analysis do not by themselves settle catalogue ownership."
+        },
+        {
+          "origin_id": "OSDS:OR-0162",
+          "fields": {
+            "Neighbour named in R": "GISDS",
+            "Reconstructed relationship / source boundary": "Primary home proposed for satellite/aerial/EO mapping",
+            "Unresolved implementation or scientific issue": "Mixed-provider/product and aerial-observation boundary unresolved"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0150",
+          "fields": {},
+          "text": "1. Accept this reconstruction as a bounded candidate-evidence edition, distinct from an original transcript?\n2. Resolve ground/air/marine/subsurface/specialist-biology scope at source/product level without erasing history.\n3. Approve names, definitions, overlaps and ownership for the sixteen families before issuing classification identities.\n4. Decide whether embedded AI/edge inference is a capability family, theme, or other typed concept; do not assume family 17.\n5. Define four umbrellas and approve any subtheme membership separately.\n6. Define independent identities for instruments, platforms, methods, standards, communities, datasets and assertions.\n7. Decide which named new communities/resources qualify for the source inventory versus separate record types.\n8. Approve the conceptual campaign and EII pathways as scoped relationships, with no assumed verification/derivation outcomes.\n9. Establish claim-level evidence and decision states, and choose a proportionate schema extension and validator changes if ingestion is authorised.\n10. Keep original citations, external identities, rights, standard editions and scientific fitness unresolved until separately researched."
+        },
+        {
+          "origin_id": "OSDS:OR-0244",
+          "fields": {
+            "Item / evidence locator": "Satellite/aerial/biology exclusions; R§1",
+            "R / S / M assessment": "Missing as operational rules; Tension",
+            "Proposed destination and record treatment": "Source/product scope-review questions, not deletions",
+            "Evidence/decision limitation": "Needs owner scientific decision"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0289",
+          "fields": {},
+          "text": "1. Review this reconstruction edition, especially R's assistant-authored origin and incomplete historical authentication. Approve or qualify its candidate-evidence use.\n2. Select a bounded substantive intake: preserve sixteen family labels, four umbrellas, six dimensions, five platform leads and named method/resource proposals with explicit unknowns. Do not invent their definitions to reach an apparent completion count.\n3. Resolve only the scientific scope/identity decisions explicitly authorised; defer marine/aerial/biology boundaries, source merges and external equivalences otherwise.\n4. Design minimal independent typed records and assertion provenance, retaining the current source register authority and original scientific values.\n5. Implement paired scientific/machine content and concise README navigation only after a scoped patch is approved. Reconcile source-derived labels, methods, themes and reference candidates without automatically verifying them.\n6. Extend preservation/validation checks; keep source counts distinct from family/platform/theme/member counts. Run meaningful negative tests for identity, references, lifecycle/verification confusion and preservation.\n7. Review rendered scientific content with the owner. Prior documentary Stage C non-acceptance remains in force; document creation does not satisfy it.\n8. Perform final validation only after acceptance. Git actions, website pins/checksums and publication remain separate authorisations. Do not modify DRM."
+        },
+        {
+          "origin_id": "OSDS:OR-0181",
+          "fields": {
+            "Thread": "T03",
+            "Research question / phase": "Scale and boundary: User excluded satellite, Earth viewing, aerial drone/balloon/aircraft mapping, GIS and specialised biological instrumentation; accepted governmental/global infrastructures where observation is at human/ground scale.",
+            "Recovered substantive answer": "Ground-context observational system, not small-institution-only system.",
+            "Authority": "Explicit user scope decision."
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0070",
+          "fields": {},
+          "text": "Unattended self-powered loggers, fixed stations, ground rovers, robotic boats, autonomous sondes, fixed cameras, GNSS/IMU platforms and automated samplers. Can measure gradients, episodic changes and adaptive/high-frequency conditions. Distinguish operational autonomy, remote communication, sensing, navigation and data interpretation. Examples mentioned: Argo, OceanOPS, Copernicus Marine, NEON, USGS, EarthScope and robotics datasets. **Boundary qualification:** ocean floats and mobile underwater platforms are cited as analogous in-situ systems; aerial mapping remains excluded."
+        },
+        {
+          "origin_id": "OSDS:OR-0195",
+          "fields": {
+            "Rel ID": "REL03",
+            "Subject": "OSDS",
+            "Predicate": "cross-references",
+            "Object": "GISDS satellite/aerial mapping and geospatial services",
+            "Qualification": "Boundary: exclude aerial mapping as OSDS records; candidate relationship, no endpoint-resolution claim"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0205",
+          "fields": {
+            "Decision ID": "DEC03",
+            "Proposition": "Human/ground-scale scope; exclude satellite/aerial GIS and specialised biology instruments",
+            "Evidence locator": "Explicit user direction T03",
+            "Authority / status": "confirmed"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0239",
+          "fields": {},
+          "text": "- **GAP13:** Boundary examples for underwater autonomy, fixed ecological cameras and biological instruments."
+        }
+      ],
+      "qualifications": [
+        "Ground-context focus and aerial/specialist-biological exclusions are reported proposals. Aircraft observations, marine/subsurface systems and biological capture remain unresolved at product level; all existing providers are preserved."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0153",
+      "label": "Foundational references",
+      "kind": "correction_or_conflict",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0147",
+        "OSDS:OR-0126",
+        "OSDS:OR-0274",
+        "OSDS:OR-0290",
+        "OSDS:OR-0099",
+        "OSDS:OR-0291",
+        "OSDS:OR-0226"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0147",
+          "fields": {},
+          "text": "**R§12, R§7/9/10; N§8; B foundational references.** The list below covers every named framework or methodological lead in the reconstruction brief. A reference to a standard is not adoption or source-level conformance."
+        },
+        {
+          "origin_id": "OSDS:OR-0126",
+          "fields": {
+            "Reference or concept": "W3C/OGC SOSA/SSN",
+            "Kind in this audit": "Standards/ontology reference candidate",
+            "Existing representation and unresolved evidence": "Already in manifest foundational references; source editions/mappings not adopted"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0274",
+          "fields": {
+            "Item / evidence locator": "SOSA/SSN, SensorThings, OMS; B, R§12",
+            "R / S / M assessment": "Already foundational references",
+            "Proposed destination and record treatment": "Retain; separately assess edition/mappings later",
+            "Evidence/decision limitation": "References are not compliance"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0290",
+          "fields": {},
+          "text": "**DRM authority:** `DRM_Minimum_Shared_Protocol(1).md` identifies itself as **DRM-MSP 0.1.0, unadopted review candidate, review revision 2, public preparation edition 1 November 2026**. Phase 4 bounded pilots are closed; Phase 5 and general adoption are not authorised. `20261103_DRM_a01_rev03.md`, despite its filename, is an **A1/A2 comparative review narrative** proposing DRM-ING-01–10; it is not an adopted ingestion specification. The uploaded OSDS prompt mentions a separate ingestion-methodology document, but that complete document was **not supplied**. Apply its ten proposed controls as experimental guidance, not binding clauses. The foundational SensorThings API remains in the earlier OSDS conversation even though the newer prompt emphasises SOSA/SSN, PROV-O and O&M."
+        },
+        {
+          "origin_id": "OSDS:OR-0099",
+          "fields": {
+            "Ref ID": "STD04",
+            "Framework / source": "W3C PROV-O",
+            "Role": "General provenance relationships between entities, activities and agents",
+            "Evidence / verification limitation": "Appears in uploaded OSDS A02 prompt; not clearly established in original voice discussion"
+          },
+          "text": null
+        },
+        {
+          "origin_id": "OSDS:OR-0291",
+          "fields": {},
+          "text": "No OSDS standards implementation, conformance, current specification edition or rights clearance is demonstrated by these mentions. The original three foundational references were **SOSA/SSN, SensorThings API and OGC O&M/OMS**; the uploaded A02 prompt additionally highlights PROV-O."
+        },
+        {
+          "origin_id": "OSDS:OR-0226",
+          "fields": {
+            "Issue ID": "V12",
+            "Claim / risk": "Three standards versus A02 additions",
+            "Finding": "SOSA/SSN, SensorThings, O&M foundational; PROV-O added by A02 instructions",
+            "Required disposition": "Preserve both origin contexts"
+          },
+          "text": null
+        }
+      ],
+      "qualifications": [
+        "Three original foundational standards stay unchanged. PROV-O is an additional A02-instruction-origin reference, not an authenticated original foundational reference or adopted mapping."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0154",
+      "label": "2. Scope, boundaries and chronological reconstruction",
+      "kind": "research_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0292"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0292",
+          "fields": {},
+          "text": "**Conversation sequence locator:** `T01`–`T14` are **audit-scoped narrative locators**, not original message IDs. The exchange was sequential, with O01→O08 covered in order and interspersed scope and methodological discussion. Exact individual turn times and source-export offsets are unavailable. No verbatim quotes are claimed."
+        }
+      ],
+      "qualifications": [
+        "Secondary documentary account; no original-turn completeness or independent scientific verification implied."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0155",
+      "label": "8. Scientific source inventory — candidate identities recovered",
+      "kind": "research_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0293"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0293",
+          "fields": {},
+          "text": "The original assistant inventory listed **62 row entries**, not 62 distinct verified providers. Duplicate/cross-domain mentions include ICOS, EarthScope and Zenodo; generic repositories are not themselves instruments. The following is a **row-preserving reconstruction** of those names; URL, licence, DOI, coverage and entity-type verification must be performed against the original inventory and external sources before canonical ingestion."
+        }
+      ],
+      "qualifications": [
+        "Secondary documentary account; no original-turn completeness or independent scientific verification implied."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0156",
+      "label": "8. Scientific source inventory — candidate identities recovered",
+      "kind": "research_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0294"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0294",
+          "fields": {},
+          "text": "**Inventory check:** 62 row identities accounted for in the reconstructed original inventory. These are **audit-scoped row aliases**, not new OSDS canonical IDs. The earlier list numbered 001–062; `SRC###` is used here only to prevent confusing row numbers with database identity. The original URLs are present in the prior conversation message but not reprinted here; their byte-level and field-level preservation is **not** asserted. Original inventory classifications and access descriptions require a source-edition crosswalk before any merge or correction."
+        }
+      ],
+      "qualifications": [
+        "Secondary documentary account; no original-turn completeness or independent scientific verification implied."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0157",
+      "label": "10. Decision and authority ledger",
+      "kind": "research_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0295"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0295",
+          "fields": {},
+          "text": "**Authority limit:** These are reported user confirmations recoverable from displayed conversation, not externally authenticated signed decisions. No repository owner approval for schema changes, record acceptance, publication or scientific verification is inferred."
+        }
+      ],
+      "qualifications": [
+        "Secondary documentary account; no original-turn completeness or independent scientific verification implied."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    },
+    {
+      "id": "OSDS:RA-0158",
+      "label": "16. Distinct completeness assessments",
+      "kind": "research_qualification",
+      "states": {
+        "documentary_inclusion": "candidate_documentary",
+        "canonical_research_status": "candidate",
+        "identity_verification": "unverified",
+        "scientific_verification": "not_independently_verified",
+        "reported_authority": "audit_reported_or_author_analysis",
+        "authority_evidence": "original_scientific_turns_unavailable",
+        "relationship_review": "proposed",
+        "access": "not_assessed",
+        "rights": "unknown"
+      },
+      "origin_ids": [
+        "OSDS:OR-0296"
+      ],
+      "content": [
+        {
+          "origin_id": "OSDS:OR-0296",
+          "fields": {},
+          "text": "**Conversation recovery:** Directly visible substantive sequence T01–T14 covered, but no immutable L0 transcript, message-level offset map or completeness denominator; **no percentage claimed**. **Documentary inventory:** 62/62 original displayed inventory row names reconstructed, but earlier audit editions unavailable and field-level parity (URLs, category assignments, caveats) unproven; **not 100% information preservation**. **Scientific domain completeness:** eight domains and eight categories have exploratory coverage; no systematic completeness benchmark or independent source verification. These three assessments must not be combined."
+        }
+      ],
+      "qualifications": [
+        "Secondary documentary account; no original-turn completeness or independent scientific verification implied."
+      ],
+      "subject": null,
+      "predicate": null,
+      "object": null,
+      "internal_targets": []
+    }
+  ],
+  "source_aliases": [
+    {
+      "audit_alias": "SRC001",
+      "source_id": "OSDS:SRC-001",
+      "audit_name": "WMO WIGOS / GBON",
+      "canonical_name": "WMO WIGOS / GBON",
+      "origin_id": "OSDS:OR-0297",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC002",
+      "source_id": "OSDS:SRC-002",
+      "audit_name": "WMO OSCAR",
+      "canonical_name": "WMO OSCAR",
+      "origin_id": "OSDS:OR-0297",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC003",
+      "source_id": "OSDS:SRC-003",
+      "audit_name": "NOAA NCEI",
+      "canonical_name": "NOAA NCEI",
+      "origin_id": "OSDS:OR-0297",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC004",
+      "source_id": "OSDS:SRC-004",
+      "audit_name": "NOAA Global Monitoring Laboratory",
+      "canonical_name": "NOAA Global Monitoring Laboratory",
+      "origin_id": "OSDS:OR-0297",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC005",
+      "source_id": "OSDS:SRC-005",
+      "audit_name": "ICOS",
+      "canonical_name": "ICOS",
+      "origin_id": "OSDS:OR-0297",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC006",
+      "source_id": "OSDS:SRC-006",
+      "audit_name": "AERONET",
+      "canonical_name": "AERONET",
+      "origin_id": "OSDS:OR-0297",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC007",
+      "source_id": "OSDS:SRC-007",
+      "audit_name": "IAGOS",
+      "canonical_name": "IAGOS",
+      "origin_id": "OSDS:OR-0297",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC008",
+      "source_id": "OSDS:SRC-008",
+      "audit_name": "NDACC",
+      "canonical_name": "NDACC",
+      "origin_id": "OSDS:OR-0297",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC009",
+      "source_id": "OSDS:SRC-009",
+      "audit_name": "Copernicus Atmosphere Monitoring Service",
+      "canonical_name": "Copernicus Atmosphere Monitoring Service",
+      "origin_id": "OSDS:OR-0297",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC010",
+      "source_id": "OSDS:SRC-010",
+      "audit_name": "NEON",
+      "canonical_name": "NEON",
+      "origin_id": "OSDS:OR-0298",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC011",
+      "source_id": "OSDS:SRC-011",
+      "audit_name": "FLUXNET",
+      "canonical_name": "FLUXNET",
+      "origin_id": "OSDS:OR-0298",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC012",
+      "source_id": "OSDS:SRC-012",
+      "audit_name": "ILTER",
+      "canonical_name": "ILTER",
+      "origin_id": "OSDS:OR-0298",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC013",
+      "source_id": "OSDS:SRC-013",
+      "audit_name": "DEIMS-SDR",
+      "canonical_name": "DEIMS-SDR",
+      "origin_id": "OSDS:OR-0298",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC014",
+      "source_id": "OSDS:SRC-014",
+      "audit_name": "GBIF",
+      "canonical_name": "GBIF",
+      "origin_id": "OSDS:OR-0298",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC015",
+      "source_id": "OSDS:SRC-015",
+      "audit_name": "eBird",
+      "canonical_name": "eBird",
+      "origin_id": "OSDS:OR-0298",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC016",
+      "source_id": "OSDS:SRC-016",
+      "audit_name": "Wildlife Insights",
+      "canonical_name": "Wildlife Insights",
+      "origin_id": "OSDS:OR-0298",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC017",
+      "source_id": "OSDS:SRC-017",
+      "audit_name": "LifeWatch ERIC",
+      "canonical_name": "LifeWatch ERIC",
+      "origin_id": "OSDS:OR-0298",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC018",
+      "source_id": "OSDS:SRC-018",
+      "audit_name": "GLEON",
+      "canonical_name": "GLEON",
+      "origin_id": "OSDS:OR-0298",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC019",
+      "source_id": "OSDS:SRC-019",
+      "audit_name": "International Soil Moisture Network",
+      "canonical_name": "International Soil Moisture Network",
+      "origin_id": "OSDS:OR-0299",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC020",
+      "source_id": "OSDS:SRC-020",
+      "audit_name": "TERENO",
+      "canonical_name": "TERENO",
+      "origin_id": "OSDS:OR-0299",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC021",
+      "source_id": "OSDS:SRC-021",
+      "audit_name": "ISRIC",
+      "canonical_name": "ISRIC World Soil Information",
+      "origin_id": "OSDS:OR-0299",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC022",
+      "source_id": "OSDS:SRC-022",
+      "audit_name": "EarthScope",
+      "canonical_name": "EarthScope",
+      "origin_id": "OSDS:OR-0299",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC023",
+      "source_id": "OSDS:SRC-023",
+      "audit_name": "International Seismological Centre",
+      "canonical_name": "International Seismological Centre",
+      "origin_id": "OSDS:OR-0299",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC024",
+      "source_id": "OSDS:SRC-024",
+      "audit_name": "GTN-P",
+      "canonical_name": "GTN-P",
+      "origin_id": "OSDS:OR-0299",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC025",
+      "source_id": "OSDS:SRC-025",
+      "audit_name": "World Glacier Monitoring Service",
+      "canonical_name": "World Glacier Monitoring Service",
+      "origin_id": "OSDS:OR-0299",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC026",
+      "source_id": "OSDS:SRC-026",
+      "audit_name": "GLORIA",
+      "canonical_name": "GLORIA",
+      "origin_id": "OSDS:OR-0299",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC027",
+      "source_id": "OSDS:SRC-027",
+      "audit_name": "USGS Water Data",
+      "canonical_name": "USGS Water Data",
+      "origin_id": "OSDS:OR-0300",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC028",
+      "source_id": "OSDS:SRC-028",
+      "audit_name": "Argo",
+      "canonical_name": "Argo",
+      "origin_id": "OSDS:OR-0300",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC029",
+      "source_id": "OSDS:SRC-029",
+      "audit_name": "Copernicus Marine",
+      "canonical_name": "Copernicus Marine",
+      "origin_id": "OSDS:OR-0300",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC030",
+      "source_id": "OSDS:SRC-030",
+      "audit_name": "EMODnet",
+      "canonical_name": "EMODnet",
+      "origin_id": "OSDS:OR-0300",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC031",
+      "source_id": "OSDS:SRC-031",
+      "audit_name": "OceanOPS",
+      "canonical_name": "OceanOPS",
+      "origin_id": "OSDS:OR-0300",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC032",
+      "source_id": "OSDS:SRC-032",
+      "audit_name": "GOOS",
+      "canonical_name": "GOOS",
+      "origin_id": "OSDS:OR-0300",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC033",
+      "source_id": "OSDS:SRC-033",
+      "audit_name": "US IOOS",
+      "canonical_name": "US IOOS",
+      "origin_id": "OSDS:OR-0300",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC034",
+      "source_id": "OSDS:SRC-034",
+      "audit_name": "GLOSS",
+      "canonical_name": "GLOSS",
+      "origin_id": "OSDS:OR-0300",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC035",
+      "source_id": "OSDS:SRC-035",
+      "audit_name": "British Oceanographic Data Centre",
+      "canonical_name": "British Oceanographic Data Centre",
+      "origin_id": "OSDS:OR-0300",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC036",
+      "source_id": "OSDS:SRC-036",
+      "audit_name": "USDA LTAR",
+      "canonical_name": "USDA LTAR",
+      "origin_id": "OSDS:OR-0301",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC037",
+      "source_id": "OSDS:SRC-037",
+      "audit_name": "USDA NASS",
+      "canonical_name": "USDA NASS",
+      "origin_id": "OSDS:OR-0301",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC038",
+      "source_id": "OSDS:SRC-038",
+      "audit_name": "FAO AQUASTAT",
+      "canonical_name": "FAO AQUASTAT",
+      "origin_id": "OSDS:OR-0301",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC039",
+      "source_id": "OSDS:SRC-039",
+      "audit_name": "European Flood Awareness System",
+      "canonical_name": "European Flood Awareness System",
+      "origin_id": "OSDS:OR-0301",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC040",
+      "source_id": "OSDS:SRC-040",
+      "audit_name": "ICOS Ecosystem Stations",
+      "canonical_name": "ICOS Ecosystem Stations",
+      "origin_id": "OSDS:OR-0301",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC041",
+      "source_id": "OSDS:SRC-041",
+      "audit_name": "Lincoln Agricultural Robotics Datasets",
+      "canonical_name": "Lincoln Agricultural Robotics Datasets",
+      "origin_id": "OSDS:OR-0301",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC042",
+      "source_id": "OSDS:SRC-042",
+      "audit_name": "AG-LOAM",
+      "canonical_name": "AG-LOAM",
+      "origin_id": "OSDS:OR-0301",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC043",
+      "source_id": "OSDS:SRC-043",
+      "audit_name": "OpenAQ",
+      "canonical_name": "OpenAQ",
+      "origin_id": "OSDS:OR-0302",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC044",
+      "source_id": "OSDS:SRC-044",
+      "audit_name": "openSenseMap",
+      "canonical_name": "openSenseMap",
+      "origin_id": "OSDS:OR-0302",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC045",
+      "source_id": "OSDS:SRC-045",
+      "audit_name": "Sensor.Community",
+      "canonical_name": "Sensor.Community",
+      "origin_id": "OSDS:OR-0302",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC046",
+      "source_id": "OSDS:SRC-046",
+      "audit_name": "Smart Citizen",
+      "canonical_name": "Smart Citizen",
+      "origin_id": "OSDS:OR-0302",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC047",
+      "source_id": "OSDS:SRC-047",
+      "audit_name": "EEA Datahub",
+      "canonical_name": "EEA Datahub",
+      "origin_id": "OSDS:OR-0302",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC048",
+      "source_id": "OSDS:SRC-048",
+      "audit_name": "London Datastore",
+      "canonical_name": "London Datastore",
+      "origin_id": "OSDS:OR-0302",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC049",
+      "source_id": "OSDS:SRC-049",
+      "audit_name": "Barcelona Open Data",
+      "canonical_name": "Barcelona Open Data",
+      "origin_id": "OSDS:OR-0302",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC050",
+      "source_id": "OSDS:SRC-050",
+      "audit_name": "Open Power System Data",
+      "canonical_name": "Open Power System Data",
+      "origin_id": "OSDS:OR-0303",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC051",
+      "source_id": "OSDS:SRC-051",
+      "audit_name": "ENTSO-E Transparency Platform",
+      "canonical_name": "ENTSO-E Transparency Platform",
+      "origin_id": "OSDS:OR-0303",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC052",
+      "source_id": "OSDS:SRC-052",
+      "audit_name": "NREL Grid Research",
+      "canonical_name": "NREL Grid Research",
+      "origin_id": "OSDS:OR-0303",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC053",
+      "source_id": "OSDS:SRC-053",
+      "audit_name": "NASA Open Data",
+      "canonical_name": "NASA Open Data",
+      "origin_id": "OSDS:OR-0303",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC054",
+      "source_id": "OSDS:SRC-054",
+      "audit_name": "UCI Machine Learning Repository",
+      "canonical_name": "UCI Machine Learning Repository",
+      "origin_id": "OSDS:OR-0303",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC055",
+      "source_id": "OSDS:SRC-055",
+      "audit_name": "Zenodo",
+      "canonical_name": "Zenodo",
+      "origin_id": "OSDS:OR-0303",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC056",
+      "source_id": "OSDS:SRC-056",
+      "audit_name": "PANGAEA",
+      "canonical_name": "PANGAEA",
+      "origin_id": "OSDS:OR-0304",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC057",
+      "source_id": "OSDS:SRC-057",
+      "audit_name": "NASA Earthdata",
+      "canonical_name": "NASA Earthdata",
+      "origin_id": "OSDS:OR-0304",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC058",
+      "source_id": "OSDS:SRC-058",
+      "audit_name": "Zenodo Research Datasets",
+      "canonical_name": "Zenodo Research Datasets",
+      "origin_id": "OSDS:OR-0304",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC059",
+      "source_id": "OSDS:SRC-059",
+      "audit_name": "Mendeley Data",
+      "canonical_name": "Mendeley Data",
+      "origin_id": "OSDS:OR-0304",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC060",
+      "source_id": "OSDS:SRC-060",
+      "audit_name": "OpenML",
+      "canonical_name": "OpenML",
+      "origin_id": "OSDS:OR-0304",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC061",
+      "source_id": "OSDS:SRC-061",
+      "audit_name": "AWS Open Data Registry",
+      "canonical_name": "AWS Open Data Registry",
+      "origin_id": "OSDS:OR-0304",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    },
+    {
+      "audit_alias": "SRC062",
+      "source_id": "OSDS:SRC-062",
+      "audit_name": "EarthScope Research Infrastructure",
+      "canonical_name": "EarthScope Research Infrastructure",
+      "origin_id": "OSDS:OR-0304",
+      "status": "row_alias_mapping_only_not_external_identity_verification"
+    }
+  ],
+  "counts": {
+    "concepts": 109,
+    "assertions": 158,
+    "origins": 304,
+    "source_aliases": 62,
+    "concept_types": {
+      "instrument_family_candidate": 16,
+      "observation_method_context": 8,
+      "theme_umbrella_candidate": 4,
+      "descriptive_dimension_candidate": 6,
+      "computing_platform_candidate": 6,
+      "standards_framework_candidate": 8,
+      "framework_reference_group": 2,
+      "technical_interface_group": 1,
+      "research_resource_candidate": 15,
+      "method_framework_candidate": 9,
+      "method_capability_candidate": 34
+    },
+    "assertion_types": {
+      "scope_method_or_evidence_qualification": 27,
+      "historical_discussion_report": 14,
+      "federation_relationship_proposal": 10,
+      "reported_decision": 12,
+      "verification_question": 12,
+      "research_gap": 15,
+      "reconciliation_question": 44,
+      "theme_membership_proposal": 12,
+      "correction_or_conflict": 7,
+      "research_qualification": 5
+    }
+  }
+}
+```
